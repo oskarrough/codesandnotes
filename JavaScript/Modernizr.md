@@ -1,1 +1,0 @@
-# Feature detection with Modernizr

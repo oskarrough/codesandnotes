@@ -5,7 +5,8 @@ Now, back in the days everything was hardcoded without databases. No, not really
 
 **@todo**
 
-**References**
+### References
 
-- [How We Build CMS-Free Websites](http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/)
-- <https://pinboard.in/u:rough/t:cms>
+* [How We Build CMS-Free Websites](http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/)
+* http://alistapart.com/topic/content-strategy
+* * https://pinboard.in/u:rough/t:cms
