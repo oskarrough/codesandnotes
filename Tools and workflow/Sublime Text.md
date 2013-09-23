@@ -1,7 +1,9 @@
 # Sublime Text
+
 Sublime Text (as of writing version 3.0) is my editor of choice. It's insanely fast, extendable through packages, runs on every platform and has a huge community. In short, it's everything you need.
 
 ## Themes and color schemes
+
 Syntax highlighting and thereby themes are…
 
 - http://tmtheme-editor.herokuapp.com/
@@ -10,10 +12,12 @@ Syntax highlighting and thereby themes are…
 - https://news.layervault.com/stories/271-ask-dn-whats-the-best-sublime-text-color-scheme
 
 ## Package control
+
 1. Install package control http://wbond.net/sublime_packages/package_control
 2. Go fetch some useful packages. What are useful packages?
 
-### Useful packages
+**Useful packages**
+
 Sublimelinter, Emmet, gitgutter, ternjs
 
 ## Sublime and the command line
@@ -24,7 +28,15 @@ Subl
 
 Sublime text has nice mate-esque command line launcher called 'subl' hidden in its distribution. To make it available universally:
 
+@todo check my gist
+
 `$ ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl`
+
 Once Installed, you can run it anywhere to open a fresh project/window:
 
 `$ subl .`
+
+**References**
+
+* this
+* that
