@@ -1,16 +1,11 @@
-Date: 2000-05-01
-Title: JavaScript
-
 # JavaScript
 Unobtrusive, progressive enhancement etc.
 
-Modernizr
+vanilla
 
 ## Frameworks
 - http://jquery.com (de facto standard)
 
-## jQuery Plugins
-- find that page that collects em all…
 
 #### References
 - https://developer.mozilla.org/en/JavaScript

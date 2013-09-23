@@ -1,6 +1,3 @@
-Date: 2000-02-16
-Title: Naming conventions
-
 # Naming conventions
 Naming conventions help ensure consistency in your code. It helps you remember what is what and it avoids confusion. It makes things easier.
 Now, if you're developing alone on a project it will help you a lot but if you're developing on the same project with others you will quickly realize that it is neccesary.

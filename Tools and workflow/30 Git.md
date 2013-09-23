@@ -1,7 +1,5 @@
-Date: 2000-12-02
-Title: Git
-
 # Git
+
 intro to git
 references
 

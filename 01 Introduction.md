@@ -1,6 +1,3 @@
-Date: 2000-01-01
-Title: The rough guide to the web
-
 # THE ROUGH GUIDE TO THE WEB
 by Oskar Rough Mosumgaard
 

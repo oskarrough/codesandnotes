@@ -1,6 +1,3 @@
-Date: 2000-03-05
-Title: Easier HTML
-
 # Easier HTML
 Writing HTML can be tedious but luckily you are a developer as so many before you and developers are lazy. And we all know who invented the wheel.
 
@@ -26,5 +23,6 @@ http://jade-lang.com/
 Something about HAML.
 http://haml.info/
 
-#### References
+**References**
+
 - [http://blog.oskarrough.com/2013/02/emmet-and-hayaku/](http://blog.oskarrough.com/2013/02/emmet-and-hayaku/)

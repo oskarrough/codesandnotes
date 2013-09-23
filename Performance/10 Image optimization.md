@@ -1,11 +1,7 @@
-Date: 2000-06-11
-Title: Image optimization
-
 # Image optimization
 Any website should be fast. No one likes waiting and images are one of the major slowdowns online. So, you should always optimise your images. Here are some ways to do it.
 
 Find some links explaining color depths, bits, alpha channels and it's relation to file size.
-
 
 ## PNG
 You can optimize images directly via Terminal (say with [OptiPNG](http://optipng.sourceforge.net/) or [Pngcrush](http://pmt.sourceforge.net/pngcrush/))but for most people it's easier to use software with a gui.
@@ -15,7 +11,6 @@ Like these:
 - [ImageOptim](http://imageoptim.com/)
 - [Trimage](http://trimage.org/)
 - [PunyPNG](http://www.punypng.com/)
-
 
 #### References
 - http://www.splashnology.com/article/how-to-optimize-png-and-jpeg-without-quality-loss-part-1/2071/

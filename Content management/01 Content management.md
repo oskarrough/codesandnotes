@@ -1,19 +1,11 @@
-Date: 2000-07-01
-Title: CMS
-
-# CMS
+# Content management
 There's a plethora of content management systems out there. I've tried a lot and which to choose really comes down to each projects specific needs and future plans.
 
 Now, back in the days everything was hardcoded without databases. No, not really. What do I know.
 
 **@todo**
 
-* PHP-based systems
-* File-based systems
-* JavaScript-based
-
-
-#### References
+**References**
 
 - [How We Build CMS-Free Websites](http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/)
 - <https://pinboard.in/u:rough/t:cms>

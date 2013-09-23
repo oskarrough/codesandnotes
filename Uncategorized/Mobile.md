@@ -1,6 +1,3 @@
-Date: 2000-08-01
-Title: Mobile
-
 # Mobile
 The web is mobile.
 

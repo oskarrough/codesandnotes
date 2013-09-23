@@ -1,6 +1,3 @@
-Date: 2000-04-06
-Title: Browser defaults, Normalize and why you would want it
-
 # Browser defaults, Normalize and why you would want it
 All browsers come with predefined CSS rules that styles the default elements.
 For instance, the `<h1>` element often has the following rules:
@@ -11,7 +8,7 @@ These things are often taken for granted (and should be). Without it, every elem
 
 A problem with the default browser styles is that every browser vendor is not using the same ones. Let me give you an example from [Normalize.css](http://necolas.github.com/normalize.css/):
 
-```
+```css
 /* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
 b,
 strong {
@@ -20,7 +17,6 @@ strong {
 ```
 
 Apparently using `b` or `strong` isn't only `bold` it can also be `bolder`. While this example difference isn't too huge the important thing is that you never really know and this is why Normalize.css is a great starting point for your projects.
-
 
 ## Introducing Normalize.css
 Normalize.css is a relatively small .css file you can include at the start of your projects to close the gaps between browser defaults so you won't have to think about it yourself.
@@ -32,5 +28,5 @@ Normalize.css is a relatively small .css file you can include at the start of yo
 
 Sold.
 
-#### References
+**References**
 - [Normalize.css](http://necolas.github.com/normalize.css:/)

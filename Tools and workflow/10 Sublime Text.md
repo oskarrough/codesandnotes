@@ -1,6 +1,3 @@
-Date: 2000-02-11
-Title: Sublime Text
-
 # Sublime Text
 Sublime Text (as of writing version 3.0) is my editor of choice. It's insanely fast, extendable through packages, runs on every platform and has a huge community. In short, it's everything you need.
 

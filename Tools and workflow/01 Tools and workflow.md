@@ -1,6 +1,3 @@
-Date: 2000-02-01
-Title: Tools & Workflow
-
 # Tools & Workflow
 Having the right set of tools for the job is essential. As we are writing code you will need an editor, processing tools, be able to use FTP and know how to collaborate on projects using version control like Git.
 

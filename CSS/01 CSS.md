@@ -1,6 +1,3 @@
-Date: 2000-04-01
-Title: CSS
-
 # CSS (Cascading Style Sheets)
 Cascading, inheritance, selectors and their specificity. This section is about best practices and our experience with structured oocss.
 
@@ -35,7 +32,6 @@ Base, layout, module and theme. These are the layers we use to divide our css.
 
 ### Theme
 - Most won't need this.
-
 
 ## CSS Sizing
 Percent is wacky in CSS: Top/bottom padding = % of width. Height = % height of container. Line-height = % of font-size. Too prescriptive.
@@ -102,8 +98,8 @@ Feature detection vs browser detection
 
 Enter [Modernizr](http://www.modernizr.com).
 
+**References**
 
-#### References
 - https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills
 - http://html5please.us
 - http://caniuse.com

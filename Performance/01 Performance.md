@@ -1,31 +1,24 @@
-Date: 2000-06-01
-Title: Performance
-
 # Performance
 If there's one thing you can do to improve user-experience on a site, it isn't optimising your media queries for different devices or making images fade smoother. It is making it fast. Speed is more important than aesthetics.
 
-Here are some general tips but be sure to read through the references including the speed developer tools provided by Google and Yahoo. 
+Here are some general tips but be sure to read through the references including the speed developer tools provided by Google and Yahoo.
 
 Tip from Captain Obvious: Don't use stuff you don't need.
 
-
 ## HTTP Requests
 Reduce HTTP requests to an absolute minimum. Concatenate files. Use parallels requests.
-
 
 ## Image optimisation
 use png-8 whenever possible
 http://www.smushit.com/ysmush.it/
 http://www.jpegmini.com/main/home
 
-
 ## Sprites
 Sprites help reduce HTTP requests and reduces electricity use by 76%.
 http://developer.yahoo.com/performance/rules.html#opt_sprites
 http://compass-style.org/reference/compass/utilities/sprites/
 
-
-#### References
+## References
 
 **General**
 

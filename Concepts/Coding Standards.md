@@ -1,15 +1,12 @@
-Date: 2000-02-15
-Title: Coding with style and standards
-
 # Coding with style and standards
 dsadsadsa
 
-- (Why coding style matters)[http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/]
-- (Github CSS styleguide)[https://github.com/styleguide/css]
-- (Github Javascript styleguide)[https://github.com/styleguide/javascript]
-- (Idiomatic.css)[https://github.com/necolas/idiomatic-css]
-- (Idomatic.js)[https://github.com/rwldrn/idiomatic.js/]
-- (Google HTML/CSS Style Guide)[http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml]
+- [Why coding style matters](http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/)
+- [Github CSS styleguide](https://github.com/styleguide/css)
+- [Github Javascript styleguide](https://github.com/styleguide/javascript)
+- [Idiomatic.css](https://github.com/necolas/idiomatic-css)
+- [Idomatic.js](https://github.com/rwldrn/idiomatic.js/)
+- [Google HTML/CSS Style Guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
 
 ## Indentwars
 There's a reason the word 'war' is included in this section. I can't remember where I found this quote:
@@ -25,7 +22,7 @@ selector {
 	color: red;
 }
 
-### References
+## References
 - lea verou tabs
 - [indentation-with-spaces-considered](http://mystilleef.blogspot.com/2006/11/indentation-with-spaces-considered.html)
 - [tabs-vs-spaces-for-indentation](http://nithinbekal.com/2011/tabs-vs-spaces-for-indentation/)

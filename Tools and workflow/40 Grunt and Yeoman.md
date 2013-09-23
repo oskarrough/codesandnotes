@@ -1,6 +1,3 @@
-Date: 2000-12-03
-Title: Grunt
-
 # Grunt
 
 What is grunt
@@ -22,11 +19,14 @@ In almost every project we're using Sass, Compass and Susy. Since Susy relies on
 > gem install susy
 
 
-
 ## Grunt Webapp
 Grunt gives your project structure. In the root there are some configuration files:
 bower.json -> a list of components managed through bower. Running “bower install” will install them into /app/components
 package.json -> a list of components managed through npm. Running “npm install” will install them locally into the project
 
-## Grunt and jshint
-## Grunt and jade
+## Ideas for grunt
+- deploy
+- js linting
+- building
+
+## Yeoman
