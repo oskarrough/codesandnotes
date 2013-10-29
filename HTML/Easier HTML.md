@@ -1,10 +1,8 @@
 # Easier HTML
-Writing HTML can be tedious but luckily you are a developer as so many before you and developers are lazy. And we all know who invented the wheel.
-
-The easiest is to…
+Writing HTML can be tedious but luckily you are a developer and developers are lazy, also the ones before you. And we all know who invented the wheel.
 
 ## Let your editor do the brackets
-Almost every editor helps you with autocomplete. Some editors and their plugins will also help you with abbrevations and fuzzy search.
+Almost every editor helps you with autocomplete. Some editors and their plugins will also help you with abbreviations and fuzzy search.
 
 TL/DR: [Use Sublime Text and Emmet](http://blog.oskarrough.com/2013/02/emmet-and-hayaku/).
 
@@ -25,4 +23,4 @@ http://haml.info/
 
 **References**
 
-- [http://blog.oskarrough.com/2013/02/emmet-and-hayaku/](http://blog.oskarrough.com/2013/02/emmet-and-hayaku/)
+* [http://blog.oskarrough.com/2013/02/emmet-and-hayaku/](http://blog.oskarrough.com/2013/02/emmet-and-hayaku/)

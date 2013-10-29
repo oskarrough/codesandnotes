@@ -21,3 +21,7 @@ git pull --rebase
 
 **Push changes online**
 git push
+
+
+### References
+http://bradfrostweb.com/blog/post/gitgithub-resources/

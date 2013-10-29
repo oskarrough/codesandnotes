@@ -17,3 +17,4 @@ Like these:
 - http://www.smashingmagazine.com/2009/07/15/clever-png-optimization-techniques/
 - http://www.codinghorror.com/blog/2007/03/getting-the-most-out-of-png.html
 - http://perishablepress.com/png-image-optimization/
+- http://addyosmani.com/blog/image-optimization-tools/

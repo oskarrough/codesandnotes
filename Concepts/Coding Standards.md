@@ -9,11 +9,13 @@ dsadsadsa
 - [Google HTML/CSS Style Guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
 
 ## Indentwars
-There's a reason the word 'war' is included in this section. I can't remember where I found this quote:
+There's a reason the word 'war' is included in this section. 
 
 	> "Let me summarize. The purpose of the tab character is for indentation and formatting. Optimal indentation width differs among people. Text editors allow users to set their preferred indentation width. If you use spaces for indentation, you make text editors ignore the preferred indentation width of your audience, readers or users. Hence, using spaces for indentation is considered harmful."
 
-At the end of the day, you should use whatever your team has decided for and you should stick to it. Personally, I prefer a tab-width of 4 spaces.
+I don't remember where I found this quote but at the end of the day, you should use whatever your team has decided for - and you should stick to it.
+
+Tabs or spaces?Personally, I prefer a tab-width of 4 spaces.
 
 CSS is written like this:
 

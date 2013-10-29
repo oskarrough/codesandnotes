@@ -1,15 +1,38 @@
 # Sublime Text
 
-Sublime Text (as of writing version 3.0) is my editor of choice. It's insanely fast, extendable through packages, runs on every platform and has a huge community. In short, it's everything you need.
+Sublime Text (as of this writing in version 3.0) is my editor of choice. It's insanely fast, extendable through packages, runs on os x, Windows and Linux and has a huge community. It's pretty perfect.
 
-## Themes and color schemes
+## Shortcuts
 
-Syntax highlighting and thereby themes are…
+There are tons of keyboard shortcuts you would benefit from and I suggest taking some time to actually learn and use them. It's worth it.
 
-- http://tmtheme-editor.herokuapp.com/
-- https://github.com/chriskempson/base16
-- http://buymeasoda.github.com/soda-theme/
-- https://news.layervault.com/stories/271-ask-dn-whats-the-best-sublime-text-color-scheme
+## Settings
+
+There are a few settings that I will suggest.
+
+`"auto_complete_commit_on_tab": true`
+This is the most important one. It will allow you to autocomplete on 'tab' instead of 'enter' which is generally faster and thereby superior. Can take some getting used to but it really is better.
+
+`"bold_folder_labels": true`
+Make folders stand out from files in your sidebar.
+
+`"ensure_newline_at_eof_on_save": true`
+Adds an empty space at the end of your file on save. Helps keep your version control commits clean.
+
+`"fade_fold_buttons": false`
+Always show buttons for code folding. Makes me use it more often.
+
+```"folder_exclude_patterns": [
+	".svn",
+	".git",
+	".sass-cache"
+]```
+
+This option allows you to hide files and folders in your sidebar, which can give some more space in not only the sidebar but also… YOUR MIND
+
+
+`"trim_trailing_white_space_on_save": true`
+Helps trimming away extra, useless spaces automatically as you save.
 
 ## Package control
 
@@ -35,6 +58,37 @@ Sublime text has nice mate-esque command line launcher called 'subl' hidden in i
 Once Installed, you can run it anywhere to open a fresh project/window:
 
 `$ subl .`
+
+
+## Themes and color schemes
+
+_Color schemes_ will (hopefully) make your code stand our more clearly.
+
+_Themes_ are the styling of the chrome in Sublime Text.
+
+Although there's a huge difference in quality in the available schemes and themes, in the end it's really a user preference.
+Some prefer light, some dark, some like rainbows and some like shadows.
+
+That being said, some schemes are just better since they clarify the different parts of your code, functions from objects to vars and so on. Others just look pretty.
+
+Choose a good one. My favorite is included by default in Sublime and is called 'Eiffel'. I prefer text black on white and I like my comments to be very visible.
+
+### Typography
+
+Monospaced fonts, "fixed-width typefaces whose glyphs have the same width", improves the readability of code. Originally created out of the limits of the typewriter and later the lack of advanced graphic engines in the first computers.
+
+Popular ones are Anonymous Pro, Courier, Consolas, Inconsolata, Monaco, Menlo and Source Code Pro the latter being my favorite.
+
+Add this to your Sublime Text settings to change the typeface:
+
+```"font_face": "Source Code Pro"
+"font_size": 13```
+
+- http://tmtheme-editor.herokuapp.com/
+- https://github.com/chriskempson/base16
+- http://buymeasoda.github.com/soda-theme/
+- https://news.layervault.com/stories/271-ask-dn-whats-the-best-sublime-text-color-scheme
+
 
 **References**
 

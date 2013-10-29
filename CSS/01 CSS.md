@@ -1,9 +1,11 @@
 # CSS (Cascading Style Sheets)
+
 Cascading, inheritance, selectors and their specificity. This section is about best practices and our experience with structured oocss.
 
 	> Work with CSS, not against it. (source: http://www.stubbornella.org/content/2012/05/02/cross-browser-debugging-css)
 
 ## CSS 101
+
 - The box model
 - floats
 - margin, padding, line-height
@@ -14,16 +16,19 @@ Cascading, inheritance, selectors and their specificity. This section is about b
 - media queries
 
 ## CSS structure
+
 Most of this is inspired by the BEM Method and SMACSS.
 
 Base, layout, module and theme. These are the layers we use to divide our css.
 
 ### Base
+
 - Config (variables for color, typography and layout)
 - Mixins
 - Elements (customized normalize.css)
 
 ### Layout
+
 - Helpers
 - Grid
 
