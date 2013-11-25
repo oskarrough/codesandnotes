@@ -21,9 +21,18 @@ The Grunt ecosystem is huge and it's growing every day. With literally hundreds 
 
 When it comes to choosing and configuring all the Grunt tasks you'd want is where Yeoman comes in.
 
+### Grunt references
+
+- http://www.integralist.co.uk/posts/grunt-boilerplate/
+A very thorough article explaining and helping you start Grunt.
+- [merrickchristensen.com/articles/gruntjs-workflow.html](http://merrickchristensen.com/articles/gruntjs-workflow.html)
+
+
 ## What is Yeoman?
 
 In my opinion, Yeoman is first and foremost a smart community of developers that help each other nail down best practices in our industry.
+
+See Yeoman.md
 
 ## Installing Grunt
 
@@ -58,6 +67,6 @@ package.json -> a list of components managed through npm. Running “npm install
 
 ### References
 
-- [merrickchristensen.com/articles/gruntjs-workflow.html](http://merrickchristensen.com/articles/gruntjs-workflow.html)
+
 - [Grunt](http://gruntjs.com/)
 - [Yeoman](http://yeoman.io/)
