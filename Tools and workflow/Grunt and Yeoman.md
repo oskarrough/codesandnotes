@@ -1,11 +1,35 @@
-# Grunt
+# Grunt and Yeoman
 
-What is grunt
+[Grunt](http://gruntjs.com/) is a task-based command line JavaScript tool for automating common tasks in web development as compilation and building.
+
+[Yeoman](http://yeoman.io/) is an opinionated collection of workflows for all kinds of different projects. Yeoman relies heavily on Grunt and Bower.
+
+Yeoman (also just called Yo) sets up the a solid folder structure and fills your projects with best practices. This is called scaffolding.
+
+Grunt compiles, builds, tests and helps you develop your project.
+
+Got it? Ok.
+
+## Grunt: The JavaScript Task Runner
+
+I remember the first time I learned about Grunt and was like "wow, hell no! Too much stuff I don't need, don't understand and don't want to invest time in."
+
+> Why use a task runner?
+In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
+
+> Why use Grunt?
+The Grunt ecosystem is huge and it's growing every day. With literally hundreds of plugins to choose from, you can use Grunt to automate just about anything with a minimum of effort. If someone hasn't already built what you need, authoring and publishing your own Grunt plugin to npm is a breeze.
+
+When it comes to choosing and configuring all the Grunt tasks you'd want is where Yeoman comes in.
+
+## What is Yeoman?
+
+In my opinion, Yeoman is first and foremost a smart community of developers that help each other nail down best practices in our industry.
 
 ## Installing Grunt
 
 Next, install Yeoman, Grunt and Bower:
-> npm install -g yo grunt-cli bower
+> npm install -g  grunt-cli bower
 
 Make sure all global npm modules are up to date:
 > npm update -g
@@ -19,7 +43,7 @@ In almost every project we're using Sass, Compass and Susy. Since Susy relies on
 > gem install susy
 
 
-## Grunt Webapp
+## Yeoman
 Grunt gives your project structure. In the root there are some configuration files:
 bower.json -> a list of components managed through bower. Running “bower install” will install them into /app/components
 package.json -> a list of components managed through npm. Running “npm install” will install them locally into the project
@@ -30,3 +54,9 @@ package.json -> a list of components managed through npm. Running “npm install
 - building
 
 ## Yeoman
+
+
+## References
+[merrickchristensen.com/articles/gruntjs-workflow.html](http://merrickchristensen.com/articles/gruntjs-workflow.html)
+[Grunt](http://gruntjs.com/)
+[Yeoman](http://yeoman.io/)

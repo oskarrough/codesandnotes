@@ -1,12 +1,22 @@
 # Sublime Text
 
-Sublime Text (as of this writing in version 3.0) is my editor of choice. It's insanely fast, extendable through packages, runs on os x, Windows and Linux and has a huge community. It's pretty perfect.
+Sublime Text (as of this writing in version 3.0) is my editor of choice. It's insanely fast, extendable through packages, runs on OS X, Windows and Linux and has a huge community. It's pretty perfect for me and many others.
 
 ## Shortcuts
 
-There are tons of keyboard shortcuts you would benefit from and I suggest taking some time to actually learn and use them. It's worth it.
+There are tons of keyboard shortcuts you would benefit from and I really suggest taking some time to actually learn and use them. It's worth it.
+
+> cmd+shift+p -> 'Command Palette'
+
+The Command Palette gives you access to all exposed actions of Sublime and its plugins.
+
+> cmd+t or cmd+p -> 'GoTo Anything'
+
+GoTo Anything is an instant open/search tool. It has fuzzy search so you could write 'in' to open index.html for example.
 
 ## Settings
+
+Upload my settings to a gist.
 
 There are a few settings that I will suggest.
 

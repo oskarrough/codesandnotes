@@ -16,46 +16,23 @@ Denne gang valgt at skrive om mit valg af hardware, backup og især software. Va
 ## Software
 
 * Alfred (m. powerpack)
-* Arq
-* Synk
 * Cloud
-* Sparrow
 * Google Apps (mail, docs, calendar)
+* Notational Velocity
+* Dropbox
 * Transmission
 * Skype
-* Xampp
-* Renamer
-* Steam
-* Onlive
 * Chrome synced
-* Firefox synced
-* Safari
 * VLC
-* Coda
 * Transmit
 * iTunes
 * AirFoil
-* Spotify/yourfreedom/tunnelblick
-* Last.fm
+* Spotify
 * Caffeine
-* Simplenote
-* Notational Velocity
-* Dropbox
 * 1Password
 * Cleanmymac
 * Cathode
 * DaisyDisk
-* Djay
-* Fontexplorer x pro
 * Imageoptim
-* iwork
-* mp3trimmer
-* max
-* switch
-* nocturne
-* oomwriter
-* parallels
-* pixelmator
-* starcraft ii
-* lion
-* ia writer
+* Parallels Desktop
+* Sublime Text

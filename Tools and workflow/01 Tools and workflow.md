@@ -1,12 +1,9 @@
 # Tools & Workflow
+
 Having the right set of tools for the job is essential. As we are writing code you will need an editor, processing tools, be able to use FTP and know how to collaborate on projects using version control like Git.
 
-## Browsers
-Browsers, browsers and browsers… I need to write about the differences, rendering engines and the history of the browser.
-
-- [How browsers work](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
-
 ## Editor
+
 First and foremost you need a good, solid and fast editor. Here are some of the best:
 
 * [Sublime Text](http://www.sublimetext.com/)
@@ -25,6 +22,7 @@ In the future where everything runs in the browser we have online editors like:
 - jsbin etc. (http://code.hopeglory.com/post/coding-in-the-browser/)
 
 ## The command line
+
 At first daunting, the command line is where it all started. Through commands you have access to almost everything on your OS. Many of the tools I will later talk about are enhanced by the command line, others work only through the command line while some serve merely as a GUI for the command line.
 
 On OS X you have Terminal.app.
@@ -32,6 +30,7 @@ On OS X you have Terminal.app.
 @todo find links on getting started with the terminal
 
 ## Processing
+
 **CSS Preprocessors**
 
 * Sass
