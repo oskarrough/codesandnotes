@@ -12,3 +12,4 @@ vanilla
 - https://developer.mozilla.org/en/JavaScript/Guide
 - https://github.com/necolas/idiomatic-js
 - http://superherojs.com/
+- http://coding.smashingmagazine.com/2013/11/12/an-introduction-to-dom-events/
