@@ -1,8 +1,7 @@
 # Grunt and Yeoman
 
-[Grunt](http://gruntjs.com/) is a task-based command line JavaScript tool for automating common tasks in web development as compilation and building.
-
 [Yeoman](http://yeoman.io/) is an opinionated collection of workflows for all kinds of different projects. Yeoman relies heavily on Grunt and Bower.
+[Grunt](http://gruntjs.com/) is a task-based command line JavaScript tool for automating common tasks in web development as compilation and building.
 
 Yeoman (also just called Yo) sets up the a solid folder structure and fills your projects with best practices. This is called scaffolding.
 
