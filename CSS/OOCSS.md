@@ -1,34 +1,24 @@
 # Object-orientated CSS (OOCSS)
 
-**References**
-* https://github.com/stubbornella/oocss/wiki
-SmartWeb 2013 - Johnatan Snook
-https://vimeo.com/79514917
-
-stubbornella
-snoookca
-necolas
-
 seperate styles in functional vs visual styles
-
 css preprocessors provides abstraction. is only an asset for developers. End product is still  CSS.
-
 objects/component/module
-
-
-
 256 classes to override one ID
-
-
-https://speakerdeck.com/csswizardry/big-css-1
-
 break it down. smaller blocks are more flexible than bigger ones. blocks can be reused with other blocks.
+single responsibility principle, the basis of unix.
+dont be afraid of many classes. Classes keeps your modules flexible and avoids repetition.
 
 base
 layout
-module
-theme
+modules
 
-single responsibility principle, the basis of unix.
+**References**
 
-dont be afraid of many classes. Classes keeps your modules flexible and avoids repetition.
+- https://github.com/stubbornella/oocss/wiki
+- SmartWeb 2013 - Johnatan Snook
+- https://vimeo.com/79514917
+- https://speakerdeck.com/csswizardry/big-css-1
+- stubbornella
+- necolas
+- snoookca
+- csswizardry

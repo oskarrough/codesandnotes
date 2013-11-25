@@ -1,13 +1,18 @@
 # JavaScript
+
 Unobtrusive, progressive enhancement etc.
 
 vanilla
 
-## Frameworks
-- http://jquery.com (de facto standard)
+## Why would I ever want a framework?
+
+- http://jquery.com
+- http://mootools
+- protoscript
 
 
-#### References
+**References**
+
 - https://developer.mozilla.org/en/JavaScript
 - https://developer.mozilla.org/en/JavaScript/Guide
 - https://github.com/necolas/idiomatic-js

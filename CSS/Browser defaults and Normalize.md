@@ -28,9 +28,7 @@ Normalize.css is a relatively small .css file you can include at the start of yo
 
 > Normalize.css is a small CSS file that provides better cross-browser consistency in the default styling of HTML elements. It’s a modern, HTML5-ready, alternative to the traditional CSS reset.
 
-
 Sold.
-
 
 **References**
 
