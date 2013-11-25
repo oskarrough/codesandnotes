@@ -48,7 +48,6 @@ Breaks between letters are not allowed. Also where they are normally explicitly 
 
 Is recommended for mixed Latin and CJK texts.
 
-
 ## The CSS property 'overflow-wrap'
 
 **> overflow-wrap: normal;**
@@ -59,10 +58,6 @@ Lines may break only at allowed break points. However, the restrictions introduc
 
 An unbreakable "word" may be broken at an arbitrary point if there are no otherwise-acceptable break points in the line. Shaping characters are still shaped as if the word were not broken, and grapheme clusters must together stay as one unit. No hyphenation character is inserted at the break point.
 
-
-
-
-
 ## Kinsoku shori
 > Line breaking rules of Japanese language are determined by JIS X 4051, Japanese Industrial Standard.[1] It describes word wrap rules and processing rules for Japanese language documents. these rules are called Kinsoku Shori(禁則処理, literally process of prohibition rules).
 
@@ -72,7 +67,8 @@ An unbreakable "word" may be broken at an arbitrary point if there are no otherw
 There is only partial browser support of word-break: break-all;
 Korean uses spaces between words.
 
-## More resources
+### References
+
 - http://rishida.net/docs/unicode-tutorial/toc
 - http://rishida.net/docs/unicode-tutorial/part5
 - http://stackoverflow.com/questions/2090302/word-wrap-algorithms-for-japanese

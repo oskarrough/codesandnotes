@@ -4,4 +4,4 @@ Text
 
 ### References
 
-* [title](http://link.com/)
+- [title](http://link.com/)

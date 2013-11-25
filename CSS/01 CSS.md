@@ -33,40 +33,50 @@ Base, layout, module and theme. These are the layers we use to divide our css.
 - Grid
 
 ### Module
+
 - Navigation etc.
 
 ### Theme
+
 - Most won't need this.
 
 ## CSS Sizing
+
 Percent is wacky in CSS: Top/bottom padding = % of width. Height = % height of container. Line-height = % of font-size. Too prescriptive.
 - http://code.hopeglory.com/technique/modern-css-sizing-advice
 
 ## CSS Line-height
+
 - http://www.slideshare.net/maxdesign/line-height
 
 ## CSS Typography
+
 - http://nicewebtype.com/notes/responsive-typography/
 - http://typecast.com
 
 ## CSS Methods
+
 Here's a list of methods often used with CSS.
 
 ### Box-sizing
+
 Alternatively, we can apply the * { box-sizing: border-box; } method and be fine without the extra container.
 - http://paulirish.com/2012/box-sizing-border-box-ftw
 - https://github.com/Schepp/box-sizing-polyfill
 
 ### Mediablock
+
 - http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
 - http://jsfiddle.net/2jc9L/
 - http://jsfiddle.net/necolas/rZvEF/
 - http://groups.google.com/group/object-oriented-css/browse_thread/thread/c5b53078b5e3bb39?pli=1
 
 ### Image-replacement (ir)
+
 - http://css-tricks.com/examples/ImageReplacement/
 
 ### Word-wrapping
+
 css methods - word-wrapping
 - http://www.quirksmode.org/oddsandends/wbr.html
 - http://blog.kenneth.io/blog/2012/03/04/word-wrapping-hypernation-using-css/
@@ -83,17 +93,22 @@ css methods - word-wrapping
 If a submodule changes the layout or positioning of it's parent and base module, consider creating a new module instead.
 
 ## Grids
+
 margin on left or right or negative columns only on children?
+
 - http://gridpak.com/
 - http://www.gridsetapp.com/
 
 ### Grid
+
 This grid's two basic components are 'grids' and 'units'. A grid always contains one or more units and these units should always be direct children.
 
 ## Responsive webdesign
+
 Responsive webdesign.
 
 ## Feature detection
+
 Every browser supports different properties in different ways. It's a lot better than it was ten years ago but still there's work to do.
 Feature detection vs browser detection
 
@@ -103,7 +118,7 @@ Feature detection vs browser detection
 
 Enter [Modernizr](http://www.modernizr.com).
 
-**References**
+### References
 
 - https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills
 - http://html5please.us

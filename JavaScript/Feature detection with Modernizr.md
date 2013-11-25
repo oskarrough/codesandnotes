@@ -11,10 +11,10 @@ Instead, you could and probably should use feature detection!
 [Modernizr.js](http://modernizr.com/) "is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser".
 
 	Taking advantage of cool new web technologies is great fun, until you have to support browsers that lag behind. Modernizr makes it easy for you to write conditional JavaScript and CSS to handle each situation, whether a browser supports a feature or not. It’s perfect for doing progressive enhancement easily.
-	
+
 ## Example
 
-**Task:** Rotate an element 90 degrees  
+**Task:** Rotate an element 90 degrees
 **First solution:** `css div { transform: rotate(90); }`
 
 This will do the job, but what if the browser does not support CSS transforms? In most cases, nothing happens as the browser happily just ignores the rule but now we when the element isn't rotated the design doesn't work anymore. We need a fallback. Enter Modernizr.
@@ -62,8 +62,5 @@ You can build your own production-ready Modernizr at [modernizr.com/download](ht
 
 ### References
 
-* http://modernizr.com/download/
-* http://modernizr.com/resources/
-
-
-
+- http://modernizr.com/download/
+- http://modernizr.com/resources/

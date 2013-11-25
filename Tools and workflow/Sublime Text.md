@@ -69,7 +69,6 @@ Once Installed, you can run it anywhere to open a fresh project/window:
 
 `$ subl .`
 
-
 ## Themes and color schemes
 
 _Color schemes_ will (hopefully) make your code stand our more clearly.
@@ -99,8 +98,7 @@ Add this to your Sublime Text settings to change the typeface:
 - http://buymeasoda.github.com/soda-theme/
 - https://news.layervault.com/stories/271-ask-dn-whats-the-best-sublime-text-color-scheme
 
-
-**References**
+### References
 
 * this
 * that

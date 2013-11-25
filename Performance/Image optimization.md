@@ -13,6 +13,7 @@ Like these:
 - [PunyPNG](http://www.punypng.com/)
 
 #### References
+
 - http://jamiemason.github.io/ImageOptim-CLI/
 - http://www.splashnology.com/article/how-to-optimize-png-and-jpeg-without-quality-loss-part-1/2071/
 - http://www.smashingmagazine.com/2009/07/15/clever-png-optimization-techniques/

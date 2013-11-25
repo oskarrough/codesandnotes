@@ -10,7 +10,6 @@ How?
 
 ## Bower
 
-
 ### References
 
 * http://bower.io/

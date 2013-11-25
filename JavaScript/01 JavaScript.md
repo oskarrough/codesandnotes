@@ -10,8 +10,7 @@ vanilla
 - http://mootools
 - protoscript
 
-
-**References**
+### References
 
 - https://developer.mozilla.org/en/JavaScript
 - https://developer.mozilla.org/en/JavaScript/Guide

@@ -10,14 +10,11 @@ Now, back in the days everything was hardcoded without databases. No, not really
 
 ### References
 
-http://www.zeldman.com/category/content-first/
-http://alistapart.com/column/wysiwtf
-http://www.lukew.com/ff/entry.asp?1598
-
-[Structure First. Content Always.](http://www.markboulton.co.uk/journal/structure-first-content-always)
-
-[Content first by Adactio](http://adactio.com/journal/4523/)
-
-* [How We Build CMS-Free Websites](http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/)
-* http://alistapart.com/topic/content-strategy
-* https://pinboard.in/u:rough/t:cms
+- http://www.zeldman.com/category/content-first/
+- http://alistapart.com/column/wysiwtf
+- http://www.lukew.com/ff/entry.asp?1598
+- [Structure First. Content Always.](http://www.markboulton.co.uk/journal/structure-first-content-always)
+- [Content first by Adactio](http://adactio.com/journal/4523/)
+- [How We Build CMS-Free Websites](http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/)
+- http://alistapart.com/topic/content-strategy
+- https://pinboard.in/u:rough/t:cms

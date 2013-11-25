@@ -57,3 +57,5 @@ On OS X you have Terminal.app.
 - Git
 - Github & Bitbucket
 - Dropbox, SugarSync, etc.
+
+### References

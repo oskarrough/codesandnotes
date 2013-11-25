@@ -14,6 +14,7 @@ Here are some pointers:
 
 
 ## THE naming convention
+
 This convention is tested, it works and it *will* help you differentiate your classes and allow you to write cleaner, more maintanable code.
 
 ```
@@ -25,6 +26,6 @@ This convention is tested, it works and it *will* help you differentiate your cl
 ```
 
 ### References
+
 - [SUIT naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 - [SUIT Components and examples of naming conventions](https://github.com/suitcss/suit/blob/master/doc/components.md#naming-conventions)
-

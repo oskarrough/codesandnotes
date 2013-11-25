@@ -42,13 +42,14 @@ This will install all the dependancies in bower.json and package.json locally in
 In almost every project we're using Sass, Compass and Susy. Since Susy relies on both Sass and Compass as dependancies you will get all three just by installing Susy:
 > gem install susy
 
-
 ## Yeoman
+
 Grunt gives your project structure. In the root there are some configuration files:
 bower.json -> a list of components managed through bower. Running “bower install” will install them into /app/components
 package.json -> a list of components managed through npm. Running “npm install” will install them locally into the project
 
 ## Ideas for grunt
+
 - deploy
 - js linting
 - building
@@ -56,7 +57,8 @@ package.json -> a list of components managed through npm. Running “npm install
 ## Yeoman
 
 
-## References
-[merrickchristensen.com/articles/gruntjs-workflow.html](http://merrickchristensen.com/articles/gruntjs-workflow.html)
-[Grunt](http://gruntjs.com/)
-[Yeoman](http://yeoman.io/)
+### References
+
+- [merrickchristensen.com/articles/gruntjs-workflow.html](http://merrickchristensen.com/articles/gruntjs-workflow.html)
+- [Grunt](http://gruntjs.com/)
+- [Yeoman](http://yeoman.io/)

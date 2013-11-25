@@ -1,4 +1,5 @@
 # JavaScript: MVC
+
 intro
 
 ## What is an MVC
@@ -7,7 +8,8 @@ intro
 ## Ember
 ## Angular.js
 ## Backbone
-## References
+
+### References
 
 - http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/
 - https://github.com/documentcloud/backbone/wiki
