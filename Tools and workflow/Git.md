@@ -24,4 +24,6 @@ git push
 
 ### References
 
-http://bradfrostweb.com/blog/post/gitgithub-resources/
+- https://pinboard.in/u:rough/t:git/
+- http://www.integralist.co.uk/posts/git-tips/
+- http://bradfrostweb.com/blog/post/gitgithub-resources/

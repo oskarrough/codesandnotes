@@ -11,6 +11,7 @@ intro
 
 ### References
 
+- Learn Angular.js: http://egghead.io/
 - http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/
 - https://github.com/documentcloud/backbone/wiki
 - https://github.com/addyosmani/backbone-fundamentals

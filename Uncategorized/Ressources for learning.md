@@ -8,7 +8,7 @@ Here are some references for learning online.
 
 ### References
 
-* [title](http://link.com/)
-* https://developer.mozilla.org/en/learn
-* https://pinboard.in/u:rough/t:learning
-* http://blog.oskarrough.com/tag/learning
+- https://www.bitcast.io/
+- https://developer.mozilla.org/en/learn
+- https://pinboard.in/u:rough/t:learning
+- http://blog.oskarrough.com/tag/learning

@@ -24,14 +24,14 @@ http://compass-style.org/reference/compass/utilities/sprites/
 
 ### References
 
-**General**
-
 - http://adactio.com/journal/5439/
 - http://allinthehead.com/retro/361/how-to-make-your-website-fast
 - http://www.askapache.com/htaccess/speed-up-sites-with-htaccess-caching.html
 - http://backbonetutorials.com/seo-for-single-page-apps/
 - https://developers.google.com/speed/tools?hl=de
 - http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/
+- http://www.mobify.com/blog/beginners-guide-to-perceived-performance/
+- http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/
 
 **Tools**
 
