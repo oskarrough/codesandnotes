@@ -1,17 +1,14 @@
 # Grunt and Yeoman
 
-[Yeoman](http://yeoman.io/) is an opinionated collection of workflows for all kinds of different projects. Yeoman relies heavily on Grunt and Bower.
-[Grunt](http://gruntjs.com/) is a task-based command line JavaScript tool for automating common tasks in web development as compilation and building.
+[Yeoman](http://yeoman.io/) is an opinionated collection of workflows for all kinds of different projects. Yeoman (also just called Yo) sets up the a solid folder structure and fills your projects with best practices. This is called scaffolding. It relies heavily on Grunt and Bower.
 
-Yeoman (also just called Yo) sets up the a solid folder structure and fills your projects with best practices. This is called scaffolding.
-
-Grunt compiles, builds, tests and helps you develop your project.
+[Grunt](http://gruntjs.com/) is a task-based command line JavaScript tool for automating common tasks in web development as compilation and building. It compiles, builds, tests and helps you develop your project.
 
 Got it? Ok.
 
 ## Grunt: The JavaScript Task Runner
 
-I remember the first time I learned about Grunt and was like "wow, hell no! Too much stuff I don't need, don't understand and don't want to invest time in."
+I remember the first time I learned about Grunt and was like "wow, hell no! Too much stuff I don't need, don't understand and don't want to invest time in." Now I'm 19 but my mind is older. It is worth the time.
 
 > Why use a task runner?
 In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
@@ -62,11 +59,8 @@ package.json -> a list of components managed through npm. Running “npm install
 - js linting
 - building
 
-## Yeoman
-
 
 ### References
-
 
 - [Grunt](http://gruntjs.com/)
 - [Yeoman](http://yeoman.io/)
