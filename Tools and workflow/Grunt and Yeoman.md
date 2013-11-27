@@ -18,7 +18,6 @@ The Grunt ecosystem is huge and it's growing every day. With literally hundreds 
 
 When it comes to choosing and configuring all the Grunt tasks you'd want is where Yeoman comes in.
 
-
 ## What is Yeoman?
 
 In my opinion, Yeoman is first and foremost a smart community of developers that help each other nail down best practices in our industry.
