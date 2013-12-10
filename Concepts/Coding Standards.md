@@ -1,6 +1,8 @@
 # Coding with style and standards
 
-Introduction.
+Introduction. Code conventions?
+
+http://javascript.crockford.com/code.html
 
 - [Why coding style matters](http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/)
 - [Github CSS styleguide](https://github.com/styleguide/css)

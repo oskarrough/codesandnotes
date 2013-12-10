@@ -27,3 +27,5 @@ git push
 - https://pinboard.in/u:rough/t:git/
 - http://www.integralist.co.uk/posts/git-tips/
 - http://bradfrostweb.com/blog/post/gitgithub-resources/
+- http://try.github.io/
+- http://24ways.org/2013/git-for-grownups/
