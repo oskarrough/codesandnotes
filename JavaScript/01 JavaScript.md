@@ -10,15 +10,27 @@ vanilla
 
 ### References
 
-- https://developer.mozilla.org/en/JavaScript
-- https://developer.mozilla.org/en/JavaScript/Guide
-- https://github.com/necolas/idiomatic-js
-- http://superherojs.com/
+
+
+
+**Documentation**
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript (a lot of good resources here)
+
+**Learning**
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+- http://www.2ality.com/2012/08/guide-jslang.html
+- http://dailyjs.com/js101.html
 - http://www.integralist.co.uk/posts/javascript-101/
-- http://coding.smashingmagazine.com/2013/11/12/an-introduction-to-dom-events/
+- [Basic JavaScript for the impatient programmer](http://www.2ality.com/2013/06/basic-javascript.html)
 
-**References to be sorted**
 
-- [New rules for JavaScript](https://speakerdeck.com/getify/new-rules-for-javascript)
-- [SEO in JS Web Apps](http://blog.alexmaccaw.com/seo-in-js-web-apps)
+**Other articles**
+
+- [Idiomatic JavaScript (Necolas)](https://github.com/necolas/idiomatic-js)
 - [JavaScript best practices](http://www.thinkful.com/learn/javascript-best-practices-1/Summary)
+- [New rules for JavaScript](https://speakerdeck.com/getify/new-rules-for-javascript)
+- [SEO in JS Web Apps (Alex Maccaw)](http://blog.alexmaccaw.com/seo-in-js-web-apps)
+- [An introduction to DOM events (Smashing Magazine)](http://coding.smashingmagazine.com/2013/11/12/an-introduction-to-dom-events/)
+- http://superherojs.com/
