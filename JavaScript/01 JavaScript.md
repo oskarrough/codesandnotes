@@ -8,9 +8,7 @@ vanilla
 
 - http://jquery.com
 
-### References
-
-
+### See more
 
 
 **Documentation**
@@ -25,6 +23,10 @@ vanilla
 - http://www.integralist.co.uk/posts/javascript-101/
 - [Basic JavaScript for the impatient programmer](http://www.2ality.com/2013/06/basic-javascript.html)
 
+## Books
+
+- http://jsbooks.revolunet.com/
+- http://eloquentjavascript.net/
 
 **Other articles**
 
@@ -34,3 +36,4 @@ vanilla
 - [SEO in JS Web Apps (Alex Maccaw)](http://blog.alexmaccaw.com/seo-in-js-web-apps)
 - [An introduction to DOM events (Smashing Magazine)](http://coding.smashingmagazine.com/2013/11/12/an-introduction-to-dom-events/)
 - http://superherojs.com/
+http://sivers.org/learn-js

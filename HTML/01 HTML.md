@@ -14,5 +14,5 @@ Which one is which?
 
 Now it makes sense, not only to computers, but to you and the people using your site.
 
-### References
+### See more
 

@@ -8,7 +8,7 @@ Now, back in the days everything was hardcoded without databases. No, not really
 
 **@todo**
 
-### References
+### See more
 
 - http://www.zeldman.com/category/content-first/
 - http://alistapart.com/column/wysiwtf

@@ -58,4 +58,4 @@ On OS X you have Terminal.app.
 - Github & Bitbucket
 - Dropbox, SugarSync, etc.
 
-### References
+### See more

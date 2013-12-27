@@ -2,6 +2,6 @@
 
 What is 'this' in JavaScript?
 
-### References
+### See more
 
 - https://www.youtube.com/watch?v=yuo8YqKDQ-M

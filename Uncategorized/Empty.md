@@ -2,6 +2,6 @@
 
 Text
 
-### References
+### See more
 
 - [title](http://link.com/)

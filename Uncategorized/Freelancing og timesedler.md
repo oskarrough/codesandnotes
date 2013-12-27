@@ -4,7 +4,7 @@ Flere og flere springer bureauet over og starter freelance. Harvest er mit foret
 
 Det synkroniserer over alt, kan integreres med det meste og jeg kan kun anbefale det.
 
-### References
+### See more
 
 http://thrivesolo.com/
 http://www.getharvest.com/

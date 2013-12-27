@@ -9,7 +9,7 @@ intro
 ## Angular.js
 ## Backbone
 
-### References
+### See more
 
 - Learn Angular.js: http://egghead.io/
 - http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/

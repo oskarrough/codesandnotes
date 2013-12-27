@@ -29,4 +29,4 @@ You identify your code, split it into several functions that can call each other
 
 [Example](http://jsbin.com/opUcUqa/4/edit)
 
-### References
+### See more

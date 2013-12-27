@@ -12,7 +12,7 @@ base
 layout
 modules
 
-### References
+### See more
 
 - https://github.com/stubbornella/oocss/wiki
 - SmartWeb 2013 - Johnatan Snook
@@ -22,3 +22,4 @@ modules
 - necolas
 - snoookca
 - csswizardry
+- https://github.com/byrichardpowell/CSS-Style

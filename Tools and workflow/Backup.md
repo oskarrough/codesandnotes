@@ -39,4 +39,4 @@ My data is spread across the default OSX folders: Documents, Music and Photos. O
 
 E-mail is in the cloud, contacts and calendar as well. Settings and preferences for my applications etc. are all in my dropbox/private folder.
 
-### References
+### See more

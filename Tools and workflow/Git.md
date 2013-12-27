@@ -1,11 +1,14 @@
 # Git
 
-intro to git
-references
+Git is a free and open source distributed version control system. Basically, it allows more people to work together on the same code, saving a version history, merge different versions of the same file and much, much more.
 
-## Tips
+In the spirit of the rough guide I'll point you in the right directions since so many others before me explain and understand Git on a level I'll probably never reach.
 
-**Commit local changes**
+## The simplest Git workflow
+
+You write some code on a project on your computer. In other words, you create local changes. What you want now is to choose which of those changes you want to keep and share with the
+
+Commit local changes
 git add .
 git commit -m "message"
 
@@ -22,10 +25,27 @@ git pull --rebase
 **Push changes online**
 git push
 
-### References
+## Avoiding conflicts with rebase
 
+
+
+## GUI for Git
+
+Having an interface for Git helps a lot. Github.com is one way, Bitbucket.com is another but there are also native apps to accompany you. I recommend Sourcetree as the most helpful.
+
+- http://www.sourcetreeapp.com/
+- http://mac.github.com/
+- http://windows.github.com/
+- http://www.git-tower.com/
+
+### See more
+
+- http://git-scm.com/book
+- https://help.github.com/
+- http://think-like-a-git.net/ - Git really isn't made for human beings. Think Like (a) Git is a guide for the perplexed that should help smoothen things out
 - https://pinboard.in/u:rough/t:git/
 - http://www.integralist.co.uk/posts/git-tips/
+- A visual Git reference http://marklodato.github.io/visual-git-guide/index-en.html
 - http://bradfrostweb.com/blog/post/gitgithub-resources/
 - http://try.github.io/
 - http://24ways.org/2013/git-for-grownups/

@@ -22,7 +22,7 @@ Sprites help reduce HTTP requests and reduces electricity use by 76%.
 http://developer.yahoo.com/performance/rules.html#opt_sprites
 http://compass-style.org/reference/compass/utilities/sprites/
 
-### References
+### See more
 
 - http://adactio.com/journal/5439/
 - http://allinthehead.com/retro/361/how-to-make-your-website-fast

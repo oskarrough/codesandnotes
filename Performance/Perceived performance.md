@@ -12,7 +12,7 @@ And that's perceived performance for you right there.
 
 Perceived performance will make your software feel faster, which in turn will make it faster.
 
-### References
+### See more
 
 * http://www.codinghorror.com/blog/2008/03/actual-performance-perceived-performance.html
 * http://www.chrisharrison.net/index.php/Research/ProgressBars

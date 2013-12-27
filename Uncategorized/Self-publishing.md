@@ -2,7 +2,7 @@
 
 [Pandoc](http://johnmacfarlane.net/pandoc/) is 'universal document converter' which is very helpful for transforming your prefered writing format to whatever you need.
 
-### References
+### See more
 
 - https://www.petekeen.net/adventures-in-self-publishing
 - http://practicaltypography.com/index.html

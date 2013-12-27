@@ -98,7 +98,7 @@ Add this to your Sublime Text settings to change the typeface:
 - http://buymeasoda.github.com/soda-theme/
 - https://news.layervault.com/stories/271-ask-dn-whats-the-best-sublime-text-color-scheme
 
-### References
+### See more
 
-* this
-* that
+- http://blog.alainmeier.com/post/27255145114/some-things-beginners-might-not-know-about-sublime-text
+- http://whiletruecode.com/post/7-handy-text-manipulation-tricks-sublime-text-2

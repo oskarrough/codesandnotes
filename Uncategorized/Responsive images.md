@@ -1,4 +1,4 @@
-# Adaptive images
+# Responsive and adaptive images
 
 Why should a 320px wide smartphone load the same 1920px wide image a huge desktop monitor would need?
 
@@ -14,7 +14,7 @@ When your front end is asking for different (sizes of) images you also need to h
 
 This is a server side solution that will return a responsive image based on the variables passed through as a part of the query string.
 
-### References
+### See more
 
 - http://www.w3.org/TR/2013/WD-html-picture-element-20130226/
 - https://github.com/scottjehl/picturefill
@@ -23,3 +23,6 @@ This is a server side solution that will return a responsive image based on the 
 comparison of picture and src-n
 - http://foundation.zurb.com/docs/components/interchange.html
 - http://css-tricks.com/which-responsive-images-solution-should-you-use/
+- https://github.com/BBC-News/Imager.js
+- http://blog.cloudfour.com/sensible-jumps-in-responsive-image-file-sizes
+- http://html5doctor.com/responsive-images-end-of-year-report/

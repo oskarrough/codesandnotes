@@ -2,7 +2,6 @@
 
 What is scope?
 
-
 ```js
 // a globally-scoped variable
 var a = 1;
@@ -74,8 +73,9 @@ alert(new Seven().b);
 ```
 
 
-### References
+### See more
 
+- http://flippinawesome.org/2013/12/09/demystifying-this-in-javascript/
 - http://www.2ality.com/2011/02/javascript-variable-scoping-and-its.html
 - http://dailyjs.com/2012/07/23/js101-scope/
 - http://coding.smashingmagazine.com/2009/08/01/what-you-need-to-know-about-javascript-scope/

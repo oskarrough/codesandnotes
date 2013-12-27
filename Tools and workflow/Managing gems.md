@@ -30,7 +30,7 @@ If you want to get rid of a gem, use `gem uninstall sass`.
 
 As soon as have more than one project chances are that they require different versions of the same gem. As gems are installed globally you will have a problem. If you work together with others it is very likely that they have a different setup.
 
-To avoid these conflicts you want to manage gems on a project level. You do this using [Bundler](http://bundler.io/). You define what you need in a [`Gemfile`](http://bundler.io/v1.3/gemfile.html) (with uppercase 'G' and no file extension). The Gemfile needs to be in the root of your project. This is the same concept as NPM + packages.json and Bower + bower.json. 
+To avoid these conflicts you want to manage gems on a project level. You do this using [Bundler](http://bundler.io/). You define what you need in a [`Gemfile`](http://bundler.io/v1.3/gemfile.html) (with uppercase 'G' and no file extension). The Gemfile needs to be in the root of your project. This is the same concept as NPM + packages.json and Bower + bower.json.
 
 This way you define specifically which gems and versions your project needs and everything is defined in the Gemfile which makes it easy to share across systems (your co-workers).
 
@@ -52,7 +52,7 @@ To install all this, you need to install [Bundler](http://bundler.io/).
 ## Making Compass understand
 
 This one is easily missed. By default, Compass will use the global gems and not the ones defined in your Gemfile. To make Compass use them, you have to run Compass thorugh bundler like so:
- 
+
 `bundle exec compass watch`
 
 ## Making Compass understand through Grunt
@@ -65,12 +65,12 @@ Using grunt-contrib-compass you tell Compass to run its commands through bundler
         bundleExec: true,
         // … where we have defined the following:
         require: ['breakpoint', 'susy', 'sass-css-importer']
-				
+
 				………… more options are normally here
     }
 }```
 
-### References
+### See more
 
 - [RubyGems](http://en.wikipedia.org/wiki/RubyGems)
 - [Bundler](http://bundler.io/)

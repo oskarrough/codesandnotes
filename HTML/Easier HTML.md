@@ -27,6 +27,6 @@ http://jade-lang.com/
 Something about HAML.
 http://haml.info/
 
-### References
+### See more
 
 * [http://blog.oskarrough.com/2013/02/emmet-and-hayaku/](http://blog.oskarrough.com/2013/02/emmet-and-hayaku/)

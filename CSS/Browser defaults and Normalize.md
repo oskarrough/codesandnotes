@@ -30,6 +30,6 @@ Normalize.css is a relatively small .css file you can include at the start of yo
 
 Sold.
 
-### References
+### See more
 
 - [Normalize.css](http://necolas.github.com/normalize.css:/)

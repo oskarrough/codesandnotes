@@ -12,7 +12,7 @@ Like these:
 - [Trimage](http://trimage.org/)
 - [PunyPNG](http://www.punypng.com/)
 
-#### References
+#### See more
 
 - http://jamiemason.github.io/ImageOptim-CLI/
 - http://www.splashnology.com/article/how-to-optimize-png-and-jpeg-without-quality-loss-part-1/2071/

@@ -10,7 +10,6 @@ In our rule-based computer world this makes things a lot harder. You need a dict
 
 For instance, here are the [Requirements for Japanese Text Layout](http://www.w3.org/TR/2012/NOTE-jlreq-20120403/).
 
-
 > The reason is that word breaking in Japanese (and various other languages, especially East Asian languages) is difficult and highly context sensitive. In Western languages we usually have whitespace or punctuation between words and except for some quirks and exceptions, breaking a paragraph into words is usually straightforward and unambiguous.
 > In Japanese, on the other hand, words are frequently not separated by spaces and therefore word breaking becomes a guessing game. A good lexicon helps but unless you have a way of verifying that the resulting word broken sentence makes sense semantically (which is what a Japanese speaking human would do), there are usually a number of syntactically valid ways of word breaking a sentence and you have to resort to heuristics for picking what is likelythe right one.
 
@@ -67,7 +66,7 @@ An unbreakable "word" may be broken at an arbitrary point if there are no otherw
 There is only partial browser support of word-break: break-all;
 Korean uses spaces between words.
 
-### References
+### See more
 
 - http://rishida.net/docs/unicode-tutorial/toc
 - http://rishida.net/docs/unicode-tutorial/part5

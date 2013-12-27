@@ -60,7 +60,7 @@ Less tests, less work, less bytes, better performance.
 
 You can build your own production-ready Modernizr at [modernizr.com/download](http://modernizr.com/download/).
 
-### References
+### See more
 
 - http://modernizr.com/download/
 - http://modernizr.com/resources/
