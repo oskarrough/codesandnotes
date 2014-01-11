@@ -23,3 +23,4 @@ modules
 - snoookca
 - csswizardry
 - https://github.com/byrichardpowell/CSS-Style
+- http://www.vanseodesign.com/css/object-oriented-css/

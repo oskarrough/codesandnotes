@@ -20,8 +20,11 @@ PATCH version when you make backwards-compatible bug fixes.
 
 What?
 
-MAJOR: When you add something that breaks earlier versions
-MINOR: When you add something that does not break earlier versons
+MAJOR: When you add something that breaks earlier versions  
+MINOR: When you add something that does not break earlier versons  
 PATCH: When you only fix something (without breaking something else)
 
-Read more on [Semantic Versioning](http://semver.org/)
+### References
+
+- [Semantic Versioning](http://semver.org/)
+- [The fear of 1.0.0](http://jeremyckahn.github.io/blog/2013/12/29/the-fear-of-1-dot-0-0/)

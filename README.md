@@ -1,7 +1,11 @@
-# README and preface
+# Codes & Notes
 
-This is a collection of my thoughts and writings on creating things (websites) on the internet. Inspired by a good friend curious to learn more about development for the web, the plan is to touch and guide on all topics I would recommend him to invest time in.
+This is the repository of the book on web development I’m writing.  It is called [Codes & Notes](http://codesandnotes.com)
 
-Now, I want to publish them somehow but first I *need** to nerd the best possible publishing solution. Since this could take a lifetime I take my other good friend's advice and ship early, ship often. All this just to say that many of the articles will still be drafts. Hope some of it is helpful anyway. Work in progress and all that.
+Also read the [Introduction](http://codesandnotes.com/introduction)
 
-Please see Introduction.md.
+## Technical setup
+
+First I wrote all articles in Dropbox, categorized in folders and markdown files. This is great but it gives me more control to have everything in a CMS like Wordpress. This way I don’t have to update table of contents, chapters and topic pages manually.
+
+The articles in this repository are the ones not yet finishes or moved to the Wordpress install.

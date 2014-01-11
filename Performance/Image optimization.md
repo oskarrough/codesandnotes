@@ -20,3 +20,4 @@ Like these:
 - http://www.codinghorror.com/blog/2007/03/getting-the-most-out-of-png.html
 - http://perishablepress.com/png-image-optimization/
 - http://addyosmani.com/blog/image-optimization-tools/
+- http://calendar.perfplanet.com/2013/browser-specific-image-formats/

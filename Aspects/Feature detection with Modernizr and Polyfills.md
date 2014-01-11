@@ -1,12 +1,26 @@
-# Feature detection with Modernizr
+# Feature detection with Modernizr and Polyfills
 
-**Not all features of the web are supported equal. The web is young and in flux. Things change, things break.**
+**Not all features of the web are equal. The web is young and in flux. Things change, things break.**
 
-The beginner would check for browser support of your feature using for instance caniuse.com. If you look at [the support for CSS 2D Transforms](http://caniuse.com/transforms2d) you will learn that IE older than version 9 have no support.
+When we build things we rely on different browser features to achieve our goals. Perhaps we need to use `css-transitions` and the `canvas` feature (and element).
 
-Now, you could 'browser sniff' and see your users browser and write some code that makes sure your site works without this feature. The problem with this method is that you don't base your code on the feature in question but a specific browser version. Browser sniffing can go wrong and (most) browsers get updated. It's just not a very reliable method.
+In the spirit of [progressive enhancement](http://codesandnotes.com/progressive-enhancement/), graceful degradation or [progressive reduction](http://codesandnotes.com/progressive-reduction/) we have learned that it is a good idea to test what the user’s platform supports before we start using features that would break anyway.
+
+## You need to know, your code needs to know
+
+We need to know what features are supported where. Our code needs to know. And we need to know what to do with when a feature isn’t supported, for instance polyfilling.
+
+> When [Can I Use](http://caniuse.com) tells you the browser support story, while [Modernizr](http://modernizr.com) gives you the power of feature detection. [HTML5 Please](http://html5please.com) helps you out with recommendations for polyfills and implementation so you can decide if and how to put each of these features to use. (quote from HTML5 please)
+
+## Avoid browser sniffing
+
+Before Modernizr and such precise tools arrived, browser sniffing was used all the time. The concept is to test for a user-agent header which the browser sends, revealing which browser it is. So you knew that if it was Internet Explorer 8, this and that feature isn’t supported.
+
+This very quickly turned into a mess. The problem with this method is that you don't write your code based to the feature but to a specific browser version. Browsers get updated while versions numbers and features fly around. It's just not a very reliable method.
 
 Instead, you could and probably should use feature detection!
+
+# Feature detection
 
 [Modernizr.js](http://modernizr.com/) "is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser".
 

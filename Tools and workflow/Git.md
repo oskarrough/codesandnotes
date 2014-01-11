@@ -27,7 +27,11 @@ git push
 
 ## Avoiding conflicts with rebase
 
+## Git conventions
 
+As with everything else, it’s important to keep conventions when working with Git. One helpful idea is to prefix commit messages with common verbs like “add”, “remove”, “update”, “refactor”, “fix” for example.
+
+See more on https://medium.com/code-adventures/a940ee20862d
 
 ## GUI for Git
 

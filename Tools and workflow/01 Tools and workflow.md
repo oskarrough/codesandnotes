@@ -1,16 +1,16 @@
 # Tools & Workflow
 
-Having the right set of tools for the job is essential. As we are writing code you will need an editor, processing tools, be able to use FTP and know how to collaborate on projects using version control like Git.
+Having the right set of tools for the job is essential. As we are writing code you will need an editor, processing tools, be able to handle servers and content management systems as well as know how to collaborate on projects using version control like Git.
 
-## Editor
+## Text editors
 
 First and foremost you need a good, solid and fast editor. Here are some of the best:
 
-* [Sublime Text](http://www.sublimetext.com/)
-* [Chocolat](http://chocolatapp.com/)
-* [Coda](http://panic.com/coda/)
-* [Espresso](http://macrabbit.com/espresso/)
-* [Textmate](http://macromates.com/)
+- [Sublime Text](http://www.sublimetext.com/) (many agree this is 
+- [Chocolat](http://chocolatapp.com/)
+- [Coda](http://panic.com/coda/)
+- [Espresso](http://macrabbit.com/espresso/)
+- [Textmate](http://macromates.com/)
 
 In the future where everything runs in the browser we have online editors like:
 

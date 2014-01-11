@@ -27,6 +27,7 @@ vanilla
 
 - http://jsbooks.revolunet.com/
 - http://eloquentjavascript.net/
+- https://eloquentjavascript.net/2nd_edition/preview/
 
 **Other articles**
 
@@ -36,4 +37,5 @@ vanilla
 - [SEO in JS Web Apps (Alex Maccaw)](http://blog.alexmaccaw.com/seo-in-js-web-apps)
 - [An introduction to DOM events (Smashing Magazine)](http://coding.smashingmagazine.com/2013/11/12/an-introduction-to-dom-events/)
 - http://superherojs.com/
-http://sivers.org/learn-js
+- http://sivers.org/learn-js
+- https://github.com/airbnb/javascript

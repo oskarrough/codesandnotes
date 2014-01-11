@@ -82,6 +82,10 @@ That being said, some schemes are just better since they clarify the different p
 
 Choose a good one. My favorite is included by default in Sublime and is called 'Eiffel'. I prefer text black on white and I like my comments to be very visible.
 
+http://kkga.github.io/spacegray/
+eiffel
+
+
 ### Typography
 
 Monospaced fonts, "fixed-width typefaces whose glyphs have the same width", improves the readability of code. Originally created out of the limits of the typewriter and later the lack of advanced graphic engines in the first computers.
@@ -100,5 +104,6 @@ Add this to your Sublime Text settings to change the typeface:
 
 ### See more
 
+- http://scotch.io/bar-talk/best-of-sublime-text-3-features-plugins-and-settings
 - http://blog.alainmeier.com/post/27255145114/some-things-beginners-might-not-know-about-sublime-text
 - http://whiletruecode.com/post/7-handy-text-manipulation-tricks-sublime-text-2

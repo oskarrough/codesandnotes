@@ -7,7 +7,15 @@ intro
 ## When to use MVC
 ## Ember
 ## Angular.js
-## Backbone
+
+## Backbone.js
+
+- https://github.com/addyosmani/backbone-fundamentals
+- http://www.quora.com/What-are-some-good-resources-for-Backbone-js
+- https://github.com/documentcloud/backbone/wiki
+- http://recipeswithbackbone.com/
+- http://weblog.bocoup.com/introducing-the-backbone-boilerplate/
+- https://github.com/tbranyen/backbone-boilerplate
 
 ### See more
 
