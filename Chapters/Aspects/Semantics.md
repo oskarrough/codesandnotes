@@ -7,3 +7,4 @@
 ### See more
 
 - http://html5doctor.com/lets-talk-about-semantics/
+http://www.456bereastreet.com/archive/201104/html5_document_outline_revisited/

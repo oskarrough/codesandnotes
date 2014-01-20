@@ -1,5 +1,7 @@
 # JavaScript: MVC
 
+to js: http://blog.adtile.me/2014/01/16/a-dive-into-plain-javascript/
+
 intro
 
 ## What is an MVC

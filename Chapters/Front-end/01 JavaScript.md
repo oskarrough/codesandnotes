@@ -29,8 +29,10 @@ vanilla
 - http://eloquentjavascript.net/
 - https://eloquentjavascript.net/2nd_edition/preview/
 
+
 **Other articles**
 
+- http://www.2ality.com/2013/06/basic-javascript.html
 - [Idiomatic JavaScript (Necolas)](https://github.com/necolas/idiomatic-js)
 - [JavaScript best practices](http://www.thinkful.com/learn/javascript-best-practices-1/Summary)
 - [New rules for JavaScript](https://speakerdeck.com/getify/new-rules-for-javascript)

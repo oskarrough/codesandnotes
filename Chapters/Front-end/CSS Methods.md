@@ -13,3 +13,8 @@ columns only on children?
 http://gridpak.com/
 http://www.gridsetapp.com/
 
+css single line comments with //
+http://www.xanthir.com/b4U10
+
+content
+http://tech.pro/blog/1799/7-creative-uses-of-css-content
