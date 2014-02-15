@@ -20,10 +20,12 @@
 <body <?php body_class(); ?>>
 <?php do_action( 'before' ); ?>
 
+	<?php if (!is_home()): ?>
 	<header class="SiteHeader">
 		<h1 class="SiteTitle"><a href="http://codesandnotes.com/" rel="home">
 			<!-- <span class="Codes">{Codes}</span> <span class="And">&amp;</span> <span class="Notes">‘Notes’</span> -->
 			<img src="/images/codesandnotes.png" alt="Codes &amp; Notes">
 		</a></h1>
-		<p class="SiteDescription">by <a href="http://oskarrough.com" rel="author" target="_blank">Oskar Rough Mosumgaard</a></p>
+		<p class="SiteDescription">A guide to web development that you can trust by <a href="http://oskarrough.com" rel="author" target="_blank">Oskar Rough Mosumgaard</a></p>
 	</header>
+	<?php endif; ?>

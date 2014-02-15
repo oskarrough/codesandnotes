@@ -37,8 +37,36 @@ article,aside,details,figcaption,figure,footer,header,main,nav,section {
 	$green: #207c14;
 */
 
+
+article,
+.Container {
+	padding: 2rem 2rem 1.5rem;
+}
+@media (min-width: 37.5rem) {
+	article,
+	.Container {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+}
+@media (min-width: 56.25rem) {
+	article,
+	.Container {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}
+
+.Container,
+article,
 .Manchet {
-	margin-top: 2rem;
+	max-width: 45rem;
+	background-color: #fff;
+}
+
+.Manchet {
+	margin-top: 5rem;
+	padding: 4rem 0 1px;
 	text-align: center;
 }
 .Manchet h1 {
@@ -46,19 +74,36 @@ article,aside,details,figcaption,figure,footer,header,main,nav,section {
 	text-transform: uppercase;
 	color: #F36611;
 }
+.Manchet h1 {
+	/* hide the text */
+	text-indent: -90em;
+	overflow: hidden;
+	/* set the size of the bg image */
+	max-width: 530px;
+	height: 0;
+	padding-top: 10.754716981%;
+	/* add and center the bg and box */
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(/images/codesandnotes--orange.png);
+	background-position: 50% 50%;
+	background-size: 90% auto;
+	background-repeat: no-repeat;
+}
+
 @media (min-width: 600px) {
 	.Manchet h1 {
 		font-size: 50px;
 	}
 }
 .Manchet h2 {
-	font-size: 30px;
+	font-size: 1.875rem;
 	margin-top: 1rem;
 }
 .Manchet h3 {
 	font-style: italic;
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 1.125rem;
 	margin-bottom: 2rem;
 }
 .Manchet h3 span {
@@ -109,10 +154,26 @@ textarea {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
+figure {
+	position: relative;
+}
+figure img {
+	vertical-align: top;
+}
+hr {
+	background-image: url(/images/ornaments/ornament-1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 58px;
+	height: 90px;
+	border: 0;
+	margin: 1rem 0;
+}
 
 /* Headings */
 h1, h2, h3, h4,
-blockquote {
+blockquote,
+.Toc {
 	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Bodoni MT", "Times New Roman", serif;
 }
 h1 {
@@ -122,7 +183,7 @@ h1 {
 	font-weight: 600;
 }
 h2 {
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	line-height: 1.1;
@@ -135,15 +196,16 @@ article h1 {
 	/*font-variant: small-caps;
 	text-align: center;*/
 }
-article h2 {
-	font-size: 1.5rem;
-}
 article h3 {
 	font-size: 1.25rem;
 }
 article p,
 article ul {
 	font-size: 1.0625rem;
+}
+article p + p {
+	margin-top: -1rem;
+	text-indent: 1.5rem;
 }
 article img {
 	display: block;
@@ -234,12 +296,11 @@ ul {
 }
 li::before {
 	content: '↝ ';
-	color: rgb(81, 214, 62);
+	/*color: rgb(230, 230, 230);*/
 }
-
-
 .Meta:last-child {
 	margin-top: 1rem;
+
 }
 
 /* Hide chapters when you are on a chapter */
@@ -254,31 +315,20 @@ li::before {
 	margin: 1.5rem 0;
 	max-width: 336px;
 }
-@media (min-width: 600px) {
-	.SiteTitle {
-		margin-top: 3rem;
-	}
-}
-.home .SiteTitle {
-	max-width: 448px;
-}
-@media (min-width: 35rem) {
-	.SiteTitle {
-		margin-bottom: 3rem;
-	}
-	.
-}
 .SiteTitle a {
 	display: block;
 	padding: 1.5em 2em 0.7em 1em;
 	background-color: #fff;
 	border-bottom: 0;
 }
+@media (min-width: 560px) {
+	.SiteTitle {
+		margin-bottom: 3rem;
+	}
+}
 .SiteDescription {
-	margin-top: 0;
 	display: none;
 }
-
 
 /* Links */
 a,
@@ -286,19 +336,14 @@ a:visited {
 	color: #000;
 	color: rgb(0,50,50);
 	text-decoration: none;
-	border-bottom: 1px solid rgba(0,50,50,0.25);
+	border-bottom: 1px solid rgb(230,230,230);
 }
 a:hover,
 a:focus,
 a:active {
 	color: rgb(0,150,150);
+	border-color: rgb(0,150,150);
 }
-/*h1 a,
-h2 a,
-.Toc a {
-	color: rgb(0,50,50);
-}*/
-
 
 /* Prefix chapter and topic links with a symbol */
 a[rel="category tag"]::before {
@@ -360,7 +405,6 @@ a[class^="tag-link-"] {
 	margin: 0.5rem 0 0.5rem 1rem;
 }
 
-
 /* Comments */
 .comment-content a {
 	word-wrap: break-word;
@@ -374,19 +418,25 @@ a[class^="tag-link-"] {
 	margin-bottom: -1rem;
 }
 
-
 /* Search widget */
 .Search-submit {
 	display: none;
 }
 
-
 /* Tag cloud */
+.wp-tag-cloud {
+	margin-left: 1rem;
+	-webkit-column-width: 10rem;
+	-moz-column-width: 10rem;
+	column-width: 10rem;
+	-webkit-column-gap: 2rem;
+	-moz-column-gap: 2rem;
+	column-gap: 2rem;
+}
 .wp-tag-cloud a,
 .widget_most_popular_tags a {
 	font-size: 1rem !important;
 }
-
 
 /* Layout */
 body {
@@ -396,24 +446,7 @@ body {
 }
 @media (min-width: 600px) {
 	body {
-		padding: 2rem;
-	}
-}
-article {
-	padding: 2rem 2rem 1.5rem;
-	max-width: 45rem;
-	background-color: #fff;
-}
-@media (min-width: 37.5rem) {
-	article {
-		padding-left: 3rem;
-		padding-right: 3rem;
-	}
-}
-@media (min-width: 56.25rem) {
-	article {
-		padding-left: 4rem;
-		padding-right: 4rem;
+		padding: 5rem 2rem 2rem;
 	}
 }
 article + article {
@@ -454,7 +487,7 @@ aside {
 }
 @media screen and (min-width: 65rem) {
 	body {
-		padding-left: 20%;
+		padding-left: 18%;
 	}
 }
 @media screen and (min-width: 50rem) {
@@ -588,13 +621,11 @@ section {
     -moz-transform: rotate(180deg) scale(1);
     transform: rotate(180deg) scale(1);
   }
-
   50% {
     -webkit-transform: rotate(540deg) scale(1.5);
     -moz-transform: rotate(540deg) scale(1.5);
     transform: rotate(540deg) scale(1.5);
   }
-
   to {
     -webkit-transform: rotate(540deg) scale(1);
     -moz-transform: rotate(540deg) scale(1);
@@ -606,12 +637,10 @@ section {
     -webkit-transform: rotate(180deg) scale(1);
     transform: rotate(180deg) scale(1);
   }
-
   50% {
     -webkit-transform: rotate(540deg) scale(1.5);
     transform: rotate(540deg) scale(1.5);
   }
-
   to {
     -webkit-transform: rotate(540deg) scale(1);
     transform: rotate(540deg) scale(1);
@@ -624,20 +653,17 @@ section {
   -webkit-animation: right 1.7s infinite;
   animation: right 1.7s infinite;
 }
-
 @keyframes right {
   from {
     -webkit-transform: rotate(0deg) scale(1.5);
     -moz-transform: rotate(0deg) scale(1.5);
     transform: rotate(0deg) scale(1.5);
   }
-
   50% {
     -webkit-transform: rotate(0deg) scale(1);
     -moz-transform: rotate(0deg) scale(1);
     transform: rotate(0deg) scale(1);
   }
-
   to {
     -webkit-transform: rotate(-360deg) scale(1.5);
     -moz-transform: rotate(-360deg) scale(1.5);
@@ -650,31 +676,17 @@ section {
     -moz-transform: rotate(0deg) scale(1.5);
     transform: rotate(0deg) scale(1.5);
   }
-
   50% {
     -webkit-transform: rotate(0deg) scale(1);
     -moz-transform: rotate(0deg) scale(1);
     transform: rotate(0deg) scale(1);
   }
-
   to {
     -webkit-transform: rotate(-360deg) scale(1.5);
     -moz-transform: rotate(-360deg) scale(1.5);
     transform: rotate(-360deg) scale(1.5);
   }
 }
-
-
-.wp-tag-cloud {
-	margin-left: 1rem;
-	-webkit-column-width: 10rem;
-	-moz-column-width: 10rem;
-	column-width: 10rem;
-	-webkit-column-gap: 2rem;
-	-moz-column-gap: 2rem;
-	column-gap: 2rem;
-}
-
 
 body {
 	background-repeat: no-repeat;
@@ -702,14 +714,6 @@ body {
 	background-size: 100% auto;
 }
 
-
-
-figure {
-	position: relative;
-}
-figure img {
-	vertical-align: top;
-}
 .Caption--overlay {
 	position: absolute;
 	bottom: 2rem;
@@ -719,17 +723,6 @@ figure img {
 }
 
 
-hr {
-	background-image: url(/images/ornaments/ornament-1.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	height: 58px;
-	height: 90px;
-	border: 0;
-	/* padding because of anchor links */
-	margin: 1rem 0;
-	/*padding: 2rem 0;*/
-}
 
 
 
