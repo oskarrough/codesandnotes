@@ -4,3 +4,4 @@ Through trial and error and more hours than I care to think about I’ve learned
 
 https://www.codeschool.com
 http://hello.processing.org/editor/
+https://github.com/vhf/free-programming-books

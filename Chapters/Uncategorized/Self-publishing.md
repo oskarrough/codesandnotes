@@ -4,6 +4,8 @@
 
 ### See more
 
+- http://hemingwayapp.com/
+- http://stevewedig.com/2014/02/03/software-developers-reading-list/
 - http://codesandnotes.com/css-books-css-figures/
 - https://www.petekeen.net/adventures-in-self-publishing
 - http://practicaltypography.com/index.html

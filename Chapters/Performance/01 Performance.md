@@ -39,3 +39,4 @@ http://compass-style.org/reference/compass/utilities/sprites/
 - http://developer.yahoo.com/performance/rules.html
 - http://stevesouders.com/hpws/
 - https://github.com/One-com/assetgraph
+http://blog.fogcreek.com/we-spent-a-week-making-trello-boards-load-extremely-fast-heres-how-we-did-it/
