@@ -1,17 +1,13 @@
 # Codes & Notes
 
-This is the repository of the book on web development I’m writing.  It is called [Codes & Notes](http://codesandnotes.com)
+This is the repository of the book on web development I’m writing.
 
-Also read the [Introduction](http://codesandnotes.com/introduction)
+Please read the [Introduction to Codes & Notes](http://codesandnotes.com/introduction).
+
+This repository contains only drafts (as well as some setup). Everything ready for the public is on the website, not here.
 
 ## Technical setup
 
-First I wrote all articles in Dropbox, categorized in folders and markdown files. This is great but it gives me more control to have everything in a CMS like Wordpress. This way I don’t have to update table of contents, chapters and topic pages manually.
+Currently running on a custom Wordpress install. Todo: move back to a static site system.
 
-The articles in this repository are the ones not yet finishes or moved to the Wordpress install.
-
-### Structure
-
-/chapters includes article drafts. Published articles are only in the Wordpress database to avoid duplication.
-/dist is the compiled versions of the articles in /chapters
-/wordpress is a backup of the Wordpress theme used by Codes & Notes
+If you have any questions, contact me at oskar@rough.dk
