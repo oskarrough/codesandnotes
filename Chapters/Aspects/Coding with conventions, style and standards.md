@@ -1,6 +1,8 @@
-# Coding with style and standards
+# Coding with conventions, style and standards
 
 Introduction. Code conventions?
+- best practices regarding spans, naming, code hierarchy.
+- Conform to the conventions (stay consistent)
 
 http://javascript.crockford.com/code.html
 

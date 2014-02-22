@@ -16,3 +16,8 @@ Now it makes sense, not only to computers, but to you and the people using your 
 
 ### See more
 
+- doctype
+- Explain what "Semantic HTML" means.
+- tables
+- elements & semantics
+- semantics & accessibility

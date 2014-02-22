@@ -6,6 +6,12 @@ Here are some general tips but be sure to read through the references including 
 
 Tip from Captain Obvious: Don't use stuff you don't need.
 
+- How would you optimize a websites assets/resources?
+- File concatenation, File minification, CDN Hosted, Caching
+- Serve site assets from multiple domains?
+- Why? How many resources will a browser download from a given domain at a time?
+- Perceived performance. decreate page load
+
 ## HTTP Requests
 
 Reduce HTTP requests to an absolute minimum. Concatenate files. Use parallels requests.

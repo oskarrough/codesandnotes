@@ -7,7 +7,7 @@ objects/component/module
 break it down. smaller blocks are more flexible than bigger ones. blocks can be reused with other blocks.
 single responsibility principle, the basis of unix.
 dont be afraid of many classes. Classes keeps your modules flexible and avoids repetition.
-
+- Organizing CSS: Modular, Extensible, Scalable
 base
 layout
 modules
