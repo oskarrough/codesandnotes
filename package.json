@@ -8,11 +8,11 @@
   "homepage": "http://codesandnotes.com",
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-markdown-pdf": "1.1.0",
+    "grunt-markdown-pdf": "2.1.1",
     "grunt-contrib-clean": "~0.5.0",
-    "load-grunt-tasks": "~0.2.1",
-    "grunt-markdown": "~0.4.0",
-    "assemble": "~0.4.33"
+    "load-grunt-tasks": "~0.3.0",
+    "grunt-markdown": "~0.5.0",
+    "assemble": "~0.4.36"
   },
   "engines": {
     "node": ">= 0.10.0"
@@ -21,7 +21,7 @@
     "grunt": "~0.4.1"
   },
   "dependencies": {
-    "markdown-pdf": "~1.2.0",
-    "async": "~0.2.8"
+    "markdown-pdf": "~2.2.0",
+    "async": "~0.2.10"
   }
 }
