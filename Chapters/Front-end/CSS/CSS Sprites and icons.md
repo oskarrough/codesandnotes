@@ -12,3 +12,7 @@
 What are sprites. Why would I want it. How do you do it
 - Image replacement techniques
 compass sprites
+
+http://developer.yahoo.com/performance/rules.html#opt_sprites
+http://compass-style.org/reference/compass/utilities/sprites/
+http://codesandnotes.com/css-sprites-and-icons

@@ -11,3 +11,6 @@
 - Flexbox
 - Going with the flow
 - Layout: Floats, absolutes, fixeds, fluids, breakpoints
+- Aspect ratio div
+- pixel rounding
+- negative margins
