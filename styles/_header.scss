@@ -1,0 +1,74 @@
+/**
+ * Site title and description
+ */
+.SiteTitle {
+	@include rhythm($larger);
+	margin-top: $space*1.5;
+	margin-bottom: $space;
+	text-shadow: 2px 2px 0 rgba(0,100,100,0.2);
+	a {
+		border-bottom: 0;
+		color: $orange;
+	}
+}
+.SiteDescription {
+	margin-top: 0;
+	font-size: smaller;
+	display: none;
+}
+
+
+/**
+ * Manchet
+ */
+.Manchet {
+	margin-top: $space*2;
+	padding: $space*2 0 $space;
+	text-align: center;
+}
+.Manchet h1 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: $orange;
+}
+@media (min-width: 760px) {
+	.Manchet { margin-top: $space*4; }
+	.Manchet h1 { font-size: 4rem;}
+}
+.Manchet h2 {
+	font-size: ($larger/$base-font-size) * 1rem;
+	line-height: ($base-line-height*1.5)/$larger;
+}
+.Manchet h3 {
+	margin-bottom: -0.5em;
+	span {
+		letter-spacing: 0.0625em;
+		color: #207c14;
+		font-style: normal;
+	}
+}
+.Manchet p {
+	max-width: 31em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+// .ManchetNIU h1 {
+// 	/* hide the text */
+// 	text-indent: -90em;
+// 	overflow: hidden;
+// 	/* set the size of the bg image */
+// 	max-width: 530px;
+// 	height: 0;
+// 	padding-top: 10.754716981%;
+// 	/* add and center the bg and box */
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	background-image: url(/images/codesandnotes--orange.png);
+// 	background-position: 50% 50%;
+// 	background-size: 90% auto;
+// 	background-repeat: no-repeat;
+// }

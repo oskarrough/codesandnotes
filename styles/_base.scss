@@ -1,0 +1,162 @@
+/* Global */
+* {
+	box-sizing: border-box;
+}
+article,aside,details,figcaption,figure,footer,header,main,nav,section {
+	display: block;
+}
+
+html {
+	color: $black;
+	background-color: rgb(249,247,243);
+	background-color: $sand;
+}
+
+/* Set a default margin between elements */
+blockquote,
+ol,
+ul,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+fieldset,
+table,
+address
+textarea,
+hr {
+	margin-top: $space;
+	margin-bottom: $space;
+}
+strong {
+	font-weight: 600;
+}
+figure {
+	position: relative;
+}
+figure img {
+	vertical-align: top;
+}
+hr {
+	background-image: url(/images/ornaments/ornament-1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 58px;
+	height: 90px;
+	border: 0;
+}
+dfn, cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	margin-left: 2rem;
+	margin-right: 1rem;
+	max-width: 34rem;
+	font-style: italic;
+}
+blockquote,
+blockquote p {
+	font-size: 1.125rem;
+}
+code,
+pre {
+	font-family: 'Source Code Pro', Consolas, monospace;
+	font-weight: normal;
+	background: rgb(249,250,250);
+	@include rhythm($small);
+}
+pre {
+	line-height: 1.6;
+	overflow: auto;
+	padding: 1rem;
+}
+abbr, acronym, .Caps {
+	text-transform: lowercase;
+	font-variant: small-caps;
+	font-style: normal;
+	border-bottom: 0;
+	letter-spacing: 0.1em;
+}
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+small {
+	@include rhythm($small);
+}
+big {
+	font-size: 125%;
+}
+figure {
+	margin: 0;
+}
+table {
+	width: 100%;
+}
+img,
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+}
+textarea {
+	margin: 0;
+	min-height: 5.444444444rem;
+	max-width: 100%;
+}
+ol,
+ul {
+	padding-left: 0;
+	list-style: none;
+}
+li::before {
+	content: '↝ ';
+	/*color: rgb(230, 230, 230);*/
+}
+
+/* Links */
+a,
+a:visited {
+	color: #000;
+	color: rgb(42, 121, 92);
+	text-decoration: none;
+	border-bottom: 1px solid rgb(21,200,130);
+}
+a:hover,
+a:focus,
+a:active {
+	color: rgb(0,160,160);
+	border-color: rgb(0,160,160);
+}
+a img {
+	border: 0;
+}
+
+/* Prefix chapter and topic links with a symbol */
+a[rel="category tag"]::before {
+	content: '§';
+	opacity: 0.5;
+}
+a[rel="tag"]::before,
+a[class^="tag-link-"] {
+	content: '#';
+}
+
+/* Clearing */
+.clear:before,
+.clear:after {
+	content: '';
+	display: table;
+}
+.clear:after {
+	clear: both;
+}

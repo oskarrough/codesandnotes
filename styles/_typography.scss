@@ -1,0 +1,105 @@
+html {
+	font-size: ($base-font-size * 1px);
+	// line-height: ($base-line-height/$base-font-size);
+	line-height: 1.444444444;
+	/*font-family: 'arno-pro-display';*/
+	font-family: 'eskapade';
+	text-rendering: optimizeLegibility;
+	/*-webkit-font-smoothing: antialiased;*/
+}
+
+@media (max-width: 500px) { html { font-size: 17px; } }
+@media (min-width: 1000px) { html { font-size: 19px; } }
+@media (min-width: 1400px) { html { font-size: 20px; } }
+
+/* Headings */
+h1, h2, h3, h4,
+blockquote,
+.Toc {
+	// font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Bodoni MT", "Times New Roman", serif;*/
+	// font-family: 'eskapade-fraktur';
+	// font-style: italic;
+	// font-weight: 400;
+	// font-family: 'eskapade';
+	// font-weight: 400;
+	font-family: 'arno-pro-display';
+	font-weight: 600;
+}
+
+h1,
+.Chapter h2 {
+	font-size: ($x-large/$base-font-size) * 1rem;
+	line-height: ($base-line-height*2)/$x-large;
+	margin-bottom: $space;
+	font-family: 'eskapade-fraktur';
+	font-style: italic;
+	font-weight: 400;
+}
+
+h2 {
+	@include rhythm($large);
+}
+h3 {
+	@include rhythm($medium);
+}
+article p + h2 {
+	margin-top: $space*2;
+	margin-bottom: $space/-2;
+}
+article p + p {
+	margin-top: $space * -1;
+	text-indent: $space;
+}
+article p + p img {
+	margin-top: 3rem;
+}
+article img {
+	display: block;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+
+/* Chapters */
+section {
+	margin-top: $space * 2;
+	max-width: 50em;
+}
+section:first-child {
+	margin-top: auto;
+}
+.Chapter h2 a {
+	color: $black;
+}
+.Chapter > p {
+	max-width: 30rem;
+}
+.Chapter h2::before {
+	content: '§ ';
+	position: relative;
+}
+.Chapter a {
+	border-bottom: 0;
+}
+
+
+/* Table of contents */
+.Toc {
+	font-size: ($medium/$base-font-size) * 1rem;
+	line-height: ($base-line-height*1.5)/$medium;
+	margin-bottom: $space/2;
+	margin-left: 1rem;
+}
+.Toc li::before {
+	display: none;
+}
+@media screen and (min-width: 34rem) {
+	.Toc {
+		column-width: 20rem;
+		column-gap: 2rem;
+	}
+	.Toc h1,
+	.Toc p {
+		column-span: all;
+	}
+}

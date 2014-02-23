@@ -1,0 +1,235 @@
+.Container,
+article,
+.Manchet {
+	max-width: 40rem;
+	background-color: rgb(249,247,243);
+}
+article,
+.Container {
+	padding: 2.888888889rem 2rem;
+}
+.Manchet + .Container {
+	padding-top: 1.444444444rem;
+}
+@media (min-width: 56.25rem) {
+	article,
+	.Container {
+		padding-left: 4rem;
+		padding-right: 4rem;
+		padding-bottom: 5.777777778rem;
+	}
+}
+/* Hide chapters when you are on a chapter */
+.category article .Chapters {
+	display: none;
+}
+
+
+
+/* Layout */
+body {
+	margin: 0;
+	overflow-y: scroll;
+	float: left;
+	width: 100%;
+}
+@media (min-width: 1000px) {
+	body {
+		padding: 0 2rem 2rem;
+	}
+}
+article + article {
+	margin-top: 1em;
+}
+a.post-edit-link {
+	float: right;
+	color: red;
+}
+@media (min-width: 500px) {
+	.Comments,
+	#disqus_thread {
+		margin-left: 2rem;
+		clear: both;
+	}
+}
+nav {
+	clear: both;
+}
+footer {
+	clear: both;
+	margin-top: 2rem;
+}
+aside {
+	clear: both;
+}
+@media screen and (min-width: 35rem) {
+	body {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+@media screen and (min-width: 65rem) {
+	body {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+@media screen and (min-width: 50rem) {
+	/*main {
+		float: left;
+		width: 100%;
+		margin-right: -100%;
+		padding-right: 210px;
+	}
+	.home main {
+		margin-right: auto;
+		padding-right: 0;
+		float: none;
+		width: auto;
+	}
+	aside {
+		clear: none;
+		float: right;
+		width: 180px;
+	}*/
+}
+
+body,
+main,
+footer {
+	transition: opacity 100ms;
+}
+.is-routing main,
+.is-routing footer {
+	opacity: 0.666;
+}
+body {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.home {
+	background-image: url('/images/illustrations/bio-volcano-lg-web.jpg');
+	background-size: 100% auto;
+}
+/* introduction */
+.postid-1262 {
+	background-image: url('/images/illustrations/bio_lavoisier_lg.jpg');
+	background-position: 100% 0;
+	background-size: 100% auto;
+}
+/* css box model */
+.postid-1495 {
+	background-image: url('/images/illustrations/lilOctopus-web2.jpg');
+	background-position: 100% -1rem;
+}
+/* RTL */
+.postid-478 {
+	background-image: url('/images/illustrations/Village_of_Sekiya_at_Sumida_river.jpg');
+	background-position: 100% 0;
+	background-size: 100% auto;
+}
+/* Normalize */
+.postid-1532 {
+	background-image: url('/images/illustrations/20_lg.jpg');
+}
+/* Cross browser*/
+.postid-282 {
+	background-image: url('/images/illustrations/phobia_11_lg.jpg');
+}
+
+
+/* Print styles */
+@media print {
+	html {
+		color: black;
+	}
+	body {
+		/*background-image: none;*/
+	}
+	article a[href]:after {
+	    content: " (" attr(href) ")";
+	}
+	article a[href^="#"]:after,
+	article a[href^="javascript"]:after,
+	.Meta a:after {
+	    content: "";
+	}
+	h2 {
+	    page-break-after: avoid;
+	}
+	article .Topics,
+	.Secondary,
+	.yarpp-related,
+	#comments,
+	.post-edit-link {
+		display: none;
+	}
+	article {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.TocLink {
+	position: fixed;
+	bottom: -0.5rem;
+	right: 1rem;
+	display: none;
+}
+@media (min-width: 980px) {
+	.TocLink {
+		display: block;
+	}
+}
+
+
+/* Related posts */
+.yarpp-related {
+	float: left;
+	clear: both;
+	margin: 0 0 1.444444444rem;
+	padding: 0 2rem;
+	background: rgb(218, 231, 220);
+}
+
+/* Comments */
+.Comments {
+	clear: both;
+}
+.comment-content a {
+	word-wrap: break-word;
+}
+.logged-in-as,
+.comment-form-comment label,
+.form-allowed-tags {
+	display: none;
+}
+.comment-form-comment {
+	margin-bottom: -1rem;
+}
+
+/* Search widget */
+.Search-submit {
+	display: none;
+}
+
+/* Tag cloud */
+.wp-tag-cloud {
+	margin-left: 1rem;
+	column-width: 10rem;
+	column-gap: 2rem;
+}
+.wp-tag-cloud a,
+.widget_most_popular_tags a {
+	font-size: 1rem !important;
+}
+
+
+/* Meta text */
+.Meta {
+	font-size: 0.888888889rem;
+	line-height: 1.625;
+}
+.Meta:last-child {
+	margin-top: 1.444444444rem;
+}

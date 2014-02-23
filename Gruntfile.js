@@ -43,23 +43,7 @@ module.exports = function(grunt) {
         src: 'Chapters/**/*.md',
         dest: 'dist/pdf'
       }
-    },
-
-    // Assemble for what?
-    assemble: {
-      options: {
-        assets: 'assets',
-        plugins: ['permalinks'],
-        partials: ['includes/**/*.hbs'],
-        layout: ['layouts/default.hbs'],
-        data: ['data/*.{json,yml}']
-      },
-      pages: {
-        src: ['Chapters/**/*.md'],
-        dest: './'
-      }
-    },
-  })
+    }
 
   grunt.registerTask('default', [
     'clean',
