@@ -40,7 +40,7 @@ article,aside,details,figcaption,figure,footer,header,main,nav,section {
 
 html {
 	font-size: 17px;
-	line-height: 1.4;
+	line-height: 1.444444444;
 	color: #111;
 	background-color: rgb(249,247,243);
 	background-color: #f4e8d5;
@@ -52,7 +52,7 @@ html {
 	/*-webkit-font-smoothing: antialiased;*/
 }
 @media (min-width: 500px) { html { font-size: 18px; } }
-@media (min-width: 760px) { html { font-size: 19px; } }
+@media (min-width: 900px) { html { font-size: 19px; } }
 @media (min-width: 1400px) { html { font-size: 20px; } }
 
 
@@ -74,8 +74,8 @@ fieldset,
 table,
 address
 textarea {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-top: 1.444444444rem;
+	margin-bottom: 1.444444444rem;
 }
 
 
@@ -96,7 +96,7 @@ hr {
 	height: 58px;
 	height: 90px;
 	border: 0;
-	margin: 1rem 0;
+	margin: 1.444444444rem 0 1.444444444rem;
 }
 
 /* Headings */
@@ -118,43 +118,25 @@ h1,
 	font-family: 'eskapade-fraktur';
 	font-style: italic;
 	font-weight: 400;
+	font-size: 2.5rem;
+	line-height: 1.155555556;
+	margin-bottom: 0.577777778em;
 }
 h1 {
-	font-size: 2.5rem;
-	line-height: 1;
-	margin-bottom: 1rem;
 }
 h2 {
-	font-size: 1.8rem;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
-	line-height: 1.1;
-}
-/*@media (min-width: 500px) {
-	h2 {
-		font-size: 1.8rem;
-	}
-}*/
-/* a bit bigger for articles */
-article h1 {
-	/*font-size: 3rem;*/
-	/*font-variant: small-caps;
-	text-align: center;*/
+	font-size: 1.5rem;
+	line-height: 0.962962963;
 }
 article p + h2 {
-	margin-top: 1.5rem;
-	margin-bottom: -0.5rem;
-}
-article h3 {
-	/*font-size: 1.25rem;*/
-}
-article p,
-article ul {
-	/*font-size: 1.25rem;*/
+	/*margin-top: 1.5rem;
+	margin-bottom: -0.5rem;*/
+	margin-top: 2.166666667rem;
+	margin-bottom: -0.722222222rem;
 }
 article p + p {
-	margin-top: -1rem;
-	text-indent: 1em;
+	margin-top: -1.444444444rem;
+	text-indent: 1.444444444rem;
 }
 article p + p img {
 	margin-top: 3rem;
@@ -165,8 +147,13 @@ article img {
 	margin-bottom: 2rem;
 }
 h3 {
-	font-size: 1.263157895rem;
-	font-weight: normal;
+	font-size: 1.277777778rem;
+	line-height: 1.130434783;
+}
+.Toc {
+	font-size: 1.277777778rem;
+	line-height: 1.695652174;
+	margin-bottom: 0.722222222rem;
 }
 strong {
 	font-weight: 600;
@@ -189,16 +176,13 @@ code,
 pre {
 	font-family: 'Source Code Pro', Consolas, monospace;
 	font-weight: normal;
-	background: rgb(249,247,243);
+	background: rgb(249,250,250);
+	font-size: 0.888888889rem;
 }
 pre {
-	font-size: 0.8125rem;
 	line-height: 1.6;
 	overflow: auto;
 	padding: 1rem;
-}
-code {
-	padding: 0 0.125em;
 }
 abbr, acronym, .caps {
 	text-transform: lowercase;
@@ -234,6 +218,7 @@ img {
 }
 textarea {
 	margin: 0;
+	min-height: 5.444444444rem;
 	max-width: 100%;
 }
 a img {
@@ -243,14 +228,10 @@ ol,
 ul {
 	padding-left: 0;
 	list-style: none;
-	line-height: 1.65;
 }
 li::before {
 	content: '↝ ';
 	/*color: rgb(230, 230, 230);*/
-}
-.Meta:last-child {
-	margin-top: 1rem;
 }
 
 
@@ -259,42 +240,41 @@ li::before {
 article,
 .Manchet {
 	max-width: 40rem;
-	/*margin-left: auto;
-	margin-right: auto;*/
-	/*background-color: #fff;
-	background-color: rgba(255,255,255,0.95);*/
 	background-color: rgb(249,247,243);
 }
 article,
 .Container {
-	padding: 2rem;
+	padding: 2.888888889rem 2rem;
 }
-@media (min-width: 37.5rem) {
-	article,
-	.Container {
-		padding: 3rem 2rem 4rem;
-	}
+.Manchet + .Container {
+	padding-top: 1.444444444rem;
 }
 @media (min-width: 56.25rem) {
 	article,
 	.Container {
-		padding: 3rem 4rem 5rem;
+		padding-left: 4rem;
+		padding-right: 4rem;
+		padding-bottom: 5.777777778rem;
 	}
 }
-
-
-
 .Manchet {
-	margin-top: 5rem;
-	padding: 4rem 0 1px;
+	margin-top: 2.888888889rem;
+	padding: 2.888888889rem 0 1.166666667rem;
 	text-align: center;
 }
 .Manchet h1 {
-	letter-spacing: 0.2em;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: #F36611;
 }
-.Manchet h1 {
+@media (min-width: 760px) {
+	.Manchet { margin-top: 5.777777778rem; }
+	.Manchet h1 { font-size: 4rem;}
+}
+
+.ManchetNIU h1 {
 	/* hide the text */
 	text-indent: -90em;
 	overflow: hidden;
@@ -310,20 +290,12 @@ article,
 	background-size: 90% auto;
 	background-repeat: no-repeat;
 }
-
-@media (min-width: 600px) {
-	.Manchet h1 {
-		font-size: 50px;
-	}
-}
 .Manchet h2 {
-	font-size: 1.875rem;
-	margin-top: 1rem;
+	font-size: 2rem;
+	line-height: 1.083333333;
 }
 .Manchet h3 {
-	font-style: italic;
-	font-size: 1.125rem;
-	margin-bottom: 2rem;
+	margin-bottom: -0.5em;
 }
 .Manchet h3 span {
 	letter-spacing: 0.0625em;
@@ -357,7 +329,7 @@ article,
 }
 @media (min-width: 560px) {
 	.SiteTitle {
-		margin-bottom: 3rem;
+		margin-bottom: 3.2rem;
 	}
 }
 .SiteDescription {
@@ -368,9 +340,9 @@ article,
 a,
 a:visited {
 	color: #000;
-	color: rgb(0,60,60);
+	color: rgb(42, 121, 92);
 	text-decoration: none;
-	border-bottom: 1px solid rgb(200,200,200);
+	border-bottom: 1px solid rgb(21,200,130);
 }
 a:hover,
 a:focus,
@@ -382,6 +354,7 @@ a:active {
 /* Prefix chapter and topic links with a symbol */
 a[rel="category tag"]::before {
 	content: '§';
+	opacity: 0.5;
 }
 a[rel="tag"]::before,
 a[class^="tag-link-"] {
@@ -429,12 +402,9 @@ a[class^="tag-link-"] {
 .yarpp-related {
 	float: left;
 	clear: both;
-	margin: 0 0 3rem;
+	margin: 0 0 1.444444444rem;
 	padding: 0 2rem;
 	background: rgb(218, 231, 220);
-}
-.yarpp-related h3 {
-	margin: 0.5rem 0 0.5rem 1rem;
 }
 
 /* Comments */
@@ -477,15 +447,17 @@ a[class^="tag-link-"] {
 body {
 	margin: 0;
 	overflow-y: scroll;
+	float: left;
+	width: 100%;
 }
 @media (min-width: 600px) {
 	body {
-		padding: 1rem;
+		padding: 0 0 1rem;
 	}
 }
 @media (min-width: 1000px) {
 	body {
-		padding: 2rem;
+		padding: 0 2rem 2rem;
 	}
 }
 article + article {
@@ -493,7 +465,11 @@ article + article {
 }
 /* Meta text */
 .Meta {
-	font-size: 0.875rem;
+	font-size: 0.888888889rem;
+	line-height: 1.625;
+}
+.Meta:last-child {
+	margin-top: 1.444444444rem;
 }
 a.post-edit-link {
 	float: right;
@@ -561,8 +537,11 @@ footer {
 	opacity: 0.666;
 }
 section {
-	margin-top: 2.5rem;
+	margin-top: 2.888888889rem;
 	max-width: 50em;
+}
+section:first-child {
+	margin-top: auto;
 }
 
 /* Chapters */
@@ -573,19 +552,13 @@ section {
 	content: '§ ';
 	position: relative;
 }
-@media (min-width: 35rem) {
-	.Chapter h2::before {
-		margin-left: -1em;
-	}
+.Chapter a {
+	border-bottom: 0;
 }
 
 /* Table of contents */
 .Toc {
 	margin-left: 1rem;
-}
-.Toc li {
-	margin-bottom: 0.5rem;
-	font-size: 1.25rem;
 }
 .Toc li::before {
 	display: none;
@@ -745,7 +718,14 @@ body {
 	background-position: 100% 0;
 	background-size: 100% auto;
 }
-
+/* Normalize */
+.postid-1532 {
+	background-image: url('/images/illustrations/20_lg.jpg');
+}
+/* Cross browser*/
+.postid-282 {
+	background-image: url('/images/illustrations/phobia_11_lg.jpg');
+}
 .Caption--overlay {
 	position: absolute;
 	bottom: 2rem;
@@ -804,4 +784,29 @@ body {
 		counter-increment: page;
 		content: "Page " counter(page);
 	}
+}
+
+
+.TocLink {
+	position: fixed;
+	bottom: -0.5rem;
+	right: 1rem;
+	display: none;
+}
+@media (min-width: 980px) {
+	.TocLink {
+		display: block;
+	}
+}
+
+
+li {
+	position: relative;
+}
+li img:first-of-type {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 25%;
+	height: auto;
 }
