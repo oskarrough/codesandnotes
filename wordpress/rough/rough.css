@@ -11,7 +11,7 @@
 article,aside,details,figcaption,figure,footer,header,main,nav,section {
 	display: block;
 }
-@font-face {
+/*@font-face {
     font-family: 'ApercuBold';
     src: url('/fonts/apercu-bold-webfont.eot');
     src: url('/fonts/apercu-bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -30,7 +30,7 @@ article,aside,details,figcaption,figure,footer,header,main,nav,section {
          url('/fonts/apercu-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
 /*
 	$orange: #F36611;
@@ -38,100 +38,23 @@ article,aside,details,figcaption,figure,footer,header,main,nav,section {
 */
 
 
-article,
-.Container {
-	padding: 2rem 2rem 1.5rem;
-}
-@media (min-width: 37.5rem) {
-	article,
-	.Container {
-		padding-left: 3rem;
-		padding-right: 3rem;
-	}
-}
-@media (min-width: 56.25rem) {
-	article,
-	.Container {
-		padding-left: 4rem;
-		padding-right: 4rem;
-	}
-}
-
-.Container,
-article,
-.Manchet {
-	max-width: 45rem;
-	background-color: #fff;
-}
-
-.Manchet {
-	margin-top: 5rem;
-	padding: 4rem 0 1px;
-	text-align: center;
-}
-.Manchet h1 {
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-	color: #F36611;
-}
-.Manchet h1 {
-	/* hide the text */
-	text-indent: -90em;
-	overflow: hidden;
-	/* set the size of the bg image */
-	max-width: 530px;
-	height: 0;
-	padding-top: 10.754716981%;
-	/* add and center the bg and box */
-	margin-left: auto;
-	margin-right: auto;
-	background-image: url(/images/codesandnotes--orange.png);
-	background-position: 50% 50%;
-	background-size: 90% auto;
-	background-repeat: no-repeat;
-}
-
-@media (min-width: 600px) {
-	.Manchet h1 {
-		font-size: 50px;
-	}
-}
-.Manchet h2 {
-	font-size: 1.875rem;
-	margin-top: 1rem;
-}
-.Manchet h3 {
-	font-style: italic;
-	font-weight: 600;
-	font-size: 1.125rem;
-	margin-bottom: 2rem;
-}
-.Manchet h3 span {
-	letter-spacing: 0.0625em;
-	color: #207c14;
-	font-style: normal;
-}
-.Manchet p {
-	max-width: 31em;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 html {
-	font-size: 14px;
+	font-size: 17px;
 	line-height: 1.4;
 	color: #111;
 	background-color: rgb(249,247,243);
 	background-color: #f4e8d5;
-	font-family: "ApercuRegular", Calibri, sans-serif;
-	font-weight: normal;
-	font-style: normal;
-	font-size-adjust: 0.508;
+
+	/*font-family: 'arno-pro-display';*/
+	font-family: 'eskapade';
+
+	text-rendering: optimizeLegibility;
+	/*-webkit-font-smoothing: antialiased;*/
 }
-strong {
-	font-family: 'ApercuBold', Calibri, sans-serif;
-	font-weight: normal;
-}
+@media (min-width: 500px) { html { font-size: 18px; } }
+@media (min-width: 760px) { html { font-size: 19px; } }
+@media (min-width: 1400px) { html { font-size: 20px; } }
+
 
 /* Set a default margin between elements */
 blockquote,
@@ -154,6 +77,12 @@ textarea {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
+
+
+strong {
+	/*font-family: 'ApercuBold', Calibri, sans-serif;*/
+	font-weight: normal;
+}
 figure {
 	position: relative;
 }
@@ -174,65 +103,87 @@ hr {
 h1, h2, h3, h4,
 blockquote,
 .Toc {
-	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Bodoni MT", "Times New Roman", serif;
+	/*font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Bodoni MT", "Times New Roman", serif;*/
+	font-family: 'arno-pro-display';
+	font-weight: 600;
+	/*font-family: 'eskapade-fraktur';
+	font-style: italic;
+	font-weight: 400;*/
+	/*font-family: 'eskapade';
+	font-weight: 400;*/
+}
+
+h1,
+.Chapter h2 {
+	font-family: 'eskapade-fraktur';
+	font-style: italic;
+	font-weight: 400;
 }
 h1 {
-	font-size: 1.625rem;
-	line-height: 1.1;
+	font-size: 2.5rem;
+	line-height: 1;
 	margin-bottom: 1rem;
-	font-weight: 600;
 }
 h2 {
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	line-height: 1.1;
-	font-weight: 600;
 }
+/*@media (min-width: 500px) {
+	h2 {
+		font-size: 1.8rem;
+	}
+}*/
 /* a bit bigger for articles */
 article h1 {
-	/*font-size: 1.875rem;*/
-	font-size: 2.5rem;
+	/*font-size: 3rem;*/
 	/*font-variant: small-caps;
 	text-align: center;*/
 }
+article p + h2 {
+	margin-top: 1.5rem;
+	margin-bottom: -0.5rem;
+}
 article h3 {
-	font-size: 1.25rem;
+	/*font-size: 1.25rem;*/
 }
 article p,
 article ul {
-	font-size: 1.0625rem;
+	/*font-size: 1.25rem;*/
 }
 article p + p {
 	margin-top: -1rem;
-	text-indent: 1.5rem;
+	text-indent: 1em;
+}
+article p + p img {
+	margin-top: 3rem;
 }
 article img {
 	display: block;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 h3 {
-	font-size: 1rem;
+	font-size: 1.263157895rem;
 	font-weight: normal;
 }
-
-/* Elements styles */
 strong {
 	font-weight: 600;
 }
 dfn, cite, em, i {
 	font-style: italic;
 }
-blockquote,
-blockquote p {
-	font-size: 1rem;
-}
 blockquote {
 	margin-left: 2rem;
 	margin-right: 1rem;
 	line-height: 1.3;
 	max-width: 34rem;
+	font-style: italic;
+}
+blockquote,
+blockquote p {
+	font-size: 1.125rem;
 }
 code,
 pre {
@@ -300,8 +251,91 @@ li::before {
 }
 .Meta:last-child {
 	margin-top: 1rem;
-
 }
+
+
+
+.Container,
+article,
+.Manchet {
+	max-width: 40rem;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	/*background-color: #fff;
+	background-color: rgba(255,255,255,0.95);*/
+	background-color: rgb(249,247,243);
+}
+article,
+.Container {
+	padding: 2rem;
+}
+@media (min-width: 37.5rem) {
+	article,
+	.Container {
+		padding: 3rem 2rem 4rem;
+	}
+}
+@media (min-width: 56.25rem) {
+	article,
+	.Container {
+		padding: 3rem 4rem 5rem;
+	}
+}
+
+
+
+.Manchet {
+	margin-top: 5rem;
+	padding: 4rem 0 1px;
+	text-align: center;
+}
+.Manchet h1 {
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #F36611;
+}
+.Manchet h1 {
+	/* hide the text */
+	text-indent: -90em;
+	overflow: hidden;
+	/* set the size of the bg image */
+	max-width: 530px;
+	height: 0;
+	padding-top: 10.754716981%;
+	/* add and center the bg and box */
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(/images/codesandnotes--orange.png);
+	background-position: 50% 50%;
+	background-size: 90% auto;
+	background-repeat: no-repeat;
+}
+
+@media (min-width: 600px) {
+	.Manchet h1 {
+		font-size: 50px;
+	}
+}
+.Manchet h2 {
+	font-size: 1.875rem;
+	margin-top: 1rem;
+}
+.Manchet h3 {
+	font-style: italic;
+	font-size: 1.125rem;
+	margin-bottom: 2rem;
+}
+.Manchet h3 span {
+	letter-spacing: 0.0625em;
+	color: #207c14;
+	font-style: normal;
+}
+.Manchet p {
+	max-width: 31em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 /* Hide chapters when you are on a chapter */
 .category article .Chapters {
@@ -312,7 +346,7 @@ li::before {
 /* Site title and description */
 .SiteTitle {
 	font-size: 1rem;
-	margin: 1.5rem 0;
+	margin: 0 0 1.5rem;
 	max-width: 336px;
 }
 .SiteTitle a {
@@ -334,15 +368,15 @@ li::before {
 a,
 a:visited {
 	color: #000;
-	color: rgb(0,50,50);
+	color: rgb(0,60,60);
 	text-decoration: none;
-	border-bottom: 1px solid rgb(230,230,230);
+	border-bottom: 1px solid rgb(200,200,200);
 }
 a:hover,
 a:focus,
 a:active {
-	color: rgb(0,150,150);
-	border-color: rgb(0,150,150);
+	color: rgb(0,160,160);
+	border-color: rgb(0,160,160);
 }
 
 /* Prefix chapter and topic links with a symbol */
@@ -370,7 +404,6 @@ a[class^="tag-link-"] {
 	color: #21759b;
 	display: block;
 	font-size: 0.875rem;
-	font-weight: bold;
 	height: auto;
 	left: 5px;
 	line-height: normal;
@@ -378,7 +411,6 @@ a[class^="tag-link-"] {
 	text-decoration: none;
 	top: 5px;
 	width: auto;
-	z-index: 100000; /* Above WP toolbar */
 }
 
 
@@ -406,6 +438,9 @@ a[class^="tag-link-"] {
 }
 
 /* Comments */
+.Comments {
+	clear: both;
+}
 .comment-content a {
 	word-wrap: break-word;
 }
@@ -441,12 +476,16 @@ a[class^="tag-link-"] {
 /* Layout */
 body {
 	margin: 0;
-	padding: 1rem;
 	overflow-y: scroll;
 }
 @media (min-width: 600px) {
 	body {
-		padding: 5rem 2rem 2rem;
+		padding: 1rem;
+	}
+}
+@media (min-width: 1000px) {
+	body {
+		padding: 2rem;
 	}
 }
 article + article {
@@ -477,21 +516,21 @@ footer {
 aside {
 	clear: both;
 }
+/* 11 17 22 17*/
 @media screen and (min-width: 35rem) {
-	html  {
-		font-size: 16px;
-	}
 	body {
-		padding-left: 10%;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 }
 @media screen and (min-width: 65rem) {
 	body {
-		padding-left: 18%;
+		padding-left: 10%;
+		padding-right: 10%;
 	}
 }
 @media screen and (min-width: 50rem) {
-	main {
+	/*main {
 		float: left;
 		width: 100%;
 		margin-right: -100%;
@@ -507,14 +546,8 @@ aside {
 		clear: none;
 		float: right;
 		width: 180px;
-	}
+	}*/
 }
-@media screen and (min-width: 1240px) {
-	main {
-		padding-right: 0;
-	}
-}
-
 
 body,
 main,
@@ -539,7 +572,6 @@ section {
 .Chapter h2::before {
 	content: '§ ';
 	position: relative;
-	top: -0.066666667em;
 }
 @media (min-width: 35rem) {
 	.Chapter h2::before {
@@ -766,7 +798,7 @@ body {
 @page {
 	counter-increment: page;
 	@top-center {
-		content: "Headline, yo!"
+		content: "Codes & Notes by Oskar Rough Mosumgaard"
 	}
 	@bottom-right {
 		counter-increment: page;

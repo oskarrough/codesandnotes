@@ -8,7 +8,7 @@
 	</nav>
 
 	<footer class="SiteFooter">
-		<p>Codes &amp; Notes <span class="Copyright">&copy; Oskar Rough Mosumgaard 2014</span> <a href="/about">→  About</a></p>
+		<p><a href="http://codesandnotes.com">Codes &amp; Notes - Table of contents</a> <span class="Copyright">&copy; Oskar Rough Mosumgaard 2014</span> <a href="/about">→  About</a></p>
 	</footer>
 
 	<script>

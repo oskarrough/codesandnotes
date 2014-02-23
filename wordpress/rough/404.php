@@ -8,15 +8,12 @@
 get_header(); ?>
 
 <main class="Main">
-	<h1 class="Title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'rough' ); ?></h1>
+	<h1 class="Title"><?php _e( 'Imagine if books had 404 pages?', 'rough' ); ?></h1>
 
-	<p><?php _e( 'Maybe try one of the links below or a search?', 'rough' ); ?></p>
+	<p>Go back to the <a href="http://codesandnotes.com">table of contents of Codes &amp; Notes</a> or try a search.</p>
 
 	<?php get_search_form(); ?>
 
-	<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-	<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
 </main>
 
 <?php get_footer(); ?>

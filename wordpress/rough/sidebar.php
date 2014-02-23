@@ -6,7 +6,7 @@
  */
 ?>
 	<aside id="Secondary" class="Secondary">
-		<p><a class="link-toc" href="/">↑ Table of contents</a></p>
+		<!-- <p><a class="link-toc" href="/">↑ Table of contents</a></p> -->
 
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>

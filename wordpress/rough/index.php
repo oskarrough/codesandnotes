@@ -9,7 +9,7 @@ get_header(); ?>
 	<h2>A guide to web development<br>that you can trust</h2>
 	<h3>by <span class="Author">Oskar Rough Mosumgaard</span></h3>
 	<p>A book for anyone wanting to learn more about web development. Whether you are just getting started or need a trustworthy reference, this is it.</p>
-	<p>&rarr; <a href="/introduction">Introduction</a></p>
+	<p style="font-family: 'eskapade-fraktur'; font-size: 1.2em;">&rarr; <a href="/introduction">Introduction</a></p>
 	<hr class="Ornament" id="toc">
 </header>
 
@@ -64,6 +64,7 @@ get_header(); ?>
 		<?php while ($query->have_posts()) : $query->the_post(); ?>
 			<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 		<?php endwhile; ?>
+		</ul>
 	</section>
 
 	<section class="Chapter">

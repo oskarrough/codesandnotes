@@ -13,6 +13,7 @@ get_header(); ?>
 
 	<?php if ( have_posts() ) : ?>
 
+	<div class="Container">
 		<h1 class="Title">§
 			<?php
 				if ( is_category() ) :
@@ -66,6 +67,7 @@ get_header(); ?>
 				endif;
 			?>
 		</h1>
+
 		<?php
 			// Show an optional term description.
 			$term_description = term_description();
@@ -73,6 +75,9 @@ get_header(); ?>
 				printf( '<div class="taxonomy-description">%s</div>', $term_description );
 			endif;
 		?>
+
+		<p>On this URL you will find all articles in the chapter in their full-length. Ready for printing.</p>
+	</div>
 
 		<?php
 			//Custom taxonomy is project_type, custom term is web-design

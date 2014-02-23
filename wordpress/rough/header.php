@@ -7,13 +7,15 @@
  * @package rough
  */
 ?><!doctype html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<title><?php wp_title( '–', true, 'right' ); ?></title>
-	<meta name="description" content="An online book and reference for web development that you can trust">
+	<meta name="description" content="Codes and notes is an online book and reference for web development that you can trust">
+	<script src="//use.typekit.net/krs2vbw.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 	<link rel="stylesheet" type="text/css" href="/rough.css" />
 	<?php wp_head(); ?>
 </head>
