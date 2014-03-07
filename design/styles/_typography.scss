@@ -2,8 +2,7 @@ html {
 	font-size: ($base-font-size * 1px);
 	// line-height: ($base-line-height/$base-font-size);
 	line-height: 1.444444444;
-	/*font-family: 'arno-pro-display';*/
-	font-family: 'eskapade';
+	@include ff-paragraph;
 	text-rendering: optimizeLegibility;
 	/*-webkit-font-smoothing: antialiased;*/
 }
@@ -14,16 +13,8 @@ html {
 
 /* Headings */
 h1, h2, h3, h4,
-blockquote,
 .Toc {
-	// font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Bodoni MT", "Times New Roman", serif;*/
-	// font-family: 'eskapade-fraktur';
-	// font-style: italic;
-	// font-weight: 400;
-	// font-family: 'eskapade';
-	// font-weight: 400;
-	font-family: 'arno-pro-display';
-	font-weight: 600;
+	@include ff-header;
 }
 
 h1,
@@ -31,9 +22,8 @@ h1,
 	font-size: ($x-large/$base-font-size) * 1rem;
 	line-height: ($base-line-height*2)/$x-large;
 	margin-bottom: $space;
-	font-family: 'eskapade-fraktur';
+	@include ff-title;
 	font-style: italic;
-	font-weight: 400;
 }
 
 h2 {
@@ -42,8 +32,9 @@ h2 {
 h3 {
 	@include rhythm($medium);
 }
-article p + h2 {
-	margin-top: $space*2;
+article p + h2,
+article blockquote + h2 {
+	margin-top: $space;
 	margin-bottom: $space/-2;
 }
 article p + p {
@@ -102,4 +93,38 @@ section:first-child {
 	.Toc p {
 		column-span: all;
 	}
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	margin-left: $space;
+	margin-right: $space*2;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	font-style: italic;
+}
+code,
+pre {
+	font-family: 'Source Code Pro', Consolas, monospace;
+	font-weight: normal;
+	background: rgb(249,250,250);
+	@include rhythm($small);
+}
+pre {
+	line-height: 1.6;
+	overflow: auto;
+	padding: 1rem;
+}
+abbr, acronym, .Caps {
+	text-transform: lowercase;
+	font-variant: small-caps;
+	font-style: normal;
+	border-bottom: 0;
+	letter-spacing: 0.1em;
+}
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
 }

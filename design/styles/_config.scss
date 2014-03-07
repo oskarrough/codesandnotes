@@ -1,0 +1,44 @@
+$black: #111;
+$orange: #F36611;
+$sand: #f4e8d5;
+$green: #207c14;
+
+$base-line-height: 26;
+
+$small: 16;
+$base-font-size: 18;
+$medium: 23;
+$large: 26;
+$larger: 36;
+$x-large: 47;
+
+// $space: ($base-line-height/$base-font-size) * 1rem;
+$space: 1.444444444rem;
+
+@mixin rhythm($size) {
+	font-size: ($size/$base-font-size) * 1rem;
+	line-height: ($base-line-height/$size);
+}
+
+// font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Bodoni MT", "Times New Roman", serif;*/
+
+@mixin ff-paragraph(){
+	font-family: 'eskapade', serif;
+	font-weight: 400;
+}
+@mixin ff-header(){
+	// font-family: 'soleil';
+	// font-family: 'arno-pro-display', sans-serif;
+	font-family: 'freight-sans-pro';
+	font-weight: 600;
+}
+@mixin ff-title(){
+	// font-family: 'freight-sans-pro';
+	font-family: 'eskapade-fraktur', 'eskapade', sans-serif;
+	font-weight: 400;
+}
+
+strong {
+	font-weight: normal;
+	font-style: italic;
+}
