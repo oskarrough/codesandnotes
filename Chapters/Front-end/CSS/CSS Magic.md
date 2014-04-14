@@ -16,3 +16,4 @@ Here I want to include a list/collection of css tricks that are useful and perha
 - vertical centering
 - media-block/object
 - good uses of inline block
+- http://wtfhtmlcss.com/
