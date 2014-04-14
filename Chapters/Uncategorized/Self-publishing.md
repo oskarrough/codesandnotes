@@ -2,19 +2,7 @@
 
 [Pandoc](http://johnmacfarlane.net/pandoc/) is 'universal document converter' which is very helpful for transforming your prefered writing format to whatever you need.
 
-## Other digital books
-
-- http://shapeofdesignbook.com/
-- https://github.com/tooling/book-of-modern-frontend-tooling
-- http://practicaltypography.com/introduction.html
-- http://smacss.com/
-- http://webtypography.net/toc/
-
-## Distribution
-
-https://gumroad.com/
-
-## Related links
+### See more
 
 - http://hemingwayapp.com/
 - http://stevewedig.com/2014/02/03/software-developers-reading-list/
@@ -31,13 +19,10 @@ https://gumroad.com/
 - http://css-tricks.com/words-avoid-educational-writing/
 - http://www.abookapart.com/products/design-is-a-job
 
-1. PDF
-2. HTML
-3. EPUB
-4. MOBI
+### Online books
 
-### Semantic naming approach
-name files, order with 1. etc. Store it in YAML frontmatter.
-
-### TOC based approach
-toc.json toc.md
+- http://shapeofdesignbook.com/
+- https://github.com/tooling/book-of-modern-frontend-tooling
+- http://practicaltypography.com/introduction.html
+- http://smacss.com/
+- http://webtypography.net/toc/

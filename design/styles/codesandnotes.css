@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
 	Oskar Rough Mosumgaard. 2014.
 */
@@ -8,35 +7,17 @@ strong {
 
 /* Global */
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
-  color: #111111;
+  color: #111;
   background-color: #f9f7f3;
   background-color: #f4e8d5;
   background: #f9fafa; }
 
 /* Set a default margin between elements */
-blockquote,
-ol,
-ul,
-dl,
-dd,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-pre,
-fieldset,
-table,
-address
-textarea,
-hr {
+blockquote, ol, ul, dl, dd, h1, h2, h3, h4, h5, h6, p, pre, fieldset, table, address textarea, hr {
   margin-top: 1.44444rem;
   margin-bottom: 1.44444rem; }
 
@@ -60,10 +41,7 @@ figure {
 table {
   width: 100%; }
 
-img,
-embed,
-iframe,
-object {
+img, embed, iframe, object {
   max-width: 100%; }
 
 img {
@@ -72,11 +50,10 @@ img {
 
 textarea {
   margin: 0;
-  min-height: 5.444444444rem;
+  min-height: 5.44444rem;
   max-width: 100%; }
 
-ol,
-ul {
+ol, ul {
   padding-left: 0;
   list-style: none; }
 
@@ -84,16 +61,13 @@ li::before {
   content: '↝ '; }
 
 /* Links */
-a,
-a:visited {
+a, a:visited {
   color: #000;
   color: #2a795c;
   text-decoration: none;
   border-bottom: 1px solid; }
 
-a:hover,
-a:focus,
-a:active {
+a:hover, a:focus, a:active {
   color: #00a0a0; }
 
 a img {
@@ -104,13 +78,11 @@ a[rel="category tag"]::before {
   content: '§';
   opacity: 0.5; }
 
-a[rel="tag"]::before,
-a[class^="tag-link-"] {
+a[rel="tag"]::before, a[class^="tag-link-"] {
   content: '#'; }
 
 /* Clearing */
-.clear:before,
-.clear:after {
+.clear:before, .clear:after {
   content: '';
   display: table; }
 
@@ -119,7 +91,7 @@ a[class^="tag-link-"] {
 
 html {
   font-size: 18px;
-  line-height: 1.444444444;
+  line-height: 1.44444;
   font-family: 'eskapade', serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -128,20 +100,21 @@ html {
 @media (max-width: 500px) {
   html {
     font-size: 17px; } }
+
 @media (min-width: 1000px) {
   html {
     font-size: 19px; } }
+
 @media (min-width: 1400px) {
   html {
     font-size: 20px; } }
+
 /* Headings */
-h1, h2, h3, h4,
-.Toc {
+h1, h2, h3, h4, .Toc {
   font-family: 'freight-sans-pro';
   font-weight: 600; }
 
-h1,
-.Chapter h2 {
+h1, .Chapter h2 {
   font-size: 2.61111rem;
   line-height: 1.10638;
   margin-bottom: 1.44444rem;
@@ -157,8 +130,7 @@ h3 {
   font-size: 1.27778rem;
   line-height: 1.13043; }
 
-article p + h2,
-article blockquote + h2 {
+article p + h2, article blockquote + h2 {
   margin-top: 1.44444rem;
   margin-bottom: -0.72222rem; }
 
@@ -183,7 +155,7 @@ section:first-child {
   margin-top: auto; }
 
 .Chapter h2 a {
-  color: #111111; }
+  color: #111; }
 
 .Chapter > p {
   max-width: 30rem; }
@@ -213,12 +185,11 @@ section:first-child {
     -webkit-column-gap: 2rem;
     -moz-column-gap: 2rem;
     column-gap: 2rem; }
-
-  .Toc h1,
-  .Toc p {
+  .Toc h1, .Toc p {
     -webkit-column-span: all;
     -moz-column-span: all;
     column-span: all; } }
+
 dfn, cite, em, i {
   font-style: italic; }
 
@@ -229,8 +200,7 @@ blockquote {
   line-height: 1.2;
   font-style: italic; }
 
-code,
-pre {
+code, pre {
   font-family: 'Source Code Pro', Consolas, monospace;
   font-weight: normal;
   background: #f9fafa;
@@ -264,7 +234,7 @@ mark, ins {
   text-shadow: 2px 2px 0 rgba(0, 100, 100, 0.2); }
   .SiteTitle a {
     border-bottom: 0;
-    color: #f36611; }
+    color: #F36611; }
 
 .SiteDescription {
   margin-top: 0;
@@ -284,14 +254,14 @@ mark, ins {
   margin-bottom: 1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #f36611; }
+  color: #F36611; }
 
 @media (min-width: 760px) {
   .Manchet {
     margin-top: 5.77778rem; }
-
   .Manchet h1 {
     font-size: 4rem; } }
+
 .Manchet h2 {
   font-size: 2rem;
   line-height: 1.08333; }
@@ -308,25 +278,22 @@ mark, ins {
   margin-left: auto;
   margin-right: auto; }
 
-.Container,
-article,
-.Manchet {
+.Container, article, .Manchet {
   max-width: 40rem;
   background-color: #f9f7f3; }
 
-article,
-.Container {
-  padding: 2.888888889rem 2rem; }
+article, .Container {
+  padding: 2.88889rem 2rem; }
 
 .Manchet + .Container {
-  padding-top: 1.444444444rem; }
+  padding-top: 1.44444rem; }
 
 @media (min-width: 56.25rem) {
-  article,
-  .Container {
+  article, .Container {
     padding-left: 4rem;
     padding-right: 4rem;
-    padding-bottom: 5.777777778rem; } }
+    padding-bottom: 5.77778rem; } }
+
 /* Hide chapters when you are on a chapter */
 .category article .Chapters {
   display: none; }
@@ -341,6 +308,7 @@ body {
 @media (min-width: 1000px) {
   body {
     padding: 0 2rem 2rem; } }
+
 article + article {
   margin-top: 1em; }
 
@@ -349,10 +317,10 @@ a.post-edit-link {
   color: red; }
 
 @media (min-width: 500px) {
-  .Comments,
-  #disqus_thread {
+  .Comments, #disqus_thread {
     margin-left: 2rem;
     clear: both; } }
+
 nav {
   clear: both; }
 
@@ -367,36 +335,19 @@ aside {
   body {
     padding-left: 5%;
     padding-right: 5%; } }
+
 @media screen and (min-width: 65rem) {
   body {
     padding-left: 10%;
     padding-right: 10%; } }
-@media screen and (min-width: 50rem) {
-  /*main {
-  	float: left;
-  	width: 100%;
-  	margin-right: -100%;
-  	padding-right: 210px;
-  }
-  .home main {
-  	margin-right: auto;
-  	padding-right: 0;
-  	float: none;
-  	width: auto;
-  }
-  aside {
-  	clear: none;
-  	float: right;
-  	width: 180px;
-  }*/ }
-body,
-main,
-footer {
+
+@media screen and (min-width: 50rem) { }
+
+body, main, footer {
   -webkit-transition: opacity 100ms;
   transition: opacity 100ms; }
 
-.is-routing main,
-.is-routing footer {
+.is-routing main, .is-routing footer {
   opacity: 0.666; }
 
 body {
@@ -404,66 +355,50 @@ body {
   background-position: 0 0; }
 
 .home {
-  background-image: url("/images/illustrations/bio-volcano-lg-web.jpg");
-  -webkit-background-size: 100% auto;
+  background-image: url('/images/illustrations/bio-volcano-lg-web.jpg');
   background-size: 100% auto; }
 
 /* introduction */
 .postid-1262 {
-  background-image: url("/images/illustrations/bio_lavoisier_lg.jpg");
+  background-image: url('/images/illustrations/bio_lavoisier_lg.jpg');
   background-position: 100% 0;
-  -webkit-background-size: 100% auto;
   background-size: 100% auto; }
 
 /* css box model */
 .postid-1495 {
-  background-image: url("/images/illustrations/lilOctopus-web2.jpg");
+  background-image: url('/images/illustrations/lilOctopus-web2.jpg');
   background-position: 100% -1rem; }
 
 /* RTL */
 .postid-478 {
-  background-image: url("/images/illustrations/Village_of_Sekiya_at_Sumida_river.jpg");
+  background-image: url('/images/illustrations/Village_of_Sekiya_at_Sumida_river.jpg');
   background-position: 100% 0;
-  -webkit-background-size: 100% auto;
   background-size: 100% auto; }
 
 /* Normalize */
 .postid-1532 {
-  background-image: url("/images/illustrations/20_lg.jpg"); }
+  background-image: url('/images/illustrations/20_lg.jpg'); }
 
 /* Cross browser*/
 .postid-282 {
-  background-image: url("/images/illustrations/phobia_11_lg.jpg"); }
+  background-image: url('/images/illustrations/phobia_11_lg.jpg'); }
 
 /* Print styles */
 @media print {
   html {
     color: black; }
-
-  body {
-    /*background-image: none;*/ }
-
   article a[href]:after {
     content: " (" attr(href) ")"; }
-
-  article a[href^="#"]:after,
-  article a[href^="javascript"]:after,
-  .Meta a:after {
+  article a[href^="#"]:after, article a[href^="javascript"]:after, .Meta a:after {
     content: ""; }
-
   h2 {
     page-break-after: avoid; }
-
-  article .Topics,
-  .Secondary,
-  .yarpp-related,
-  #comments,
-  .post-edit-link {
+  article .Topics, .Secondary, .yarpp-related, #comments, .post-edit-link {
     display: none; }
-
   article {
     padding-left: 0;
     padding-right: 0; } }
+
 .TocLink {
   position: fixed;
   bottom: -0.5rem;
@@ -473,11 +408,12 @@ body {
 @media (min-width: 980px) {
   .TocLink {
     display: block; } }
+
 /* Related posts */
 .yarpp-related {
   float: left;
   clear: both;
-  margin: 0 0 1.444444444rem;
+  margin: 0 0 1.44444rem;
   padding: 0 2rem;
   background: #dae7dc; }
 
@@ -488,9 +424,7 @@ body {
 .comment-content a {
   word-wrap: break-word; }
 
-.logged-in-as,
-.comment-form-comment label,
-.form-allowed-tags {
+.logged-in-as, .comment-form-comment label, .form-allowed-tags {
   display: none; }
 
 .comment-form-comment {
@@ -510,17 +444,16 @@ body {
   -moz-column-gap: 2rem;
   column-gap: 2rem; }
 
-.wp-tag-cloud a,
-.widget_most_popular_tags a {
+.wp-tag-cloud a, .widget_most_popular_tags a {
   font-size: 1rem !important; }
 
 /* Meta text */
 .Meta {
-  font-size: 0.888888889rem;
+  font-size: 0.88889rem;
   line-height: 1.625; }
 
 .Meta:last-child {
-  margin-top: 1.444444444rem; }
+  margin-top: 1.44444rem; }
 
 /* Loader */
 #Loader {
@@ -544,8 +477,7 @@ body {
   top: 0;
   border: 1px solid transparent; }
 
-.Stick--right > span,
-.Stick--left > span {
+.Stick--right > span, .Stick--left > span {
   display: block;
   width: 6px;
   height: 6px;
@@ -555,7 +487,6 @@ body {
 .Stick--left {
   left: 3px;
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   -webkit-animation: left 1.7s infinite;
   animation: left 1.7s infinite; }
@@ -576,18 +507,16 @@ body {
 @keyframes left {
   from {
     -webkit-transform: rotate(180deg) scale(1);
-    -ms-transform: rotate(180deg) scale(1);
     transform: rotate(180deg) scale(1); }
 
   50% {
     -webkit-transform: rotate(540deg) scale(1.5);
-    -ms-transform: rotate(540deg) scale(1.5);
     transform: rotate(540deg) scale(1.5); }
 
   to {
     -webkit-transform: rotate(540deg) scale(1);
-    -ms-transform: rotate(540deg) scale(1);
     transform: rotate(540deg) scale(1); } }
+
 .Stick--right {
   right: 3px;
   -webkit-animation: right 1.7s infinite;
@@ -609,15 +538,12 @@ body {
 @keyframes right {
   from {
     -webkit-transform: rotate(0deg) scale(1.5);
-    -ms-transform: rotate(0deg) scale(1.5);
     transform: rotate(0deg) scale(1.5); }
 
   50% {
     -webkit-transform: rotate(0deg) scale(1);
-    -ms-transform: rotate(0deg) scale(1);
     transform: rotate(0deg) scale(1); }
 
   to {
     -webkit-transform: rotate(-360deg) scale(1.5);
-    -ms-transform: rotate(-360deg) scale(1.5);
     transform: rotate(-360deg) scale(1.5); } }

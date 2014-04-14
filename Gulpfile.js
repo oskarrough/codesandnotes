@@ -13,19 +13,14 @@ gulp.task('clean', function () {
 
 // Styles
 gulp.task('styles', function() {
-	return gulp.src('design/styles/codesandnotes.scss')
+	return gulp.src('styles/codesandnotes.scss')
 		.pipe(plugins.sass())
 		.pipe(plugins.autoprefixer('last 2 versions'))
 		// .pipe(plugins.csso())
-		.pipe(gulp.dest('design/styles/'));
+		.pipe(gulp.dest('styles/'));
 });
 
 // Default task
 gulp.task('default', ['clean'], function() {
-	return gulp.start('styles');
-});
-
-// Watch task
-gulp.task('watch', function() {
-	gulp.watch('design/styles/*.scss', ['styles']);
+	gulp.start('styles');
 });
