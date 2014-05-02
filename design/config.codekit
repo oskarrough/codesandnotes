@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "16828",
+"creatorBuild": "16903",
 "files": {
 	"\/codesandnotes.jpg": {
 		"fileType": 16384,
@@ -9,6 +9,7 @@
 		"initialSize": 174855,
 		"inputAbbreviatedPath": "\/codesandnotes.jpg",
 		"outputAbbreviatedPath": "\/codesandnotes.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -19,6 +20,7 @@
 		"initialSize": 163330,
 		"inputAbbreviatedPath": "\/codesandnotes2.jpg",
 		"outputAbbreviatedPath": "\/codesandnotes2.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -29,6 +31,7 @@
 		"initialSize": 26438,
 		"inputAbbreviatedPath": "\/favicons\/apple-touch-icon-114x114.png",
 		"outputAbbreviatedPath": "\/favicons\/apple-touch-icon-114x114.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -39,6 +42,7 @@
 		"initialSize": 29015,
 		"inputAbbreviatedPath": "\/favicons\/apple-touch-icon-120x120.png",
 		"outputAbbreviatedPath": "\/favicons\/apple-touch-icon-120x120.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -49,6 +53,7 @@
 		"initialSize": 40444,
 		"inputAbbreviatedPath": "\/favicons\/apple-touch-icon-144x144.png",
 		"outputAbbreviatedPath": "\/favicons\/apple-touch-icon-144x144.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -59,6 +64,7 @@
 		"initialSize": 44663,
 		"inputAbbreviatedPath": "\/favicons\/apple-touch-icon-152x152.png",
 		"outputAbbreviatedPath": "\/favicons\/apple-touch-icon-152x152.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -69,6 +75,7 @@
 		"initialSize": 7632,
 		"inputAbbreviatedPath": "\/favicons\/apple-touch-icon-57x57.png",
 		"outputAbbreviatedPath": "\/favicons\/apple-touch-icon-57x57.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -79,6 +86,7 @@
 		"initialSize": 8258,
 		"inputAbbreviatedPath": "\/favicons\/apple-touch-icon-60x60.png",
 		"outputAbbreviatedPath": "\/favicons\/apple-touch-icon-60x60.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -89,6 +97,7 @@
 		"initialSize": 11194,
 		"inputAbbreviatedPath": "\/favicons\/apple-touch-icon-72x72.png",
 		"outputAbbreviatedPath": "\/favicons\/apple-touch-icon-72x72.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -99,6 +108,7 @@
 		"initialSize": 12308,
 		"inputAbbreviatedPath": "\/favicons\/apple-touch-icon-76x76.png",
 		"outputAbbreviatedPath": "\/favicons\/apple-touch-icon-76x76.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -109,6 +119,7 @@
 		"initialSize": 49785,
 		"inputAbbreviatedPath": "\/favicons\/apple-touch-icon-precomposed.png",
 		"outputAbbreviatedPath": "\/favicons\/apple-touch-icon-precomposed.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -119,6 +130,7 @@
 		"initialSize": 44663,
 		"inputAbbreviatedPath": "\/favicons\/apple-touch-icon.png",
 		"outputAbbreviatedPath": "\/favicons\/apple-touch-icon.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -129,6 +141,7 @@
 		"initialSize": 49185,
 		"inputAbbreviatedPath": "\/favicons\/favicon-160x160.png",
 		"outputAbbreviatedPath": "\/favicons\/favicon-160x160.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -139,6 +152,7 @@
 		"initialSize": 1840,
 		"inputAbbreviatedPath": "\/favicons\/favicon-16x16.png",
 		"outputAbbreviatedPath": "\/favicons\/favicon-16x16.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -149,6 +163,7 @@
 		"initialSize": 72210,
 		"inputAbbreviatedPath": "\/favicons\/favicon-196x196.png",
 		"outputAbbreviatedPath": "\/favicons\/favicon-196x196.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -159,6 +174,7 @@
 		"initialSize": 3358,
 		"inputAbbreviatedPath": "\/favicons\/favicon-32x32.png",
 		"outputAbbreviatedPath": "\/favicons\/favicon-32x32.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -169,6 +185,7 @@
 		"initialSize": 19488,
 		"inputAbbreviatedPath": "\/favicons\/favicon-96x96.png",
 		"outputAbbreviatedPath": "\/favicons\/favicon-96x96.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -179,6 +196,7 @@
 		"initialSize": 44129,
 		"inputAbbreviatedPath": "\/favicons\/mstile-144x144.png",
 		"outputAbbreviatedPath": "\/favicons\/mstile-144x144.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -189,6 +207,7 @@
 		"initialSize": 37097,
 		"inputAbbreviatedPath": "\/favicons\/mstile-150x150.png",
 		"outputAbbreviatedPath": "\/favicons\/mstile-150x150.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -199,6 +218,7 @@
 		"initialSize": 38605,
 		"inputAbbreviatedPath": "\/favicons\/mstile-310x150.png",
 		"outputAbbreviatedPath": "\/favicons\/mstile-310x150.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -209,6 +229,7 @@
 		"initialSize": 146620,
 		"inputAbbreviatedPath": "\/favicons\/mstile-310x310.png",
 		"outputAbbreviatedPath": "\/favicons\/mstile-310x310.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -219,6 +240,7 @@
 		"initialSize": 20190,
 		"inputAbbreviatedPath": "\/favicons\/mstile-70x70.png",
 		"outputAbbreviatedPath": "\/favicons\/mstile-70x70.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -229,6 +251,7 @@
 		"initialSize": 421689,
 		"inputAbbreviatedPath": "\/images\/codesandnotes drafts.png",
 		"outputAbbreviatedPath": "\/images\/codesandnotes drafts.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -239,6 +262,7 @@
 		"initialSize": 6686,
 		"inputAbbreviatedPath": "\/images\/codesandnotes--orange.png",
 		"outputAbbreviatedPath": "\/images\/codesandnotes--orange.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -249,6 +273,7 @@
 		"initialSize": 3147,
 		"inputAbbreviatedPath": "\/images\/codesandnotes-white.png",
 		"outputAbbreviatedPath": "\/images\/codesandnotes-white.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -259,6 +284,7 @@
 		"initialSize": 5856,
 		"inputAbbreviatedPath": "\/images\/codesandnotes.png",
 		"outputAbbreviatedPath": "\/images\/codesandnotes.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -269,6 +295,7 @@
 		"initialSize": 2.47804e+06,
 		"inputAbbreviatedPath": "\/images\/illustrations\/11267594266_d49398c916_o.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/11267594266_d49398c916_o.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -279,6 +306,7 @@
 		"initialSize": 1.63804e+06,
 		"inputAbbreviatedPath": "\/images\/illustrations\/2013-10-19 14.16.35.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/2013-10-19 14.16.35.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -289,6 +317,7 @@
 		"initialSize": 2.26783e+06,
 		"inputAbbreviatedPath": "\/images\/illustrations\/2013-10-19 14.16.40.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/2013-10-19 14.16.40.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -299,6 +328,7 @@
 		"initialSize": 360230,
 		"inputAbbreviatedPath": "\/images\/illustrations\/20_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/20_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -309,6 +339,7 @@
 		"initialSize": 116160,
 		"inputAbbreviatedPath": "\/images\/illustrations\/a-drop-of-mercury-into-mercury.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/a-drop-of-mercury-into-mercury.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -319,6 +350,7 @@
 		"initialSize": 57746,
 		"inputAbbreviatedPath": "\/images\/illustrations\/ak_mantis_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/ak_mantis_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -329,6 +361,7 @@
 		"initialSize": 341428,
 		"inputAbbreviatedPath": "\/images\/illustrations\/ak_pihrana_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/ak_pihrana_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -339,6 +372,7 @@
 		"initialSize": 116991,
 		"inputAbbreviatedPath": "\/images\/illustrations\/ak_shark_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/ak_shark_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -349,6 +383,7 @@
 		"initialSize": 142958,
 		"inputAbbreviatedPath": "\/images\/illustrations\/ak_squid_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/ak_squid_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -359,6 +394,7 @@
 		"initialSize": 248922,
 		"inputAbbreviatedPath": "\/images\/illustrations\/ak_tarantula_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/ak_tarantula_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -369,6 +405,7 @@
 		"initialSize": 325301,
 		"inputAbbreviatedPath": "\/images\/illustrations\/bio-volcano-lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/bio-volcano-lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -379,6 +416,7 @@
 		"initialSize": 181463,
 		"inputAbbreviatedPath": "\/images\/illustrations\/bio_desert_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/bio_desert_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -389,6 +427,7 @@
 		"initialSize": 179104,
 		"inputAbbreviatedPath": "\/images\/illustrations\/bio_foodchain_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/bio_foodchain_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -399,6 +438,7 @@
 		"initialSize": 140712,
 		"inputAbbreviatedPath": "\/images\/illustrations\/bio_lavoisier_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/bio_lavoisier_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -409,6 +449,7 @@
 		"initialSize": 332258,
 		"inputAbbreviatedPath": "\/images\/illustrations\/bio_mendel_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/bio_mendel_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -419,6 +460,7 @@
 		"initialSize": 500050,
 		"inputAbbreviatedPath": "\/images\/illustrations\/bio_mosaic_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/bio_mosaic_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -429,6 +471,7 @@
 		"initialSize": 238729,
 		"inputAbbreviatedPath": "\/images\/illustrations\/bio_prarie_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/bio_prarie_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -439,6 +482,7 @@
 		"initialSize": 321642,
 		"inputAbbreviatedPath": "\/images\/illustrations\/bio_seacreature_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/bio_seacreature_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -449,6 +493,7 @@
 		"initialSize": 201884,
 		"inputAbbreviatedPath": "\/images\/illustrations\/bio_toc_lg1-806x1024.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/bio_toc_lg1-806x1024.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -459,6 +504,7 @@
 		"initialSize": 292054,
 		"inputAbbreviatedPath": "\/images\/illustrations\/bio_woodland_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/bio_woodland_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -469,6 +515,7 @@
 		"initialSize": 572545,
 		"inputAbbreviatedPath": "\/images\/illustrations\/book cover.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/book cover.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -479,6 +526,7 @@
 		"initialSize": 125102,
 		"inputAbbreviatedPath": "\/images\/illustrations\/British-Opium-Production.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/British-Opium-Production.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -489,6 +537,7 @@
 		"initialSize": 550900,
 		"inputAbbreviatedPath": "\/images\/illustrations\/bug.png",
 		"outputAbbreviatedPath": "\/images\/illustrations\/bug.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -499,6 +548,7 @@
 		"initialSize": 104151,
 		"inputAbbreviatedPath": "\/images\/illustrations\/c_1850_Sherwill_1_Exam67866.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/c_1850_Sherwill_1_Exam67866.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -509,6 +559,7 @@
 		"initialSize": 111813,
 		"inputAbbreviatedPath": "\/images\/illustrations\/c_1850_Sherwill_2_Mixi67898.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/c_1850_Sherwill_2_Mixi67898.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -519,6 +570,7 @@
 		"initialSize": 98920,
 		"inputAbbreviatedPath": "\/images\/illustrations\/c_1850_Sherwill_3_Ball67901.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/c_1850_Sherwill_3_Ball67901.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -529,6 +581,7 @@
 		"initialSize": 100618,
 		"inputAbbreviatedPath": "\/images\/illustrations\/c_1850_Sherwill_4_Dryi67904.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/c_1850_Sherwill_4_Dryi67904.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -539,6 +592,7 @@
 		"initialSize": 125102,
 		"inputAbbreviatedPath": "\/images\/illustrations\/c_1850_Sherwill_5_Stac67933.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/c_1850_Sherwill_5_Stac67933.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -549,6 +603,7 @@
 		"initialSize": 437090,
 		"inputAbbreviatedPath": "\/images\/illustrations\/chart_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/chart_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -559,6 +614,7 @@
 		"initialSize": 26120,
 		"inputAbbreviatedPath": "\/images\/illustrations\/finger_sm.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/finger_sm.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -569,6 +625,7 @@
 		"initialSize": 310076,
 		"inputAbbreviatedPath": "\/images\/illustrations\/geranium_12_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/geranium_12_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -579,6 +636,7 @@
 		"initialSize": 2.71873e+06,
 		"inputAbbreviatedPath": "\/images\/illustrations\/host-bat-batchelorgems2.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/host-bat-batchelorgems2.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -589,6 +647,7 @@
 		"initialSize": 899378,
 		"inputAbbreviatedPath": "\/images\/illustrations\/host-bat-batchelorgems3.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/host-bat-batchelorgems3.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -599,6 +658,7 @@
 		"initialSize": 677357,
 		"inputAbbreviatedPath": "\/images\/illustrations\/inland_dec1895_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/inland_dec1895_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -609,6 +669,7 @@
 		"initialSize": 1.65363e+06,
 		"inputAbbreviatedPath": "\/images\/illustrations\/kon-tiki.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/kon-tiki.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -619,6 +680,7 @@
 		"initialSize": 712972,
 		"inputAbbreviatedPath": "\/images\/illustrations\/langley_1873_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/langley_1873_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -629,6 +691,7 @@
 		"initialSize": 133977,
 		"inputAbbreviatedPath": "\/images\/illustrations\/lilOctopus-web.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/lilOctopus-web.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -639,6 +702,7 @@
 		"initialSize": 134016,
 		"inputAbbreviatedPath": "\/images\/illustrations\/lilOctopus-web2.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/lilOctopus-web2.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -649,6 +713,7 @@
 		"initialSize": 99487,
 		"inputAbbreviatedPath": "\/images\/illustrations\/lilOctopus.jpeg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/lilOctopus.jpeg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -659,6 +724,7 @@
 		"initialSize": 313877,
 		"inputAbbreviatedPath": "\/images\/illustrations\/lobby_detail_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/lobby_detail_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -669,6 +735,7 @@
 		"initialSize": 2.47804e+06,
 		"inputAbbreviatedPath": "\/images\/illustrations\/machine.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/machine.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -679,6 +746,7 @@
 		"initialSize": 212349,
 		"inputAbbreviatedPath": "\/images\/illustrations\/paige-compositor-1904.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/paige-compositor-1904.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -689,6 +757,7 @@
 		"initialSize": 196618,
 		"inputAbbreviatedPath": "\/images\/illustrations\/phobia_11_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/phobia_11_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -699,6 +768,7 @@
 		"initialSize": 184179,
 		"inputAbbreviatedPath": "\/images\/illustrations\/phobia_1_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/phobia_1_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -709,6 +779,7 @@
 		"initialSize": 165330,
 		"inputAbbreviatedPath": "\/images\/illustrations\/phobia_3_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/phobia_3_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -719,6 +790,7 @@
 		"initialSize": 161574,
 		"inputAbbreviatedPath": "\/images\/illustrations\/phobia_7_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/phobia_7_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -729,6 +801,7 @@
 		"initialSize": 219381,
 		"inputAbbreviatedPath": "\/images\/illustrations\/si_5_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/si_5_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -739,6 +812,7 @@
 		"initialSize": 212324,
 		"inputAbbreviatedPath": "\/images\/illustrations\/si_cover_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/si_cover_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -749,6 +823,7 @@
 		"initialSize": 2.03457e+06,
 		"inputAbbreviatedPath": "\/images\/illustrations\/the-fuji-from-the-mountains-of-totomi.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/the-fuji-from-the-mountains-of-totomi.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -759,6 +834,7 @@
 		"initialSize": 129794,
 		"inputAbbreviatedPath": "\/images\/illustrations\/Village_of_Sekiya_at_Sumida_river-web.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/Village_of_Sekiya_at_Sumida_river-web.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -769,6 +845,7 @@
 		"initialSize": 271277,
 		"inputAbbreviatedPath": "\/images\/illustrations\/Village_of_Sekiya_at_Sumida_river.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/Village_of_Sekiya_at_Sumida_river.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -779,6 +856,7 @@
 		"initialSize": 627774,
 		"inputAbbreviatedPath": "\/images\/illustrations\/wilks_s_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/wilks_s_lg.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -789,6 +867,7 @@
 		"initialSize": 3773,
 		"inputAbbreviatedPath": "\/images\/ornaments\/ornament-1.png",
 		"outputAbbreviatedPath": "\/images\/ornaments\/ornament-1.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -798,6 +877,16 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/styleguide.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styleguide.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/styles\/_base.scss": {
@@ -809,6 +898,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/_base.scss",
 		"outputAbbreviatedPath": "\/css\/_base.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -824,6 +914,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/_config.scss",
 		"outputAbbreviatedPath": "\/css\/_config.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -839,6 +930,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/_header.scss",
 		"outputAbbreviatedPath": "\/css\/_header.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -854,6 +946,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/_layout.scss",
 		"outputAbbreviatedPath": "\/css\/_layout.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -869,6 +962,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/_loader.scss",
 		"outputAbbreviatedPath": "\/css\/_loader.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -884,6 +978,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/_typography-modernscale.scss",
 		"outputAbbreviatedPath": "\/css\/_typography-modernscale.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -899,6 +994,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/_typography.scss",
 		"outputAbbreviatedPath": "\/css\/_typography.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -911,6 +1007,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/codesandnotes.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/styles\/codesandnotes.scss": {
@@ -922,6 +1019,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/codesandnotes.scss",
 		"outputAbbreviatedPath": "\/styles\/codesandnotes.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,

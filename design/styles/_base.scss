@@ -6,9 +6,10 @@
 
 html {
 	color: $black;
-	background-color: rgb(249,247,243);
+	background-color: $beige;
 	background-color: $sand;
-	background: rgb(249,250,250);
+	background-color: $light;
+
 }
 
 /* Set a default margin between elements */
@@ -76,21 +77,52 @@ li::before {
 	content: '↝ ';
 }
 
+
+
+
+// $text-color:  $black;
+$bg-size: 1px;
+$stroke-size: 2px;
+
+@mixin underline($bg-color: $beige, $font-size: 1.0625em, $underline-color: $gray) {
+	text-decoration: none;
+	background-image:
+		linear-gradient(bottom, $bg-color 50%, $underline-color 50%);
+	background-repeat: repeat-x;
+	background-size: $bg-size $bg-size;
+	background-position: 0 $font-size;
+	// color: $text-color;
+	text-shadow: $stroke-size 0 $bg-color,
+				 0 $stroke-size $bg-color,
+				 -#{$stroke-size} 0 $bg-color,
+				 0 -#{$stroke-size} $bg-color;
+}
+
+@mixin remove-underline() {
+	background-image: none;
+	text-shadow: none;
+}
+
+
 /* Links */
 a,
 a:visited {
-	color: #000;
-	color: rgb(42, 121, 92);
+	color: $green;
+}
+a {
 	text-decoration: none;
-	border-bottom: 1px solid;
-}
-a:hover,
-a:focus,
-a:active {
-	color: rgb(0,160,160);
-}
-a img {
-	border: 0;
+	// border-bottom: 1px solid;
+	@include underline();
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $turquoise;
+		color: $secondary;
+	}
+	img {
+		border: 0;
+	}
 }
 
 /* Prefix chapter and topic links with a symbol */

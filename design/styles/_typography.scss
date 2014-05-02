@@ -1,15 +1,69 @@
+// font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Bodoni MT", "Times New Roman", serif;*/
+
+@font-face {
+	font-family: 'alix fb';
+	src: url('../fonts/alix-fb.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+// @font-face {
+// 	font-family: 'alix fb bold';
+// 	src: url('../fonts/alix-fb-bold.woff') format('woff');
+// 	font-style: normal;
+// 	font-weight: bold;
+// }
+// @font-face {
+// 	font-family: 'alix fb italic';
+// 	src: url('../fonts/alix-fb-italic.woff') format('woff');
+// 	font-style: italic;
+// 	font-weight: normal;
+// }
+// @font-face {
+// 	font-family: 'alix fb bolditalic';
+// 	src: url('../fonts/alix-fb-bolditalic.woff') format('woff');
+// 	font-style: italic;
+// 	font-weight: bold;
+// }
+
+
+@mixin ff-paragraph(){
+	// font-family: 'eskapade', serif;
+	font-family: 'edita', serif;
+	// font-family: 'alix fb';
+	// font-family: 'alix fb italic';
+	// font-style: italic;
+	font-weight: normal;
+}
+@mixin ff-header(){
+	// font-family: 'soleil';
+	// font-family: 'arno-pro-display', sans-serif;
+	// font-family: 'freight-sans-pro';
+	// font-family: 'edita';
+	// font-weight: 600;
+	font-family: 'eskapade-fraktur';
+	font-weight: normal;
+}
+@mixin ff-title(){
+	// font-family: 'freight-sans-pro';
+	font-family: 'eskapade-fraktur', 'eskapade', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+
 html {
 	font-size: ($base-font-size * 1px);
 	// line-height: ($base-line-height/$base-font-size);
 	line-height: 1.444444444;
 	@include ff-paragraph;
 	text-rendering: optimizeLegibility;
-	/*-webkit-font-smoothing: antialiased;*/
+	-webkit-font-smoothing: antialiased;
+
+	@media (max-width: 500px) { font-size: 17px; }
+	@media (min-width: 1000px) { font-size: 19px; }
+	@media (min-width: 1400px) { font-size: 20px; }
 }
 
-@media (max-width: 500px) { html { font-size: 17px; } }
-@media (min-width: 1000px) { html { font-size: 19px; } }
-@media (min-width: 1400px) { html { font-size: 20px; } }
 
 /* Headings */
 h1, h2, h3, h4,
@@ -22,79 +76,48 @@ h1,
 	font-size: ($x-large/$base-font-size) * 1rem;
 	line-height: ($base-line-height*2)/$x-large;
 	margin-bottom: $space;
-	@include ff-title;
+}
+h1 a,
+h2 a {
+	@include remove-underline;
+}
+h1 {
 	font-style: italic;
 }
-
 h2 {
 	@include rhythm($large);
 }
 h3 {
 	@include rhythm($medium);
 }
-article p + h2,
-article blockquote + h2 {
-	margin-top: $space;
-	margin-bottom: $space/-2;
-}
-article p + p {
-	margin-top: $space * -1;
-	text-indent: $space;
-}
-article p + p img {
-	margin-top: 3rem;
-}
-article img {
-	display: block;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-}
-
-
-/* Chapters */
-section {
-	margin-top: $space * 2;
-	max-width: 50em;
-}
-section:first-child {
-	margin-top: auto;
-}
-.Chapter h2 a {
-	color: $black;
-}
-.Chapter > p {
-	max-width: 30rem;
-}
-.Chapter h2::before {
-	content: '§ ';
-	position: relative;
-}
-.Chapter a {
-	border-bottom: 0;
-}
-
-
-/* Table of contents */
-.Toc {
-	font-size: ($medium/$base-font-size) * 1rem;
-	line-height: ($base-line-height*1.5)/$medium;
-	margin-bottom: $space/2;
-	margin-left: 1rem;
-}
-.Toc li::before {
-	display: none;
-}
-@media screen and (min-width: 34rem) {
-	.Toc {
-		column-width: 20rem;
-		column-gap: 2rem;
+article {
+	p + h2,
+	ul + h2,
+	blockquote + h2 {
+		margin-top: $space * 1.5;
+		margin-bottom: $space/-2;
 	}
-	.Toc h1,
-	.Toc p {
-		column-span: all;
+	p + p {
+		margin-top: $space * -1;
+		text-indent: $space/1.5;
+	}
+	p + p img {
+		margin-top: 3rem;
+	}
+	img {
+		display: block;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 	}
 }
 
+
+/**
+ * More styles
+ */
+strong {
+	font-weight: 600;
+}
 dfn, cite, em, i {
 	font-style: italic;
 }
@@ -107,15 +130,15 @@ blockquote {
 }
 code,
 pre {
-	font-family: 'Source Code Pro', Consolas, monospace;
+	font-family: 'Alix fb', 'Source Code Pro', Consolas, monospace;
 	font-weight: normal;
-	background: rgb(249,250,250);
 	@include rhythm($small);
 }
 pre {
+	padding: 1rem;
 	line-height: 1.6;
 	overflow: auto;
-	padding: 1rem;
+	background: rgb(249,250,250);
 }
 abbr, acronym, .Caps {
 	text-transform: lowercase;
@@ -124,7 +147,57 @@ abbr, acronym, .Caps {
 	border-bottom: 0;
 	letter-spacing: 0.1em;
 }
-mark, ins {
-	background: #fff9c0;
-	text-decoration: none;
+
+
+/**
+ * Chapters
+ */
+section {
+	margin-top: $space * 2;
+	max-width: 50em;
+	&:first-child {
+		margin-top: auto;
+	}
+}
+.Chapter {
+	h2::before {
+		content: '§ ';
+		position: relative;
+	}
+	h2 a {
+		color: $black;
+	}
+	> p {
+		max-width: 30rem;
+	}
+	a {
+		border-bottom: 0;
+	}
+}
+
+
+/**
+ * Table of ontents
+ */
+.Toc {
+	font-size: ($medium/$base-font-size) * 1rem;
+	line-height: ($base-line-height*1.5)/$medium;
+	margin-bottom: $space/2;
+	margin-left: 1rem;
+
+	a {
+		@include underline($font-size: 1.173913043em);
+	}
+	li::before {
+		display: none;
+	}
+	@media screen and (min-width: 34rem) {
+		column-width: 20rem;
+		column-gap: 2rem;
+
+		h1,
+		p {
+			column-span: all;
+		}
+	}
 }

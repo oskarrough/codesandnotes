@@ -7,8 +7,8 @@
 	margin-bottom: $space;
 	text-shadow: 2px 2px 0 rgba(0,100,100,0.2);
 	a {
-		border-bottom: 0;
-		color: $orange;
+		@include remove-underline;
+		color: $secondary;
 	}
 }
 .SiteDescription {
@@ -25,34 +25,34 @@
 	margin-top: $space*2;
 	padding: $space*2 0 $space;
 	text-align: center;
-}
-.Manchet h1 {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-	color: $orange;
-}
-@media (min-width: 760px) {
-	.Manchet { margin-top: $space*4; }
-	.Manchet h1 { font-size: 4rem;}
-}
-.Manchet h2 {
-	font-size: ($larger/$base-font-size) * 1rem;
-	line-height: ($base-line-height*1.5)/$larger;
-}
-.Manchet h3 {
-	margin-bottom: -0.5em;
-	span {
-		letter-spacing: 0.0625em;
-		color: #207c14;
-		font-style: normal;
+	@media (min-width: 760px) {
+		margin-top: $space*4;
 	}
-}
-.Manchet p {
-	max-width: 31em;
-	margin-left: auto;
-	margin-right: auto;
+	h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: $secondary;
+		@media (min-width: 760px) {
+			font-size: 4rem;
+		}
+	}
+	h2 {
+		font-size: ($larger/$base-font-size) * 1rem;
+		line-height: ($base-line-height*1.5)/$larger;
+	}
+	h3 {
+		margin-bottom: -0.5em;
+		span {
+			color: $secondary;
+		}
+	}
+	p {
+		max-width: 31em;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 
@@ -67,7 +67,7 @@
 // 	/* add and center the bg and box */
 // 	margin-left: auto;
 // 	margin-right: auto;
-// 	background-image: url(/images/codesandnotes--orange.png);
+// 	background-image: url(/images/codesandnotes--secondary.png);
 // 	background-position: 50% 50%;
 // 	background-size: 90% auto;
 // 	background-repeat: no-repeat;
