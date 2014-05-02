@@ -17,6 +17,7 @@ https://gumroad.com/
 
 ## Related links
 
+- http://creating-ebooks.com/
 - http://hemingwayapp.com/
 - http://stevewedig.com/2014/02/03/software-developers-reading-list/
 - http://codesandnotes.com/css-books-css-figures/

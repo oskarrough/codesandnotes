@@ -1,6 +1,6 @@
 # Versioning
 
-Software updates bring new features, break old ones and are sometimed forced on you. If your software is dependent on other software you will rely on versioning to make sure your a third-party update doesn't break your own software.
+Software updates bring new features, break old ones and are sometimes forced on you. If your software is dependent on other software you will rely on versioning to make sure your a third-party update doesn't break your own software.
 
 This is extremely important when you're dealing with software. If you rely on software or if others are relying yours. Not so much if you're developing a website for your mom.
 
