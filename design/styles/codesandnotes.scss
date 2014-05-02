@@ -3,9 +3,10 @@
 */
 
 @import 'config';
-@import 'base.scss';
-@import 'typography.scss';
-// @import 'typography-modernscale.scss';
-@import 'header.scss';
-@import 'layout.scss';
-@import 'loader.scss';
+@import 'utilities';
+@import 'base';
+@import 'typography';
+// @import 'typography-modernscale';
+@import 'header';
+@import 'layout';
+@import 'loader';

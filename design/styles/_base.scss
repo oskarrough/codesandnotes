@@ -1,15 +1,9 @@
 /* Global */
-
-* {
-	box-sizing: border-box;
-}
-
 html {
 	color: $black;
 	background-color: $beige;
 	background-color: $sand;
 	background-color: $light;
-
 }
 
 /* Set a default margin between elements */
@@ -26,19 +20,16 @@ h5,
 h6,
 p,
 pre,
-fieldset,
 table,
-address
+address,
 textarea,
 hr {
-	margin-top: $space;
-	margin-bottom: $space;
+	margin-top: 0;
+	margin-bottom: 1rem;
 }
 figure {
+	margin: 0;
 	position: relative;
-}
-figure img {
-	vertical-align: top;
 }
 hr {
 	background-image: url(/images/ornaments/ornament-1.png);
@@ -47,9 +38,6 @@ hr {
 	height: 58px;
 	height: 90px;
 	border: 0;
-}
-figure {
-	margin: 0;
 }
 table {
 	width: 100%;
@@ -62,6 +50,7 @@ object {
 }
 img {
 	height: auto; /* Make sure images are scaled correctly. */
+	vertical-align: top;
 }
 textarea {
 	margin: 0;
@@ -78,40 +67,12 @@ li::before {
 }
 
 
-
-
-// $text-color:  $black;
-$bg-size: 1px;
-$stroke-size: 2px;
-
-@mixin underline($bg-color: $beige, $font-size: 1.0625em, $underline-color: $gray) {
-	text-decoration: none;
-	background-image:
-		linear-gradient(bottom, $bg-color 50%, $underline-color 50%);
-	background-repeat: repeat-x;
-	background-size: $bg-size $bg-size;
-	background-position: 0 $font-size;
-	// color: $text-color;
-	text-shadow: $stroke-size 0 $bg-color,
-				 0 $stroke-size $bg-color,
-				 -#{$stroke-size} 0 $bg-color,
-				 0 -#{$stroke-size} $bg-color;
-}
-
-@mixin remove-underline() {
-	background-image: none;
-	text-shadow: none;
-}
-
-
 /* Links */
 a,
 a:visited {
 	color: $green;
 }
 a {
-	text-decoration: none;
-	// border-bottom: 1px solid;
 	@include underline();
 
 	&:hover,
@@ -119,9 +80,6 @@ a {
 	&:active {
 		color: $turquoise;
 		color: $secondary;
-	}
-	img {
-		border: 0;
 	}
 }
 
@@ -133,14 +91,4 @@ a[rel="category tag"]::before {
 a[rel="tag"]::before,
 a[class^="tag-link-"] {
 	content: '#';
-}
-
-/* Clearing */
-.clear:before,
-.clear:after {
-	content: '';
-	display: table;
-}
-.clear:after {
-	clear: both;
 }

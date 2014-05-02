@@ -3,9 +3,11 @@
  */
 .SiteTitle {
 	@include rhythm($larger);
-	margin-top: $space*1.5;
-	margin-bottom: $space;
+	// margin-top: 0;
+	padding-top: $space*2;
+	// margin-bottom: $space;
 	text-shadow: 2px 2px 0 rgba(0,100,100,0.2);
+
 	a {
 		@include remove-underline;
 		color: $secondary;
@@ -23,7 +25,7 @@
  */
 .Manchet {
 	margin-top: $space*2;
-	padding: $space*2 0 $space;
+	padding: $space*4 0 $space;
 	text-align: center;
 	@media (min-width: 760px) {
 		margin-top: $space*4;
@@ -34,16 +36,18 @@
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
 		color: $secondary;
+		text-shadow: 2px 2px 0px rgba(240, 155, 77, 1);
+		transform: rotateZ(-3deg);
 		@media (min-width: 760px) {
 			font-size: 4rem;
 		}
 	}
 	h2 {
 		font-size: ($larger/$base-font-size) * 1rem;
-		line-height: ($base-line-height*1.5)/$larger;
+		line-height: 0.8;
+		margin-bottom: $space;
 	}
 	h3 {
-		margin-bottom: -0.5em;
 		span {
 			color: $secondary;
 		}
@@ -52,6 +56,9 @@
 		max-width: 31em;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	& + .Container {
+		padding-top: $space;
 	}
 }
 

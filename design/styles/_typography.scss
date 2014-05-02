@@ -25,54 +25,44 @@
 // 	font-weight: bold;
 // }
 
+$serif: Charter, Hoefler Text, Cambria, Georgia, Times New Roman, serif;
 
 @mixin ff-paragraph(){
-	// font-family: 'eskapade', serif;
-	font-family: 'edita', serif;
-	// font-family: 'alix fb';
-	// font-family: 'alix fb italic';
-	// font-style: italic;
+	font-family: 'edita', $serif;
 	font-weight: normal;
 }
 @mixin ff-header(){
-	// font-family: 'soleil';
-	// font-family: 'arno-pro-display', sans-serif;
-	// font-family: 'freight-sans-pro';
 	// font-family: 'edita';
 	// font-weight: 600;
-	font-family: 'eskapade-fraktur';
+	font-family: 'eskapade-fraktur', $serif;
 	font-weight: normal;
 }
 @mixin ff-title(){
-	// font-family: 'freight-sans-pro';
-	font-family: 'eskapade-fraktur', 'eskapade', sans-serif;
+	font-family: 'eskapade-fraktur', $serif;
 	font-weight: 400;
 	font-style: italic;
 }
 
 
 html {
-	font-size: ($base-font-size * 1px);
-	// line-height: ($base-line-height/$base-font-size);
-	line-height: 1.444444444;
 	@include ff-paragraph;
+	font-size: $base-font-size * 1px;
+	line-height: ($base-line-height/$base-font-size);
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 
-	@media (max-width: 500px) { font-size: 17px; }
-	@media (min-width: 1000px) { font-size: 19px; }
-	@media (min-width: 1400px) { font-size: 20px; }
+	// @media (max-width: 500px) { font-size: 17px; }
+	// @media (min-width: 1000px) { font-size: 19px; }
+	// @media (min-width: 1400px) { font-size: 20px; }
 }
 
 
 /* Headings */
-h1, h2, h3, h4,
-.Toc {
+h1, h2, h3, h4 {
 	@include ff-header;
 }
 
-h1,
-.Chapter h2 {
+h1 {
 	font-size: ($x-large/$base-font-size) * 1rem;
 	line-height: ($base-line-height*2)/$x-large;
 	margin-bottom: $space;
@@ -85,29 +75,35 @@ h1 {
 	font-style: italic;
 }
 h2 {
-	@include rhythm($large);
+	// @include rhythm($large);
+	font-size: ($large/$base-font-size)*1rem;
+	line-height: (32/$large);
+	margin-top: $space*1.5;
+	margin-bottom: $space/2;
 }
 h3 {
-	@include rhythm($medium);
+	// @include rhythm($medium);
+	font-size: ($medium/$base-font-size)*1rem;
+	margin-bottom: $space/2;
 }
 article {
 	p + h2,
 	ul + h2,
 	blockquote + h2 {
-		margin-top: $space * 1.5;
-		margin-bottom: $space/-2;
+		// margin-top: $space * 1.5;
+		// margin-bottom: $space/-2;
 	}
 	p + p {
-		margin-top: $space * -1;
-		text-indent: $space/1.5;
+		// margin-top: $space * -1;
+		// text-indent: $space/1.5;
 	}
 	p + p img {
-		margin-top: 3rem;
+		margin-top: $space*2;
 	}
 	img {
 		display: block;
-		margin-top: 2rem;
-		margin-bottom: 2rem;
+		margin-top: $space*2;
+		margin-bottom: $space*2;
 	}
 }
 
@@ -124,8 +120,7 @@ dfn, cite, em, i {
 blockquote {
 	margin-left: $space;
 	margin-right: $space*2;
-	font-size: 1.25rem;
-	line-height: 1.2;
+	font-size: 24px;
 	font-style: italic;
 }
 code,
@@ -135,7 +130,7 @@ pre {
 	@include rhythm($small);
 }
 pre {
-	padding: 1rem;
+	padding: $space;
 	line-height: 1.6;
 	overflow: auto;
 	background: rgb(249,250,250);
@@ -177,27 +172,31 @@ section {
 
 
 /**
- * Table of ontents
+ * Table of contents
  */
 .Toc {
-	font-size: ($medium/$base-font-size) * 1rem;
-	line-height: ($base-line-height*1.5)/$medium;
-	margin-bottom: $space/2;
-	margin-left: 1rem;
 
+	margin-bottom: $space/2;
+	margin-left: $space;
+
+	li {
+		@include ff-header;
+		font-size: ($medium/$base-font-size) * 1rem;
+		line-height: ($base-line-height*1.5)/$medium;
+		&:before {
+			display: none;
+		}
+	}
 	a {
 		@include underline($font-size: 1.173913043em);
 	}
-	li::before {
-		display: none;
-	}
-	@media screen and (min-width: 34rem) {
-		column-width: 20rem;
-		column-gap: 2rem;
+	// @media screen and (min-width: 34rem) {
+	// 	column-width: 20rem;
+	// 	column-gap: 2rem;
 
-		h1,
-		p {
-			column-span: all;
-		}
-	}
+	// 	h1,
+	// 	p {
+	// 		column-span: all;
+	// 	}
+	// }
 }

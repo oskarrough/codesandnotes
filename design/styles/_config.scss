@@ -1,3 +1,22 @@
+/**
+ * Sizes
+ */
+
+$small: 16;
+$base-font-size: 20;
+$base-line-height: 26;
+$medium: 24;
+$large: 30;
+$larger: 36;
+$x-large: 50;
+$space: ($base-line-height/$base-font-size) * 1rem;
+// $space: (1.333333333rem); // sass precision wasn't high enough but it is 26/18
+
+
+/**
+ * Colors
+ */
+
 $black: hsl(0, 0%, 7%);
 $secondary: hsl(20, 90%, 50%);
 $turquoise: hsl(180, 100%, 30%);
@@ -15,23 +34,6 @@ $dark: hsl(312, 56%, 2%);
 $red: hsl(6, 66%, 50%);
 $yellow: hsl(54, 66%, 70%);
 $darkyellow: hsl(66, 25%, 49%);
-
-$base-line-height: 26;
-$small: 16;
-$base-font-size: 18;
-$medium: 23;
-$large: 26;
-$larger: 36;
-$x-large: 47;
-
-// $space: ($base-line-height/$base-font-size) * 1rem;
-$space: 1.444444444rem;
-
-@mixin rhythm($size) {
-	font-size: ($size/$base-font-size) * 1rem;
-	line-height: ($base-line-height/$size);
-}
-
 
 .Color--black { background-color: $black;}
 .Color--secondary { background-color: $secondary;}
