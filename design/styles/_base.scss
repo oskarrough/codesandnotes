@@ -25,7 +25,7 @@ address,
 textarea,
 hr {
 	margin-top: 0;
-	margin-bottom: 1rem;
+	margin-bottom: $space;
 }
 figure {
 	margin: 0;
@@ -62,7 +62,7 @@ ul {
 	padding-left: 0;
 	list-style: none;
 }
-li::before {
+li:before {
 	content: '↝ ';
 }
 

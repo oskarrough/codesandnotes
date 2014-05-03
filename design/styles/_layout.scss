@@ -11,7 +11,7 @@ body {
 	margin: 0;
 	overflow-y: scroll;
 
-	@media screen and (min-width: 650px) {
+	@media screen and (min-width: 30rem) {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
@@ -24,45 +24,42 @@ body {
 	}
 }
 .Container,
-article,
-.Manchet {
+.Manchet,
+.Main,
+.Aside,
+.SiteFooter {
 	max-width: 40rem;
-	background-color: $beige;
-	background-color: $light;
-	padding: $space*2;
-	@media (min-width: 56.25rem) {
-		padding-left: $space * 4;
-		padding-right: $space * 4;
-		padding-bottom: $space * 4;
-		max-width: 44rem;
+	padding-left: $space;
+	padding-right: $space;
+	@media screen and (min-width: 40rem) {
+		padding-left: $space*2;
+		padding-right: $space*2;
 	}
 }
-/* Hide chapters when you are on a chapter */
-.category article .Chapters {
-	display: none;
+.Main {
+	background-color: $light;
+	padding-bottom: $space * 2;
 }
-nav {
+article {
+	padding-top: $space*3;
+}
+.SiteFooter {
+	margin-top: $space;
+}
+.Aside {
 	clear: both;
 }
-footer {
-	clear: both;
-	margin-top: $space*2;
-}
-aside {
-	clear: both;
-}
-
 
 /**
  * Page transitions
  */
 body,
 main,
-footer {
+.SiteFooter {
 	transition: opacity 100ms;
 }
 .is-routing main,
-.is-routing footer {
+.is-routing .SiteFooter {
 	opacity: 0.666;
 }
 
@@ -75,7 +72,7 @@ body {
 	background-position: 0 0;
 }
 .home {
-	background-image: url('/images/illustrations/bio-volcano-lg-web.jpg');
+	background-image: url('../images/illustrations/bio-volcano-lg-web.jpg');
 	background-size: 100% auto;
 }
 /* introduction */
@@ -107,57 +104,6 @@ body {
 
 
 /**
- * Print styles
- */
-@media print {
-	html {
-		color: black;
-	}
-	body {
-		/*background-image: none;*/
-	}
-	article a[href]:after {
-	    content: " (" attr(href) ")";
-	}
-	article a[href^="#"]:after,
-	article a[href^="javascript"]:after,
-	.Meta a:after {
-	    content: "";
-	}
-	h2 {
-	    page-break-after: avoid;
-	}
-	article .Topics,
-	.Secondary,
-	.yarpp-related,
-	#comments,
-	.post-edit-link {
-		display: none;
-	}
-	article {
-		padding-left: 0;
-		padding-right: 0;
-	}
-}
-
-
-/**
- * Related posts
- */
-.yarpp-related {
-	float: left;
-	clear: both;
-	margin: 0 0 $space;
-	padding: $space 2rem $space/2;
-	background: $lightgreen;
-
-	a {
-		@include underline($bg-color: $lightgreen, $font-size: 1.173913043em);
-	}
-}
-
-
-/**
  * Comments
  */
 .Comments {
@@ -172,22 +118,14 @@ body {
 	display: none;
 }
 .comment-form-comment {
-	margin-bottom: -1rem;
+	margin-bottom: 0;
 }
 @media (min-width: 500px) {
 	.Comments,
 	#disqus_thread {
-		margin-left: 2rem;
+		margin-left: $space*2;
 		clear: both;
 	}
-}
-
-
-/**
- * Search widget
- */
-.Search-submit {
-	display: none;
 }
 
 
@@ -195,13 +133,16 @@ body {
  * Tag cloud
  */
 .wp-tag-cloud {
-	margin-left: 1rem;
-	column-width: 10rem;
-	column-gap: 2rem;
-}
-.wp-tag-cloud a,
-.widget_most_popular_tags a {
-	font-size: 1rem !important;
+	display: none;
+	@media (min-width: 30rem) {
+		display: block;
+		margin-left: $space;
+		columns: 2;
+		column-gap: $space*2;
+	}
+	a {
+		font-size: 1rem !important;
+	}
 }
 
 
@@ -209,29 +150,8 @@ body {
  * Meta text
  */
 .Meta {
-	font-size: 0.888888889rem;
-	line-height: 1.625;
-	&:last-child {
-		margin-top: $space;
-	}
-}
-
-
-/**
- * Table of contents link
- */
-.TocLink {
-	position: fixed;
-	bottom: -0.5rem;
-	right: 1rem;
-	display: none;
-	@media (min-width: 980px) {
-		display: block;
-	}
-
-	a {
-		@include remove-underline;
-	}
+	font-size: ($small/$base-font-size)*1rem;
+	// line-height: 1.625;
 }
 
 
@@ -241,6 +161,14 @@ body {
 a.post-edit-link {
 	float: right;
 	color: red;
+}
+
+
+/**
+ * Search widget
+ */
+.Search-submit {
+	display: none;
 }
 
 

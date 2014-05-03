@@ -1,13 +1,5 @@
 # Codes & Notes
 
-This is the repository of the book on web development I’m writing.
+This is the repository of the book on web development I’m writing.  All published articles are not in here but on the website only.  This repo contains drafts, design and a backup of my Wordpress setup.
 
 Please read the [Introduction to Codes & Notes](http://codesandnotes.com/introduction).
-
-This repository contains only drafts (as well as some setup). Everything ready for the public is on the website, not here.
-
-## Technical setup
-
-Currently running on a custom Wordpress install. Todo: move back to a static site system.
-
-If you have any questions, contact me at oskar@rough.dk

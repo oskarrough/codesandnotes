@@ -332,6 +332,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/illustrations\/6a00d83542d51e69e20120a5ec29c4970c.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/illustrations\/6a00d83542d51e69e20120a5ec29c4970c.png",
+		"outputAbbreviatedPath": "\/images\/illustrations\/6a00d83542d51e69e20120a5ec29c4970c.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/illustrations\/a-drop-of-mercury-into-mercury.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -394,6 +405,17 @@
 		"initialSize": 248922,
 		"inputAbbreviatedPath": "\/images\/illustrations\/ak_tarantula_lg.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/ak_tarantula_lg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/bio-volcano-lg-web.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/illustrations\/bio-volcano-lg-web.jpg",
+		"outputAbbreviatedPath": "\/images\/illustrations\/bio-volcano-lg-web.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -493,6 +515,17 @@
 		"initialSize": 201884,
 		"inputAbbreviatedPath": "\/images\/illustrations\/bio_toc_lg1-806x1024.jpg",
 		"outputAbbreviatedPath": "\/images\/illustrations\/bio_toc_lg1-806x1024.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/illustrations\/bio_volcano_lg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/illustrations\/bio_volcano_lg.jpg",
+		"outputAbbreviatedPath": "\/images\/illustrations\/bio_volcano_lg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -880,6 +913,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/post.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/post.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/styleguide.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -897,7 +939,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/_base.scss",
-		"outputAbbreviatedPath": "\/css\/_base.css",
+		"outputAbbreviatedPath": "\/styles\/_base.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -913,7 +955,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/_config.scss",
-		"outputAbbreviatedPath": "\/css\/_config.css",
+		"outputAbbreviatedPath": "\/styles\/_config.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -929,7 +971,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/_header.scss",
-		"outputAbbreviatedPath": "\/css\/_header.css",
+		"outputAbbreviatedPath": "\/styles\/_header.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -945,7 +987,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/_layout.scss",
-		"outputAbbreviatedPath": "\/css\/_layout.css",
+		"outputAbbreviatedPath": "\/styles\/_layout.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -961,7 +1003,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/_loader.scss",
-		"outputAbbreviatedPath": "\/css\/_loader.css",
+		"outputAbbreviatedPath": "\/styles\/_loader.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -985,6 +1027,38 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/styles\/_print.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/_print.scss",
+		"outputAbbreviatedPath": "\/styles\/_print.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/styles\/_toc.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/_toc.scss",
+		"outputAbbreviatedPath": "\/styles\/_toc.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/styles\/_typography-modernscale.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -993,7 +1067,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/_typography-modernscale.scss",
-		"outputAbbreviatedPath": "\/css\/_typography-modernscale.css",
+		"outputAbbreviatedPath": "\/styles\/_typography-modernscale.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1009,7 +1083,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/_typography.scss",
-		"outputAbbreviatedPath": "\/css\/_typography.css",
+		"outputAbbreviatedPath": "\/styles\/_typography.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1061,7 +1135,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Oskar Rough Mosumgaard",
+"lastSavedByUser": "Oskar",
 "manualImportLinks": {
 	},
 "projectAttributes": {

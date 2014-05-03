@@ -1,0 +1,90 @@
+/**
+ * Chapters
+ */
+section {
+	// max-width: 50em;
+}
+.Chapter {
+	h2::before {
+		content: '§ ';
+		position: relative;
+	}
+	h2 a {
+		color: $black;
+	}
+	> p {
+		max-width: 30rem;
+	}
+}
+/* Hide chapters when you are on a chapter */
+.category article .Chapters {
+	display: none;
+}
+
+
+/**
+ * Table of contents
+ */
+.Toc {
+	li {
+		// @include ff-header;
+		// font-size: ($medium/$base-font-size) * 1rem;
+		// line-height: ($base-line-height*1.4)/$medium;
+
+		line-height: (30/$base-font-size);
+
+
+		&:before {
+			@media (max-width: 30rem) {
+				display: none;
+			}
+			color: $gray;
+			transition: color 100ms;
+		}
+		&:hover:before {
+			color: $black;
+		}
+	}
+	a {
+		// @include underline($font-size: 1.173913043em);
+	}
+
+
+}
+
+
+/**
+ * Table of contents link
+ */
+.TocLink {
+	position: fixed;
+	bottom: -0.5rem;
+	right: 1rem;
+	display: none;
+	@media (min-width: 980px) {
+		display: block;
+	}
+
+	a {
+		@include remove-underline;
+	}
+}
+
+
+/**
+ * Related posts
+ */
+.yarpp-related {
+	float: left;
+	clear: both;
+	margin: $space 0;
+	padding: 0 $space $space/2;
+	background: $lightgreen;
+
+	.Toc {
+		margin-bottom: 0;
+	}
+	a {
+		@include underline($bg-color: $lightgreen, $font-size: 1.173913043em);
+	}
+}

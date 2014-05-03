@@ -46,12 +46,12 @@ $serif: Charter, Hoefler Text, Cambria, Georgia, Times New Roman, serif;
 
 html {
 	@include ff-paragraph;
-	font-size: $base-font-size * 1px;
-	line-height: ($base-line-height/$base-font-size);
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+	font-size: $base-font-size * 1px;
+	line-height: ($base-line-height/$base-font-size);
 
-	// @media (max-width: 500px) { font-size: 17px; }
+	@media (max-width: 30em) { font-size: $small * 1px; }
 	// @media (min-width: 1000px) { font-size: 19px; }
 	// @media (min-width: 1400px) { font-size: 20px; }
 }
@@ -78,7 +78,7 @@ h2 {
 	// @include rhythm($large);
 	font-size: ($large/$base-font-size)*1rem;
 	line-height: (32/$large);
-	margin-top: $space*1.5;
+	margin-top: $space*1;
 	margin-bottom: $space/2;
 }
 h3 {
@@ -120,7 +120,7 @@ dfn, cite, em, i {
 blockquote {
 	margin-left: $space;
 	margin-right: $space*2;
-	font-size: 24px;
+	font-size: ($medium/$base-font-size) * 1rem;
 	font-style: italic;
 }
 code,
@@ -130,10 +130,10 @@ pre {
 	@include rhythm($small);
 }
 pre {
-	padding: $space;
+	// padding: $space;
 	line-height: 1.6;
 	overflow: auto;
-	background: rgb(249,250,250);
+	// background: rgb(249,250,250);
 }
 abbr, acronym, .Caps {
 	text-transform: lowercase;
@@ -141,62 +141,4 @@ abbr, acronym, .Caps {
 	font-style: normal;
 	border-bottom: 0;
 	letter-spacing: 0.1em;
-}
-
-
-/**
- * Chapters
- */
-section {
-	margin-top: $space * 2;
-	max-width: 50em;
-	&:first-child {
-		margin-top: auto;
-	}
-}
-.Chapter {
-	h2::before {
-		content: '§ ';
-		position: relative;
-	}
-	h2 a {
-		color: $black;
-	}
-	> p {
-		max-width: 30rem;
-	}
-	a {
-		border-bottom: 0;
-	}
-}
-
-
-/**
- * Table of contents
- */
-.Toc {
-
-	margin-bottom: $space/2;
-	margin-left: $space;
-
-	li {
-		@include ff-header;
-		font-size: ($medium/$base-font-size) * 1rem;
-		line-height: ($base-line-height*1.5)/$medium;
-		&:before {
-			display: none;
-		}
-	}
-	a {
-		@include underline($font-size: 1.173913043em);
-	}
-	// @media screen and (min-width: 34rem) {
-	// 	column-width: 20rem;
-	// 	column-gap: 2rem;
-
-	// 	h1,
-	// 	p {
-	// 		column-span: all;
-	// 	}
-	// }
 }

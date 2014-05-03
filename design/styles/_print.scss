@@ -1,0 +1,33 @@
+/**
+ * Print styles
+ */
+@media print {
+	html {
+		color: black;
+	}
+	body {
+		/*background-image: none;*/
+	}
+	article a[href]:after {
+	    content: " (" attr(href) ")";
+	}
+	article a[href^="#"]:after,
+	article a[href^="javascript"]:after,
+	.Meta a:after {
+	    content: "";
+	}
+	h2 {
+	    page-break-after: avoid;
+	}
+	article .Topics,
+	.Secondary,
+	.yarpp-related,
+	#comments,
+	.post-edit-link {
+		display: none;
+	}
+	article {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
