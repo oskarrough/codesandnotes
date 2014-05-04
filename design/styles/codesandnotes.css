@@ -414,7 +414,13 @@ a.post-edit-link {
   font-size: 1.8rem;
   line-height: 0.72222;
   padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-shadow: 2px 2px 0 rgba(0, 100, 100, 0.2); }
+  @media (min-width: 30em) {
+    .SiteTitle {
+      padding-left: 0;
+      padding-right: 0; } }
   .SiteTitle a {
     background-image: none;
     text-shadow: none;
