@@ -1,19 +1,15 @@
-<?php
-/*
-Template Name: Archives
-*/
-get_header(); ?>
+<?php get_header(); ?>
 
 <header class="Manchet">
 	<h1>Codes &amp; Notes</h1>
-	<h2>A guide to web development<br>that you can trust</h2>
+	<h2>A guide to web development that you can trust</h2>
 	<h3>by <span class="Author">Oskar Rough Mosumgaard</span></h3>
-	<p>A book for anyone wanting to learn more about web development. Whether you are just getting started or need a trustworthy reference, this is it.</p>
-	<p style="font-family: 'eskapade-fraktur'; font-size: 1.2em;">&rarr; <a href="/introduction">Introduction</a></p>
+	<p>A book for anyone wanting to learn more about web development.<br>Whether you are just getting started or need a trustworthy reference, this is it.</p>
+	<!-- <p style="font-family: 'eskapade-fraktur'; font-size: 1.2em;">&rarr; <a href="/introduction">Introduction</a></p> -->
 	<hr class="Ornament" id="toc">
 </header>
 
-<main id="Main" class="Main Container">
+<main class="Main Container">
 
 	<!-- <h3>Chapters</h3>
 	<ul>
@@ -33,10 +29,21 @@ get_header(); ?>
 
 	<section class="Chapter">
 		<h2 id="Preface"><a href="/chapters/preface">Preface</a></h2>
-		<p>“Sometimes magic is just someone spending more time on something than anyone else might reasonably expect” <cite>— Teller</cite>.</p>
+		<p>“<em>Sometimes magic is just someone spending more time on something than anyone else might reasonably expect</em>” <cite>— Teller</cite>.</p>
 
 		<?php $query = new WP_Query('category_name=preface&posts_per_page=-1&orderby=menu_order&order=asc'); ?>
 
+		<ul class="Toc">
+		<?php while ($query->have_posts()) : $query->the_post(); ?>
+			<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+		<?php endwhile; ?>
+		</ul>
+	</section>
+
+	<section class="Chapter">
+		<h2 id="Front-end"><a href="/chapters/front-end">Front-end</a></h2>
+		<p>Technical articles related to front-end development as HTML, CSS and JavaScript.</p>
+		<?php $query = new WP_Query('category_name=front-end&posts_per_page=-1&orderby=menu_order&order=asc'); ?>
 		<ul class="Toc">
 		<?php while ($query->have_posts()) : $query->the_post(); ?>
 			<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
@@ -49,17 +56,6 @@ get_header(); ?>
 		<p>Ideas and approaches that you can apply to your challenges.<br>A wider range of concepts and solutions for your problems.</p>
 
 		<?php $query = new WP_Query('category_name=aspects&posts_per_page=-1&orderby=menu_order&order=asc'); ?>
-		<ul class="Toc">
-		<?php while ($query->have_posts()) : $query->the_post(); ?>
-			<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-		<?php endwhile; ?>
-		</ul>
-	</section>
-
-	<section class="Chapter">
-		<h2 id="Front-end"><a href="/chapters/front-end">Front-end</a></h2>
-		<p>Technical articles related to front-end development as HTML, CSS and JavaScript.</p>
-		<?php $query = new WP_Query('category_name=front-end&posts_per_page=-1&orderby=menu_order&order=asc'); ?>
 		<ul class="Toc">
 		<?php while ($query->have_posts()) : $query->the_post(); ?>
 			<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
@@ -102,7 +98,8 @@ get_header(); ?>
 		<?php endwhile; ?>
 		</ul>
 	</section>
-	<section id="Topics" class="Topics">
+
+	<section class="Topics">
 		<h2 class="Topics-title">Topics</h2>
 		<p>Subjects that go across chapters.</p>
 		<?php wp_tag_cloud(

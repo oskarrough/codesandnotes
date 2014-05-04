@@ -20,7 +20,6 @@
 					<span class="Topics"><span class="screen-reader-text">Topics: </span><?php the_tags('', ' '); ?></span>
 				<?php } ?>
 
-
 				<?php edit_post_link( __('Edit')); ?>
 			</footer>
 		</article>

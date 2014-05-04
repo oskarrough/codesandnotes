@@ -85,7 +85,7 @@ function rough_scripts() {
 	#wp_enqueue_script( 'rough-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 }
-add_action( 'wp_enqueue_scripts', 'rough_scripts' );
+// add_action( 'wp_enqueue_scripts', 'rough_scripts' );
 
 /**
  * Implement the Custom Header feature.
@@ -120,3 +120,7 @@ function rough_modify_query_order( $query ) {
     }
 }
 add_action( 'pre_get_posts', 'rough_modify_query_order' );
+
+
+// Disable W3TC footer comment for all users
+add_filter( 'w3tc_can_print_comment', function( $w3tc_setting ) { return false; }, 10, 1 );

@@ -5,7 +5,7 @@
  * @package rough
  */
 ?>
-	<aside id="Secondary" class="Secondary">
+	<aside class="Aside">
 		<!-- <p><a class="link-toc" href="/">↑ Table of contents</a></p> -->
 
 		<?php do_action( 'before_sidebar' ); ?>
