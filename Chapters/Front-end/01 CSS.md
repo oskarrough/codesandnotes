@@ -20,6 +20,22 @@ Cascading, inheritance, selectors and their specificity. This section is about b
 - Define CSS Box Model, and demonstrate the ability to properly manipulate the "box" around tags
 - Differentiate between classes vs IDs and apply best practices when implementing
 - Select nested elements to apply styling
+- refactoring
+- design patterns
+- CSS property hacks, conditionally included .css files
+- media queries or mobile specific layouts/CSS?
+- What are some of the "gotchas" for writing efficient CSS?
+- Differentiate between basic web color principles: RGB, RGBA, hexadecimal color, HSL
+- Experiment with CSS properties and values to change styling of a page
+- Define CSS Box Model, and demonstrate the ability to properly manipulate the "box" around tags
+- Differentiate between classes vs IDs and apply best practices when implementing
+- Select nested elements to apply styling
+- Anatomy of a CSS rule
+- The CSS cascade: Browsers deal with conflicting rules by:
+	1. Importance
+	2. Origin (author, user, browser)
+	3. Specificity
+	4. Source order
 
 ## CSS structure
 
@@ -131,22 +147,3 @@ Enter [Modernizr](http://www.modernizr.com).
 - http://caniuse.com
 - http://www.modernizr.com
 - http://sassmeister.com/
-
-
-
-- refactoring
-- design patterns
-- CSS property hacks, conditionally included .css files
-- media queries or mobile specific layouts/CSS?
-- What are some of the "gotchas" for writing efficient CSS?
-- Differentiate between basic web color principles: RGB, RGBA, hexadecimal color, HSL
-- Experiment with CSS properties and values to change styling of a page
-- Define CSS Box Model, and demonstrate the ability to properly manipulate the "box" around tags
-- Differentiate between classes vs IDs and apply best practices when implementing
-- Select nested elements to apply styling
-- Anatomy of a CSS rule
-- The CSS cascade: Browsers deal with conflicting rules by:
-	1. Importance
-	2. Origin (author, user, browser)
-	3. Specificity
-	4. Source order
