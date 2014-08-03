@@ -14,10 +14,10 @@
 			?>
 
 			<footer class="Meta">
-				<span class="Chapters"><span class="screen-reader-text">Chapters: </span><?php the_category(', '); ?>. </span>
+				<span class="Meta-chapters"><span class="screen-reader-text">Chapters: </span><?php the_category(', '); ?>. </span>
 
 				<?php if( has_tag() ) { ?>
-					<span class="Topics"><span class="screen-reader-text">Topics: </span><?php the_tags('', ' '); ?></span>
+					<span class="Meta-topics"><span class="screen-reader-text">Topics: </span><?php the_tags('', ' '); ?></span>
 				<?php } ?>
 
 				<?php edit_post_link( __('Edit')); ?>

@@ -13,7 +13,6 @@ get_header(); ?>
 
 	<?php if ( have_posts() ) : ?>
 
-	<div class="Container">
 		<h1 class="Title">§
 			<?php
 				if ( is_category() ) :
@@ -76,8 +75,7 @@ get_header(); ?>
 			endif;
 		?>
 
-		<p>On this URL you will find all articles in the chapter in their full-length. Ready for printing.</p>
-	</div>
+		<p>Here you'll find all full-length articles in this chapter.</p>
 
 		<?php
 			//Custom taxonomy is project_type, custom term is web-design

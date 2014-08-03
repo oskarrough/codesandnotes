@@ -124,3 +124,17 @@ add_action( 'pre_get_posts', 'rough_modify_query_order' );
 
 // Disable W3TC footer comment for all users
 add_filter( 'w3tc_can_print_comment', function( $w3tc_setting ) { return false; }, 10, 1 );
+
+
+
+
+// Remove yarpp related plugin CSS
+add_action('wp_print_styles','rough_dequeue_header_styles');
+function rough_dequeue_header_styles() {
+  wp_dequeue_style('yarppWidgetCss');
+}
+
+add_action('get_footer','rough_dequeue_footer_styles');
+function rough_dequeue_footer_styles() {
+  wp_dequeue_style('yarppRelatedCss');
+}

@@ -7,7 +7,7 @@ Description: A simple example YARPP template.
 ?>
 
 <?php if (have_posts()):?>
-<h2>Continue reading:</h2>
+<h3>Continue reading:</h3>
 <ul class="Toc">
 	<?php while (have_posts()) : the_post(); ?>
 	<li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
