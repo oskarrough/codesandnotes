@@ -17,6 +17,7 @@ https://gumroad.com/
 
 ## Related links
 
+- http://liber.io/
 - http://creating-ebooks.com/
 - http://hemingwayapp.com/
 - http://stevewedig.com/2014/02/03/software-developers-reading-list/
@@ -31,6 +32,7 @@ https://gumroad.com/
 - http://24ways.org/2013/how-to-write-a-book/
 - http://css-tricks.com/words-avoid-educational-writing/
 - http://www.abookapart.com/products/design-is-a-job
+- https://www.gitbook.io/
 
 1. PDF
 2. HTML

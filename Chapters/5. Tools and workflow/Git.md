@@ -44,6 +44,7 @@ Having an interface for Git helps a lot. Github.com is one way, Bitbucket.com is
 
 ### See more
 
+- http://www.git-tower.com/learn/
 - http://git-scm.com/book
 - https://help.github.com/
 - http://think-like-a-git.net/ - Git really isn't made for human beings. Think Like (a) Git is a guide for the perplexed that should help smoothen things out

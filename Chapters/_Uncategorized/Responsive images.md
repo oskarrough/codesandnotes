@@ -16,13 +16,12 @@ This is a server side solution that will return a responsive image based on the 
 
 ### See more
 
+- http://dev.opera.com/articles/responsive-images/
 - http://www.w3.org/TR/2013/WD-html-picture-element-20130226/
-- https://github.com/scottjehl/picturefill
 - http://www.iandevlin.com/blog/2013/10/responsive-web-design/resimagecrop-a-responsive-image-solution
-- https://gist.github.com/Wilto/27d6925e8c1a71a87a03
-comparison of picture and src-n
-- http://foundation.zurb.com/docs/components/interchange.html
+
 - http://css-tricks.com/which-responsive-images-solution-should-you-use/
-- https://github.com/BBC-News/Imager.js
 - http://blog.cloudfour.com/sensible-jumps-in-responsive-image-file-sizes
-- http://html5doctor.com/responsive-images-end-of-year-report/
+
+- https://github.com/scottjehl/picturefill
+- https://github.com/BBC-News/Imager.js

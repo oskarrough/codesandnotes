@@ -5,3 +5,5 @@ Back in the days all I wanted was 99 fps in Counter-Strike. Now I'm trying to st
 ### See more
 
 http://www.thecssninja.com/javascript/pointer-events-60fps
+https://engineering.gosquared.com/optimising-60fps-everywhere-in-javascript
+http://ariya.ofilabs.com/2013/06/optimizing-css3-for-gpu-compositing.html

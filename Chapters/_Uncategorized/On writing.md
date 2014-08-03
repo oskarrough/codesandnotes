@@ -1,6 +1,6 @@
 # On writing
 
-Some tips. Thieved from different places on the internet.
+Tips on writing. Thieved and gathered from different internet places and I unfortunately can't credit the sources anymore.
 
 ## General notes
 

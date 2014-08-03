@@ -1,6 +1,6 @@
 # Mobile
 
-The web is mobile.
+The web is mobile. Ignore at your own peril.
 
 ### See more
 

@@ -27,7 +27,6 @@ http://easings.net/
 http://jonobr1.github.io/Physics/#physics
 http://burakkanber.com/blog/physics-in-javascript-car-suspension-part-1-spring-mass-damper/
 
-
 http://updates.html5rocks.com/2014/05/Web-Animations---element-animate-is-now-in-Chrome-36
 
 http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/#toc-imperative-declarative
