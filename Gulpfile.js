@@ -1,23 +1,19 @@
-// Before using, we have to require gulp itself
-var gulp = require('gulp');
+'use strict';
 
-// Automatically require all dependencies listed in package.json that start with "gulp-"
-// Example: gulp-minify-css turns into plugins.minifyCss()
-var plugins = require('gulp-load-plugins')();
+// Load gulp and all gulp plugins automatically
+var gulp = require('gulp');
+var $ = require('gulp-load-plugins')();
 
 // Clean
-gulp.task('clean', function () {
-	return gulp.src(['dist'], {read: false})
-		.pipe(plugins.clean());
-});
+gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
-// Styles
+// Compile SCSS to CSS
 gulp.task('styles', function() {
-	return gulp.src('design/styles/codesandnotes.scss')
-		.pipe(plugins.sass())
-		.pipe(plugins.autoprefixer('last 2 versions'))
-		// .pipe(plugins.csso())
-		.pipe(gulp.dest('design/styles/'));
+	return gulp.src('design/styles/*.scss')
+		.pipe($.sass())
+		.pipe($.autoprefixer('last 1 versions'))
+		// .pipe($.csso())
+		.pipe(gulp.dest('design/styles'));
 });
 
 // Default task

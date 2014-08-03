@@ -2,31 +2,20 @@
   "name": "codes-and-notes",
   "version": "0.0.1",
   "description": "",
-  "main": "Gruntfile.js",
+  "main": "",
   "author": "Oskar Rough Mosumgaard",
   "license": "MIT",
   "homepage": "http://codesandnotes.com",
+  "dependencies": {},
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-markdown-pdf": "2.1.1",
-    "grunt-contrib-clean": "~0.5.0",
-    "load-grunt-tasks": "~0.3.0",
-    "grunt-markdown": "~0.5.0",
-    "gulp": "~3.5.5",
-    "gulp-load-plugins": "~0.4.0",
-    "gulp-sass": "~0.7.1",
-    "gulp-autoprefixer": "0.0.6",
-    "gulp-clean": "~0.2.4"
+    "del": "^0.1.1",
+    "gulp": "~3.8.7",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-csso": "^0.2.9",
+    "gulp-load-plugins": "~0.5.3",
+    "gulp-sass": "~0.7.2"
   },
   "engines": {
     "node": ">= 0.10.0"
-  },
-  "peerDependencies": {
-    "grunt": "~0.4.1"
-  },
-  "dependencies": {
-    "markdown-pdf": "~2.2.0",
-    "async": "~0.2.10",
-    "gulp-csso": "^0.2.6"
   }
 }
