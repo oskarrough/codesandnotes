@@ -5,46 +5,47 @@
 /**
  * Site layout
  */
+html {
+	background-color: $beige;
+	background-color: $sand;
+	background-color: $light;
+	color: $black;
+}
 body {
-	float: left;
-	width: 100%;
 	margin: 0;
 	overflow-y: scroll;
-
-	@media screen and (min-width: 30rem) {
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-	@media (min-width: 1000px) {
-		padding: 0 2rem 2rem;
-	}
-	@media screen and (min-width: 1100px) {
-		padding-left: 10%;
-		padding-right: 10%;
-	}
+	padding-top: 1px; // hack
 }
 .Container,
 .Manchet,
+.Header,
 .Main,
 .Aside,
-.SiteFooter {
-	max-width: 40rem;
-	padding-left: $space;
-	padding-right: $space;
-	@media screen and (min-width: 40rem) {
-		padding-left: $space*2;
-		padding-right: $space*2;
-	}
+.Footer {
+	box-sizing: content-box;
+	max-width: 31rem; // less than 31 will break the manchet
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $space*3;
+	padding-right: $space*3;
+}
+.Header {
+	padding-left: 0;
+	max-width: 34rem;
+	margin-bottom: $space*2;
 }
 .Main {
+	padding-top: $space;
+	padding-bottom: $space*2;
 	background-color: $light;
-	padding-bottom: $space * 2;
 }
 article {
-	padding-top: $space*3;
-	margin-bottom: $space*3;
+	padding-top: $space*2;
+	padding-bottom: $space;
+	border-bottom: 5px solid $lightgreen;
+	margin-bottom: $space*2;
 }
-.SiteFooter {
+.Footer {
 	margin-top: $space;
 }
 .Aside {
@@ -56,78 +57,36 @@ article {
  */
 body,
 main,
-.SiteFooter {
+.Footer {
 	transition: opacity 100ms;
 }
 .is-routing main,
-.is-routing .SiteFooter {
+.is-routing .Footer {
 	opacity: 0.666;
 }
 
 
-/**
- * Site backgrounds
- */
-body {
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-.home {
-	background-image: url('../images/illustrations/bio-volcano-lg-web.jpg');
-	background-size: 100% auto;
-}
-/* introduction */
-.postid-1262 {
-	background-image: url('/images/illustrations/bio_lavoisier_lg.jpg');
-	background-position: 100% 0;
-	background-size: 100% auto;
-}
-/* css box model */
-.postid-1495 {
-	background-image: url('/images/illustrations/lilOctopus-web2.jpg');
-	background-position: 100% -1rem;
-	background-size: 100% auto;
-}
-/* RTL */
-.postid-478 {
-	background-image: url('/images/illustrations/Village_of_Sekiya_at_Sumida_river.jpg');
-	background-position: 100% 0;
-	background-size: 100% auto;
-}
-/* Normalize */
-.postid-1532 {
-	background-image: url('/images/illustrations/20_lg.jpg');
-}
-/* Cross browser*/
-.postid-282 {
-	background-image: url('/images/illustrations/phobia_11_lg.jpg');
-}
+
 
 
 /**
  * Comments
  */
-.Comments {
+.Comments,
+#disqus_thread {
 	clear: both;
 }
-.comment-content a {
-	word-wrap: break-word;
-}
-.logged-in-as,
-.comment-form-comment label,
-.form-allowed-tags {
-	display: none;
-}
-.comment-form-comment {
-	margin-bottom: 0;
-}
-@media (min-width: 500px) {
-	.Comments,
-	#disqus_thread {
-		margin-left: $space*2;
-		clear: both;
-	}
-}
+// .comment-content a {
+// 	word-wrap: break-word;
+// }
+// .logged-in-as,
+// .comment-form-comment label,
+// .form-allowed-tags {
+// 	display: none;
+// }
+// .comment-form-comment {
+// 	margin-bottom: 0;
+// }
 
 
 /**
@@ -135,14 +94,14 @@ body {
  */
 .wp-tag-cloud {
 	display: none;
+	column-width: 8em;
+	// column-gap: $space*2;
+	line-height: initial;
 	@media (min-width: 30rem) {
 		display: block;
-		margin-left: $space;
-		columns: 2;
-		column-gap: $space*2;
 	}
 	a {
-		font-size: 1rem !important;
+		font-size: 16px !important;
 	}
 }
 

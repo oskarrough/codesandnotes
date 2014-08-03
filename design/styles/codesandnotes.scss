@@ -7,8 +7,10 @@
 @import 'base';
 @import 'typography';
 // @import 'typography-modernscale';
+
 @import 'layout';
+@import 'layout-backgrounds';
 @import 'header';
 @import 'toc';
-@import 'loader';
 @import 'print';
+@import 'loader';

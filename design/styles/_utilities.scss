@@ -6,7 +6,6 @@
 	line-height: ($base-line-height/$size);
 }
 
-
 /**
  * Clearfix
  */
@@ -19,16 +18,13 @@
 	clear: both;
 }
 
-
-
 /**
- * Better underlines
+ * Pretty underlines
  */
-
 $bg-size: 1px;
 $stroke-size: 2px;
 
-@mixin underline($bg-color: $beige, $font-size: 1.0625em, $underline-color: $gray) {
+@mixin underline($bg-color: $beige, $font-size: 1.0625em, $underline-color: $lightgray) {
 	text-decoration: none;
 	background-image:
 		linear-gradient(bottom, $bg-color 50%, $underline-color 50%);

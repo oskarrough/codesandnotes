@@ -1,7 +1,7 @@
 /**
  * Site title and description
  */
-.SiteTitle {
+.Header-title {
 	@include rhythm($larger);
 	padding-top: $space*2;
 	padding-left: $space;
@@ -17,7 +17,7 @@
 		color: $secondary;
 	}
 }
-.SiteDescription {
+.Header-description {
 	margin-top: 0;
 	font-size: smaller;
 	display: none;
@@ -29,25 +29,20 @@
  */
 .Manchet {
 	margin-top: $space*6;
-	margin-left: $space;
-	margin-right: $space;
 	padding-top: $space*2;
-	padding-bottom: $space;
+	padding-bottom: $space*2;
 	text-align: center;
-	background-color: $darkblue;
-	@media (min-width: 30em) {
-		padding-top: $space*4;
-		margin-left: 0;
-		margin-right: 0;
-	}
+
+	// background-color: $light;
+	background-color: hsl(41, 2%, 12%);
+	color: #fff;
+
 	h1 {
-		font-size: 3rem;
 		margin-bottom: $space/2;
-		letter-spacing: 0.05em;
+		letter-spacing: 0.03em;
 		text-transform: uppercase;
 		color: $secondary;
-		// text-shadow: 2px 2px 0px rgba(240, 155, 77, 1);
-		text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.43);
+		text-shadow: 2px 2px 0px hsl(190, 20%, 61%);
 		@media (min-width: 30em) {
 			font-size: 4rem;
 		}
@@ -60,18 +55,15 @@
 			color: $secondary;
 		}
 	}
-	p {
-		max-width: 31em;
-		margin-left: auto;
-		margin-right: auto;
-	}
+	// p {
+	// 	max-width: 31em;
+	// 	margin-left: auto;
+	// 	margin-right: auto;
+	// }
 	hr {
 		margin-bottom: 0;
 	}
 	& + .Container {
 		padding-top: $space;
 	}
-
-
-	color: #fff;
 }

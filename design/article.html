@@ -1,168 +1,135 @@
-
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-	<title>The CSS Box Model – Codes &amp; Notes</title>
-	<meta name="description" content="Codes and notes is an online book and reference for web development that you can trust">
+	<title>Understanding The CSS Box Model – Codes &amp; Notes</title>
+	<link rel="stylesheet" type="text/css" href="styles/codesandnotes.css" />
 	<script src="//use.typekit.net/krs2vbw.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
-	<link rel="stylesheet" type="text/css" href="styles/codesandnotes.css" />
+
+	<!-- BEGIN Metadata added by Add-Meta-Tags WordPress plugin -->
+	<meta name="description" content="It is important to understand how elements are rendered. How those CSS properties you write magically turn into beautiful shapes. Well, boxes. Every element on your page is a rectangular box. Even if it looks like a circle, it’s a box." />
+	<!-- END Metadata added by Add-Meta-Tags WordPress plugin -->
+
 	<link rel='canonical' href='http://codesandnotes.com/the-css-box-model/' />
 </head>
 <body class="single single-post postid-1495 single-format-standard logged-in">
 
-		<header class="SiteHeader">
-		<h1 class="SiteTitle"><a href="http://codesandnotes.com/" rel="home">Codes &amp; Notes</a></h1>
-		<p class="SiteDescription">A guide to web development that you can trust by <a href="http://oskarrough.com" rel="author" target="_blank">Oskar Rough Mosumgaard</a></p>
+	<header class="Header">
+		<h1 class="Header-title"><a href="http://codesandnotes.com/" rel="home">Codes &amp; Notes</a></h1>
+		<p class="Header-description">A guide to web development that you can trust by	<a href="http://oskarrough.com" rel="author" target="_blank">Oskar Rough Mosumgaard</a></p>
 	</header>
 
-	<main id="Main" class="Main">
+	<main class="Main">
 
-				<article >
-			<h1>The CSS Box Model</h1>
-			<p>It is important to understand how elements are rendered. How those CSS properties you write magically turn into beautiful shapes. Well, boxes. Every element on your page is a rectangular box. Even if it looks like a circle, it’s a box. This <code>box-model</code> is what browsers use to calculate the total width and height of an element.</p>
-<h2 id="howisthesizecalculated">How is the size calculated?</h2>
-<p>The way the box model is calculated is called <code>box-sizing</code> and it has a default value of <code>content-box</code>. This content-box does not include padding and borders in the width and height of an element. This means an element with a set width of 100px will not necessarily have a total, calculated width of a 100px. If the borders total 2px (e.g. 1px on each side), the borders are added to the width which will result in a total width of 102px. Padding adds to the size in the exact same way.</p>
-<p>This might not be what you expect but it <em>is</em> the default way everything is calculated on the web anyway. The size is calculated in a specific order. First the box is expanded as much as possible to contain the content. Then width and height to constrain the box, then padding, then borders and lastly margins.</p>
-<p>Read that again, please.</p>
-<blockquote>
-<p>Remember, if you don’t specify a width or height, block elements default to the full width of the window and as heigh as the content. Inline elements snaps tightly to the content.</p>
-</blockquote>
-<h2 id="differentboxmodelswithboxsizing">Different box models with box-sizing</h2>
-<p>The box-sizing property has three different values to choose from: <code>content-box</code>, <code>padding-box</code> and <code>border-box</code>.</p>
-<p>We just learned that the default <code>content-box</code> adds padding and borders to the width and height.</p>
-<p>The <code>padding-box</code> value also includes padding to the total size, but not border.</p>
-<p>The <code>border-box</code> value includes both padding and border to the size.</p>
-<h3 id="anexample">An example</h3>
-<pre><code class="css">div {
-    width: 100px;
-    padding: 10px;
-  margin: 10px;
-    border: 1px;
-}
-</code></pre>
-<p>With <code>content-box</code>, the div will have a width of 1px + 10px + 100px + 10px + 1px = 122px.</p>
-<p>With <code>padding-box</code>, the div will have a width of 10px + 100px + 10px = 120px.</p>
-<p>With <code>border-box</code>, the div will have a width of 100px.</p>
-<h2 id="settingborderboxasthedefault">Setting border-box as the default</h2>
-<p>Which one makes the most sense for you? Probably the last one, <code>border-box</code>, as the total width is also the width you defined. The padding and borders will be placed inside the box unlike <code>content-box</code> which will place them outside.</p>
-<p>This is why many people, including me, recommend changing the <code>box-sizing</code> to <code>border-box</code> for all elements like this:</p>
-<pre><code class="css">* {
-    box-sizing: border-box;
-}
-</code></pre>
-<h2 id="browsersupport">Browser support</h2>
-<p>One important thing to note is that browsers, sadly, interpret these rules differently. While it is now much, much better, Internet Explorer 8 treats <code>border-box</code> as <code>content-box</code> which will ruin your layout. If you have to support IE8, I would still recommend changing to border-box but you will have to write extra styles to compensate. Styles like <code>width: 100%; padding: 2em;</code> are especially problematic without border-box calculation.</p>
-<ul>
-<li>(Browser support for box-sizing)[http://caniuse.com/css3-boxsizing]</li>
-</ul>
-<h2 id="summary">Summary</h2>
-<ul>
-<li>Everything is a box</li>
-<li>Every box has a width and height as well as content, padding, border and margin</li>
-<li>By default, content-box means padding and borders are added to the size</li>
-<li>Border-box is easier to use as the padding and borders are placed inside the width and height.</li>
-</ul>
-<h3 id="seemore">See more</h3>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box_model">box model documentation</a>.</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing">box-sizing documentation</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model">The visual formatting model</a></li>
-<li><a href="http://docs.webplatform.org/wiki/guides/the_css_layout_model">The CSS layout model</a></li>
-</ul>
-
-			<footer class="Meta">
-								<span class="Chapters">Chapter: <a href="http://codesandnotes.com/chapters/front-end/" title="View all posts in Front-end" rel="category tag">Front-end</a></span>
-													<span class="Topics">Topics: <a href="http://codesandnotes.com/topics/box-model/" rel="tag">box-model</a> <a href="http://codesandnotes.com/topics/box-sizing/" rel="tag">box-sizing</a> <a href="http://codesandnotes.com/topics/css/" rel="tag">CSS</a></span>
-
-				<a class="post-edit-link" href="http://codesandnotes.com/wp-admin/post.php?post=1495&amp;action=edit">Edit</a>			</footer>
-		</article>
-
-
-		<div class='yarpp-related'>
-
-<h2>Continue reading:</h2>
-<ul class="Toc">
-		<li><a href="http://codesandnotes.com/css-for-rtl-websites/">CSS for RTL websites</a></li>
-		<li><a href="http://codesandnotes.com/css-frameworks/">CSS frameworks</a></li>
-		<li><a href="http://codesandnotes.com/css3-flexbox-ressources/">CSS3 Flexbox ressources</a></li>
-		<li><a href="http://codesandnotes.com/chained-or-prefixed-classes/">Chained or prefixed classes?</a></li>
-		<li><a href="http://codesandnotes.com/default-browser-styles-and-normalize/">Default browser styles and Normalize</a></li>
+		<article>
+			<h1>Understanding The CSS Box Model</h1>
+			<p>It is important to understand how elements are rendered. How those CSS properties you write magically turn into beautiful shapes. Well, boxes. Every element on your page is a rectangular box. Even if it looks like a circle, it’s a box. This	<code>box-model</code> is what browsers use to calculate the total width and height of an element.</p>
+			<img src="/images/illustrations/lilOctopus-web2.jpg" alt="">
+			<h2>How is the size calculated?</h2>
+			<p>The way the box model is calculated is called	<code>box-sizing</code> and it has a default value of	<code>content-box</code>. This content-box does not include padding and borders in the width and height of an element. This means an element with a set width of 100px will not necessarily have a total, calculated width of a 100px. If the borders total 2px (e.g. 1px on each side), the borders are added to the width which will result in a total width of 102px. Padding adds to the size in the exact same way.</p>
+			<p>This might not be what you expect but it	<em>is</em> the default way everything is calculated on the web anyway. The size is calculated in a specific order. First the box is expanded as much as possible to contain the content. Then width and height to constrain the box, then padding, then borders and lastly margins.</p>
+			<p>Read that again, please.</p>
+			<blockquote>
+				<p>Remember, if you don’t specify a width or height, block elements default to the full width of the window and as heigh as the content. Inline elements snaps tightly to the content.</p>
+			</blockquote>
+			<h2>Different box models with box-sizing</h2>
+			<p>The box-sizing property has three different values to choose from:	<code>content-box</code>,	<code>padding-box</code> and	<code>border-box</code>. We just learned that the default	<code>content-box</code> adds padding and borders to the width and height. The	<code>padding-box</code> value also includes padding to the total size, but not border. The	<code>border-box</code> value includes both padding and border to the size.</p>
+			<h2>An example</h2>
+			<pre><code class="css">div {
+	width: 100px;
+	padding: 10px;
+	margin: 10px;
+	border: 1px;
+			}
+		</code></pre>
+		<p>With	<code>content-box</code>, the div will have a width of 1px + 10px + 100px + 10px + 1px = 122px. With	<code>padding-box</code>, the div will have a width of 10px + 100px + 10px = 120px. With	<code>border-box</code>, the div will have a width of 100px.</p>
+		<h2>Setting border-box as the default</h2>
+		<p>Which one makes the most sense for you? Probably the last one,	<code>border-box</code>, as the total width is also the width you defined. The padding and borders will be placed inside the box unlike	<code>content-box</code> which will place them outside. This is why many people, including me, recommend changing the	<code>box-sizing</code> to	<code>border-box</code> for all elements like this:</p>
+		<pre><code class="css">* {
+			box-sizing: border-box;
+		}
+	</code></pre>
+	<h2 id="browsersupport">Browser support</h2>
+	<p>One important thing to note is that browsers, sadly, interpret these rules differently. While it is now much, much better, Internet Explorer 8 treats	<code>border-box</code> as	<code>content-box</code> which will ruin your layout. If you have to support IE8, I would still recommend changing to border-box but you will have to write extra styles to compensate. Styles like	<code>width: 100%; padding: 2em;</code> are especially problematic without border-box calculation.</p>
+	<ul>
+		<li><a href="http://caniuse.com/css3-boxsizing">Browser support for box-sizing</a></li>
 	</ul>
-<!-- <p><a href="http://codesandnotes.com" title="See all articles on Codes &amp; Notes">↑ Table of contents</a></p> -->
-</div>
+	<h2>Summary</h2>
+	<ul>
+		<li>Everything is a box</li>
+		<li>Every box has a width and height as well as content, padding, border and margin</li>
+		<li>By default, content-box means padding and borders are added to the size</li>
+		<li>Border-box is easier to use as the padding and borders are placed inside the width and height.</li>
+	</ul>
+	<h2 id="seemore">See more</h2>
+	<ul>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box_model">box model documentation</a>.</li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing">box-sizing documentation</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model">The visual formatting model</a></li>
+		<li><a href="http://docs.webplatform.org/wiki/guides/the_css_layout_model">The CSS layout model</a></li>
+	</ul>
+
+	<footer class="Meta">
+		<span class="Chapters">Chapter:	<a href="http://codesandnotes.com/chapters/front-end/" title="View all posts in Front-end" rel="category tag">Front-end</a></span>
+		<span class="Topics">Topics:	<a href="http://codesandnotes.com/topics/box-model/" rel="tag">box-model</a>	<a href="http://codesandnotes.com/topics/box-sizing/" rel="tag">box-sizing</a>	<a href="http://codesandnotes.com/topics/css/" rel="tag">CSS</a></span>
+
+		<a class="post-edit-link" href="http://codesandnotes.com/gust/editor/1495">Edit</a>			</footer>
+	</article>
 
 
-<div id="comments" class="Comments">
+	<div class='yarpp-related'>
+		<h3>Continue reading:</h3>
+		<ul class="Toc">
+			<li><a href="http://codesandnotes.com/controlling-typography-with-sass/">Controlling typography with Sass</a></li>
+			<li><a href="http://codesandnotes.com/css-performance/">CSS performance</a></li>
+			<li><a href="http://codesandnotes.com/css-frameworks/">CSS frameworks</a></li>
+			<li><a href="http://codesandnotes.com/getting-started-with-flexbox/">Getting started with Flexbox</a></li>
+			<li><a href="http://codesandnotes.com/understanding-browser-styles-and-normalize/">Understanding browser styles and Normalize</a></li>
+		</ul>
+		<!--	<p><a href="http://codesandnotes.com" title="See all articles on Codes &amp; Notes">↑ Table of contents</a></p> -->
+	</div>
 
 
-
-									<div id="respond" class="comment-respond">
-				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/the-css-box-model/#respond" style="display:none;">Cancel reply</a></small></h3>
-									<form action="http://codesandnotes.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
-																			<p class="logged-in-as">Logged in as <a href="http://codesandnotes.com/wp-admin/profile.php">Oskar</a>. <a href="http://codesandnotes.com/wp-login.php?action=logout&amp;redirect_to=http%3A%2F%2Fcodesandnotes.com%2Fthe-css-box-model%2F&amp;_wpnonce=2aac5ec749" title="Log out of this account">Log out?</a></p>																			<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
-							<input name="submit" type="submit" id="submit" value="Post Comment" />
-							<input type='hidden' name='comment_post_ID' value='1495' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-						</p>
-						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9aa289a6e6" /></p><input type="hidden" id="_wp_unfiltered_html_comment_disabled" name="_wp_unfiltered_html_comment_disabled" value="642464b733" /><script>(function(){if(window===window.parent){document.getElementById('_wp_unfiltered_html_comment_disabled').name='_wp_unfiltered_html_comment';}})();</script>
-<script type='text/javascript' src='http://codesandnotes.com/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
-<script type='text/javascript' src='http://codesandnotes.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-<script type='text/javascript' src='http://codesandnotes.com/wp-content/plugins/akismet/_inc/form.js?ver=3.0.0'></script>
-<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="206"/></p>					</form>
-							</div><!-- #respond -->
-
-</div><!-- #comments -->
 
 		</main>
 
-	<aside id="Secondary" class="Secondary">
-		<!-- <p><a class="link-toc" href="/">↑ Table of contents</a></p> -->
+		<aside class="Aside">
+			<!--	<p><a class="link-toc" href="/">↑ Table of contents</a></p> -->
 
 
-		<form method="get" id="Search" class="Search" action="http://codesandnotes.com/">
-	<label>
-		<span class="screen-reader-text">Search for:</span>
-		<input type="search" class="Search-field" placeholder="Search &hellip;" value="" name="s">
-	</label>
-	<input type="submit" class="Search-submit" value="Search">
-</form>
-	</aside>
+			<form method="get" id="Search" class="Search" action="http://codesandnotes.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="Search-field" placeholder="Search &hellip;" value="" name="s">
+				</label>
+				<input type="submit" class="Search-submit" value="Search">
+			</form>
+		</aside>
 
-	<nav class="SiteNav">
-		<div id="Loader">
-		  <div class="Stick Stick--left"><span></span></div>
-		  <div class="Stick Stick--right"><span></span></div>
-		</div>
-	</nav>
-
-	<footer class="SiteFooter">
-		<p><a href="http://codesandnotes.com">Codes &amp; Notes</a> <span class="Copyright">&copy; Oskar Rough Mosumgaard 2014</span> <a href="/about">→  About</a></p>
-		<p class="TocLink"><a href="http://codesandnotes.com">§ Table of contents</a></p>
+	<footer class="Footer">
+		<p><a href="http://codesandnotes.com">Codes &amp; Notes</a>	<span class="Copyright">&copy; Oskar Rough Mosumgaard 2014</span>	<a href="/about">→  About</a></p>
+		<p class="TocLink"><a href="http://codesandnotes.com#toc">§ Table of contents</a></p>
 	</footer>
 
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-3906535-21', 'codesandnotes.com');
-		ga('send', 'pageview');
-	</script>
+	<div id="Loader">
+		<div class="Stick Stick--left"><span></span></div>
+		<div class="Stick Stick--right"><span></span></div>
+	</div>
 
-	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-	<script>
-	var removeRouting = function() {
-		$('body').removeClass('is-routing')
-	}
+	<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-3906535-21', 'codesandnotes.com');ga('send', 'pageview');</script>
 
-	$(function(){
-		var $links = $("a:not([href^='#']), a[href^='http://codesandnotes.com']");
-		var doit;
-		$links.on('click', function(event){
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		var removeRouting = function() {
+			$('body').removeClass('is-routing')
+		}
+		$(function(){
+			var $links = $("a:not([href^='#']), a[href^='http://codesandnotes.com']");
+			var doit;
+			$links.on('click', function(event){
 			// Remove routing after set time
 			clearTimeout(doit);
 			doit = setTimeout(removeRouting, 2000);
@@ -173,7 +140,7 @@
 				top: event.pageY + 'px'
 			});
 		});
-	});
+		});
 	</script>
 
 </body>

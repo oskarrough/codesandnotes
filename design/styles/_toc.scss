@@ -1,23 +1,26 @@
 /**
  * Chapters
  */
-section {
-	// max-width: 50em;
+main {
+	counter-reset: section;
 }
 .Chapter {
 	h2::before {
-		content: '§ ';
-		position: relative;
+		// content: '§ ';
+		counter-increment: section;
+		content: "" counter(section) ". "; // Puts "1. " in front of every chapter title
+		color: $lightgray;
 	}
 	h2 a {
 		color: $black;
 	}
 	> p {
-		max-width: 30rem;
+		// max-width: 30rem;
+		font-size: (18/20)*1rem;
 	}
 }
 /* Hide chapters when you are on a chapter */
-.category article .Chapters {
+.category .Meta-chapters {
 	display: none;
 }
 
@@ -25,31 +28,34 @@ section {
 /**
  * Table of contents
  */
-.Toc {
-	li {
-		// @include ff-header;
-		// font-size: ($medium/$base-font-size) * 1rem;
-		// line-height: ($base-line-height*1.4)/$medium;
+.Toc,
+.wp-tag-cloud {
+	li::before {
+		color: $lightgray;
+		transition: color 100ms;
 
-		line-height: (30/$base-font-size);
-
-
-		&:before {
-			@media (max-width: 30rem) {
-				display: none;
-			}
-			color: $gray;
-			transition: color 100ms;
-		}
-		&:hover:before {
-			color: $black;
+		@media (max-width: 30rem) {
+			display: none;
 		}
 	}
-	a {
-		// @include underline($font-size: 1.173913043em);
+	li:hover:before {
+		color: $black;
 	}
 
+	// &.is-hidden {
+	// 	max-height: 2.4rem;
+	// 	overflow: hidden;
+	// 	border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+	// 	background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1));
+	// 	background-position: bottom left;
+	// 	background-repeat: no-repeat;
+	// 	background-size: 100% 0.5em;
+	// }
+}
 
+.Topics {
+	margin-top: 2rem;
+	border-top: 5px solid $lightgreen;
 }
 
 
@@ -75,16 +81,16 @@ section {
  * Related posts
  */
 .yarpp-related {
-	float: left;
-	clear: both;
-	margin: $space 0;
-	padding: 0 $space $space/2;
-	background: $lightgreen;
-
-	.Toc {
-		margin-bottom: 0;
-	}
-	a {
-		@include underline($bg-color: $lightgreen, $font-size: 1.173913043em);
-	}
+	margin-bottom: $space;
+	// overflow: auto;
+	// float: left;
+	// clear: both;
+	// padding: 0 $space;
+	// background: $lightgreen;
+	// a {
+	// 	@include underline($bg-color: $lightgreen, $font-size: 1.173913043em);
+	// }
+}
+.yarpp-related-none {
+	display: none;
 }
