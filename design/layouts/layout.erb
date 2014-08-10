@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<!-- <title>Codes &amp; Notes – Codes and notes is a reference for web development that you can trust</title> -->
+	<title><%= discover_page_title %></title>
+	<meta name="description" content="Codes and notes is a reference for web development that you can trust" />
+
+	<link rel="stylesheet" type="text/css" href="styles/codesandnotes.css" />
+
+	<script src="//use.typekit.net/krs2vbw.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+</head>
+<!-- <body class="home blog logged-in"> -->
+<body class="<%= page_classes %>">
+
+	<header class="Manchet">
+		<h1>Codes &amp; Notes</h1>
+		<h2>A guide to web development that you can trust</h2>
+		<h3>by <span class="Author">Oskar Rough Mosumgaard</span></h3>
+		<p>A book for anyone wanting to learn more about web development.<br>Whether you are just getting started or need a trustworthy reference, this is it.</p>
+		<hr class="Ornament" id="toc">
+	</header>
+
+	<main class="Main">
+
+		<%= yield %>
+
+	</main>
+
+	<nav>
+		<%= previous_link(data.tree) %>
+		<%= next_link(data.tree) %>
+	</nav>
+
+	<aside>
+		<h3>Table of Contents</h3>
+		<nav>
+			<ul>
+				<%= tree_to_html(data.tree) %>
+				<!-- https://github.com/bryanbraun/middleman-navtree -->
+			</ul>
+		</nav>
+	</aside>
+
+	<script type="text/javascript">
+	 // <![CDATA[
+	 var disqus_shortname = 'codesandnotes';
+	 (function () {
+	 	var nodes = document.getElementsByTagName('span');
+	 	for (var i = 0, url; i < nodes.length; i++) {
+	 		if (nodes[i].className.indexOf('dsq-postid') != -1) {
+	 			nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+	 			url = nodes[i].parentNode.href.split('#', 1);
+	 			if (url.length == 1) url = url[0];
+	 			else url = url[1]
+	 				nodes[i].parentNode.href = url + '#disqus_thread';
+	 		}
+	 	}
+	 	var s = document.createElement('script'); s.async = true;
+	 	s.type = 'text/javascript';
+	 	s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+	 	(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	 }());
+	 //]]>
+	</script>
+
+	<footer class="Footer">
+		<p><a href="http://codesandnotes.com">Codes &amp; Notes</a> <span class="Copyright">&copy; Oskar Rough Mosumgaard 2014</span> <a href="/about">→  About</a></p>
+		<p class="TocLink"><a href="http://codesandnotes.com#toc">§ Table of contents</a></p>
+	</footer>
+
+	<div id="Loader">
+		<div class="Stick Stick--left"><span></span></div>
+		<div class="Stick Stick--right"><span></span></div>
+	</div>
+
+	<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-3906535-21', 'codesandnotes.com');ga('send', 'pageview');</script>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		var removeRouting = function() {
+			$('body').removeClass('is-routing')
+		}
+
+		$(function(){
+
+			// Loading
+			// var doit;
+			// var $links = $("a:not([href^='#']), a[href^='http://codesandnotes.com']");
+			// $links.on('click', function(event){
+
+			// 	// Remove routing after set time
+			// 	clearTimeout(doit);
+			// 	doit = setTimeout(removeRouting, 2000);
+			// 	$('body').addClass('is-routing');
+
+			// 	// Show the loader at mouse position
+			// 	$('#Loader').css({
+			// 		left: (event.pageX - 20) + 'px',
+			// 		top: event.pageY + 'px'
+			// 	});
+			// });
+
+
+			// $('.Chapter').find('h2').each(function(){
+			// 	var toc = $(this).nextAll('.Toc').addClass('is-hidden');
+			// 	$(this).on('click', function(event){
+			// 		event.preventDefault();
+			// 		toc.toggleClass('is-hidden');
+			// 	});
+			// });
+
+		});
+	</script>
+
+</body>
+</html>
