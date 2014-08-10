@@ -1,5 +1,10 @@
 # Self-publishing
 
+# Middleman method
+
+http://middlemanapp.com
+https://github.com/bryanbraun/middleman-navtree
+
 [Pandoc](http://johnmacfarlane.net/pandoc/) is 'universal document converter' which is very helpful for transforming your preferred writing format to whatever you need.
 
 ## Other digital books

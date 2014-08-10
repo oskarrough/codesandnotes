@@ -1,6 +1,6 @@
-# This in JavaScript
+# Scope this in JavaScript
 
-What is 'this' in JavaScript?
+What is 'this' in JavaScript? Talk about scope, how it changes and how to deal with it.
 
 ### See more
 
