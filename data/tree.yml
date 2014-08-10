@@ -2,90 +2,91 @@
 index.md: /index.md
 0-Uncategorized:
   Animation.md: /0-Uncategorized/Animation.md
-  Article%20ideas.md: /0-Uncategorized/Article%20ideas.md
+  Article-ideas.md: /0-Uncategorized/Article-ideas.md
   Backend.md: /0-Uncategorized/Backend.md
-  Book%20design%20ideas.md: /0-Uncategorized/Book%20design%20ideas.md
-  Freelancing%20og%20timesedler.md: /0-Uncategorized/Freelancing%20og%20timesedler.md
-  Gems%20without%20sudo.md: /0-Uncategorized/Gems%20without%20sudo.md
-  Getting%20online%20-%20Domains,%20hosting%20and%20DNS.md: /0-Uncategorized/Getting%20online%20-%20Domains,%20hosting%20and%20DNS.md
-  Getting%20started%20with%20web%20development.md: /0-Uncategorized/Getting%20started%20with%20web%20development.md
+  Book-design-ideas.md: /0-Uncategorized/Book-design-ideas.md
+  Freelancing-og-timesedler.md: /0-Uncategorized/Freelancing-og-timesedler.md
+  Gems-without-sudo.md: /0-Uncategorized/Gems-without-sudo.md
+  Getting-online-Domains-hosting-and-DNS.md: /0-Uncategorized/Getting-online-Domains-hosting-and-DNS.md
+  Getting-started-with-web-development.md: /0-Uncategorized/Getting-started-with-web-development.md
   Help.md: /0-Uncategorized/Help.md
   Mobile.md: /0-Uncategorized/Mobile.md
-  Offline%20information.md: /0-Uncategorized/Offline%20information.md
-  On%20writing.md: /0-Uncategorized/On%20writing.md
-  Responsive%20images.md: /0-Uncategorized/Responsive%20images.md
-  Ressources%20for%20learning.md: /0-Uncategorized/Ressources%20for%20learning.md
+  Offline-information.md: /0-Uncategorized/Offline-information.md
+  On-writing.md: /0-Uncategorized/On-writing.md
+  Responsive-images.md: /0-Uncategorized/Responsive-images.md
+  Ressources-for-learning.md: /0-Uncategorized/Ressources-for-learning.md
   Self-publishing.md: /0-Uncategorized/Self-publishing.md
   Versioning.md: /0-Uncategorized/Versioning.md
-  Word%20breaking%20in%20East%20Asian%20languages.md: /0-Uncategorized/Word%20breaking%20in%20East%20Asian%20languages.md
+  Word-breaking-in-East-Asian-languages.md: /0-Uncategorized/Word-breaking-in-East-Asian-languages.md
 1-Preface: {}
 2-Front-end:
-  01%20CSS.md: /2-Front-end/01%20CSS.md
-  01%20HTML.md: /2-Front-end/01%20HTML.md
-  01%20JavaScript.md: /2-Front-end/01%20JavaScript.md
+  01-CSS.md: /2-Front-end/01-CSS.md
+  01-HTML.md: /2-Front-end/01-HTML.md
+  01-JavaScript.md: /2-Front-end/01-JavaScript.md
   CSS:
-    Animating%20with%20CSS.md: /2-Front-end/CSS/Animating%20with%20CSS.md
-    CSS%20Magic.md: /2-Front-end/CSS/CSS%20Magic.md
-    CSS%20Methods.md: /2-Front-end/CSS/CSS%20Methods.md
-    CSS%20Preprocessors.md: /2-Front-end/CSS/CSS%20Preprocessors.md
-    CSS%20Selectors.md: /2-Front-end/CSS/CSS%20Selectors.md
-    CSS%20Sprites%20and%20icons.md: /2-Front-end/CSS/CSS%20Sprites%20and%20icons.md
-    Layout%20with%20CSS.md: /2-Front-end/CSS/Layout%20with%20CSS.md
+    Animating-with-CSS.md: /2-Front-end/CSS/Animating-with-CSS.md
+    CSS-Magic.md: /2-Front-end/CSS/CSS-Magic.md
+    CSS-Methods.md: /2-Front-end/CSS/CSS-Methods.md
+    CSS-Preprocessors.md: /2-Front-end/CSS/CSS-Preprocessors.md
+    CSS-Selectors.md: /2-Front-end/CSS/CSS-Selectors.md
+    CSS-Sprites-and-icons.md: /2-Front-end/CSS/CSS-Sprites-and-icons.md
+    Layout-with-CSS.md: /2-Front-end/CSS/Layout-with-CSS.md
     Mediablock.md: /2-Front-end/CSS/Mediablock.md
     OOCSS.md: /2-Front-end/CSS/OOCSS.md
-    Responsive%20web%20design.md: /2-Front-end/CSS/Responsive%20web%20design.md
+    Responsive-web-design.md: /2-Front-end/CSS/Responsive-web-design.md
     Typography.md: /2-Front-end/CSS/Typography.md
-    When%20to%20use%20classes%20and%20ids.md: /2-Front-end/CSS/When%20to%20use%20classes%20and%20ids.md
+    When-to-use-classes-and-ids.md: /2-Front-end/CSS/When-to-use-classes-and-ids.md
   HTML: {}
   JavaScript:
-    Functional%20JavaScript.md: /2-Front-end/JavaScript/Functional%20JavaScript.md
-    JavaScript%20MVC.md: /2-Front-end/JavaScript/JavaScript%20MVC.md
-    Object-orientated%20JavaScript.md: /2-Front-end/JavaScript/Object-orientated%20JavaScript.md
+    Functional-JavaScript.md: /2-Front-end/JavaScript/Functional-JavaScript.md
+    JavaScript-MVC.md: /2-Front-end/JavaScript/JavaScript-MVC.md
+    Object-orientated-JavaScript.md: /2-Front-end/JavaScript/Object-orientated-JavaScript.md
     Scope.md: /2-Front-end/JavaScript/Scope.md
-    Testing%20JavaScript.md: /2-Front-end/JavaScript/Testing%20JavaScript.md
-    This%20in%20JavaScript.md: /2-Front-end/JavaScript/This%20in%20JavaScript.md
+    Testing-JavaScript.md: /2-Front-end/JavaScript/Testing-JavaScript.md
+    This-in-JavaScript.md: /2-Front-end/JavaScript/This-in-JavaScript.md
     jQuery.md: /2-Front-end/JavaScript/jQuery.md
-  Mobile%20first.md: /2-Front-end/Mobile%20first.md
-  Sticky%20elements%20edit.md: /2-Front-end/Sticky%20elements%20edit.md
-  Testing%20CSS.md: /2-Front-end/Testing%20CSS.md
-  Web%20components.md: /2-Front-end/Web%20components.md
+  Mobile-first.md: /2-Front-end/Mobile-first.md
+  Sticky-elements-edit.md: /2-Front-end/Sticky-elements-edit.md
+  Testing-CSS.md: /2-Front-end/Testing-CSS.md
+  Web-components.md: /2-Front-end/Web-components.md
 3-Architecture: {}
 4-Aspects:
-  0%20Aspects.md: /4-Aspects/0%20Aspects.md
-  Coding%20with%20conventions,%20style%20and%20standards.md: /4-Aspects/Coding%20with%20conventions,%20style%20and%20standards.md
-  Feature%20detection%20with%20Modernizr%20and%20Polyfills.md: /4-Aspects/Feature%20detection%20with%20Modernizr%20and%20Polyfills.md
+  0-Aspects.md: /4-Aspects/0-Aspects.md
+  Coding-with-conventions,-style-and-standards.md: /4-Aspects/Coding-with-conventions,-style-and-standards.md
+  Feature-detection-with-Modernizr-and-Polyfills.md: /4-Aspects/Feature-detection-with-Modernizr-and-Polyfills.md
   Semantics.md: /4-Aspects/Semantics.md
-  Small%20changes.md: /4-Aspects/Small%20changes.md
-  The%20different%20levels%20of%20programming.md: /4-Aspects/The%20different%20levels%20of%20programming.md
-5-Tools%20and%20workflow:
-  01%20Tools%20and%20workflow.md: /5-Tools%20and%20workflow/01%20Tools%20and%20workflow.md
-  Backup.md: /5-Tools%20and%20workflow/Backup.md
-  Choose%20only%20what%20you%20need%20and%20choose%20the%20right%20tool%20for%20the%20right%20job.md: /5-Tools%20and%20workflow/Choose%20only%20what%20you%20need%20and%20choose%20the%20right%20tool%20for%20the%20right%20job.md
-  Development%20workflow.md: /5-Tools%20and%20workflow/Development%20workflow.md
-  Digital%20tools.md: /5-Tools%20and%20workflow/Digital%20tools.md
-  Fonts%20for%20code.md: /5-Tools%20and%20workflow/Fonts%20for%20code.md
-  Front%20end%20package%20management%20and%20Bower.md: /5-Tools%20and%20workflow/Front%20end%20package%20management%20and%20Bower.md
-  Git.md: /5-Tools%20and%20workflow/Git.md
-  Grunt%20and%20Yeoman.md: /5-Tools%20and%20workflow/Grunt%20and%20Yeoman.md
-  Hosting%20(dns,%20server,%20virtual%20server,%20deploying).md: /5-Tools%20and%20workflow/Hosting%20(dns,%20server,%20virtual%20server,%20deploying).md
-  Managing%20gems.md: /5-Tools%20and%20workflow/Managing%20gems.md
-  Polymer.md: /5-Tools%20and%20workflow/Polymer.md
-  Quick%20Look.md: /5-Tools%20and%20workflow/Quick%20Look.md
-  Relative%20Compass%20sprite%20urls%20grunt%20compass.md: /5-Tools%20and%20workflow/Relative%20Compass%20sprite%20urls%20grunt%20compass.md
-  SVG.md: /5-Tools%20and%20workflow/SVG.md
-  Servers.md: /5-Tools%20and%20workflow/Servers.md
-  Shell.md: /5-Tools%20and%20workflow/Shell.md
-  Static%20sites.md: /5-Tools%20and%20workflow/Static%20sites.md
-  Sublime%20Text.md: /5-Tools%20and%20workflow/Sublime%20Text.md
-  What%20is%20the%20job%20of%20the%20browser.md: /5-Tools%20and%20workflow/What%20is%20the%20job%20of%20the%20browser.md
-6-Content%20management:
-  01%20Content%20management.md: /6-Content%20management/01%20Content%20management.md
-  Content%20management%20systems.md: /6-Content%20management/Content%20management%20systems.md
+  Small-changes.md: /4-Aspects/Small-changes.md
+  The-different-levels-of-programming.md: /4-Aspects/The-different-levels-of-programming.md
+5-Tools-and-workflow:
+  01-Tools-and-workflow.md: /5-Tools-and-workflow/01-Tools-and-workflow.md
+  Backup.md: /5-Tools-and-workflow/Backup.md
+  Choose-only-what-you-need-and-choose-the-right-tool-for-the-right-job.md: /5-Tools-and-workflow/Choose-only-what-you-need-and-choose-the-right-tool-for-the-right-job.md
+  Development-workflow.md: /5-Tools-and-workflow/Development-workflow.md
+  Digital-tools.md: /5-Tools-and-workflow/Digital-tools.md
+  Fonts-for-code.md: /5-Tools-and-workflow/Fonts-for-code.md
+  Front-end-package-management-and-Bower.md: /5-Tools-and-workflow/Front-end-package-management-and-Bower.md
+  Git.md: /5-Tools-and-workflow/Git.md
+  Grunt-and-Yeoman.md: /5-Tools-and-workflow/Grunt-and-Yeoman.md
+  Hosting-(dns,-server,-virtual-server,-deploying).md: /5-Tools-and-workflow/Hosting-(dns,-server,-virtual-server,-deploying).md
+  Managing-gems.md: /5-Tools-and-workflow/Managing-gems.md
+  Polymer.md: /5-Tools-and-workflow/Polymer.md
+  Quick-Look.md: /5-Tools-and-workflow/Quick-Look.md
+  Relative-Compass-sprite-urls-grunt-compass.md: /5-Tools-and-workflow/Relative-Compass-sprite-urls-grunt-compass.md
+  SVG.md: /5-Tools-and-workflow/SVG.md
+  Servers.md: /5-Tools-and-workflow/Servers.md
+  Shell.md: /5-Tools-and-workflow/Shell.md
+  Static-sites.md: /5-Tools-and-workflow/Static-sites.md
+  Sublime-Text.md: /5-Tools-and-workflow/Sublime-Text.md
+  What-is-the-job-of-the-browser.md: /5-Tools-and-workflow/What-is-the-job-of-the-browser.md
+6-Content-management:
+  01-Content-management.md: /6-Content-management/01-Content-management.md
+  Content-management-systems.md: /6-Content-management/Content-management-systems.md
 7-Performance:
-  01%20Performance.md: /7-Performance/01%20Performance.md
+  01-Performance.md: /7-Performance/01-Performance.md
   1000ms.md: /7-Performance/1000ms.md
-  60%20fps.md: /7-Performance/60%20fps.md
+  60-fps.md: /7-Performance/60-fps.md
   Gzipping.md: /7-Performance/Gzipping.md
-  Image%20optimization.md: /7-Performance/Image%20optimization.md
+  Image-optimization.md: /7-Performance/Image-optimization.md
   Learning.md: /7-Performance/Learning.md
 index-wp.md: /index-wp.md
+sitemap.xml.erb: /sitemap.xml.erb
