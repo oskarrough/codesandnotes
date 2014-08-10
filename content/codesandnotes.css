@@ -1,0 +1,14 @@
+body {
+	background-color: #eee;
+}
+nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 200px;
+	bottom: 0;
+	overflow-y: scroll;
+}
+#main {
+	margin-right: 240px;
+}

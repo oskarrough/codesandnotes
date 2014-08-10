@@ -7,7 +7,7 @@ var $ = require('gulp-load-plugins')();
 var exec = require('child_process').exec;
 
 gulp.task('styles', function () {
-	return gulp.src('design/styles/codesandnotes.scss')
+	return gulp.src('design/styles/*.scss')
 		.pipe($.plumber())
 		.pipe($.rubySass({
 			style: 'expanded',

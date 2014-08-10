@@ -88,5 +88,6 @@ index.md: /index.md
   Gzipping.md: /7-Performance/Gzipping.md
   Image-optimization.md: /7-Performance/Image-optimization.md
   Learning.md: /7-Performance/Learning.md
+codesandnotes.css: /codesandnotes.css
 index-wp.md: /index-wp.md
 sitemap.xml.erb: /sitemap.xml.erb

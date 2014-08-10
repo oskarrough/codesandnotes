@@ -7,8 +7,9 @@
 	<!-- <title>Codes &amp; Notes – Codes and notes is a reference for web development that you can trust</title> -->
 	<title><%= discover_page_title %></title>
 	<meta name="description" content="Codes and notes is a reference for web development that you can trust" />
-
-	<link rel="stylesheet" type="text/css" href="styles/codesandnotes.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="codesandnotes.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="styles/codesandnotes.css" /> -->
+	<%= stylesheet_link_tag 'codesandnotes' %>
 
 	<script src="//use.typekit.net/krs2vbw.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
@@ -25,25 +26,25 @@
 	</header>
 
 	<main class="Main">
-
 		<%= yield %>
-
 	</main>
 
 	<nav>
 		<%= previous_link(data.tree) %>
 		<%= next_link(data.tree) %>
-	</nav>
 
-	<aside>
+		<hr>
+
+		<%= table_of_contents(current_page) %>
+
+		<hr>
+
 		<h3>Table of Contents</h3>
-		<nav>
-			<ul>
-				<%= tree_to_html(data.tree) %>
-				<!-- https://github.com/bryanbraun/middleman-navtree -->
-			</ul>
-		</nav>
-	</aside>
+		<ul>
+			<%= tree_to_html(data.tree) %>
+			<!-- https://github.com/bryanbraun/middleman-navtree -->
+		</ul>
+	</nav>
 
 	<script type="text/javascript">
 	 // <![CDATA[

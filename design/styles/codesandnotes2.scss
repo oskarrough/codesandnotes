@@ -1,0 +1,26 @@
+/*!
+	Oskar Rough Mosumgaard. 2014.
+*/
+
+@import 'config';
+@import 'utilities';
+@import 'base';
+
+// @import 'typography';
+// @import 'typography-modernscale';
+// @import 'layout';
+// @import 'layout-backgrounds';
+// @import 'header';
+// @import 'toc';
+// @import 'print';
+// @import 'loader';
+
+main {
+	margin-left: 180px;
+}
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 160px;
+}
