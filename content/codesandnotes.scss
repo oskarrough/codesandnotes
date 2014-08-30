@@ -23,6 +23,10 @@ footer {
 }
 main {
 	flex: 1;
+
+	&:after {
+		content: '♦';
+	}
 }
 nav {
 	width: 16rem;
@@ -31,9 +35,7 @@ nav {
 	top: 1rem;
 	left: 1rem;
 	bottom: 0;
-}
 
-nav {
 	ul {
 		list-style: none;
 		padding-left: 0;
@@ -44,9 +46,11 @@ nav {
 	// }
 	li {
 		font-size: 14px;
-		margin-bottom: 0.2em;
+
 	}
 	a {
+		display: inline-block;
+		padding: 0.1em 0;
 		color: blue;
 		text-decoration: none;
 	}
