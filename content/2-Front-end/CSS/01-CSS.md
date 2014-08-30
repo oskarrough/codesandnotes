@@ -2,7 +2,7 @@
 
 Cascading, inheritance, selectors and their specificity. This section is about best practices and our experience with structured oocss.
 
-	> Work with CSS, not against it. (source: http://www.stubbornella.org/content/2012/05/02/cross-browser-debugging-css)
+	> Work with CSS, not against it. (<a href="http://www.stubbornella.org/content/2012/05/02/cross-browser-debugging-css">source</a>)
 
 ## CSS 101
 

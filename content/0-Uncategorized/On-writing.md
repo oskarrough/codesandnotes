@@ -6,19 +6,19 @@ Tips on writing. Thieved and gathered from different internet places and I unfor
 
 Use an informal, conversational tone, though not at the cost of clarity or correctness. Experts require neither excessive formality nor excessive casualness to express their authority. If you write with ALA’s readership in mind and sound like yourself, you’re most of the way there already.
 
-## CONCISE ARTICLES WITH SNAPPY INTROS
+## Concise articles with snappy intros
 
 There is no room for meandering, no space for encyclopedic completeness. You need to get in, score, and get out. State your idea clearly and quickly. If your tutorial solves a problem, state the problem. Don’t warm up to your subject by preceding it with generalizations. You don’t need to tell our readers that Tim Berners-Lee invented the web before getting to your point.
 
-## KEEP YOUR READERS IN MIND
+## Keep your readers in mind
 
 Experienced web professionals read ALA. If you dumb down your article, you will offend these readers. But our readers come from many backgrounds—a reader who knows all 317 CSS workarounds might not necessarily have heard of Edward Tufte—so take time to define your terms and provide pertinent background information, if only as a link.
 
-## ON METAPHORS
+## On metaphors
 
 Extended metaphors can provide gentle uplift and support, but they make poor lifeboats. Avoid extended cooking and spell-casting metaphors unless you can carry it off in a truly novel and delightful way. They may be apt, but are without question overworked.
 
-## CLARITY FIRST
+## Clarity first
 
 Avoid unnecessary jargon, trendy constructions, vagueness, and buzzwords. Omit needless words. Make sure that pronouns point the way to their referents like the tidy signposts they are. Strive for brisk pacing and precise explanation. Limit the use of opaque idioms and pop culture references to non-essential points; no reader should need to be familiar with a particular song or movie to understand your central argument.
 

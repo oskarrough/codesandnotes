@@ -14,14 +14,12 @@ When your front end is asking for different (sizes of) images you also need to h
 
 This is a server side solution that will return a responsive image based on the variables passed through as a part of the query string.
 
-### See more
+### Resources
 
 - http://dev.opera.com/articles/responsive-images/
 - http://www.w3.org/TR/2013/WD-html-picture-element-20130226/
 - http://www.iandevlin.com/blog/2013/10/responsive-web-design/resimagecrop-a-responsive-image-solution
-
 - http://css-tricks.com/which-responsive-images-solution-should-you-use/
 - http://blog.cloudfour.com/sensible-jumps-in-responsive-image-file-sizes
-
 - https://github.com/scottjehl/picturefill
 - https://github.com/BBC-News/Imager.js

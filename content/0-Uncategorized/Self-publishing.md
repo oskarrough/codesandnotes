@@ -1,11 +1,13 @@
 # Self-publishing
 
-# Middleman method
+Notes on self publishing. Will make it useful for others later.
 
-http://middlemanapp.com
-https://github.com/bryanbraun/middleman-navtree
+## Middleman method
 
-[Pandoc](http://johnmacfarlane.net/pandoc/) is 'universal document converter' which is very helpful for transforming your preferred writing format to whatever you need.
+- http://middlemanapp.com
+- https://github.com/bryanbraun/middleman-navtree
+[Pandoc](http://johnmacfarlane.net/pandoc/) is a 'universal document converter' which is very helpful for transforming your preferred writing format to whatever you need.
+- http://mbutterick.github.io/pollen/doc/
 
 ## Other digital books
 
@@ -15,10 +17,11 @@ https://github.com/bryanbraun/middleman-navtree
 - http://adamschwartz.co/magic-of-css/
 - https://github.com/tooling/book-of-modern-frontend-tooling
 - http://smacss.com/
+- http://javascriptplayground.com/the-refactoring-tales/
 
 ## Distribution
 
-https://gumroad.com/
+- https://gumroad.com/
 
 ## Related links
 
@@ -45,7 +48,9 @@ https://gumroad.com/
 4. MOBI
 
 ### Semantic naming approach
+
 name files, order with 1. etc. Store it in YAML frontmatter.
 
 ### TOC based approach
-toc.json toc.md
+
+toc.json or toc.md

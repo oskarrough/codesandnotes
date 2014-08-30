@@ -2,42 +2,36 @@
 index.md: /index.md
 0-Uncategorized:
   Animation.md: /0-Uncategorized/Animation.md
-  Article-ideas.md: /0-Uncategorized/Article-ideas.md
-  Backend.md: /0-Uncategorized/Backend.md
   Book-design-ideas.md: /0-Uncategorized/Book-design-ideas.md
   Freelancing-og-timesedler.md: /0-Uncategorized/Freelancing-og-timesedler.md
-  Gems-without-sudo.md: /0-Uncategorized/Gems-without-sudo.md
-  Getting-online-Domains-hosting-and-DNS.md: /0-Uncategorized/Getting-online-Domains-hosting-and-DNS.md
-  Getting-started-with-web-development.md: /0-Uncategorized/Getting-started-with-web-development.md
-  Help.md: /0-Uncategorized/Help.md
-  Mobile.md: /0-Uncategorized/Mobile.md
+  Getting-help.md: /0-Uncategorized/Getting-help.md
   Offline-information.md: /0-Uncategorized/Offline-information.md
   On-writing.md: /0-Uncategorized/On-writing.md
-  Responsive-images.md: /0-Uncategorized/Responsive-images.md
-  Ressources-for-learning.md: /0-Uncategorized/Ressources-for-learning.md
   Self-publishing.md: /0-Uncategorized/Self-publishing.md
-  Versioning.md: /0-Uncategorized/Versioning.md
-  Word-breaking-in-East-Asian-languages.md: /0-Uncategorized/Word-breaking-in-East-Asian-languages.md
-1-Preface: {}
+  To%20be%20written.md: /0-Uncategorized/To%20be%20written.md
+  UX.md: /0-Uncategorized/UX.md
+1-Preface:
+  Getting-started-with-web-development.md: /1-Preface/Getting-started-with-web-development.md
 2-Front-end:
-  01-CSS.md: /2-Front-end/01-CSS.md
-  01-HTML.md: /2-Front-end/01-HTML.md
-  01-JavaScript.md: /2-Front-end/01-JavaScript.md
   CSS:
+    01-CSS.md: /2-Front-end/CSS/01-CSS.md
     Animating-with-CSS.md: /2-Front-end/CSS/Animating-with-CSS.md
     CSS-Magic.md: /2-Front-end/CSS/CSS-Magic.md
-    CSS-Methods.md: /2-Front-end/CSS/CSS-Methods.md
     CSS-Preprocessors.md: /2-Front-end/CSS/CSS-Preprocessors.md
     CSS-Selectors.md: /2-Front-end/CSS/CSS-Selectors.md
     CSS-Sprites-and-icons.md: /2-Front-end/CSS/CSS-Sprites-and-icons.md
+    CSS-Transforms.md: /2-Front-end/CSS/CSS-Transforms.md
     Layout-with-CSS.md: /2-Front-end/CSS/Layout-with-CSS.md
     Mediablock.md: /2-Front-end/CSS/Mediablock.md
     OOCSS.md: /2-Front-end/CSS/OOCSS.md
     Responsive-web-design.md: /2-Front-end/CSS/Responsive-web-design.md
+    Testing-CSS.md: /2-Front-end/CSS/Testing-CSS.md
     Typography.md: /2-Front-end/CSS/Typography.md
     When-to-use-classes-and-ids.md: /2-Front-end/CSS/When-to-use-classes-and-ids.md
-  HTML: {}
+  HTML:
+    01-HTML.md: /2-Front-end/HTML/01-HTML.md
   JavaScript:
+    01-JavaScript.md: /2-Front-end/JavaScript/01-JavaScript.md
     Functional-JavaScript.md: /2-Front-end/JavaScript/Functional-JavaScript.md
     JavaScript-MVC.md: /2-Front-end/JavaScript/JavaScript-MVC.md
     Object-orientated-JavaScript.md: /2-Front-end/JavaScript/Object-orientated-JavaScript.md
@@ -45,11 +39,14 @@ index.md: /index.md
     Testing-JavaScript.md: /2-Front-end/JavaScript/Testing-JavaScript.md
     This-in-JavaScript.md: /2-Front-end/JavaScript/This-in-JavaScript.md
     jQuery.md: /2-Front-end/JavaScript/jQuery.md
-  Mobile-first.md: /2-Front-end/Mobile-first.md
+  Responsive-images.md: /2-Front-end/Responsive-images.md
   Sticky-elements-edit.md: /2-Front-end/Sticky-elements-edit.md
-  Testing-CSS.md: /2-Front-end/Testing-CSS.md
   Web-components.md: /2-Front-end/Web-components.md
-3-Architecture: {}
+  Word-breaking-in-East-Asian-languages.md: /2-Front-end/Word-breaking-in-East-Asian-languages.md
+3-Architecture:
+  Front-end%20architecture.md: /3-Architecture/Front-end%20architecture.md
+  Mobile-first.md: /3-Architecture/Mobile-first.md
+  Mobile.md: /3-Architecture/Mobile.md
 4-Aspects:
   0-Aspects.md: /4-Aspects/0-Aspects.md
   Coding-with-conventions,-style-and-standards.md: /4-Aspects/Coding-with-conventions,-style-and-standards.md
@@ -65,10 +62,13 @@ index.md: /index.md
   Digital-tools.md: /5-Tools-and-workflow/Digital-tools.md
   Fonts-for-code.md: /5-Tools-and-workflow/Fonts-for-code.md
   Front-end-package-management-and-Bower.md: /5-Tools-and-workflow/Front-end-package-management-and-Bower.md
+  Gems-without-sudo.md: /5-Tools-and-workflow/Gems-without-sudo.md
+  Getting-online-Domains-hosting-and-DNS.md: /5-Tools-and-workflow/Getting-online-Domains-hosting-and-DNS.md
   Git.md: /5-Tools-and-workflow/Git.md
   Grunt-and-Yeoman.md: /5-Tools-and-workflow/Grunt-and-Yeoman.md
   Hosting-(dns,-server,-virtual-server,-deploying).md: /5-Tools-and-workflow/Hosting-(dns,-server,-virtual-server,-deploying).md
   Managing-gems.md: /5-Tools-and-workflow/Managing-gems.md
+  Monospaced.md: /5-Tools-and-workflow/Monospaced.md
   Polymer.md: /5-Tools-and-workflow/Polymer.md
   Quick-Look.md: /5-Tools-and-workflow/Quick-Look.md
   Relative-Compass-sprite-urls-grunt-compass.md: /5-Tools-and-workflow/Relative-Compass-sprite-urls-grunt-compass.md
@@ -77,9 +77,11 @@ index.md: /index.md
   Shell.md: /5-Tools-and-workflow/Shell.md
   Static-sites.md: /5-Tools-and-workflow/Static-sites.md
   Sublime-Text.md: /5-Tools-and-workflow/Sublime-Text.md
+  Versioning.md: /5-Tools-and-workflow/Versioning.md
   What-is-the-job-of-the-browser.md: /5-Tools-and-workflow/What-is-the-job-of-the-browser.md
 6-Content-management:
   01-Content-management.md: /6-Content-management/01-Content-management.md
+  Backend.md: /6-Content-management/Backend.md
   Content-management-systems.md: /6-Content-management/Content-management-systems.md
 7-Performance:
   01-Performance.md: /7-Performance/01-Performance.md
@@ -88,6 +90,6 @@ index.md: /index.md
   Gzipping.md: /7-Performance/Gzipping.md
   Image-optimization.md: /7-Performance/Image-optimization.md
   Learning.md: /7-Performance/Learning.md
-codesandnotes.css: /codesandnotes.css
+codesandnotes.scss: /codesandnotes.scss
 index-wp.md: /index-wp.md
 sitemap.xml.erb: /sitemap.xml.erb
