@@ -10,8 +10,8 @@ gem "redcarpet"
 gem "middleman-navtree"
 
 # Live-reloading plugin
-#gem "middleman-livereload", "~> 3.1.0"
-gem 'middleman-livereload', :github => 'middleman/middleman-livereload'
+gem "middleman-livereload", "~> 3.3.4"
+#gem 'middleman-livereload', :github => 'middleman/middleman-livereload'
 
 # Let the system worry about vendor prefixes
 gem 'middleman-autoprefixer'

@@ -4,3 +4,4 @@ dist
 *.sublime-project
 *.sublime-workspace
 .sass-cache
+.divshot-cache
