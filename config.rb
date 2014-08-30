@@ -92,11 +92,11 @@ helpers do
     end
   end
 
-  # Generate a TOC??
+  # Generates a TOC based on headlines
   def table_of_contents(resource)
     content = File.read(resource.source_file)
     toc_renderer = Redcarpet::Render::HTML_TOC.new
-    markdown = Redcarpet::Markdown.new(toc_renderer, nesting_level: 2) # nesting_level is optional
+    markdown = Redcarpet::Markdown.new(toc_renderer, nesting_level: 3) # nesting_level is optional
     markdown.render(content)
   end
 
