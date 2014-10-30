@@ -1,6 +1,10 @@
 # Performance on the web
 
+https://github.com/davidsonfellipe/awesome-wpo
+
 If there's one thing you can do to improve user-experience on a site it is making it fast. It isn't optimizing your media queries or making images fade smoother. It is making it fast. The money tells us that speed is more important than aesthetics. I'd argue otherwise but then again I'm not the money. This is an overview of performance on the web.
+
+http://perf.fail/
 
 ## Minimize HTTP Requests
 
