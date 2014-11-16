@@ -7,7 +7,7 @@ index.md: /index.md
   Offline-information.md: /0-Uncategorized/Offline-information.md
   On-writing.md: /0-Uncategorized/On-writing.md
   Self-publishing.md: /0-Uncategorized/Self-publishing.md
-  To%20be%20written.md: /0-Uncategorized/To%20be%20written.md
+  To-be-written.md: /0-Uncategorized/To-be-written.md
   UX.md: /0-Uncategorized/UX.md
 1-Preface:
   Getting-started-with-web-development.md: /1-Preface/Getting-started-with-web-development.md
@@ -57,6 +57,7 @@ index.md: /index.md
   01-Tools-and-workflow.md: /5-Tools-and-workflow/01-Tools-and-workflow.md
   Backup.md: /5-Tools-and-workflow/Backup.md
   Choose-only-what-you-need-and-choose-the-right-tool-for-the-right-job.md: /5-Tools-and-workflow/Choose-only-what-you-need-and-choose-the-right-tool-for-the-right-job.md
+  Cross-browser-videos.md: /5-Tools-and-workflow/Cross-browser-videos.md
   Development-workflow.md: /5-Tools-and-workflow/Development-workflow.md
   Digital-tools.md: /5-Tools-and-workflow/Digital-tools.md
   Fonts-for-code.md: /5-Tools-and-workflow/Fonts-for-code.md

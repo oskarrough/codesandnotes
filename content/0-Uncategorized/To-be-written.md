@@ -22,14 +22,9 @@
 - Practice web development by transforming a design comp into an HTML and CSS web page
 - Reviewing and refactoring
 
-### Responsive Web Design
+### References
 
-- Articulate that responsive design is more design than code
-- Know the difference between fixed and responsive layouts and understand the difference between fluid and elastic layouts
-- Apply media queries to web sites to achieve a responsive layout
-- Implement media queries to change layout on mobile devices
-
-http://hackdesign.org/lesson/9/
-http://webplatformtools.org/
-http://learn.shayhowe.com/advanced-html-css/performance-organization
-http://nicewebtype.com/notes/responsive-typography/
+- http://hackdesign.org/lesson/9/
+- http://webplatformtools.org/
+- http://learn.shayhowe.com/advanced-html-css/performance-organization
+- http://nicewebtype.com/notes/responsive-typography/
