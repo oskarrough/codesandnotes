@@ -25,3 +25,6 @@ Like these:
 - http://perishablepress.com/png-image-optimization/
 - http://addyosmani.com/blog/image-optimization-tools/
 - http://calendar.perfplanet.com/2013/browser-specific-image-formats/
+- https://github.com/pornel/mediancut-posterizer
+
+pngcrush -rem alla -nofilecheck -reduce -m 7 (YOURFILE).png (OPTIMIZEDFILE).png

@@ -8,26 +8,27 @@ Manually creating sprites is super boring. What you want is a robot that creates
 
 ## Solution
 
+TODO
 
+# CSS Sprites
+
+todo
+
+- What are sprites.
+- Why would I want it.
+- How do you do it
+- Image replacement techniques
 
 ### References
 
 - http://filamentgroup.com/lab/bulletproof_icon_fonts/
-
-# CSS Sprites
-
-What are sprites. Why would I want it. How do you do it
-- Image replacement techniques
-compass sprites
-
-http://developer.yahoo.com/performance/rules.html#opt_sprites
-http://compass-style.org/reference/compass/utilities/sprites/
-http://codesandnotes.com/css-sprites-and-icons
-
-http://iconizr.com/ & https://github.com/jkphl/iconizr
-https://github.com/filamentgroup/grunticon
-https://github.com/Ensighten/grunt-spritesmith
-https://github.com/FWeinb/grunt-svgstore
-http://glue.readthedocs.org/
-http://yostudios.github.io/Spritemapper/
-https://github.com/jakesgordon/sprite-factory
+- http://developer.yahoo.com/performance/rules.html#opt_sprites
+- http://compass-style.org/reference/compass/utilities/sprites/
+- http://codesandnotes.com/css-sprites-and-icons
+- http://iconizr.com/ & https://github.com/jkphl/iconizr
+- https://github.com/filamentgroup/grunticon
+- https://github.com/Ensighten/grunt-spritesmith
+- https://github.com/FWeinb/grunt-svgstore
+- http://glue.readthedocs.org/
+- http://yostudios.github.io/Spritemapper/
+- https://github.com/jakesgordon/sprite-factory

@@ -1,8 +1,7 @@
 # jQuery
 
-Give some tips as so whether you should invest time in jQuery.
-
-When to use jQuery? When not?
+TODO: Give some tips as so whether you should invest time in jQuery.
+TODO: When to use jQuery? When not?
 
 ### See more
 

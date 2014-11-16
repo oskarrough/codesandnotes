@@ -18,9 +18,6 @@ A lot of people get really good at #3 because it's by far the easiest, but never
 Once you're proficient in using the tools of your trade, further expertise comes from understanding a particular problem domain other than programming.  It might be something serious like physics or medicine.  It might be something venal like ad targeting or high-frequency training.  It might be something frivolous like games.  You might switch specialties several times during your career.  In any case, being a great programmer means applying the technologies and techniques at hand to some goal other than programming itself.
 
 
-
-
-
 1. Pick some great developers in your field, and learn about the cutting-edge things they're doing. Go to user groups when they're presenting, read their blogs, read their books, help out on their open-source projects. Try to understand the principles they're aiming at, and don't just blindly follow the techniques. I've seen IoC DI implementations go horribly awry because the developer didn't see the warning signs of the very things that pattern is supposed to avoid.
 
 2. Avoid technique attachment ("Ooh, shiny!" syndrome). There's a tendency to always try to use the newest techniques you're learned. Event sourcing is cool, but it's not the solution to every problem. IoC makes sense, most of the time. Using lambda expressions and closures can often make a solution clearer and simpler, but you don't have to shoe-horn them into every single algorithm you write. There's nothing wrong with starting a hobby or throw-away project with the intention of learning a new technique, but when you're building code to solve a real-world problem, pick the right tool for the job.

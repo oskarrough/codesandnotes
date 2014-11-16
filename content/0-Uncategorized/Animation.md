@@ -28,3 +28,4 @@ http://product.voxmedia.com/post/68085482982/polygon-feature-design-svg-animatio
 http://tumult.com/hype/
 pasql youtube thing
 A brief introduction to animation on the web.
+my bookmarks

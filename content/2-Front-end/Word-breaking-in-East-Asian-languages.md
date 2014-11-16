@@ -16,7 +16,6 @@ For instance, here are the [Requirements for Japanese Text Layout](http://www.w3
 
 - [Word-breaking Japanese is hard](http://blogs.msdn.com/b/jonasbar/archive/2007/09/21/word-breaking-japanese-is-hard.aspx)
 
-
 ## The CSS property line-break
 
 - [Documentation for line-break](http://www.w3.org/TR/css3-text/#line-break)
@@ -24,7 +23,6 @@ For instance, here are the [Requirements for Japanese Text Layout](http://www.w3
 Particularly how wrapping interacts with punctuation and symbols.
 
 line-break: auto|loose|normal|strict;
-
 
 ## The CSS property word-break
 
@@ -68,7 +66,7 @@ An unbreakable "word" may be broken at an arbitrary point if there are no otherw
 
 ## Notes
 
-There is only partial browser support of `word-break: break-all;`  
+There is only partial browser support of `word-break: break-all;`
 Korean uses spaces between words.
 
 ### See more
