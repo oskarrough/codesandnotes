@@ -1,7 +1,9 @@
 node_modules
 dist
-.DS_Store
+.tmp
+.sass-cache
+bower_components
+test/bower_components
 *.sublime-project
 *.sublime-workspace
-.sass-cache
-.divshot-cache
+*.DS_Store

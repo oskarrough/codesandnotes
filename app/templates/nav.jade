@@ -1,0 +1,31 @@
+
+nav
+	if nav.parent.href
+		p: a(href=nav.parent.href)
+			span &larr; 
+			span= nav.parent.title
+	ul.nav
+		for sibling in nav.siblings
+			- liClasses = [];
+
+			if sibling.active
+				- liClasses.push('active');
+
+			if sibling.children.length
+				- liClasses.push('dropdown');
+				- aClasses = ['dropdown-toggle'];
+
+				if sibling.href
+					unless sibling.active
+						- aClasses.push('disabled'); // make menu links clickable
+				li(class=liClasses)
+					a(class=aClasses data-toggle='dropdown' href=sibling.href
+					data-target='#')
+						span= sibling.title
+						ul.dropdown
+							for child in sibling.children
+								li
+									a(href=child.href)= child.title
+			else
+				li(class=liClasses)
+					a(href=sibling.href)= sibling.title
