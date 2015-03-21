@@ -72,3 +72,4 @@ Write daily for 30 minutes minimum! It’s easy to notice the difference in a sh
 - http://alistapart.com/about/style-guide
 - http://css-tricks.com/words-avoid-educational-writing/
 - https://github.com/tooling/authoring-styleguide
+- http://katydecorah.com/writing-for-everyone/

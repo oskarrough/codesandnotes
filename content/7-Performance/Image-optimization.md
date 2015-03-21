@@ -16,6 +16,13 @@ Like these:
 - [Smush it](http://www.smushit.com/ysmush.it/)
 - [Jpeg mini](http://www.jpegmini.com/main/home)
 
+### Optimizing PNGs with pngcrush
+
+$ brew install pngcrush
+$ pngcrush -rem alla -nofilecheck -reduce -m 7 (YOURFILE).png (OPTIMIZEDFILE).png
+
+Should help a lot
+
 #### See more
 
 - http://jamiemason.github.io/ImageOptim-CLI/
@@ -27,4 +34,3 @@ Like these:
 - http://calendar.perfplanet.com/2013/browser-specific-image-formats/
 - https://github.com/pornel/mediancut-posterizer
 
-pngcrush -rem alla -nofilecheck -reduce -m 7 (YOURFILE).png (OPTIMIZEDFILE).png
