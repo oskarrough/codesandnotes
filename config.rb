@@ -9,8 +9,11 @@ set :layouts_dir, '../design/layouts'
 set :css_dir, '.'
 set :js_dir, 'scripts'
 set :images_dir, 'images'
-
 #set :ignore, 'app/*'
+
+# Relative links and assets are important for publishing on Github.
+set :relative_links, true
+activate :relative_assets
 
 ###
 # Page options, layouts, aliases and proxies
@@ -31,12 +34,9 @@ set :images_dir, 'images'
 
 # Disable layout on the sitemap page.
 page "/sitemap.xml", :layout => false
-
 #page "/index.html", :layout => "article"
 
-# Relative links and assets are important for publishing on Github.
-set :relative_links, true
-activate :relative_assets
+
 
 # We leave :directory_indexes inactive, so internal markdown links between pages will not break.
 #activate :directory_indexes
