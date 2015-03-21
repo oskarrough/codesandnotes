@@ -37,11 +37,17 @@ https://github.com/nwjs/nw.js/wiki/Debugging-with-Sublime-Text-2-and-3
   }
 }
 
-https://github.com/mllrsohn/node-webkit-builder
-https://github.com/Emerson/Ember-Node-Webkit-Example
 
 credits.html
 options.macIcns > icns file
 
 
 nwbuild dist -p osx64
+
+
+
+
+https://github.com/mllrsohn/node-webkit-builder
+https://github.com/Emerson/Ember-Node-Webkit-Example
+http://www.sammctaggart.com/build-a-markdown-editor-with-node-webkit-and-ember-pt-2/
+http://blog.nitrous.io/2014/04/30/building-desktop-apps-with-ember-and-node-webkit.html
