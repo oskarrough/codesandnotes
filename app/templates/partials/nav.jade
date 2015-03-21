@@ -1,0 +1,31 @@
+nav
+	
+	//- if nav.parent.href
+		//- p: a(href=nav.parent.href)
+			//- span &larr; 
+			//- span= nav.parent.title
+			
+	ul.nav
+		for item in nav.root.children
+			- liClasses = []
+
+			if item.active
+				- liClasses.push('active');
+
+			if item.children.length
+				- liClasses.push('dropdown');
+
+			li(class=liClasses)
+				a(href=item.href)= item.title
+				if item.children.length
+					ul
+						for sibling in item.children
+							- siblingClasses = []
+							if sibling.active
+								- siblingClasses.push('active');
+							li(class=siblingClasses)
+								a(href=sibling.href)= sibling.title
+				
+				//- if item.href
+				//- 	unless item.active
+				//- 		- aClasses.push('disabled'); // make menu links clickable

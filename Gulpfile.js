@@ -51,7 +51,10 @@ gulp.task('jshint', function () {
 // });
 
 gulp.task('views', function() {
-	return gulp.src('app/templates/**/*.jade')
+	return gulp.src([
+		'app/templates/**/*.jade',
+		'!app/templates/partials/**/*.jade'
+	])
 		/* the jade file can define title or order; put those at file.data */
 		.pipe($.data(function(file) { return matter(String(file.contents)); }))
 		.pipe($.nav())
