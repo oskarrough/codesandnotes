@@ -54,3 +54,4 @@ Having an interface for Git helps a lot. Github.com is one way, Bitbucket.com is
 - http://bradfrostweb.com/blog/post/gitgithub-resources/
 - http://try.github.io/
 - http://24ways.org/2013/git-for-grownups/
+- http://firstaidgit.io/
