@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The battle of support and optimization
 date: 2013-12-27
 tags: ["Aspects","Clients"]

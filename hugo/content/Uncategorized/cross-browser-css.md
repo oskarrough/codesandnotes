@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Cross-browser CSS
 date: 2012-05-03
 tags: ["Cross-browser","CSS","Front-end"]
@@ -25,4 +24,4 @@ In your own browser you have access to all your developer tools so you can inspe
 
 [Can I Use](http://caniuse.com/) is a great way to quickly check browsers (and which specific versions) support the feature you are using, CSS transforms for instance.
 
-*   Some good tips on [Cross-Browser Debugging CSS](http://www.stubbornella.org/content/2012/05/02/cross-browser-debugging-css/).
+- Some good tips on [Cross-Browser Debugging CSS](http://www.stubbornella.org/content/2012/05/02/cross-browser-debugging-css/).

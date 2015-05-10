@@ -1,8 +1,7 @@
 ---
-layout: post
 title: Connecting controllers in Ember.js
 date: 2014-11-16
-tags: ["Articles","Ember.js"]
+tags: [Ember.js"]
 ---
 
 To enable communication between controllers you have to use the `needs` property on your controller. Here's how to do it:

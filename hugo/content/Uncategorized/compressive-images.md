@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Compressive Images
 date: 2012-10-31
 tags: ["images","Links","Performance","Responsive images"]

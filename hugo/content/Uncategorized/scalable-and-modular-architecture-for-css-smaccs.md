@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Scalable and Modular Architecture for CSS (SMACCS)
 date: 2012-10-18
 tags: ["CSS","Links","OOCSS","SMACSS"]

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: CIID labs
 date: 2012-03-12
 tags: ["Learning","Links","School"]

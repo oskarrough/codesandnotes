@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Progressive Enhancement
 date: 2013-07-04
 tags: ["Aspects","Progressive Enhancement","Usability"]
@@ -13,10 +12,10 @@ Do not build the most advanced version of a feature first. Instead progressively
 
 ## Resources
 
-*   [Progressive enhancement is still important](http://jakearchibald.com/2013/progressive-enhancement-still-important/)
-*   [Progressive enhancement on Wikipedia](http://en.wikipedia.org/wiki/Progressive_enhancement)
-*   [Google search for PE](https://www.google.com/search?q=progressive+enhancement)
-*   [On progressive enhancement](http://bradfrostweb.com/blog/post/on-progressive-enhancement/)
-*   [Progressive Enhancement. Still Alive & Kickin'](http://danielmall.com/articles/progressive-enhancement/)
-*   [Designing with progressive enhancement](http://filamentgroup.com/dwpe/) (book)
-*   feature detection with [Modernizr](http://modernizr.com/)
+- [Progressive enhancement is still important](http://jakearchibald.com/2013/progressive-enhancement-still-important/)
+- [Progressive enhancement on Wikipedia](http://en.wikipedia.org/wiki/Progressive_enhancement)
+- [Google search for PE](https://www.google.com/search?q=progressive+enhancement)
+- [On progressive enhancement](http://bradfrostweb.com/blog/post/on-progressive-enhancement/)
+- [Progressive Enhancement. Still Alive & Kickin'](http://danielmall.com/articles/progressive-enhancement/)
+- [Designing with progressive enhancement](http://filamentgroup.com/dwpe/) (book)
+- feature detection with [Modernizr](http://modernizr.com/)

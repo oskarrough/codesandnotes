@@ -1,5 +1,4 @@
 ---
-layout: post
 title: About Codes & Notes
 date: 2014-01-05
 tags: ["End credits"]

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: How to update Compass
 date: 2012-01-18
 tags: ["Compass","Package-management","Tools &amp; Workflow"]

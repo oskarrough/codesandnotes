@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Easier HTML
 date: 2014-01-03
 tags: ["HTML","Productivity","Tools &amp; Workflow"]
@@ -23,6 +22,6 @@ By design HTML is simple in its syntax. [Jade](http://jade-lang.com/) and <a hre
 
 ### References
 
-*   [HTML Imports](http://www.html5rocks.com/en/tutorials/webcomponents/imports/)
-*   [The HTML spec on Github](https://github.com/w3c/html)
-*   [HTML5 cross-browser polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)
+- [HTML Imports](http://www.html5rocks.com/en/tutorials/webcomponents/imports/)
+- [The HTML spec on Github](https://github.com/w3c/html)
+- [HTML5 cross-browser polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)

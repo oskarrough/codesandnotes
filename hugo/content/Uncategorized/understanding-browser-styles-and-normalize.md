@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Understanding browser styles and Normalize
 date: 2014-01-09
 tags: ["Cross-browser","CSS","Front-end"]

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Understanding The CSS Box Model
 date: 2014-01-07
 tags: ["box-model","box-sizing","CSS","Front-end"]
@@ -44,18 +43,18 @@ Which one makes the most sense for you? Probably the last one, `border-box`, as 
 
 One important thing to note is that browsers, sadly, interpret these rules differently. While it is now much, much better, Internet Explorer 8 treats `border-box` as `content-box` which will ruin your layout. If you have to support IE8, I would still recommend changing to border-box but you will have to write extra styles to compensate. Styles like `width: 100%; padding: 2em;` are especially problematic without border-box calculation.
 
-*   [Browser support for box-sizing](http://caniuse.com/css3-boxsizing)
+- [Browser support for box-sizing](http://caniuse.com/css3-boxsizing)
 
 ## Summary
 
-*   Everything is a box
-*   Every box has a width and height as well as content, padding, border and margin
-*   By default, content-box means padding and borders are added to the size
-*   Border-box is easier to use as the padding and borders are placed inside the width and height.
+- Everything is a box
+- Every box has a width and height as well as content, padding, border and margin
+- By default, content-box means padding and borders are added to the size
+- Border-box is easier to use as the padding and borders are placed inside the width and height.
 
 ## See more
 
-*   [box model documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model).
-*   [box-sizing documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
-*   [The visual formatting model](https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model)
-*   [The CSS layout model](http://docs.webplatform.org/wiki/guides/the_css_layout_model)
+- [box model documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model).
+- [box-sizing documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+- [The visual formatting model](https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model)
+- [The CSS layout model](http://docs.webplatform.org/wiki/guides/the_css_layout_model)

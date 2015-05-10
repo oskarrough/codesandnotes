@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Modern CSS Sizing Advice
 date: 2012-05-29
 tags: ["CSS","Front-end","Front-end"]
@@ -30,6 +29,6 @@ Last bit of advice, if you can avoid defining any sizes, you'll have less issues
 
 ### See more
 
-*   [Relative Lenghts on the W3](http://www.w3.org/TR/css3-values/#relative-lengths)
-*   [Jonathan Snook on rem](http://snook.ca/archives/html_and_css/font-size-with-rem)
-*   [Font sizing with rem could be avoided](http://csswizardry.com/2011/05/font-sizing-with-rem-could-be-avoided/)
+- [Relative Lenghts on the W3](http://www.w3.org/TR/css3-values/#relative-lengths)
+- [Jonathan Snook on rem](http://snook.ca/archives/html_and_css/font-size-with-rem)
+- [Font sizing with rem could be avoided](http://csswizardry.com/2011/05/font-sizing-with-rem-could-be-avoided/)

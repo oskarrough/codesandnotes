@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Sass Libraries
 date: 2012-03-13
 tags: ["Bourbon","Compass","Links","Preprocessor","Sass"]

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Progressive Reduction
 date: 2013-02-06
 tags: ["Aspects","progressive reduction","Usability"]
@@ -21,5 +20,5 @@ The interface should adapt to the user's level of skill.
 
 ### Resources
 
-*   [Gadgets that adapt to your skill](http://www.fastcodesign.com/1672044/the-next-big-ui-idea-gadgets-that-adapt-to-your-skill)
-*   [Progressive Reduction](http://layervault.tumblr.com/post/42361566927/progressive-reduction)
+- [Gadgets that adapt to your skill](http://www.fastcodesign.com/1672044/the-next-big-ui-idea-gadgets-that-adapt-to-your-skill)
+- [Progressive Reduction](http://layervault.tumblr.com/post/42361566927/progressive-reduction)

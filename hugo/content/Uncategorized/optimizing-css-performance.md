@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Optimizing CSS performance
 date: 2013-03-08
 tags: ["Architecture","CSS","Performance"]
@@ -17,6 +16,6 @@ Yes. Writing `#Batman a` will first find all `a` elements and then filter for th
 
 ### More about CSS performance
 
-*   [CSS selector performance has changed for the better](http://calendar.perfplanet.com/2011/css-selector-performance-has-changed-for-the-better/)
-*   [Gone in 60 frames per second (talk from Paul Irish)](http://dl.dropbox.com/u/70775642/talks/performance/jqueryto/slides/index.html#1)
-*   [Tips for smooth scrolling web pages (talk form Edge conf)](http://chrislord.net/index.php/2013/02/11/tips-for-smooth-scrolling-web-pages-edgeconf-follow-up)
+- [CSS selector performance has changed for the better](http://calendar.perfplanet.com/2011/css-selector-performance-has-changed-for-the-better/)
+- [Gone in 60 frames per second (talk from Paul Irish)](http://dl.dropbox.com/u/70775642/talks/performance/jqueryto/slides/index.html#1)
+- [Tips for smooth scrolling web pages (talk form Edge conf)](http://chrislord.net/index.php/2013/02/11/tips-for-smooth-scrolling-web-pages-edgeconf-follow-up)

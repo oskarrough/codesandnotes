@@ -1,8 +1,7 @@
 ---
-layout: post
 title: Statamic
 date: 2013-02-27
-tags: ["Articles","CMS","file-based","Statamic"]
+tags: [CMS","file-based","Statamic"]
 ---
 
 [Statamic](http://statamic.com/) is a pretty useful filed-based CMS system with good ideas for the future. The two major draws for me being total version control and close to no start-up time.
@@ -11,6 +10,6 @@ You can store and manage all your content with files (could be text, markdown, h
 
 ### References
 
-*   [statamic.com/blog](http://statamic.com/blog)
-*   [tips.statamic.com](http://tips.statamic.com/)
-*   [Statamicist.com](http://statamicist.com/)
+- [statamic.com/blog](http://statamic.com/blog)
+- [tips.statamic.com](http://tips.statamic.com/)
+- [Statamicist.com](http://statamicist.com/)

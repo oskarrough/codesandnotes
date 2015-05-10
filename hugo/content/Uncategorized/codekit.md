@@ -1,5 +1,4 @@
 ---
-layout: post
 title: CodeKit (and how to use it online)
 date: 2011-12-09
 tags: ["Codekit","Tools &amp; Workflow"]

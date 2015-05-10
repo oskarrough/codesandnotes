@@ -1,8 +1,7 @@
 ---
-layout: post
 title: Changing the default active class in Ember.js
 date: 2014-11-16
-tags: ["Articles","Ember.js"]
+tags: [Ember.js"]
 ---
 
 Ember's `{{link-to}}` helper automatically adds a `class="active"` on active routes.
@@ -19,4 +18,4 @@ To change it, your `app.js` could look like this:
     });
 
     export default App;
-    
+

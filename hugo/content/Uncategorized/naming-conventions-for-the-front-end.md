@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Naming conventions for the front-end
 date: 2014-01-06
 tags: ["Architecture","Naming convention"]
@@ -13,11 +12,11 @@ In this post I'm mainly talking about naming conventions from a front-end develo
 
 Here are some pointers:
 
-*   Be consistent
-*   Identify patterns
-*   Think in components, their children and their modifiers
-*   Don't worry about component/module/block naming confusion (mostly different names for the same thing).
-*   Pick a system that works for you and your team
+- Be consistent
+- Identify patterns
+- Think in components, their children and their modifiers
+- Don't worry about component/module/block naming confusion (mostly different names for the same thing).
+- Pick a system that works for you and your team
 
 ## The naming convention
 
@@ -31,6 +30,6 @@ This convention is tested, it works and it _will_ help you differentiate your cl
 
 ### See more
 
-*   [SUIT naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
-*   [SUIT Components and examples of naming conventions](https://github.com/suitcss/suit/blob/master/doc/components.md#naming-conventions)
-*   [MindBEMding - getting your head 'round BEM syntax](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+- [SUIT naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
+- [SUIT Components and examples of naming conventions](https://github.com/suitcss/suit/blob/master/doc/components.md#naming-conventions)
+- [MindBEMding - getting your head 'round BEM syntax](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)

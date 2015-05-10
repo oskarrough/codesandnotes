@@ -1,8 +1,7 @@
 ---
-layout: post
 title: Exluding favicons from Ember CLI fingerprinting
 date: 2014-11-16
-tags: ["Articles","Ember.js"]
+tags: [Ember.js"]
 ---
 
 If there are files you don't want fingerprinted using ember-cli, like favicons, you can use this inside your Brocfile.js:

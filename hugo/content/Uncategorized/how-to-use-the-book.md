@@ -1,5 +1,4 @@
 ---
-layout: post
 title: How to use the book
 date: 2014-01-01
 tags: ["Preface"]

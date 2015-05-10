@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Element queries
 date: 2013-07-04
 tags: ["CSS","element queries","Front-end","Media Queries","Responsive"]
@@ -15,6 +14,6 @@ Element queries is a concept that does exactly this. It is however not (yet) an 
 
 ### Resources
 
-*   [Media queries are not the answer](http://coding.smashingmagazine.com/2013/06/25/media-queries-are-not-the-answer-element-query-polyfill/)
-*   [filamentgroup/scoped-media-query](http://github.com/filamentgroup/scoped-media-query)
-*   [tysonmatanich/elementQuery](http://github.com/tysonmatanich/elementQuery)
+- [Media queries are not the answer](http://coding.smashingmagazine.com/2013/06/25/media-queries-are-not-the-answer-element-query-polyfill/)
+- [filamentgroup/scoped-media-query](http://github.com/filamentgroup/scoped-media-query)
+- [tysonmatanich/elementQuery](http://github.com/tysonmatanich/elementQuery)

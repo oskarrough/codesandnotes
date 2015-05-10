@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Using Susy for layout and grids
 date: 2012-06-11
 tags: ["Front-end","Grids","Layouts","susy"]

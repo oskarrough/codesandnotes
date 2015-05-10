@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Accessibility Project
 date: 2013-01-16
 tags: ["Accessibility","Link","Links"]

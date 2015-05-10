@@ -1,8 +1,6 @@
 ---
-layout: post
 title: image test
 date: 2014-09-02
-tags: ["Articles"]
 ---
 
 Below are some different images to see what markup Wordpress outputs.

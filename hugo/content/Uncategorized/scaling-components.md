@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Scaling components
 date: 2013-09-22
 tags: ["Architecture","CSS","Responsive","scaling"]
@@ -21,5 +20,5 @@ Need to give this some more thought. What do we really need? Is this flexibility
 
 ### References
 
-*   [Modern CSS sizing advice](http://codesandnotes.com/modern-css-sizing-advice/)
-*   [Sizing (Web) components](https://medium.com/p/8f433689736f)
+- [Modern CSS sizing advice](http://codesandnotes.com/modern-css-sizing-advice/)
+- [Sizing (Web) components](https://medium.com/p/8f433689736f)

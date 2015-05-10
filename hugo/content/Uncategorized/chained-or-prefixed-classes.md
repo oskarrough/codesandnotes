@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Chained or prefixed classes?
 date: 2014-01-06
 tags: ["Architecture","CSS","Naming convention"]
@@ -15,4 +14,4 @@ See the difference? Prefixed classes minimize CSS specificity since you only hav
 
 ### Resources
 
-*   [Scope CSS classes with prefixes](http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/)
+- [Scope CSS classes with prefixes](http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/)

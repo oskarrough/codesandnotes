@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Perch CMS
 date: 2012-03-23
 tags: ["CMS","Links"]

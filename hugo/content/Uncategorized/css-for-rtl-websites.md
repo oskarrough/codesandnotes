@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Writing CSS for RTL websites
 date: 2012-11-06
 tags: ["Bidirectional","CSS","Front-end","Multilingual","RTL"]
@@ -38,4 +37,4 @@ Also, remember that browser defaults change as the direction does which means so
 
 ### See more
 
-*   [24 ways: Going Both Ways](http://24ways.org/2011/going-both-ways)
+- [24 ways: Going Both Ways](http://24ways.org/2011/going-both-ways)

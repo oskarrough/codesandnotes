@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Perceived performance
 date: 2013-12-29
 tags: ["Aspects","Performance"]
@@ -21,7 +20,7 @@ YES. And that's perceived performance for you right there. Perceived performance
 
 ### Links
 
-*   [Actual performance vs perceived performance](http://www.codinghorror.com/blog/2008/03/actual-performance-perceived-performance.html)
-*   [Progress bars](http://www.chrisharrison.net/index.php/Research/ProgressBars)
-*   [Beginner's guide to perceived performance](http://www.mobify.com/blog/beginners-guide-to-perceived-performance/)
-*   [Understanding perceived performance](http://codebetter.com/howarddierking/2009/12/12/understanding-perceived-performance/)
+- [Actual performance vs perceived performance](http://www.codinghorror.com/blog/2008/03/actual-performance-perceived-performance.html)
+- [Progress bars](http://www.chrisharrison.net/index.php/Research/ProgressBars)
+- [Beginner's guide to perceived performance](http://www.mobify.com/blog/beginners-guide-to-perceived-performance/)
+- [Understanding perceived performance](http://codebetter.com/howarddierking/2009/12/12/understanding-perceived-performance/)

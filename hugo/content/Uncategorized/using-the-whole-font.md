@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Using The Whole Font
 date: 2012-01-13
 tags: ["Links","Web typography"]

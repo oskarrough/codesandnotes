@@ -1,5 +1,4 @@
 ---
-layout: post
 title: A work in progress
 date: 2014-01-06
 tags: ["Preface"]

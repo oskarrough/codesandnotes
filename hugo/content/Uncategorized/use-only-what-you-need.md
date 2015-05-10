@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Use only what you need
 date: 2012-04-11
 tags: ["Aspects","Links"]

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Typecast
 date: 2012-11-05
 tags: ["Links","Tool","Typography","Web typography"]

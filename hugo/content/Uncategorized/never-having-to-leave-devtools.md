@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Never having to leave DevTools
 date: 2013-01-16
 tags: ["Developer tools","Productivity","Tools &amp; Workflow"]

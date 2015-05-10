@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Dotfiles
 date: 2012-06-29
 tags: ["Command line","Dotfiles","OS X","Tools &amp; Workflow"]

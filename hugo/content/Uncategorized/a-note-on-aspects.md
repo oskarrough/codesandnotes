@@ -1,5 +1,4 @@
 ---
-layout: post
 title: A note on aspects
 date: 2014-08-04
 tags: ["Aspects"]

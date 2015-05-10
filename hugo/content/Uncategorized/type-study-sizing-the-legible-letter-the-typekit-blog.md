@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Sizing the legible letter
 date: 2012-03-05
 tags: ["Links","Typography"]

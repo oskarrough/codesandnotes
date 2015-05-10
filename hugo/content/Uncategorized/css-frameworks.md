@@ -1,5 +1,4 @@
 ---
-layout: post
 title: CSS frameworks
 date: 2013-05-29
 tags: ["CSS","Framework","Front-end","Plugins"]
@@ -13,10 +12,10 @@ CSS is not magic but shortcuts are great. Frameworks gather common patterns and 
 
 Bootstrap is the only one written with Less but there are Sass ports. SUIT and inuitcss share an approach that allows you to use everything or only parts of them as a basis for your own CSS. Also see this [technical comparison of common patterns in frameworks](https://docs.google.com/spreadsheet/ccc?key=0AiN0QfBTPpOCdDFjWlM0eU1ra21XanZkekxGbjA2WWc#gid=0)
 
-Here are some CSS frameworks that are actually worth using. 
+Here are some CSS frameworks that are actually worth using.
 
-*   [SUIT](https://github.com/necolas/suit) - HTML/CSS framework for creating loosely coupled UI components
-*   [inuitcss](http://inuitcss.com/) - a powerful, scalable, Sass-based, BEM, OOCSS framework.
-*   [Pure](http://purecss.io/) - a well written low-level CSS framework by the guys at Yahoo.
-*   [Bootstrap](http://getbootstrap.com/) - sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
-*   [Foundation](http://foundation.zurb.com/) - the most advanced responsive front-end framework in the world.
+- [SUIT](https://github.com/necolas/suit) - HTML/CSS framework for creating loosely coupled UI components
+- [inuitcss](http://inuitcss.com/) - a powerful, scalable, Sass-based, BEM, OOCSS framework.
+- [Pure](http://purecss.io/) - a well written low-level CSS framework by the guys at Yahoo.
+- [Bootstrap](http://getbootstrap.com/) - sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
+- [Foundation](http://foundation.zurb.com/) - the most advanced responsive front-end framework in the world.

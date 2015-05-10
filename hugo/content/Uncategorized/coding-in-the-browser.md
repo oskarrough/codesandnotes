@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Coding in the browser
 date: 2012-07-24
 tags: ["Learning","Text editor","Tools &amp; Workflow"]

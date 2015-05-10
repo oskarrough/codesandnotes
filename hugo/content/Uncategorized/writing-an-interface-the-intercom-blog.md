@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Writing an Interface
 date: 2012-03-12
 tags: ["Copywriting","Links","UX"]

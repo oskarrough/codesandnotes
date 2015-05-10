@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Nature of Code
 date: 2012-11-05
 tags: ["Book","Links","Processing"]

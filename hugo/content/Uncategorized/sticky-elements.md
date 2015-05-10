@@ -1,8 +1,7 @@
 ---
-layout: post
 title: Sticky elements
 date: 2013-04-25
-tags: ["Articles","jquery waypoint","method","sticky element"]
+tags: [jquery waypoint","method","sticky element"]
 ---
 
 Sometimes you want to alternate between fixed and normal flow for elements. Think of a sidebar that scrolls with the page from a certain point and stops at another. The CSS property `position: sticky;` [is on the way](http://updates.html5rocks.com/2012/08/Stick-your-landings-position-sticky-lands-in-WebKit) but until we can rely on that, here's a solution with [jQuery Waypoints](http://imakewebthings.com/jquery-waypoints/) that makes it "_easy to execute a function whenever you scroll to an element_".

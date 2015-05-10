@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Media Queries with Sass and Breakpoint
 date: 2012-06-28
 tags: ["Breakpoint","Front-end","Media Queries","Sass"]

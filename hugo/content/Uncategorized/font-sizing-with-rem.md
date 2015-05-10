@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Sizing with rem
 date: 2012-01-12
 tags: ["CSS","css-rem","Front-end"]
@@ -9,6 +8,6 @@ Usually font sizing is done with either the `px` or the `em` unit. Unlike the `p
 
 ### See more
 
-*   [Relative Lenghts on the W3](http://www.w3.org/TR/css3-values/#relative-lengths)
-*   [Jonathan Snook on rem](http://snook.ca/archives/html_and_css/font-size-with-rem)
-*   [Font sizing with rem could be avoided](http://csswizardry.com/2011/05/font-sizing-with-rem-could-be-avoided/)
+- [Relative Lenghts on the W3](http://www.w3.org/TR/css3-values/#relative-lengths)
+- [Jonathan Snook on rem](http://snook.ca/archives/html_and_css/font-size-with-rem)
+- [Font sizing with rem could be avoided](http://csswizardry.com/2011/05/font-sizing-with-rem-could-be-avoided/)

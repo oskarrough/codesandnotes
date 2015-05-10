@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Write faster HTML and CSS with Emmet
 date: 2013-02-28
 tags: ["Emmet","Productivity","Sublime Text","Text editor","Tools &amp; Workflow"]
@@ -27,10 +26,10 @@ In a HTML document, write `#Blondie>figure.Logo+ul.Navigation>li*4>a{Item $}` fo
 <div id="Blondie">
     <figure class="Logo"></figure>
 
-*   <a href="">Item 1</a>
-*   <a href="">Item 2</a>
-*   <a href="">Item 3</a>
-*   <a href="">Item 4</a>
+- <a href="">Item 1</a>
+- <a href="">Item 2</a>
+- <a href="">Item 3</a>
+- <a href="">Item 4</a>
 </div>`
 
 Easy and fast. More on the [HTML syntax in Emmet](http://docs.emmet.io/abbreviations/syntax/).

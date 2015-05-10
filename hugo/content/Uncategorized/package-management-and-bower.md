@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Package management and Bower
 date: 2012-09-09
 tags: ["Bower","Components","Package-management","Tools &amp; Workflow"]
@@ -27,8 +26,8 @@ What is Component?
 
 ### See more
 
-*   http://bower.io/
-*   http://component.io/
-*   https://github.com/wilmoore/frontend-packagers
-*   http://dailyjs.com/2013/02/22/missing-component/
-*   http://tech.pro/tutorial/1190/package-managers-an-introductory-guide-for-the-uninitiated-front-end-developer#what_bower_is_not
+- http://bower.io/
+- http://component.io/
+- https://github.com/wilmoore/frontend-packagers
+- http://dailyjs.com/2013/02/22/missing-component/
+- http://tech.pro/tutorial/1190/package-managers-an-introductory-guide-for-the-uninitiated-front-end-developer#what_bower_is_not

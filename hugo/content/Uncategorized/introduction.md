@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Introduction
 date: 2014-01-03
 tags: ["Preface"]

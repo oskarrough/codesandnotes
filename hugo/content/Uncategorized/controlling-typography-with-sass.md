@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Controlling typography with Sass
 date: 2013-03-12
 tags: ["CSS","Front-end","Sass","Web typography"]
@@ -28,4 +27,4 @@ h4 {
     @extend %font-header;
 }</pre>
 
- 
+
