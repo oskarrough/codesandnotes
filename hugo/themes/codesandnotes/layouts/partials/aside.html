@@ -1,0 +1,21 @@
+<aside class="Aside">
+
+	<header class="Header">
+		<h1>
+			<a href="{{ .Site.BaseUrl }}">{{ .Site.Title }}</a>
+		</h1>
+	</header>
+
+	<h3>Tags</h3>
+	<ul class="List">
+		{{ $baseurl := .Site.BaseUrl }}
+		{{ range $name, $value := .Site.Taxonomies.tags }}
+			<li>
+				<a href="{{ $baseurl }}/tags/{{ $name | urlize }}">
+					{{ $name }} <span class="Badge">{{ .Count }}</span>
+				</a>
+			</li>
+		{{ end }}
+	</ul>
+
+</aside>

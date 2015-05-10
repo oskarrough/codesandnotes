@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+
+<h2>Tag</h2>
+
+<div class="posts">
+	{{ range .Data.Pages }}
+	{{ .Render "list-item"}}
+	{{ end }}
+</div>
+
+{{ partial "footer.html" . }}

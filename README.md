@@ -8,22 +8,10 @@ Please read the [Introduction to Codes & Notes](http://codesandnotes.com/introdu
 
 ## Setup
 
-Trying out a Middleman setup.
+fuck middleman
 
-- All chapters are in /content.
-- Middleman will convert all .md files to .html and run all pages through /design/layouts/layout.erb, building them to the /dist folder.
-- Everything from /content will be copied over.
-- Styles should be in /design/styles/ but they are in /content currently because Middleman would otherwise fail.
+gsed -i.backup -e 's/^# \(.*\)$/---\ntitle: \"\1\"\n---/g' *.md
 
-To develop:
-
-`middleman`
-
-To build
-
-`middleman build`
-`divshot push [development/production]`
-
-# Lcn
+# License
 
 Licensed [BY-NC-SA Creative Commons](http://creativecommons.org/licenses/by-nc-sa/3.0/).

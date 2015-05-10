@@ -1,0 +1,119 @@
+{{ partial "header.html" . }}
+
+<ul class="Breadcrumb">
+	<li><a href="{{ .Site.BaseUrl }}">{{ .Site.Title }}</a></li>
+	<li><a href="/{{ .Section }}/">{{ .Section}}</a></li>
+	<li>{{ .Title }}</li>
+</ul>
+
+<article class="Article">
+	<h1 class="Article-title">
+		<!-- <a href="{{ .Permalink }}"></a> -->
+		{{ .Title }}
+	</h1>
+	<div class="Article-body">
+		{{ .Content }}
+	</div>
+</article>
+
+<hr>
+
+<aside>
+
+	{{ if .TableOfContents }}
+	<h3>Table of contents</h3>
+	<div class="Toc">
+		{{ .TableOfContents }}
+	</div>
+	{{ end }}
+
+	<h3>Section pager</h3>
+	<ul class="List">
+		{{ if .PrevInSection }}
+			<li class="previous">
+				<span aria-hidden="true">Prev &larr;</span>
+				<a href="{{ .PrevInSection.Permalink }}">
+					{{ .PrevInSection.Title }}
+				</a>
+			</li>
+		{{ end }}
+		{{ if .NextInSection }}
+			<li class="next">
+				<span aria-hidden="true">Next &rarr;</span>
+				<a href="{{ .NextInSection.Permalink }}">
+					{{ .NextInSection.Title }}
+				</a>
+			</li>
+		{{ end }}
+	</ul>
+
+	<h3>Continue reading <em>{{ .Section}}</em></h3>
+	<ul class="List">
+		{{ $section := .Section }}
+		{{ range first 200 .Site.Pages }}
+			{{ if eq .Type $section }}
+				{{ .Render "list-item"}}
+			{{ end }}
+		{{ end }}
+	</ul>
+
+	{{ if .Params.tags }}
+		<h3>Tags</h3>
+		{{ $baseurl := .Site.BaseUrl }}
+		<ul class="List List--tags">
+			{{ range .Params.tags }}
+				<li>
+					<a href="{{ $baseurl }}/tags/{{ . | urlize }}">
+					{{ . }}
+					</a>
+				</li>
+			{{ end }}
+		</ul>
+	{{ end }}
+
+	<h3>Related Post</h3>
+	<ul class="List">
+		{{ $page_link := .Permalink }}
+		{{ $tags := .Params.tags }}
+		{{ range .Site.Recent }}
+			{{ $page := . }}
+			{{ $has_common_tags := intersect $tags .Params.tags | len | lt 0 }}
+			{{ if and $has_common_tags (ne $page_link $page.Permalink) }}
+				<li><a href="{{ $page.Permalink }}">{{ $page.Title }}</a></li>
+			{{ end }}
+		{{ end }}
+	</ul>
+
+	<h3>Pager</h3>
+	<ul class="List">
+		{{ if .Prev }}
+			<li class="previous">
+				<a href="{{ .Prev.Permalink }}">
+					<span aria-hidden="true">&larr;</span> Older
+				</a>
+			</li>
+		{{ else }}
+			<li class="previous disabled">
+				<a href="#">
+					<span aria-hidden="true">&larr;</span> Older
+				</a>
+			</li>
+		{{ end }}
+			<li>
+				<a href="{{ .Site.BaseUrl }}/post">All Posts</a>
+			</li>
+		{{ if .Next }}
+			<li class="next">
+				<a href="{{ .Next.Permalink }}">
+					Newer <span aria-hidden="true">&rarr;</span>
+				</a>
+			</li>
+		{{ else }}
+			<li class="next disabled">
+				<a href="#">Newer <span aria-hidden="true">&rarr;</span></a>
+			</li>
+		{{ end }}
+	</ul>
+</aside>
+
+{{ partial "footer.html" . }}

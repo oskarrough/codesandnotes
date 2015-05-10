@@ -1,0 +1,9 @@
+name = "Codesandnotes"
+license = "MIT"
+licenselink = "https://github.com/oskarrough/codesandnotes/LICENSE.md"
+description = ""
+homepage = "http://codesandnotes.com/"
+
+[author]
+  name = "Oskar Rough Mosumgaard"
+  homepage = "http://oskarrough.com"

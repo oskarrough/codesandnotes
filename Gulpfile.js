@@ -81,8 +81,6 @@ gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 // starts a server for development
 gulp.task('serve', ['html', 'markdown', 'styles', 'scripts'], function () {
 	browserSync({
-		notify: false,
-		port: 9000,
 		server: {
 			baseDir: ['.tmp', 'app'],
 			routes: {

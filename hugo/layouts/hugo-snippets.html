@@ -1,0 +1,7 @@
+<ul class="List">
+	{{ range first 200 .Data.Pages }}
+		{{ if eq .Type "Aspects"}}
+			{{ .Render "list-item"}}
+		{{ end }}
+	{{ end }}
+</ul>
