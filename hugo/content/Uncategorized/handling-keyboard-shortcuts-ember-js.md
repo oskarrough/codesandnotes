@@ -1,7 +1,7 @@
 ---
 title: Handling keyboard shortcuts with Ember.js
 date: 2014-11-16
-tags: [Ember.js"]
+tags: ['ember-js']
 ---
 
 Here's how you do something when the user presses a key. For instance, this example transtions out of my edit route when you press 'escape'.

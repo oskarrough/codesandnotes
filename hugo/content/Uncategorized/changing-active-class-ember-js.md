@@ -1,7 +1,7 @@
 ---
 title: Changing the default active class in Ember.js
 date: 2014-11-16
-tags: [Ember.js"]
+tags: ['ember-js']
 ---
 
 Ember's `{{link-to}}` helper automatically adds a `class="active"` on active routes.

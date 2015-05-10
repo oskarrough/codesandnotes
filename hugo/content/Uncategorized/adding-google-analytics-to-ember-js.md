@@ -1,7 +1,7 @@
 ---
 title: Adding Google Analytics to Ember.js
 date: 2014-11-16
-tags: [Ember.js"]
+tags: ['ember-js']
 ---
 
 Since we're developing a JavaScript app, Google Analytics doesn't know what is a "page". So you have to notify it!
