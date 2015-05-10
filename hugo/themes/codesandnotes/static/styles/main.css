@@ -16,7 +16,6 @@ body {
 	display: flex;
 	flex-flow: column nowrap;
 	padding-top: 2rem;
-	padding-right: 1rem;
 	min-height: 100vh;
 }
 .Main {
@@ -70,10 +69,15 @@ a:hover {
 	padding-right: 1rem;
 }
 
-@media (min-width: 30em) {
+body {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+@media (min-width: 40em) {
 	body {
 		padding-left: 30%;
 		padding-left: calc(30% + 2rem);
+		padding-right: 2rem;
 	}
 	.Aside {
 		position: fixed;
@@ -83,6 +87,7 @@ a:hover {
 		z-index: 1;
 		border-right: 1px solid #eee;
 		width: 30%;
+		overflow-y: scroll;
 	}
 }
 
