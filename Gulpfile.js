@@ -7,7 +7,9 @@ var reload = browserSync.reload;
 var compression = require('compression');
 var remarkable = require('gulp-remarkable'); // this doesn't seem to work with gulp-load-plugins
 // var header = require('gulp-header');
-var toc = require('gulp-toc');
+
+var hugoServer = 'hugo server --watch --config=./app/config.yaml -s ./app';
+var hugoBuild = 'hugo --config=./app/config.yaml --source ./app --verbose=true';
 
 gulp.task('markdown', function() {
 	return gulp.src('content/**/*.md')
@@ -27,22 +29,6 @@ gulp.task('markdown', function() {
 		.pipe(gulp.dest('.tmp'));
 });
 
-gulp.task('html', function() {
-	return gulp.src('app/*.html')
-		.pipe($.wrap({ src: 'app/templates/layout.html' }))
-		.pipe(gulp.dest('.tmp'));
-});
-
-// http://emberjs.jsbin.com/nakukoweme/1/edit?html,output
-gulp.task('tree', function () {
-	return gulp.src('content/**/*.md')
-		.pipe($.fileTree())
-		// .pipe($.rename({
-		// 	extname: '.jade'
-		// }))
-		.pipe(gulp.dest('dist'));
-});
-
 gulp.task('styles', function () {
 	return gulp.src('app/styles/*.scss')
 		.pipe($.sourcemaps.init())
@@ -56,7 +42,7 @@ gulp.task('styles', function () {
 		]))
 		.pipe($.sourcemaps.write('.'))
 		.pipe(gulp.dest('.tmp/styles'))
-		.pipe($.filter('**/*.css')) // Filtering stream to only css files. Needed for browser-sync css injection
+		.pipe($.filter('**/*.css'))
 		.pipe(reload({ stream: true }));
 });
 
@@ -69,17 +55,10 @@ gulp.task('scripts', function () {
 		.pipe(gulp.dest('.tmp/scripts/'));
 });
 
-// moves images to dist (no optimization because I do it manually)
-gulp.task('images', function () {
-	return gulp.src('app/images/**/*')
-		.pipe($.cache())
-		.pipe(gulp.dest('dist/images'));
-});
-
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
 // starts a server for development
-gulp.task('serve', ['html', 'markdown', 'styles', 'scripts'], function () {
+gulp.task('serve', ['markdown', 'styles', 'scripts'], function () {
 	browserSync({
 		server: {
 			baseDir: ['.tmp', 'app'],
@@ -91,8 +70,8 @@ gulp.task('serve', ['html', 'markdown', 'styles', 'scripts'], function () {
 	});
 
 	// watch for changes and run tasks
-	gulp.watch(['app/*.html', 'app/templates/*.html'], ['html', reload]);
-	gulp.watch('content/**/*.md', ['markdown', reload]);
+	// gulp.watch(['app/*.html', 'app/templates/*.html'], ['html', reload]);
+	// gulp.watch('content/**/*.md', ['markdown', reload]);
 	gulp.watch('app/scripts/**/*.js', ['scripts', reload]);
 	gulp.watch('app/styles/**/*.scss', ['styles']); // 'styles' does reload
 });
