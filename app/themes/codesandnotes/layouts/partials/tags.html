@@ -1,0 +1,10 @@
+<ul class="List">
+	{{ $baseurl := .Site.BaseUrl }}
+	{{ range $name, $value := .Site.Taxonomies.tags }}
+		<li>
+			<a href="{{ $baseurl }}/tags/{{ $name | urlize }}">
+				{{ $name }} <span class="Badge">{{ .Count }}</span>
+			</a>
+		</li>
+	{{ end }}
+</ul>

@@ -1,0 +1,8 @@
+{{ range .Data.Pages.GroupBy "Section" }}
+	<h3>{{ .Key }}</h3>
+	<ul class="List">
+		{{ range $page := .Pages }}
+			{{ .Render "list-item" }}
+		{{ end }}
+	</ul>
+{{ end }}
