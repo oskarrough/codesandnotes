@@ -1,5 +1,6 @@
 ---
-title: "Tools & Workflow"
+title: "On the right tools"
+weight: -1
 ---
 
 Having the right set of tools for the job is essential. As we are writing code you will need an editor, processing tools, be able to handle servers and content management systems as well as know how to collaborate on projects using version control like Git.
@@ -8,7 +9,7 @@ Having the right set of tools for the job is essential. As we are writing code y
 
 First and foremost you need a good, solid and fast editor. Here are some of the best:
 
-- [Sublime Text](http://www.sublimetext.com/) (many agree this is 
+- [Sublime Text](http://www.sublimetext.com/) (many agree this is
 - [Chocolat](http://chocolatapp.com/)
 - [Coda](http://panic.com/coda/)
 - [Espresso](http://macrabbit.com/espresso/)

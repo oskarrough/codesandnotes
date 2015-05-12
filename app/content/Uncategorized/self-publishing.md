@@ -20,6 +20,7 @@ Notes on self publishing. Will make it useful for others later.
 - https://github.com/tooling/book-of-modern-frontend-tooling
 - http://smacss.com/
 - http://javascriptplayground.com/the-refactoring-tales/
+- https://github.com/DrBoolean/mostly-adequate-guide
 
 ## Distribution
 
