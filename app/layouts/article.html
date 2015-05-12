@@ -27,7 +27,7 @@
 		<article>
 			<h1>Understanding The CSS Box Model</h1>
 			<p>It is important to understand how elements are rendered. How those CSS properties you write magically turn into beautiful shapes. Well, boxes. Every element on your page is a rectangular box. Even if it looks like a circle, it’s a box. This	<code>box-model</code> is what browsers use to calculate the total width and height of an element.</p>
-			<img src="/images/illustrations/lilOctopus-web2.jpg" alt="">
+			<img src="/images/illustrations/liloctopus-web2.jpg" alt="">
 			<h2>How is the size calculated?</h2>
 			<p>The way the box model is calculated is called	<code>box-sizing</code> and it has a default value of	<code>content-box</code>. This content-box does not include padding and borders in the width and height of an element. This means an element with a set width of 100px will not necessarily have a total, calculated width of a 100px. If the borders total 2px (e.g. 1px on each side), the borders are added to the width which will result in a total width of 102px. Padding adds to the size in the exact same way.</p>
 			<p>This might not be what you expect but it	<em>is</em> the default way everything is calculated on the web anyway. The size is calculated in a specific order. First the box is expanded as much as possible to contain the content. Then width and height to constrain the box, then padding, then borders and lastly margins.</p>
