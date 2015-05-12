@@ -1,10 +1,6 @@
 ---
 title: Package management and Bower
-date: 2012-09-09
-tags: ["Bower","Components","Package-management","Tools &amp; Workflow"]
 ---
-
-# Package management and Bower
 
 ### The problem
 

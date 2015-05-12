@@ -14,7 +14,7 @@ Here the computer has no way of recognizing what type of content it is. It's jus
 
 {{< highlight html >}}
 <h1>This is my title</h1>
-<p>And this is some body text with a link to <a href="http://codesandnotes.com">Codes &amp; Notes</a>.</p>```
+<p>And this is some body text with a link to <a href="http://codesandnotes.com">Codes &amp; Notes</a>.</p>
 {{< /highlight >}}
 
 Now it makes sense, not only to computers, but to you and the people using your site because browsers will apply default styling and functionality to the elements, now that it recognizes them.
