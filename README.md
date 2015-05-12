@@ -24,6 +24,15 @@ Then go:
 
 gsed -i.backup -e 's/^# \(.*\)$/---\ntitle: \"\1\"\n---/g' *.md
 
+## Running the server
+
+1. `hugo server --watch --config=./app/config.yaml -ssource=./app`
+
+## Building the project
+
+1. `hugo --config=./app/config.yaml --source=./app --verbose=true`
+2. `surge dist`
+
 # License
 
 Licensed [BY-NC-SA Creative Commons](http://creativecommons.org/licenses/by-nc-sa/3.0/).

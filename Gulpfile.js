@@ -8,9 +8,6 @@ var compression = require('compression');
 var remarkable = require('gulp-remarkable'); // this doesn't seem to work with gulp-load-plugins
 // var header = require('gulp-header');
 
-var hugoServer = 'hugo server --watch --config=./app/config.yaml -ssource=./app';
-var hugoBuild = 'hugo --config=./app/config.yaml --source=./app --verbose=true';
-
 gulp.task('markdown', function() {
 	return gulp.src('content/**/*.md')
 
