@@ -1,5 +1,5 @@
 ---
-title: "Self-publishing"
+title: Self-publishing
 ---
 
 Notes on self publishing. Will make it useful for others later.
@@ -21,6 +21,7 @@ Notes on self publishing. Will make it useful for others later.
 - http://smacss.com/
 - http://javascriptplayground.com/the-refactoring-tales/
 - https://github.com/DrBoolean/mostly-adequate-guide
+- http://read.humanjavascript.com
 
 ## Distribution
 

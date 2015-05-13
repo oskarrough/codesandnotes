@@ -10,6 +10,7 @@ html {
 }
 @media (min-width: 40rem) {
 	html {
+		
 		font-size: 19px;
 	}
 }
