@@ -1,0 +1,148 @@
+// font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Bodoni MT", "Times New Roman", serif;*/
+
+// @font-face {
+// 	font-family: 'alix fb';
+// 	src: url('../fonts/alix-fb.woff') format('woff');
+// 	font-style: normal;
+// 	font-weight: normal;
+// }
+// @font-face {
+// 	font-family: 'alix fb bold';
+// 	src: url('../fonts/alix-fb-bold.woff') format('woff');
+// 	font-style: normal;
+// 	font-weight: bold;
+// }
+// @font-face {
+// 	font-family: 'alix fb italic';
+// 	src: url('../fonts/alix-fb-italic.woff') format('woff');
+// 	font-style: italic;
+// 	font-weight: normal;
+// }
+// @font-face {
+// 	font-family: 'alix fb bolditalic';
+// 	src: url('../fonts/alix-fb-bolditalic.woff') format('woff');
+// 	font-style: italic;
+// 	font-weight: bold;
+
+$serif: Charter, Hoefler Text, Cambria, Georgia, Times New Roman, serif;
+
+@mixin ff-paragraph(){
+	font-family: 'Edita', $serif;
+	font-weight: normal;
+}
+@mixin ff-header(){
+	// font-family: 'edita';
+	// font-weight: 600;
+	font-family: 'eskapade-fraktur', $serif;
+	font-weight: normal;
+	-webkit-font-smoothing: auto; // otherwise it gets too thin, stay with the default bro
+}
+
+html {
+	@include ff-paragraph;
+	line-height: ($base-line-height/$base-font-size);
+	font-size: $small * 1px;
+	@media (min-width: 50em) { font-size: $base-font-size * 1px; }
+	// @media (min-width: 1000px) { font-size: 19px; }
+	// @media (min-width: 1400px) { font-size: 20px; }
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+// Headings
+h1,
+h2,
+h3,
+h4 {
+	@include ff-header;
+}
+h1 {
+	font-size: ($x-large/$base-font-size) * 1rem;
+	line-height: ($base-line-height*2)/$x-large;
+	margin-bottom: $space;
+	font-style: italic;
+}
+h2 {
+	// @include rhythm($large);
+	font-size: ($large/$base-font-size)*1rem;
+	line-height: (32/$large);
+	margin-top: $space*1;
+	margin-bottom: $space/2;
+}
+h3 {
+	// @include rhythm($medium);
+	font-size: ($medium/$base-font-size)*1rem;
+	margin-bottom: $space/2;
+}
+article {
+	// p + h2,
+	// ul + h2,
+	// blockquote + h2 {
+	// 	// margin-top: $space * 1.5;
+	// 	// margin-bottom: $space/-2;
+	// }
+	// p + p {
+	// 	// margin-top: $space * -1;
+	// 	// text-indent: $space/1.5;
+	// }
+	// p + p img {
+	// 	margin-top: $space*2;
+	// }
+	img {
+		display: block;
+		margin-top: $space;
+		margin-bottom: $space;
+	}
+}
+
+img.AlignLeft {
+	max-width: 60%;
+	float: left;
+	margin-left: -30%;
+	margin-right: 2rem;
+}
+img.AlignRight {
+	max-width: 60%;
+	float: right;
+	margin-left: 2rem;
+	margin-right: -30%;
+}
+
+
+/**
+ * More styles
+ */
+strong {
+	font-weight: 600;
+}
+dfn, cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	margin-left: $space;
+	margin-right: $space*2;
+	// font-size: ($medium/$base-font-size) * 1rem;
+	font-style: italic;
+}
+code,
+pre {
+	font-family: 'Alix fb', 'Source Code Pro', Consolas, monospace;
+	font-weight: normal;
+	@include rhythm($small);
+}
+pre {
+	// padding: $space;
+	line-height: 1.6;
+	overflow: auto;
+	// background: rgb(249,250,250);
+}
+abbr,
+acronym,
+.Caps {
+	text-transform: lowercase;
+	font-variant: small-caps;
+	font-style: normal;
+	border-bottom: 0;
+	letter-spacing: 0.1em;
+}

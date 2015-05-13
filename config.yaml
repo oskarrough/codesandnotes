@@ -1,0 +1,17 @@
+title: "Codes & Notes"
+languageCode: "en-us"
+buildDrafts: true
+SectionPagesMenu: "main"
+metaDataFormat: "yaml"
+pluralizelisttitles: "false"
+#baseurl: "http://codesandnotes.com/"
+# theme: "codesandnotes"
+
+layoutdir: "app/layouts"
+publishdir: "dist"
+
+taxonomies:
+  tag: "tags"
+
+params:
+  foo: "bar"
