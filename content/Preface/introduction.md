@@ -1,7 +1,5 @@
 ---
 title: Introduction
-date: 2014-01-03
-tags: ["Preface"]
 ---
 
 ## Codes & Notes is a guide and reference you can trust
@@ -20,8 +18,10 @@ One thing is certain, I've been creating websites long enough to learn that I wo
 
 In turn, I hope you will appreciate them now.
 
+![Introduction](/images/illustrations/bio-lavoisier-lg.jpg)
+
 ## How is it written?
 
 It would be foolish to ignore the enormous web development community and as such this book thrives on the work and collective thoughts of you. I will strive to provide just the right amount of references and I will do my best to cut the crap and bring you the heat.
 
-At the bottom of every page there are references to other articles you can continue reading. You can always go back to the [Table of contents](http://codesandnotes.com#toc) as well.
+At the bottom of every page there are references to other articles you can continue reading.

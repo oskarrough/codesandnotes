@@ -1,7 +1,5 @@
 ---
 title: Understanding The CSS Box Model
-date: 2014-01-07
-tags: ["box-model","box-sizing","CSS","Front-end"]
 ---
 
 It is important to understand how elements are rendered. How those CSS properties you write magically turn into beautiful shapes. Well, boxes. Every element on your page is a rectangular box. Even if it looks like a circle, it's a box. This `box-model` is what browsers use to calculate the total width and height of an element.
@@ -15,6 +13,8 @@ This might not be what you expect but it _is_ the default way everything is calc
 Read that again, please.
 
 > Remember, if you don't specify a width or height, block elements default to the full width of the window and as heigh as the content. Inline elements snaps tightly to the content.
+
+![Octopus](/images/illustrations/liloctopus-web2.jpg)
 
 ## Different box models with box-sizing
 

@@ -1,8 +1,8 @@
 ---
 title: Understanding browser styles and Normalize
-date: 2014-01-09
-tags: ["Cross-browser","CSS","Front-end"]
 ---
+
+![20-lg](/images/illustrations/20-lg.jpg)
 
 All browsers add default CSS styles to web pages, so called 'user agent styles'. This is what makes a `<button>` actually look like a button. This is what creates the margin between paragraphs and headers and so on. This article will talk about how to deal with the issues they bring.
 

@@ -1,12 +1,12 @@
 ---
 title: Writing CSS for RTL websites
-date: 2012-11-06
-tags: ["Bidirectional","CSS","Front-end","Multilingual","RTL"]
 ---
 
 In a project I worked on we wanted to support bidirectional (or bidi) text, like Arabic or Hebrew.
 
 When a website is designed in a LTR world, suddenly changing it to RTL causes all sorts of problems. All solvable, though. You have to be careful about sprite positions, form design, floats as well as margin/paddings related to those floats. If you're using a CSS preprocessor like Sass (or stylus or whatever) you can utilize small mixins to make the process easier.
+
+![dsa](/images/illustrations/village-of-sekiya-at-sumida-river.jpg)
 
 ## RTL mixin
 

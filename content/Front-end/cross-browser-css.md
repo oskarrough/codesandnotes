@@ -4,6 +4,8 @@ date: 2012-05-03
 tags: ["Cross-browser","CSS","Front-end"]
 ---
 
+![dsa](/images/illustrations/phobia-11-lg.jpg)
+
 Cross-browser issues are differences in the browser's interpretation of the spec. What? Yes. Browsers understand the same things differently. Just like humans. And that's what makes life (and developing) fun! Well, life sure but development not so much.
 
 Writing robust cross-browser front-ends used to be hell because of the huge differences in between browsers. Time went on and even Internet Explorer 6 died. One of the biggest problems was getting users on the newest browser. Only nerds enjoy updating software. Let there be automatic updating and most of our problems were solved.
