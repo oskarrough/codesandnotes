@@ -61,7 +61,7 @@ gulp.task('serve', ['hugo', 'styles', 'scripts'], function () {
 	// server, livereload + gzip
 	browserSync({
 		server: {
-			baseDir: ['.tmp', 'app', 'dist'],
+			baseDir: ['.tmp', 'app', 'static', 'dist'],
 			middleware: compression()
 		}
 	});
