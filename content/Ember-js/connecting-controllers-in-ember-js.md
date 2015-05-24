@@ -4,7 +4,7 @@ title: Connecting controllers in Ember.js
 
 To enable communication between controllers you have to use the `needs` property on your controller. Here's how to do it:
 
-<pre><code class="language-javascript">
+```javascript
 // controllers/playlist.js
 import Ember from 'ember';
 
@@ -21,6 +21,6 @@ export default Ember.ObjectController.extend({
     // if you want, you can make an alias:
     tracks: Ember.computed.alias('controllers.tracks')
 });
-</code></pre>
+```
 
 Also see the official guide on [http://emberjs.com/guides/controllers/dependencies-between-controllers/](http://emberjs.com/guides/controllers/dependencies-between-controllers/)

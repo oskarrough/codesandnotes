@@ -12,7 +12,8 @@ When a website is designed in a LTR world, suddenly changing it to RTL causes al
 
 Assuming we've defined the `dir` attribute on the HTML element we can target styles using that selector.
 
-<pre>@mixin rtl {
+```scss
+@mixin rtl {
     [dir="rtl"] & {
         @content;
     }
@@ -31,7 +32,7 @@ Assuming we've defined the `dir` attribute on the HTML element we can target sty
         margin-left: 1rem;
      }
 }
-</pre>
+```
 
 Also, remember that browser defaults change as the direction does which means some things are already taken care for for you.
 
