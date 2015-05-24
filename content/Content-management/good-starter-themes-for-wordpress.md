@@ -1,7 +1,7 @@
 ---
 title: Good starter themes for Wordpress
 date: 2013-03-26
-tags: [Theme","Wordpress"]
+tags: ["Wordpress"]
 ---
 
 There are tons of designed themes for Wordpress available giving you a quick start which is great! Until it's not.
