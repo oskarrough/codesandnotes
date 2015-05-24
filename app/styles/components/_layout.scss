@@ -16,18 +16,19 @@ body {
 	overflow-y: scroll;
 	padding-top: 1px; // hack
 }
-.Container,
-.Manchet,
-.Header,
-.Main,
-.Aside,
-.Footer {
+
+.CodesAndNotes {
 	box-sizing: content-box;
 	max-width: 31rem; // less than 31 will break the manchet
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: $space*3;
-	padding-right: $space*3;
+	padding-top: $space*2;
+	padding-left: $space;
+	padding-right: $space;
+	@media (min-width: 30rem) {
+		padding-left: $space*3;
+		padding-right: $space*3;
+	}
 }
 .Header {
 	padding-left: 0;
@@ -35,15 +36,17 @@ body {
 	margin-bottom: $space*2;
 }
 .Main {
-	padding-top: $space;
 	padding-bottom: $space*2;
 	background-color: $light;
 }
 article {
-	padding-top: $space*2;
 	padding-bottom: $space;
-	border-bottom: 5px solid $lightgreen;
+	border-bottom: 2px solid $lightgreen;
 	margin-bottom: $space*2;
+}
+.Article-title {
+	margin-top: $space*3;
+	line-height: 1;
 }
 .Footer {
 	margin-top: $space;
@@ -52,89 +55,7 @@ article {
 	clear: both;
 }
 
-/**
- * Page transitions
- */
-body,
-main,
-.Footer {
-	transition: opacity 100ms;
-}
-.is-routing main,
-.is-routing .Footer {
-	opacity: 0.666;
-}
-
-
-
-
-
-/**
- * Comments
- */
-.Comments,
-#disqus_thread {
-	clear: both;
-}
-// .comment-content a {
-// 	word-wrap: break-word;
-// }
-// .logged-in-as,
-// .comment-form-comment label,
-// .form-allowed-tags {
-// 	display: none;
-// }
-// .comment-form-comment {
-// 	margin-bottom: 0;
-// }
-
-
-/**
- * Tag cloud
- */
-.wp-tag-cloud {
-	display: none;
-	column-width: 8em;
-	// column-gap: $space*2;
-	line-height: initial;
-	@media (min-width: 30rem) {
-		display: block;
-	}
-	a {
-		font-size: 16px !important;
-	}
-}
-
-
-/**
- * Meta text
- */
-.Meta {
-	font-size: ($small/$base-font-size)*1rem;
-	// line-height: 1.625;
-}
-
-
-/**
- * Edit link
- */
-a.post-edit-link {
-	float: right;
-	color: red;
-}
-
-
-/**
- * Search widget
- */
-.Search-submit {
-	display: none;
-}
-
-
-/**
- * Styleguide
- */
+// Styleguide
 .Color {
 	display: inline-block;
 	width: 7em;
@@ -144,3 +65,25 @@ a.post-edit-link {
 	padding-top: 10px;
 	text-align: center;
 }
+
+// /**
+//  * Chapters
+//  */
+// main {
+// 	counter-reset: section;
+// }
+// .Chapter {
+// 	h2::before {
+// 		// content: '§ ';
+// 		counter-increment: section;
+// 		content: "" counter(section) ". "; // Puts "1. " in front of every chapter title
+// 		color: $lightgray;
+// 	}
+// 	h2 a {
+// 		color: $black;
+// 	}
+// 	> p {
+// 		// max-width: 30rem;
+// 		font-size: (18/20) * 1rem;
+// 	}
+// }

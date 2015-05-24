@@ -1,23 +1,16 @@
-/**
- * Sizes
- */
-
-$small: 17;
-$base-font-size: 20;
-$base-line-height: 26;
-$medium: 24;
-$large: 30;
-$larger: 36;
-$x-large: 50;
+// Sizes
+$small: 14px;
+$base-font-size: 16px;
+$base-line-height: 23px;
+$medium: 24px;
+$large: 30px;
+$larger: 36px;
+$x-large: 50px;
 $space: ($base-line-height/$base-font-size) * 1rem;
 $space: 1rem;
 // $space: (1.333333333rem); // sass precision wasn't high enough but it is 26/18
 
-
-/**
- * Colors
- */
-
+// Colors
 $black: hsl(0, 0%, 7%);
 $secondary: hsl(20, 90%, 50%);
 $turquoise: hsl(180, 100%, 30%);
@@ -29,12 +22,11 @@ $light: hsl(180, 9%, 98%);
 $gray: hsl(0, 0%, 50%);
 $lightgray: hsl(0, 0%, 80%);
 $darkblue: hsl(240, 60%, 28%);
-
 $blue: hsl(240, 100%, 50%);
 $purple: hsl(300, 100%, 16%);
 $blue: hsl(187, 66%, 57%);
-// $dark: hsl(312, 56%, 2%);
 $red: hsl(6, 66%, 50%);
+$red2: hsl(9, 79%, 50%);
 $yellow: hsl(54, 66%, 70%);
 $darkyellow: hsl(66, 25%, 49%);
 

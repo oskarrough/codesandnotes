@@ -1,30 +1,4 @@
-// font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Bodoni MT", "Times New Roman", serif;*/
-
-// @font-face {
-// 	font-family: 'alix fb';
-// 	src: url('../fonts/alix-fb.woff') format('woff');
-// 	font-style: normal;
-// 	font-weight: normal;
-// }
-// @font-face {
-// 	font-family: 'alix fb bold';
-// 	src: url('../fonts/alix-fb-bold.woff') format('woff');
-// 	font-style: normal;
-// 	font-weight: bold;
-// }
-// @font-face {
-// 	font-family: 'alix fb italic';
-// 	src: url('../fonts/alix-fb-italic.woff') format('woff');
-// 	font-style: italic;
-// 	font-weight: normal;
-// }
-// @font-face {
-// 	font-family: 'alix fb bolditalic';
-// 	src: url('../fonts/alix-fb-bolditalic.woff') format('woff');
-// 	font-style: italic;
-// 	font-weight: bold;
-
-$serif: Charter, Hoefler Text, Cambria, Georgia, Times New Roman, serif;
+$serif: Georgia, serif;
 
 @mixin ff-paragraph(){
 	font-family: 'Edita', $serif;
@@ -40,9 +14,10 @@ $serif: Charter, Hoefler Text, Cambria, Georgia, Times New Roman, serif;
 
 html {
 	@include ff-paragraph;
-	line-height: ($base-line-height/$base-font-size);
-	font-size: $small * 1px;
-	@media (min-width: 50em) { font-size: $base-font-size * 1px; }
+	font-size: $base-font-size;
+	line-height: ($base-line-height / $base-font-size);
+	@media (min-width: 30rem) { font-size: $base-font-size + 1px; }
+	@media (min-width: 40rem) { font-size: $base-font-size + 4px; }
 	// @media (min-width: 1000px) { font-size: 19px; }
 	// @media (min-width: 1400px) { font-size: 20px; }
 	text-rendering: optimizeLegibility;
@@ -56,63 +31,28 @@ h2,
 h3,
 h4 {
 	@include ff-header;
+	max-width: 90%;
 }
 h1 {
 	font-size: ($x-large/$base-font-size) * 1rem;
-	line-height: ($base-line-height*2)/$x-large;
+	line-height: 1;
 	margin-bottom: $space;
-	font-style: italic;
+	// font-style: italic;
+	font-family: 'Lydian';
+	font-weight: normal;
 }
 h2 {
 	// @include rhythm($large);
-	font-size: ($large/$base-font-size)*1rem;
-	line-height: (32/$large);
+	font-size: ($large/$base-font-size) * 1rem;
+	line-height: 1.1;
 	margin-top: $space*1;
-	margin-bottom: $space/2;
+	// margin-bottom: $space/2;
 }
 h3 {
 	// @include rhythm($medium);
-	font-size: ($medium/$base-font-size)*1rem;
+	font-size: ($medium/$base-font-size) * 1rem;
 	margin-bottom: $space/2;
 }
-article {
-	// p + h2,
-	// ul + h2,
-	// blockquote + h2 {
-	// 	// margin-top: $space * 1.5;
-	// 	// margin-bottom: $space/-2;
-	// }
-	// p + p {
-	// 	// margin-top: $space * -1;
-	// 	// text-indent: $space/1.5;
-	// }
-	// p + p img {
-	// 	margin-top: $space*2;
-	// }
-	img {
-		display: block;
-		margin-top: $space;
-		margin-bottom: $space;
-	}
-}
-
-img.AlignLeft {
-	max-width: 60%;
-	float: left;
-	margin-left: -30%;
-	margin-right: 2rem;
-}
-img.AlignRight {
-	max-width: 60%;
-	float: right;
-	margin-left: 2rem;
-	margin-right: -30%;
-}
-
-
-/**
- * More styles
- */
 strong {
 	font-weight: 600;
 }
@@ -122,20 +62,18 @@ dfn, cite, em, i {
 blockquote {
 	margin-left: $space;
 	margin-right: $space*2;
-	// font-size: ($medium/$base-font-size) * 1rem;
 	font-style: italic;
 }
 code,
 pre {
-	font-family: 'Alix fb', 'Source Code Pro', Consolas, monospace;
-	font-weight: normal;
 	@include rhythm($small);
+	font-family: 'Triplicate T4c', 'Source Code Pro', Consolas, monospace;
+	font-weight: normal;
 }
 pre {
 	// padding: $space;
 	line-height: 1.6;
 	overflow: auto;
-	// background: rgb(249,250,250);
 }
 abbr,
 acronym,
@@ -146,3 +84,58 @@ acronym,
 	border-bottom: 0;
 	letter-spacing: 0.1em;
 }
+
+// Meta text
+small,
+.Meta {
+	font-size: ($small/$base-font-size) * 1rem;
+}
+
+.List {
+	a {
+		text-decoration: none;
+	}
+}
+
+.Breadcrumb {
+	list-style: none;
+	padding-left: 0;
+	li {
+		display: inline;
+		&:before {
+			display: none;
+		}
+	}
+	li:not(:last-child):after {
+		content: ' ☞ ';
+		position: relative;
+		top: 0.1em;
+		margin-left: 0.1em;
+		margin-right: 0.1em;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+
+
+article {
+	img {
+		display: block;
+		margin-top: $space;
+		margin-bottom: $space;
+	}
+}
+// img.AlignLeft {
+// 	max-width: 60%;
+// 	float: left;
+// 	margin-left: -30%;
+// 	margin-right: 2rem;
+// }
+// img.AlignRight {
+// 	max-width: 60%;
+// 	float: right;
+// 	margin-left: 2rem;
+// 	margin-right: -30%;
+// }

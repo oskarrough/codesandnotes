@@ -4,6 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
+	<!-- <link rel="stylesheet" href="styles/prism.css" /> -->
+	<!-- <link rel="stylesheet" href="/styles/can-simple.css" /> -->
+	<link rel="stylesheet" href="/styles/codesandnotes.css" />
+
 	<title>
 		{{ if eq .Url "/" }}
 			{{ .Site.Title }} — A reference for web development you can trust
@@ -16,8 +20,8 @@
 		{{ end }}
 	</title>
 
-	 <meta name="author" content="{{ .Site.Author.name }}">
-	 <meta property="og:site_name" content="{{ .Site.Title }}">
+	<meta name="author" content="{{ .Site.Author.name }}">
+	<meta property="og:site_name" content="{{ .Site.Title }}">
 	<meta name="description" content="Codes and notes is a reference for web development that you can trust">
 
 	{{ if eq .Url "/" }}
@@ -37,10 +41,6 @@
 		<meta property="og:type" content="article">
 		<meta property="og:title" content="{{ .Title }} &middot; {{ .Site.Title }}">
 	{{ end }}
-
-	<!-- <link rel="stylesheet" href="{{ .Site.BaseUrl }}/styles/codesandnotes.css"> -->
-	<link rel="stylesheet" href="/styles/codesandnotes.css" />
-	<!-- <link rel="stylesheet" href="styles/prism.css" /> -->
 
 	<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 

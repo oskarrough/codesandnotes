@@ -1,4 +1,4 @@
-/* Set a default margin between elements */
+// Set a default margin between elements
 blockquote,
 ol,
 ul,
@@ -23,14 +23,6 @@ figure {
 	margin: 0;
 	position: relative;
 }
-hr {
-	background-image: url(/images/ornaments/ornament-1.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	height: 58px;
-	height: 90px;
-	border: 0;
-}
 table {
 	width: 100%;
 }
@@ -41,7 +33,7 @@ object {
 	max-width: 100%;
 }
 img {
-	height: auto; /* Make sure images are scaled correctly. */
+	height: auto; // Make sure images are scaled correctly.
 	vertical-align: top;
 }
 textarea {
@@ -49,18 +41,34 @@ textarea {
 	min-height: 5.444444444rem;
 	max-width: 100%;
 }
+
 ol,
 ul {
+	line-height: 1.5;
 	padding-left: 0;
 	list-style: none;
-	line-height: 1.4;
+	li:before {
+		// content: '↝ ';
+		content: '— ';
+	}
 }
-li:before {
-	content: '↝ ';
+
+hr {
+	border: 0;
+}
+.Ornament {
+	background-image: url(/images/ornaments/ornament.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 58px;
+	height: 90px;
+}
+.Ornament--white {
+	background-image: url(/images/ornaments/ornament-white.png);
 }
 
 
-/* Links */
+// Links
 a,
 a:visited {
 	color: $green;
@@ -74,12 +82,12 @@ a {
 	}
 }
 
-/* Prefix chapter and topic links with a symbol */
-a[rel="category tag"]::before {
-	content: '§';
-	opacity: 0.5;
-}
-a[rel="tag"]::before,
-a[class^="tag-link-"] {
-	content: '#';
-}
+// // Prefix chapter and topic links with a symbol
+// a[rel="category tag"]::before {
+// 	content: '§';
+// 	opacity: 0.5;
+// }
+// a[rel="tag"]::before,
+// a[class^="tag-link-"] {
+// 	content: '#';
+// }
