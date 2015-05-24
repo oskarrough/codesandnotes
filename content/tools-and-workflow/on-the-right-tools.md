@@ -1,6 +1,6 @@
 ---
 title: "On the right tools"
-weight: -1
+weight: -99
 ---
 
 Having the right set of tools for the job is essential. As we are writing code you will need an editor, processing tools, be able to handle servers and content management systems as well as know how to collaborate on projects using version control like Git.

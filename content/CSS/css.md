@@ -1,6 +1,6 @@
 ---
 title: "CSS (Cascading Style Sheets)"
-weight: -1
+weight: -99
 ---
 
 Cascading, inheritance, selectors and their specificity. This section is about best practices and our experience with structured oocss.

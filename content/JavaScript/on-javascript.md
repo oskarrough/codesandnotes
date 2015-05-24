@@ -1,12 +1,14 @@
 ---
-title: "JavaScript"
-weight: -1
+title: "On JavaScript"
+weight: -99
 ---
+
+To do.
 
 - Why would I ever want a framework?
 - http://jquery.com
 - Explain event delegation
-- Explain how this works in JavaScript
+- Explain how `this` works in JavaScript
 - Explain how prototypal inheritance works
 - How do you go about testing your JavaScript?
 - What is a closure, and how/why would you use one?

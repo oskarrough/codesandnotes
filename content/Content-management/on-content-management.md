@@ -1,6 +1,6 @@
 ---
 title: Content management
-weight: -1
+weight: -99
 ---
 
 What are you doing right now? Whether you are supposed to be developing, designing or thinking about something, what it probably boils down to is communicating some information. Some content. Without the content all you have is nothing.

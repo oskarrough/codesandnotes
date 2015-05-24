@@ -1,6 +1,6 @@
 ---
 title: "On Aspects"
-weight: -1
+weight: -99
 ---
 
 Notes and ideas for this chapter.

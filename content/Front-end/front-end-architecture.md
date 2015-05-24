@@ -1,6 +1,6 @@
 ---
 title: Front-end architecture
-weight: -1
+weight: -99
 ---
 
 TODO
