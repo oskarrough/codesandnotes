@@ -10,3 +10,4 @@ TODO: When to use jQuery? When not?
 http://learn.jquery.com/
 http://plugins.jquery.com/
 http://www.unheap.com/
+http://plainjs.com/javascript/
