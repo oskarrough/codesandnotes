@@ -1,0 +1,5 @@
+{
+	"requireSpacesInsideParentheses": null,
+	"validateIndention": "\t",
+	"validateQuoteMarks": { "mark": "'", "escape": true }
+}

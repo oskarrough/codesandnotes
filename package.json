@@ -7,9 +7,9 @@
   },
   "devDependencies": {
     "autoprefixer-core": "^5.1.11",
-    "browser-sync": "^2.7.1",
-    "compression": "^1.4.3",
-    "del": "^1.1.1",
+    "browser-sync": "^2.7.3",
+    "compression": "^1.4.4",
+    "del": "^1.2.0",
     "gulp": "^3.8.11",
     "gulp-babel": "^5.1.0",
     "gulp-cache": "^0.2.9",
@@ -18,8 +18,8 @@
     "gulp-filter": "^2.0.2",
     "gulp-if": "^1.2.5",
     "gulp-load-plugins": "^0.10.0",
-    "gulp-postcss": "^4.0.3",
-    "gulp-sass": "^2.0.0",
+    "gulp-postcss": "^5.1.7",
+    "gulp-sass": "^2.0.1",
     "gulp-size": "^1.2.1",
     "gulp-sourcemaps": "^1.5.2"
   }
