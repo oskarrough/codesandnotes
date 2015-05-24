@@ -60,17 +60,25 @@ gulp.task('serve', ['hugo', 'styles', 'scripts'], function () {
 
 	// server, livereload + gzip
 	browserSync({
+		notify: false,
 		server: {
-			baseDir: ['.tmp', 'app', 'static', 'dist'],
+			baseDir: ['.tmp', 'app', 'static', 'dist'], // 'dist' and 'static' are needed because hugo builds all content here
 			middleware: compression()
 		}
 	});
 
+	// watch for changes
+	// gulp.watch([
+	// 	// 'app/*.html',
+	// 	'app/scripts/**/*.js',
+	// 	'app/images/**/*',
+	// 	'.tmp/fonts/**/*'
+	// ]).on('change', reload);
+
 	// watch for changes and run tasks
-	gulp.watch('content/**/*.md', ['hugo', reload]);
-	gulp.watch('app/layouts/**/*.html', ['hugo', reload]);
+	gulp.watch(['content/**/*.md', 'app/layouts/**/*.html'], ['hugo']);
+	gulp.watch(['app/styles/**/*.scss'], ['styles']); // 'styles' does reload
 	gulp.watch('app/scripts/**/*.js', ['scripts', reload]);
-	gulp.watch(['app/styles/**/*.scss', 'app/styles/**/*.css'], ['styles']); // 'styles' does reload
 });
 
 // shortcut for serve
