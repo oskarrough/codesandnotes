@@ -66,12 +66,13 @@ blockquote {
 }
 code,
 pre {
-	@include rhythm($small);
+	// @include rhythm($small);
+	font-size: 16px;
 	font-family: 'Triplicate T4c', 'Source Code Pro', Consolas, monospace;
 	font-weight: normal;
+	// line-height: 1.4;
 }
 pre {
-	// padding: $space;
 	line-height: 1.6;
 	overflow: auto;
 }
