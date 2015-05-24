@@ -7,7 +7,8 @@ $serif: Georgia, serif;
 @mixin ff-header(){
 	// font-family: 'edita';
 	// font-weight: 600;
-	font-family: 'eskapade-fraktur', $serif;
+	font-family: 'lydian', 'eskapade-fraktur', $serif;
+	font-family: 'lydian-mt', $serif;
 	font-weight: normal;
 	-webkit-font-smoothing: auto; // otherwise it gets too thin, stay with the default bro
 }
@@ -16,8 +17,8 @@ html {
 	@include ff-paragraph;
 	font-size: $base-font-size;
 	line-height: ($base-line-height / $base-font-size);
-	@media (min-width: 30rem) { font-size: $base-font-size + 1px; }
-	@media (min-width: 40rem) { font-size: $base-font-size + 4px; }
+	@media (min-width: $layout-s) { font-size: $base-font-size + 1px; }
+	@media (min-width: $layout-m) { font-size: $base-font-size + 4px; }
 	// @media (min-width: 1000px) { font-size: 19px; }
 	// @media (min-width: 1400px) { font-size: 20px; }
 	text-rendering: optimizeLegibility;
@@ -31,7 +32,6 @@ h2,
 h3,
 h4 {
 	@include ff-header;
-	max-width: 90%;
 }
 h1 {
 	font-size: ($x-large/$base-font-size) * 1rem;
@@ -40,17 +40,21 @@ h1 {
 	// font-style: italic;
 	font-family: 'Lydian';
 	font-weight: normal;
+	@media (min-width: $layout-s) {
+		max-width: 80%;
+	}
 }
 h2 {
 	// @include rhythm($large);
-	font-size: ($large/$base-font-size) * 1rem;
+	font-size: ($medium/$base-font-size) * 1rem;
 	line-height: 1.1;
 	margin-top: $space*1;
 	// margin-bottom: $space/2;
 }
 h3 {
 	// @include rhythm($medium);
-	font-size: ($medium/$base-font-size) * 1rem;
+	font-size: 1rem;
+	line-height: 1.3;
 	margin-bottom: $space/2;
 }
 strong {
@@ -101,6 +105,8 @@ small,
 .Breadcrumb {
 	list-style: none;
 	padding-left: 0;
+	margin-bottom: $space*3;
+
 	li {
 		display: inline;
 		&:before {

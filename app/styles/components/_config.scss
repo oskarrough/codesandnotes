@@ -10,13 +10,18 @@ $space: ($base-line-height/$base-font-size) * 1rem;
 $space: 1rem;
 // $space: (1.333333333rem); // sass precision wasn't high enough but it is 26/18
 
+$layout-s: 30rem;
+$layout-m: 40rem;
+$layout-l: 50rem;
+
 // Colors
 $black: hsl(0, 0%, 7%);
 $secondary: hsl(20, 90%, 50%);
 $turquoise: hsl(180, 100%, 30%);
 $green: hsl(160, 59%, 30%);
+$darkgreen: hsl(122, 85%, 18%);
 $lightgreen: hsl(130, 21%, 90%);
-$sand: hsl(40, 58%, 90%);
+$sand: #F7F5F3;
 $beige: hsl(40, 30%, 96%);
 $light: hsl(180, 9%, 98%);
 $gray: hsl(0, 0%, 50%);
@@ -29,6 +34,9 @@ $red: hsl(6, 66%, 50%);
 $red2: hsl(9, 79%, 50%);
 $yellow: hsl(54, 66%, 70%);
 $darkyellow: hsl(66, 25%, 49%);
+
+$text-color: $black;
+$bg-color: $sand; // $light, $beige
 
 .Color--black { background-color: $black;}
 .Color--secondary { background-color: $secondary;}
