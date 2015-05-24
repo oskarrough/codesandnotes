@@ -26,26 +26,26 @@
 		</div>
 		{{ end }} -->
 
-		<!-- <h3>Next up:</h3> -->
-		<ul class="List">
+		<!-- ◀ ◆ ▶ -->
+
+		<p>
+			<a href="/{{ .Section }}/">◆</a>
+
 			<!-- {{ if .NextInSection }}
-				<li class="next">
-					<a href="{{ .NextInSection.Permalink }}">
-						<span aria-hidden="true">&larr; Prev</span>
-						{{ .NextInSection.Title }}
-					</a>
-				</li>
+				<a href="{{ .NextInSection.Permalink }}">
+					<span aria-hidden="true">&larr; Prev</span>
+					{{ .NextInSection.Title }}
+				</a>
 			{{ end }} -->
+
 			{{ if .PrevInSection }}
-				<li class="previous">
-					<span aria-hidden="true">☞</span>
-					<a href="{{ .PrevInSection.Permalink }}">
-						{{ .PrevInSection.Title }}
-					</a>
-				</li>
+				<span aria-hidden="true">☞</span>
+				<a href="{{ .PrevInSection.Permalink }}">
+					{{ .PrevInSection.Title }}
+				</a>
 			{{ end }}
 			<!-- <li><a href="{{ .Site.BaseUrl }}">All chapters</a></li> -->
-		</ul>
+		</p>
 
 		<!-- {{ partial "pager.html" . }} -->
 
