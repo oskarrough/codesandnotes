@@ -24,6 +24,8 @@ html {
 }
 
 body {
+	padding-left: 1rem;
+	padding-right: 1rem;
 	margin: 0;
 	min-height: 100%;
 }
@@ -36,6 +38,16 @@ body {
 .Main {
 	flex: 1;
 }
+.Header {}
+.Header h1 {
+	font-size: 1rem;
+	margin-bottom: -0.5em;
+}
+.Main {}
+.Aside {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
 .Aside ul {
 	padding-left: 0;
 	list-style: none;
@@ -45,6 +57,24 @@ body {
 	display: block;
 	padding: 0.1em 0;
 }
+/*@media (min-width: 40em) {
+	body {
+		padding-left: 25%;
+		padding-left: calc(25% + 2rem);
+		padding-right: 2rem;
+	}
+	.Aside {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		z-index: 1;
+		border-right: 1px solid #eee;
+		width: 25%;
+		overflow-y: auto;
+	}
+}*/
+
 
 /* numbered lists */
 .List {
@@ -92,6 +122,12 @@ h2 {
 h3 {
 	font-size: 1rem;
 }
+figure {
+	margin: 0;
+}
+img {
+	max-width: 100%;
+}
 
 a:link,
 a:visited {
@@ -100,39 +136,6 @@ a:visited {
 }
 a:hover {
 	text-decoration: underline;
-}
-
-.Header {}
-.Header h1 {
-	font-size: 1rem;
-	margin-bottom: -0.5em;
-}
-.Main {}
-.Aside {
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-
-body {
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-@media (min-width: 40em) {
-	body {
-		padding-left: 25%;
-		padding-left: calc(25% + 2rem);
-		padding-right: 2rem;
-	}
-	.Aside {
-		position: fixed;
-		top: 0;
-		left: 0;
-		height: 100%;
-		z-index: 1;
-		border-right: 1px solid #eee;
-		width: 25%;
-		overflow-y: auto;
-	}
 }
 
 .Article-title {
@@ -147,7 +150,7 @@ ul {
 .Badge {
 	background: rgba(204, 204, 204, 0.31);
 	border-radius: 0.3em;
-	padding: 0em 0.2em;
+	padding: 0 0.2em;
 }
 
 .Breadcrumb {

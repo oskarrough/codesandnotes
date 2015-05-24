@@ -27,7 +27,7 @@ gulp.task('deploy', function (cb) {
 
 // Sass, sourcemaps and autoprefixer
 gulp.task('styles', function () {
-	return gulp.src('app/styles/*.scss')
+	return gulp.src(['app/styles/*.scss'])
 		.pipe(plugin.sourcemaps.init())
 		.pipe(plugin.sass({
 			outputStyle: 'expanded',
@@ -70,7 +70,7 @@ gulp.task('serve', ['hugo', 'styles', 'scripts'], function () {
 	gulp.watch('content/**/*.md', ['hugo', reload]);
 	gulp.watch('app/layouts/**/*.html', ['hugo', reload]);
 	gulp.watch('app/scripts/**/*.js', ['scripts', reload]);
-	gulp.watch('app/styles/**/*.scss', ['styles']); // 'styles' does reload
+	gulp.watch(['app/styles/**/*.scss', 'app/styles/**/*.css'], ['styles']); // 'styles' does reload
 });
 
 // shortcut for serve
