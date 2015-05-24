@@ -28,7 +28,7 @@ This convention is tested, it works and it _will_ help you differentiate your cl
     .ComponentName--modifierName {}
     .is-stateOfModule {}
 
-### See more
+#### References
 
 - [SUIT naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 - [SUIT Components and examples of naming conventions](https://github.com/suitcss/suit/blob/master/doc/components.md#naming-conventions)

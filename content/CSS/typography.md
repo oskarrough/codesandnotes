@@ -13,7 +13,7 @@ tags: ['typography']
 http://www.quirksmode.org/oddsandends/wbr.html
 http://blog.kenneth.io/blog/2012/03/04/word-wrapping-hypernation-using-css/
 
-## References
+### References
 
 - http://typecast.com/blog/a-more-modern-scale-for-web-typography
 - http://fontprep.com/

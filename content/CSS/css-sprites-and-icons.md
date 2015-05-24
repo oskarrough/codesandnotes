@@ -23,7 +23,7 @@ todo
 - How do you do it
 - Image replacement techniques
 
-### References
+#### References
 
 - http://filamentgroup.com/lab/bulletproof_icon_fonts/
 - http://developer.yahoo.com/performance/rules.html#opt_sprites

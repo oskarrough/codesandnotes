@@ -71,7 +71,7 @@ An unbreakable "word" may be broken at an arbitrary point if there are no otherw
 There is only partial browser support of `word-break: break-all;`
 Korean uses spaces between words.
 
-### See more
+#### References
 
 - http://rishida.net/docs/unicode-tutorial/toc
 - http://rishida.net/docs/unicode-tutorial/part5

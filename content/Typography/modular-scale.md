@@ -8,7 +8,7 @@ Print layouts have been using modular scales for centuries, so why shouldn't we 
 
 What you're currently is composed with vertical rhythm. But more than keeping it real with Mr. Fibonacci, you should think about what really makes sense within your site. And keep visual consistency.
 
-### See more
+#### References
 
 - [More meaningful typography on ALA](http://alistapart.com/article/more-meaningful-typography)
 - [Fibonacci Flim-Flam](http://www.lhup.edu/~dsimanek/pseudo/fibonacc.htm)

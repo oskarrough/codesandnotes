@@ -20,7 +20,7 @@ By design HTML is simple in its syntax. [Jade](http://jade-lang.com/) and <a hre
 
 @todo: write about web components and html imports
 
-### References
+#### References
 
 - [HTML Imports](http://www.html5rocks.com/en/tutorials/webcomponents/imports/)
 - [The HTML spec on Github](https://github.com/w3c/html)

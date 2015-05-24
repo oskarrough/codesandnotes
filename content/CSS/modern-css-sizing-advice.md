@@ -27,7 +27,7 @@ No, but really. In this retina-dpi-apocalypse-world it's safer and better to wor
 
 Last bit of advice, if you can avoid defining any sizes, you'll have less issues.
 
-### See more
+#### References
 
 - [Relative Lenghts on the W3](http://www.w3.org/TR/css3-values/#relative-lengths)
 - [Jonathan Snook on rem](http://snook.ca/archives/html_and_css/font-size-with-rem)

@@ -21,7 +21,7 @@ intro
 - http://weblog.bocoup.com/introducing-the-backbone-boilerplate/
 - https://github.com/tbranyen/backbone-boilerplate
 
-### See more
+#### References
 
 - Learn Angular.js: http://egghead.io/
 - http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/

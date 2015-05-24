@@ -6,6 +6,6 @@ title: "Servers"
 
 ## Hosting
 
-### See more
+#### References
 
 http://24ways.org/2013/url-rewriting-for-the-fearful/

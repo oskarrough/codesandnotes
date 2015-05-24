@@ -20,7 +20,7 @@ What is Bower?
 
 What is Component?
 
-### See more
+#### References
 
 - http://bower.io/
 - http://component.io/

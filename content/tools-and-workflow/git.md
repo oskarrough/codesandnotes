@@ -44,7 +44,7 @@ Having an interface for Git helps a lot. Github.com is one way, Bitbucket.com is
 - http://windows.github.com/
 - http://www.git-tower.com/
 
-### See more
+#### References
 
 - http://www.git-tower.com/learn/
 - http://git-scm.com/book

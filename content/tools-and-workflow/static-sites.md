@@ -17,7 +17,7 @@ https://github.com/benbalter/wordpress-to-jekyll-exporter
 - [DocPad](http://docpad.org/)
 - [Jekyll](http://jekyllrb.com/)
 - [Octopress](https://github.com/imathis/octopress) (based on Jekyll)
-- [Assemble](http://assemble.io/) 
+- [Assemble](http://assemble.io/)
 - [Happyplan](https://github.com/happyplan/happyplan) (based on Assemble)
 - [Middleman](http://middlemanapp.com/)
 
@@ -30,7 +30,7 @@ Jekyll and Octopress as well as Middleman are all written in Ruby.
 - https://github.com/dpree/jekyll-navigation
 - http://stackoverflow.com/questions/9053066/sorted-navigation-menu-with-jekyll-and-liquid
 
-## See more
+#### References
 
 - http://modernstatic.com/
 - http://go-static-my-friend.fredjean.net/ (Middleman)

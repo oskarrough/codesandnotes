@@ -25,7 +25,7 @@ $ pngcrush -rem alla -nofilecheck -reduce -m 7 (YOURFILE).png (OPTIMIZEDFILE).pn
 
 Should help a lot
 
-#### See more
+##### References
 
 - http://jamiemason.github.io/ImageOptim-CLI/
 - http://www.splashnology.com/article/how-to-optimize-png-and-jpeg-without-quality-loss-part-1/2071/

@@ -69,7 +69,7 @@ Try not to edit while you’re creating your first draft. Creating and editing a
 
 Write daily for 30 minutes minimum! It’s easy to notice the difference in a short time
 
-### References
+#### References
 
 - http://alistapart.com/about/style-guide
 - http://css-tricks.com/words-avoid-educational-writing/
