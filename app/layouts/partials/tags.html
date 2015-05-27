@@ -1,5 +1,5 @@
 <ul class="List">
-	{{ $baseurl := .Site.BaseUrl }}
+	{{ $baseurl := .Site.BaseURL }}
 	{{ range $name, $value := .Site.Taxonomies.tags }}
 		<li>
 			<a href="{{ $baseurl }}/tags/{{ $name | urlize }}">

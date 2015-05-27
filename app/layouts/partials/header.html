@@ -9,11 +9,11 @@
 	<link rel="stylesheet" href="/styles/codesandnotes.css" />
 
 	<title>
-		{{ if eq .Url "/" }}
+		{{ if eq .URL "/" }}
 			{{ .Site.Title }} — A reference for web development you can trust
-		{{ else if eq .Url "/post/" }}
+		{{ else if eq .URL "/post/" }}
 			All Entries &middot; {{ .Site.Title }}
-		{{ else if in .Url "/tags/" }}
+		{{ else if in .URL "/tags/" }}
 			{{ .Site.Title }}
 		{{ else }}
 			{{ .Title }} &middot; {{ .Site.Title }}
@@ -24,16 +24,16 @@
 	<meta property="og:site_name" content="{{ .Site.Title }}">
 	<meta name="description" content="Codes and notes is a reference for web development that you can trust">
 
-	{{ if eq .Url "/" }}
+	{{ if eq .URL "/" }}
 		<!-- Index -->
 		<meta property="og:type" content="website">
 		{{ range first 1 .Data.Pages }}
 			<meta property="og:title" content="{{ .Site.Title }}">
 		{{ end }}
-	{{ else if eq .Url "/post/" }}
+	{{ else if eq .URL "/post/" }}
 		<!-- Post -->
 		<meta property="og:title" content="All Entries &middot; {{ .Site.Title }}">
-	{{ else if in .Url "/tags/" }}
+	{{ else if in .URL "/tags/" }}
 		<!-- Category -->
 		<meta property="og:title" content="{{ .Site.Title }}">
 	{{ else }}

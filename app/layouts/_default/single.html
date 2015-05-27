@@ -2,7 +2,7 @@
 
 <main class="Main">
 	<ul class="Breadcrumb">
-		<li><a href="{{ .Site.BaseUrl }}">{{ .Site.Title }}</a></li>
+		<li><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></li>
 		{{ if .Section }}
 			<li><a href="/{{ .Section }}/">{{ title .Section}}</a></li>
 		{{ end }}
@@ -44,7 +44,7 @@
 					{{ .PrevInSection.Title }}
 				</a>
 			{{ end }}
-			<!-- <li><a href="{{ .Site.BaseUrl }}">All chapters</a></li> -->
+			<!-- <li><a href="{{ .Site.BaseURL }}">All chapters</a></li> -->
 		</p>
 
 		<!-- {{ partial "pager.html" . }} -->
@@ -61,7 +61,7 @@
 
 		{{ if .Params.tags }}
 			<h3>Tags</h3>
-			{{ $baseurl := .Site.BaseUrl }}
+			{{ $baseurl := .Site.BaseURL }}
 			<ul class="List List--tags">
 				{{ range .Params.tags }}
 					<li>
@@ -77,7 +77,7 @@
 		<ul class="List">
 			{{ $page_link := .Permalink }}
 			{{ $tags := .Params.tags }}
-			{{ range .Site.Recent }}
+			{{ range .Site.Pages }}
 				{{ $page := . }}
 				{{ $has_common_tags := intersect $tags .Params.tags | len | lt 0 }}
 				{{ if and $has_common_tags (ne $page_link $page.Permalink) }}

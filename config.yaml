@@ -1,17 +1,20 @@
-title: "Codes & Notes"
-languageCode: "en-us"
-buildDrafts: true
-SectionPagesMenu: "main"
-metaDataFormat: "yaml"
-pluralizelisttitles: "false"
-#baseurl: "http://codesandnotes.com/"
-# theme: "codesandnotes"
+title: 'Codes & Notes'
+languageCode: 'en-us'
+buildDrafts: false
+pluralizelisttitles: false
+relativeUrls: true
 
-layoutdir: "app/layouts"
-publishdir: "dist"
+SectionPagesMenu: 'main'
+metaDataFormat: 'yaml'
+# baseURL: 'http://codesandnotes.com/'
+baseurl: ''
+# theme: 'codesandnotes'
+
+layoutdir: 'app/layouts'
+publishdir: 'dist'
 
 taxonomies:
-  tag: "tags"
+  tag: 'tags'
 
 params:
-  foo: "bar"
+  foo: 'bar'
