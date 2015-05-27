@@ -1,0 +1,27 @@
+.List {
+	a {
+		text-decoration: none;
+	}
+}
+
+.Breadcrumb {
+	list-style: none;
+	margin-bottom: $space*3;
+
+	li {
+		display: inline;
+		&:before {
+			display: none;
+		}
+	}
+	li:not(:last-child):after {
+		content: ' ☞ ';
+		position: relative;
+		top: 0.1em;
+		margin-left: 0.1em;
+		margin-right: 0.1em;
+	}
+	a {
+		text-decoration: none;
+	}
+}

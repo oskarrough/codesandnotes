@@ -18,6 +18,15 @@
 		</div>
 	</article>
 
+	<footer>
+		<ul class="Breadcrumb">
+			<li><a href="/{{ .Section }}/">◆</a></li>
+			{{ if .PrevInSection }}
+				<li><a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a></li>
+			{{ end }}
+		</ul>
+	</footer>
+
 	<aside>
 		<!-- {{ if .TableOfContents }}
 		<h3>Table of contents</h3>
@@ -25,27 +34,18 @@
 			{{ .TableOfContents }}
 		</div>
 		{{ end }} -->
-
+		<!-- ☞ -->
 		<!-- ◀ ◆ ▶ -->
 
-		<p>
-			<a href="/{{ .Section }}/">◆</a>
-
-			<!-- {{ if .NextInSection }}
+		<!-- {{ if .NextInSection }}
 				<a href="{{ .NextInSection.Permalink }}">
 					<span aria-hidden="true">&larr; Prev</span>
 					{{ .NextInSection.Title }}
 				</a>
 			{{ end }} -->
 
-			{{ if .PrevInSection }}
-				<span aria-hidden="true">☞</span>
-				<a href="{{ .PrevInSection.Permalink }}">
-					{{ .PrevInSection.Title }}
-				</a>
-			{{ end }}
+
 			<!-- <li><a href="{{ .Site.BaseURL }}">All chapters</a></li> -->
-		</p>
 
 		<!-- {{ partial "pager.html" . }} -->
 

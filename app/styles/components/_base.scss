@@ -71,7 +71,8 @@ hr {
 // Links
 a,
 a:visited {
-	color: $green;
+	color: $primary-color;
+	text-decoration: none;
 }
 a {
 	&:hover,

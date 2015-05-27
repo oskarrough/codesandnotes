@@ -34,10 +34,18 @@ body {
 	max-width: 34rem;
 	margin-bottom: $space*2;
 }
+.Breadcrumb,
 .Main {
-	background-color: $bg-color;
 	padding-left: $space;
 	padding-right: $space;
+}
+.Main .Breadcrumb {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.Main {
+	background-color: $bg-color;
 	padding-bottom: $space*2;
 }
 article {

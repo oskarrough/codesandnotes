@@ -41,7 +41,7 @@ h1 {
 	font-family: 'Lydian';
 	font-weight: normal;
 	@media (min-width: $layout-s) {
-		max-width: 80%;
+		max-width: 92%;
 	}
 }
 h2 {
@@ -95,37 +95,6 @@ small,
 .Meta {
 	font-size: ($small/$base-font-size) * 1rem;
 }
-
-.List {
-	a {
-		text-decoration: none;
-	}
-}
-
-.Breadcrumb {
-	list-style: none;
-	padding-left: 0;
-	margin-bottom: $space*3;
-
-	li {
-		display: inline;
-		&:before {
-			display: none;
-		}
-	}
-	li:not(:last-child):after {
-		content: ' ☞ ';
-		position: relative;
-		top: 0.1em;
-		margin-left: 0.1em;
-		margin-right: 0.1em;
-	}
-	a {
-		text-decoration: none;
-	}
-}
-
-
 
 article {
 	img {
