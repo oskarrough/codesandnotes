@@ -7,8 +7,9 @@ relativeUrls: true
 SectionPagesMenu: 'main'
 metaDataFormat: 'yaml'
 # baseURL: 'http://codesandnotes.com/'
-baseurl: ''
+# baseurl: ''
 # theme: 'codesandnotes'
+relativeURLs: true
 
 layoutdir: 'app/layouts'
 publishdir: 'dist'
@@ -18,3 +19,10 @@ taxonomies:
 
 params:
   foo: 'bar'
+
+menu:
+  main:
+    - name: "Tools and Workflow"
+      #weight: -120
+      Identifier: "Tools and Workflow"
+      url: "/tools-and-workflow"

@@ -10,16 +10,31 @@ Having used Jekyll, Wordpress, Middleman, my own Gulp generator I've finally set
 
 All articles are in `content/`. They are written in Markdown with YAML front-matter for Hugo to build the project. Templates, styles and scripts are in `app/`.
 
-## Development
+## Installing dependecies
 
-First you need git, node and hugo installed. If you have homebrew as well, hugo is installed like this:
+First you need git, node, go and hugo installed. If you have homebrew as well, hugo is installed like this:
 
 - `brew install hugo`
+
+### How to install and use Hugo from master with Fish Shell
+
+If you want to compile with the latest greatest from GitHub, do this:
+
+```bash
+brew install mercurial (needed for some dependencies)
+set -x GOPATH $HOME/go (where go should install stuff, you can change this)
+go env (check that the gopath is really set)
+go get -v github.com/spf13/hugo (installs hugo into ~/go/src/……… )
+mv ~/go/bin/hugo /usr/local/bin/ (now the hugo command should be available in your fish shell)
+```
+
+## Installing Codes & Notes
 
 Then go:
 
 1. `git clone git@github.com:oskarrough/codesandnotes.git`
-2. `cd codesandnotes/app`
+2. `cd codesandnotes`
+3. `npm install; bower install; gulp clean`
 
 gsed -i.backup -e 's/^# \(.*\)$/---\ntitle: \"\1\"\n---/g' *.md
 

@@ -2,9 +2,9 @@
 
 <main class="Main">
 	<ul class="Breadcrumb">
-		<li><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></li>
+		<li><a href="/">{{ .Site.Title }}</a></li>
 		{{ if .Section }}
-			<li><a href="/{{ .Section }}/">{{ title .Section}}</a></li>
+			<li><a href="/{{ .Section | urlize}}">{{ title .Section}}</a></li>
 		{{ end }}
 	</ul>
 
@@ -20,7 +20,7 @@
 
 	<footer>
 		<ul class="Breadcrumb">
-			<li><a href="/{{ .Section }}/">◆</a></li>
+			<li><a href="/{{ .Section }}">◆</a></li>
 			{{ if .PrevInSection }}
 				<li><a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a></li>
 			{{ end }}
