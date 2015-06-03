@@ -1,14 +1,13 @@
 ---
 title: Introduction
+weight: -99
 ---
 
 ## Codes & Notes is a guide and reference you can trust
 
-A book for anyone wanting to learn more about web development. Whether you are just getting started or need a trustworthy reference, this is it. Inspired by good friends, this is a growing resource on creating things with code on the internet.
+A book for anyone wanting to learn more about web development. Whether you are just getting started or need a trustworthy reference, this is it. Inspired by friends and learning from people learning, this is a growing resource on creating things with code on the internet.
 
-Creating web sites can be easy or challenging as you like. The media we are working on, the tools we are using and the aspects we ground our reason in are continuously being challenged.
-
-It is the goal of this book to provide an insightful view into the world of front-end development. With abstract and broad programming concepts compared to specific CSS techniques and solutions to your everyday problems through introductions to the tools and workflows I've come to rely on.
+Designing and developing your ideas with HTML, CSS and JavaScript can be easy or challenging as you like. It is my goal to provide an insigt into the world of communicating ideas. With abstract and broad programming concepts compared to specific CSS techniques and solutions to your everyday problems through introductions to the tools and workflows I've come to rely on.
 
 This book will teach you how to develop that knowledge into a robust digital product. Hey, perhaps even a product with some purpose, who knows.
 

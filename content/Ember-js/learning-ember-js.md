@@ -56,10 +56,10 @@ https://github.com/yapplabs/ember-radio-button
 
 ## Learning
 
-https://embergrep.com
-https://github.com/realityendshere/emberella
-http://www.programwitherik.com/
-https://github.com/emberjs/website/blob/master/source/guides/cookbook/ember_data/linking_to_slugs.md
+- https://embergrep.com
+- https://github.com/realityendshere/emberella
+- http://www.programwitherik.com/
+- https://github.com/emberjs/website/blob/master/source/guides/cookbook/ember_data/linking_to_slugs.md
 - [emberweekend.com/episodes](https://emberweekend.com/episodes)
 - [ember.zone/](http://ember.zone/)
 - [ember.vicramon.com/](http://ember.vicramon.com/)
@@ -80,9 +80,9 @@ https://github.com/emberjs/website/blob/master/source/guides/cookbook/ember_data
 - [madhatted.com/2013/6/8/lifecycle-hooks-in-ember-js-views](http://madhatted.com/2013/6/8/lifecycle-hooks-in-ember-js-views)
 - [alg.github.io/talks/emberjs/#/title](http://alg.github.io/talks/emberjs/#/title)
 - [medium.com/ember-js-framework/450f1ffb1967](https://medium.com/ember-js-framework/450f1ffb1967)
-
-http://ember.land/
-http://www.emberscreencasts.com/
-https://github.com/artificialio/sane
-http://gofullstack.com/getting-started-with-ember-js/
-http://emberjs.com/guides/getting-started/planning-the-application/
+- http://ember.land/
+- http://www.emberscreencasts.com/
+- https://github.com/artificialio/sane
+- http://gofullstack.com/getting-started-with-ember-js/
+- http://emberjs.com/guides/getting-started/planning-the-application/
+- http://blog.runspired.com/

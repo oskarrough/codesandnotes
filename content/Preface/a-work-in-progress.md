@@ -16,4 +16,4 @@ I want to publish everything here as a website, as a pdf, as an e-book and of co
 
 All this just to say that Codes & Notes is a work in progress and it will stay like that. It's probably best like that.
 
-![Completely unrelated except for the fact that they were also working. The opium workers](c_1850_Sherwill_5_Stac67933.jpg)
+![Completely unrelated except for the fact that they were also working. The opium workers](/images/illustrations/c-1850-sherwill-4-dryi67904.jpg)

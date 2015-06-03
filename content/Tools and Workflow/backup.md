@@ -1,12 +1,9 @@
 ---
-title: "Backup"
+title: Backup
 ---
 
 You don't want to loose your work (not to mention your photos and music) so you need to have secure backups of your data. There are several ways to achieve this. This is my way.
 
----
-title: "Manifest"
----
 
 1. I have a pretty funky music collection, photos of naked girls, documents and work related data and code. All things I do not want to loose.
 2. I have several computers that I regularly use so data can not be tied to a single computer.
@@ -42,5 +39,3 @@ I have several scripts in Synk.app that sync selected folders between all locati
 My data is spread across the default OSX folders: Documents, Music and Photos. Only using these folders forces me to focus on where I put my data.
 
 E-mail is in the cloud, contacts and calendar as well. Settings and preferences for my applications etc. are all in my dropbox/private folder.
-
-#### References
