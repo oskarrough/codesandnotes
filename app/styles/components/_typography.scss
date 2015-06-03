@@ -1,28 +1,14 @@
-$serif: Georgia, serif;
-
-@mixin ff-paragraph(){
-	font-family: 'Edita', $serif;
-	font-weight: normal;
-}
-@mixin ff-header(){
-	// font-family: 'edita';
-	// font-weight: 600;
-	font-family: 'lydian', 'eskapade-fraktur', $serif;
-	font-family: 'lydian-mt', $serif;
-	font-weight: normal;
-	-webkit-font-smoothing: auto; // otherwise it gets too thin, stay with the default bro
-}
-
 html {
-	@include ff-paragraph;
+	@include ff-body;
 	font-size: $base-font-size;
 	line-height: ($base-line-height / $base-font-size);
-	@media (min-width: $layout-s) { font-size: $base-font-size + 1px; }
+	@media (min-width: $layout-s) { font-size: $base-font-size + 3px; }
 	@media (min-width: $layout-m) { font-size: $base-font-size + 4px; }
 	// @media (min-width: 1000px) { font-size: 19px; }
 	// @media (min-width: 1400px) { font-size: 20px; }
+
 	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
+	// -webkit-font-smoothing: antialiased;
 }
 
 
@@ -37,8 +23,6 @@ h1 {
 	font-size: ($x-large/$base-font-size) * 1rem;
 	line-height: 1;
 	margin-bottom: $space;
-	// font-style: italic;
-	font-family: 'Lydian';
 	font-weight: normal;
 	@media (min-width: $layout-s) {
 		max-width: 92%;

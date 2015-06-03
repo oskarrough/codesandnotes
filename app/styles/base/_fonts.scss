@@ -4,16 +4,18 @@
 
 // Use this syntax for including web fonts cross browser
 
-// @font-face {
-// 	font-family: 'Name of the font';
-// 	src: url('fonts/webfont.eot');
-// 	src: url('fonts/webfont.eot?#iefix') format('embedded-opentype'),
-// 		 url('fonts/webfont.woff') format('woff'),
-// 		 url('fonts/webfont.ttf') format('truetype'),
-// 		 url('fonts/webfont.svg') format('svg');
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
+$serif: Georgia, serif;
+
+@mixin ff-body() {
+	font-family: 'Edita', $serif;
+	font-weight: normal;
+}
+@mixin ff-header() {
+	@include negative-text;
+	font-family: 'lydian-mt', 'eskapade-fraktur', $serif;
+	font-weight: normal;
+	// -webkit-font-smoothing: auto; // otherwise it gets too thin, stay with the default bro
+}
 
 @font-face {
 	font-family: 'lydian-mt';
@@ -25,10 +27,3 @@
 	font-weight: normal;
 	font-style: normal;
 }
-//
-// @font-face {
-// 	font-family: 'lydian-mt';
-// 	src: url('fonts/lydian-mt.ttf') format('truetype');
-// 	font-weight: normal;
-// 	font-style: normal;
-// }

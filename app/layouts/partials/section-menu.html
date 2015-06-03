@@ -1,4 +1,4 @@
-<ol class="List">
+<ol class="SectionMenu">
 	{{ $currentNode := . }}
 	{{ range .Site.Menus.main }}
 		<li><a class="{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">
