@@ -1,7 +1,5 @@
 ---
 title: Staying up to date
-date: 2013-02-06
-tags: [Information overload","inspiration","roughlinks"]
 ---
 
 I gave up following all the feeds I use to and maybe you should too. Newsletters aren't dead, especially not the weekly ones. Gives you freedom! Here are three good ones to subscribe to:
@@ -9,10 +7,12 @@ I gave up following all the feeds I use to and maybe you should too. Newsletters
 - [Web Design Weekly](http://web-design-weekly.com/)
 - [HTML5 Weekly](http://html5weekly.com/)
 - [Javascript Weekly](http://javascriptweekly.com/)
+- [Ember Weekly](http://emberweekly.com/)
+- [ES Weekly](http://esweekly.com/)
 
 Much inspired by [Hacker News](http://news.ycombinator.com/news) but related to web design:
 
-- [news.layervault.com](https://news.layervault.com)
+- [Designer News](https://www.designernews.co/)
 - [webplatformdaily.org](http://webplatformdaily.org/)
 - [sidebar.io](https://sidebar.io)
 

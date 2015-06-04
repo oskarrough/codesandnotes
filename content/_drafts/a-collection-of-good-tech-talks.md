@@ -1,7 +1,6 @@
 ---
 title: A collection of good tech talks
-date: 2013-12-26
-tags: [Conference","Learning","Talk"]
+draft: true
 ---
 
 Take an hour out of your schedule or schedule an hour. Make it your resolution to watch and learn. Make your boss understand the value and watch it with your colleagues.

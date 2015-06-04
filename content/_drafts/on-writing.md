@@ -1,5 +1,6 @@
 ---
-title: "On writing"
+title: On writing
+draft: true
 ---
 
 Tips on writing. Thieved and gathered from different internet places and I unfortunately can't credit the sources anymore.

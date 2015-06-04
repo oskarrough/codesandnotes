@@ -22,7 +22,38 @@ params:
 
 menu:
   main:
+    - name: "Preface"
+      weight: -20
+      url: "/preface/"
+    - name: "Aspects"
+      weight: -10
+      url: "/aspects/"
+    - name: "HTML"
+      url: "/html/"
+      weight: 19
+    - name: "CSS"
+      url: '/css/'
+      weight: 20
+    - name: "JavaScript"
+      url: "/javascript/"
+      weight: 30
+    - name: "Performance"
+      url: '/performance/'
+      weight: 40
+    - name: "Animation"
+      weight: 50
+      url: "/animation/"
     - name: "Tools and Workflow"
-      #weight: -120
-      Identifier: "Tools and Workflow"
-      url: "/tools-and-workflow"
+      url: '/tools-and-workflow/'
+      weight: 60
+    - name: "Ember.js"
+      identifier: "Ember-js"
+      url: "/ember-js/"
+      weight: 70
+    - name: "Typography"
+      url: "/typography/"
+      weight: 80
+    - name: "Drafts"
+      identifier: "_drafts"
+      url: "/_drafts/"
+      weight: 500

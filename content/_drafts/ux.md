@@ -1,9 +1,6 @@
 ---
 title: UX
+draft: true
 ---
-
-text
-
-## another title
 
 http://52weeksofux.com/

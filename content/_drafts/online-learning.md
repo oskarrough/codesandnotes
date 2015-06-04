@@ -1,7 +1,5 @@
 ---
 title: Online learning
-date: 2013-02-06
-tags: [Learning"]
 ---
 
 In the last years we've naturally seen more and more projects dedicated to learning online. Programming especially is an interactive experience best learnt by doing, failing, and learning. Here are some good experiences, bound to learn us one thing or another.

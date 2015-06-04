@@ -1,6 +1,7 @@
-+++
-title = "Design ideas for publishing this book"
-+++
+---
+title: Design ideas for publishing this book
+draft: true
+---
 
 h1 + p:first-line { font-weight: bold; text-transform: uppercase; }
 h1 + p:first-letter {
@@ -18,12 +19,10 @@ main { padding}
 aside { posa l0 tar fll}
 p
 
-#### References
+### References
 
 topic + p:first-line{
 	//https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings
 }
 
-
 end every article with a symbol ♦
-beautiful

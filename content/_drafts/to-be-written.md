@@ -1,6 +1,8 @@
 ---
-title: "Topics to write about"
+title: To be written
 ---
+
+Topics I'd like to write about.
 
 > I understand the basics of building a page regarding layout. It's more the small gaps that get me. I spend 30 minutes googling something because an element isn't placed right. Personally it'd be great to see a few pages created and the decisions behind each component.
 
@@ -29,4 +31,3 @@ title: "Topics to write about"
 - http://hackdesign.org/lesson/9/
 - http://webplatformtools.org/
 - http://learn.shayhowe.com/advanced-html-css/performance-organization
-- http://nicewebtype.com/notes/responsive-typography/

@@ -1,7 +1,6 @@
 ---
 title: Bret Victor
-date: 2013-12-26
-tags: [Learning"]
+draft: true
 ---
 
 Take your time to read, see and learn from [Bret Victor](https://www.google.com/search?%7Bgoogle:acceptedSuggestion%7Doq=bret+victor&%7Bgoogle:instantFieldTrialGroupParameter%7Dsourceid=chrome&ie=UTF-8&q=bret+victor). His thoughts, presentations and insight are pure gold.

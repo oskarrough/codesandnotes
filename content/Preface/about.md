@@ -4,7 +4,7 @@ title: About Codes & Notes
 
 Hi, I'm [Oskar Rough Mosumgaard](http://oskarrough.com).
 
-This website is a resource on web development. A friend wished for a single place to inspire and guide the vast information overload that is the internet. One place with just the right amount of information, insights and links. See [a work in progress](/preface/work-in-progress/).
+This website is a resource on web development. A friend wished for a single place to inspire and guide the vast information overload that is the internet. One place with just the right amount of information, insights and links. See [a work in progress](/preface/a-work-in-progress/).
 
 {{< relref "preface/work-in-progress.md" >}}
 
