@@ -23,6 +23,7 @@ $lightgreen: hsl(130, 21%, 90%);
 $sand: hsl(30, 10%, 96%);
 $beige: hsl(40, 30%, 96%);
 $light: hsl(180, 9%, 98%);
+$purple:	#1F2DC7;
 $gray: hsl(0, 0%, 50%);
 $lightgray: hsl(0, 0%, 80%);
 $darkblue: hsl(240, 60%, 28%);
@@ -30,7 +31,7 @@ $darkblue: hsl(240, 60%, 28%);
 // $yellow: hsl(54, 66%, 70%);
 // $darkyellow: hsl(66, 25%, 49%);
 
-$primary-color: $green;
+$primary-color: $purple;//$green;
 $text-color: $black;
 $bg-color: $sand; // $light, $beige
 
