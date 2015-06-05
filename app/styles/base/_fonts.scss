@@ -5,11 +5,14 @@
 // Use this syntax for including web fonts cross browser
 
 $serif: Georgia, serif;
+$sans-serif: Geneva, Gill Sans, Calibri, sans-serif;
 
 @mixin ff-body() {
-	font-family: 'Edita', $serif;
 	font-weight: normal;
+	font-family: $serif;
+	// font-family: $sans-serif;
 }
+
 @mixin ff-header() {
 	@include negative-text;
 	font-family: 'lydian-mt', 'eskapade-fraktur', $serif;

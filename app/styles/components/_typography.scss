@@ -20,17 +20,21 @@ h4 {
 	@include ff-header;
 }
 h1 {
-	font-size: ($x-large/$base-font-size) * 1rem;
+	font-size: $larger;
 	line-height: 1;
 	margin-bottom: $space;
 	font-weight: normal;
 	@media (min-width: $layout-s) {
+		font-size: $larger;
 		max-width: 92%;
+	}
+	@media (min-width: $layout-m) {
+		font-size: $x-large;
 	}
 }
 h2 {
 	// @include rhythm($large);
-	font-size: ($medium/$base-font-size) * 1rem;
+	font-size: $medium;
 	line-height: 1.1;
 	margin-top: $space*1;
 	// margin-bottom: $space/2;
