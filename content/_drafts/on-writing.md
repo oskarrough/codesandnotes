@@ -77,3 +77,4 @@ Write daily for 30 minutes minimum! It’s easy to notice the difference in a sh
 - https://github.com/tooling/authoring-styleguide
 - http://katydecorah.com/writing-for-everyone/
 - http://www.hemingwayapp.com/beta/index.html
+- http://www.nicelysaid.co/

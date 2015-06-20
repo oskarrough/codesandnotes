@@ -31,3 +31,4 @@ source: [The first 20 hours -- how to learn anything: Josh Kaufman at TEDxCSU
 - https://www.codeschool.com
 - http://hello.processing.org/editor/
 - https://github.com/vhf/free-programming-books
+- https://www.google.com/about/careers/students/guide-to-technical-development.html

@@ -14,13 +14,16 @@ Even if your project isn't limited to title-and-body kind of articles, Advanced 
 
 Custom post types, how to query and filter.
 
+- https://github.com/WP-API/WP-API/issues/1352#issuecomment-112975732
+- https://github.com/WP-API/WP-API/pull/1302
+
 ### Custom Fields
 
 How to configure Advanced Custom Fields.
 
 ### Related projects
 
-- Kunstjagd, Yasemin, BarGuide projects for inspiration.
+- Pfadfinderei, Magnus Winter, Kunstjagd, Yasemin, BarGuide projects for inspiration.
 - https://github.com/kush-team/ember-cli-to-wp-theme (the most interesting one)
 - https://github.com/calouette/ember-wp-api
 - https://github.com/Dhaulagiri/ember-cli-wordpress
@@ -30,6 +33,10 @@ How to configure Advanced Custom Fields.
 - ember-cli-sass
 - ember-cli-autoprefixer
 - ember-cli-document-title
+
+### Taxonomies
+
+The endpoint for tags is here: http://pfadfinderei.com/wp-json/taxonomies/post_tag/terms
 
 ## Supporting IE9
 
