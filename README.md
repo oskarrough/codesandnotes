@@ -21,7 +21,7 @@ First you need git, node, go and hugo installed. If you have homebrew as well, h
 If you want to compile with the latest greatest from GitHub, do this:
 
 ```bash
-brew install mercurial (needed for some dependencies)
+brew install go mercurial
 set -x GOPATH $HOME/go (where go should install stuff, you can change this)
 go env (check that the gopath is really set)
 go get -v github.com/spf13/hugo (installs hugo into ~/go/src/……… )
@@ -34,9 +34,7 @@ Then go:
 
 1. `git clone git@github.com:oskarrough/codesandnotes.git`
 2. `cd codesandnotes`
-3. `npm install; bower install; gulp clean`
-
-gsed -i.backup -e 's/^# \(.*\)$/---\ntitle: \"\1\"\n---/g' *.md
+3. `npm install; gulp clean`
 
 ## Running the server
 
@@ -50,3 +48,5 @@ gsed -i.backup -e 's/^# \(.*\)$/---\ntitle: \"\1\"\n---/g' *.md
 # License
 
 Licensed [BY-NC-SA Creative Commons](http://creativecommons.org/licenses/by-nc-sa/3.0/).
+
+gsed -i.backup -e 's/^# \(.*\)$/---\ntitle: \"\1\"\n---/g' *.md

@@ -14,20 +14,18 @@ body {
 
 .CodesAndNotes {
 	box-sizing: content-box;
-	max-width: 34rem; // less than 31 will break the manchet
+	max-width: 36rem; // less than 31 will break the manchet
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: $space*2;
-	padding-left: $space;
-	padding-right: $space;
 	@media (min-width: $layout-s) {
-		padding-left: $space*2;
-		padding-right: $space*2;
+		padding-left: $space;
+		padding-right: $space;
 	}
-	@media (min-width: $layout-m) {
-		padding-left: $space*3;
-		padding-right: $space*3;
-	}
+	// @media (min-width: $layout-m) {
+	// 	padding-left: $space*3;
+	// 	padding-right: $space*3;
+	// }
 }
 .Header {
 	padding-left: 0;
@@ -36,8 +34,8 @@ body {
 }
 .Breadcrumb,
 .Main {
-	padding-left: $space;
-	padding-right: $space;
+	padding-left: $space*2;
+	padding-right: $space*2;
 }
 .Main .Breadcrumb {
 	padding-left: 0;
@@ -46,6 +44,7 @@ body {
 
 .Main {
 	background-color: $bg-color;
+	padding-top: $space*2;
 	padding-bottom: $space*2;
 }
 article {
@@ -70,25 +69,3 @@ article {
 	padding-top: 10px;
 	text-align: center;
 }
-
-// /**
-//  * Chapters
-//  */
-// main {
-// 	counter-reset: section;
-// }
-// .Chapter {
-// 	h2::before {
-// 		// content: '§ ';
-// 		counter-increment: section;
-// 		content: "" counter(section) ". "; // Puts "1. " in front of every chapter title
-// 		color: $lightgray;
-// 	}
-// 	h2 a {
-// 		color: $black;
-// 	}
-// 	> p {
-// 		// max-width: 30rem;
-// 		font-size: (18/20) * 1rem;
-// 	}
-// }

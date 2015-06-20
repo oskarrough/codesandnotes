@@ -1,0 +1,37 @@
+{{ partial "header.html" . }}
+
+<figure class="Cover Cover--home">
+	<img src="images/illustrations/bio-volcano-lg-web.jpg" alt="">
+</figure>
+
+<main class="Main">
+	<!-- <ul class="Breadcrumb">
+		<li><a href="/">☞</a></li>
+	</ul> -->
+	<!-- <article class="Article">
+		<h1 class="Article-title">
+			{{ .Title }}
+		</h1>
+		<div class="Article-body">
+			{{ .Content }}
+		</div>
+	</article> -->
+
+	<header class="Manchet">
+		<h1 class=><span>Codes</span> <span>&amp;</span> <span>Notes</span></h1>
+		<h2>by <span class="Author">Oskar Rough Mosumgaard</span></h2>
+		<p>A guide for anyone wanting to learn more about web development. Whether you are just getting started or need a trustworthy reference, this is it.</p>
+		<hr class="Ornament" id="toc">
+	</header>
+
+	{{ partial "section-menu.html" . }}
+</main>
+
+<footer class="Footer">
+	<p class="Meta">
+		Codes &amp; Notes
+		<span class="Copyright">&copy; Oskar Rough Mosumgaard 2015</span>
+	</p>
+</footer>
+
+{{ partial "footer.html" . }}

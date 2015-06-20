@@ -1,71 +1,12 @@
 /**
- * Site title and description
- */
-// .Header-title {
-// 	@include rhythm($larger);
-// 	padding-top: $space*2;
-// 	padding-left: $space;
-// 	padding-right: $space;
-// 	@media (min-width: 30em) {
-// 		padding-left: 0;
-// 		padding-right: 0;
-// 	}
-// 	text-shadow: 2px 2px 0 rgba(0,100,100,0.2);
-//
-// 	a {
-// 		color: $secondary;
-// 	}
-// }
-// .Header-description {
-// 	margin-top: 0;
-// 	font-size: smaller;
-// 	display: none;
-// }
-
-
-/**
  * Manchet
  */
 .Manchet {
 	margin-top: $space*3;
-	padding-left: $space*2;
-	padding-right: $space*2;
-	padding-bottom: $space*2;
 	text-align: center;
-	background-color: $bg-color;
-
-	@media (min-width: $layout-s) {
-		margin-top: $space*6;
-	}
 
 	h1 {
-		@include ff-header;
-		text-transform: none;
-		line-height: 0.7;
-		padding-top: 0.8em;
-		color: $primary-color;
-		// text-shadow: 2px 2px 0px hsl(190, 20%, 61%);
-		@media (min-width: 56rem) {
-			font-size: 4rem;
-			font-size: 7vw;
-			margin-bottom: $space*2;
-			max-width: none;
-		}
-		span {
-			display: block;
-		}
-		span:nth-child(2) {
-			font-size: 0.7em;
-			margin-top: 0.3em;
-		}
-	}
-	h2 {
-		margin-top: 0;
-	}
-	hr {
-		margin-bottom: 0;
-	}
-	& + .Container {
-		padding-top: $space;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }

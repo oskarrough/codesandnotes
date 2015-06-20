@@ -76,7 +76,7 @@ gulp.task('serve', ['hugo', 'styles', 'scripts'], function () {
 	// ]).on('change', reload);
 
 	// watch for changes and run tasks
-	gulp.watch(['content/**/*.md', 'app/layouts/**/*.html'], ['hugo']);
+	gulp.watch(['content/**/*.md', 'app/templates/**/*.html'], ['hugo']);
 	gulp.watch(['app/styles/**/*.scss'], ['styles']); // 'styles' does reload
 	gulp.watch('app/scripts/**/*.js', ['scripts', reload]);
 });

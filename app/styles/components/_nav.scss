@@ -1,24 +1,21 @@
 .SectionMenu {
 	@include ff-header;
 	counter-reset: section;
-
-	font-size: $large;
-	// list-style-type: decimal;
-
+	font-size: $medium;
 	@media (min-width: $layout-s) {
-		padding-left: 25%;
+		font-size: $large;
+		padding-left: 8%;
 	}
+	// list-style-type: decimal;
 
 	li::before {
 		display: inline-block;
 		min-width: 1.5em;
 		text-align: right;
 		color: $gray;
-
 		counter-increment: section;
 		content: "" counter(section) ". ";
 	}
-
 	a {
 		text-decoration: none;
 	}

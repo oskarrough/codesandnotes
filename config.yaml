@@ -11,7 +11,7 @@ metaDataFormat: 'yaml'
 # theme: 'codesandnotes'
 relativeURLs: true
 
-layoutdir: 'app/layouts'
+layoutdir: 'app/templates'
 publishdir: 'dist'
 
 taxonomies:
