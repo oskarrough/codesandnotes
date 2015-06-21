@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var plugin = require('gulp-load-plugins')();
+var $ = require('gulp-load-plugins')();
 var exec = require('child_process').exec;
 var autoprefixer = require('autoprefixer-core');
 var browserSync = require('browser-sync');
@@ -28,28 +28,28 @@ gulp.task('deploy', function (cb) {
 // Sass, sourcemaps and autoprefixer
 gulp.task('styles', function () {
 	gulp.src(['app/styles/*.scss'])
-		.pipe(plugin.sourcemaps.init())
-		.pipe(plugin.sass({
+		.pipe($.sourcemaps.init())
+		.pipe($.sass({
 			outputStyle: 'expanded',
 			precision: 10,
 			includePaths: ['.'],
-		}).on('error', plugin.sass.logError))
-		.pipe(plugin.postcss([
+		}).on('error', $.sass.logError))
+		.pipe($.postcss([
 			autoprefixer({ browsers: ['last 2 version', 'android 4', 'ios 7', 'ie 10']})
 		]))
-		.pipe(plugin.sourcemaps.write('.'))
+		.pipe($.sourcemaps.write('.'))
 		.pipe(gulp.dest('.tmp/styles'))
-		.pipe(plugin.filter('**/*.css'))
+		.pipe($.filter('**/*.css'))
 		.pipe(reload({ stream: true }));
 });
 
 // Babel and sourcemaps
 gulp.task('scripts', function () {
 	return gulp.src('app/scripts/**/*.js')
-		.pipe(plugin.sourcemaps.init())
-		.pipe(plugin.babel())
-		// .pipe(plugin.concat('main.js'))
-		.pipe(plugin.sourcemaps.write('.'))
+		.pipe($.sourcemaps.init())
+		.pipe($.babel())
+		// .pipe($.concat('main.js'))
+		.pipe($.sourcemaps.write('.'))
 		.pipe(gulp.dest('.tmp/scripts/'));
 });
 
@@ -84,21 +84,29 @@ gulp.task('serve', ['hugo', 'styles', 'scripts'], function () {
 // shortcut for serve
 gulp.task('s', ['serve']);
 
-// this builds content, styles and scripts
-gulp.task('build', ['hugo', 'styles', 'scripts'], function() {
+
+// 1. first clean
+gulp.task('default', ['clean'], function () {
+	gulp.start('build-assets');
+});
+
+// 2. then build assets
+gulp.task('build-assets', ['hugo', 'styles', 'scripts'], function() {
+	gulp.start('minify');
+});
+
+// 3. then move them (called by minify)
+gulp.task('build-move', function() {
 	return gulp.src('.tmp/**/*')
 		.pipe(gulp.dest('dist'))
-		.pipe(plugin.size({ title: 'build', gzip: true }));
+		.pipe($.size({ title: 'build', gzip: true }));
 });
 
-// gulp.task('minify', () => {
-//   return gulp.src(['dist/styles/*.css', 'dist/scripts/*.js'])
-//     .pipe($.if('*.js', $.uglify()))
-//     .pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
-//     .pipe(gulp.dest('dist'));
-// });
-
-// cleans, then builds - use this
-gulp.task('default', ['clean'], function () {
-	gulp.start('build');
+// 4. then minify
+gulp.task('minify', ['build-move'], function() {
+  return gulp.src(['dist/styles/**/*.css', 'dist/scripts/*.js'], { base: 'dist' })
+    .pipe($.if('*.js', $.uglify()))
+    .pipe($.if('*.css', $.minifyCss({ compatibility: '*' })))
+    .pipe(gulp.dest('dist'));
 });
+

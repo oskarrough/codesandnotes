@@ -2,14 +2,14 @@ title: 'Codes & Notes'
 languageCode: 'en-us'
 buildDrafts: false
 pluralizelisttitles: false
-relativeUrls: true
 Paginate: 999
 SectionPagesMenu: 'main'
 metaDataFormat: 'yaml'
-# baseURL: 'http://codesandnotes.com/'
-# baseurl: ''
-# theme: 'codesandnotes'
+
 relativeURLs: true
+baseURL: 'http://codesandnotes.com/'
+#baseurl: ''
+# theme: 'codesandnotes'
 
 layoutdir: 'app/templates'
 publishdir: 'dist'
