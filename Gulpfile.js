@@ -27,7 +27,7 @@ gulp.task('deploy', function (cb) {
 
 // Sass, sourcemaps and autoprefixer
 gulp.task('styles', function () {
-	return gulp.src(['app/styles/*.scss'])
+	gulp.src(['app/styles/*.scss'])
 		.pipe(plugin.sourcemaps.init())
 		.pipe(plugin.sass({
 			outputStyle: 'expanded',

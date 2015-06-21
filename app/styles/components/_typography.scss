@@ -2,10 +2,10 @@ html {
 	@include ff-body;
 	font-size: $base-font-size;
 	line-height: ($base-line-height / $base-font-size);
-	@media (min-width: $layout-s) { font-size: $base-font-size + 3px; }
-	@media (min-width: $layout-m) { font-size: $base-font-size + 4px; }
-	// @media (min-width: 1000px) { font-size: 19px; }
-	// @media (min-width: 1400px) { font-size: 20px; }
+	@media (min-width: $layout-s) { font-size: $base-font-size + 2px; }
+	// @media (min-width: $layout-m) { font-size: $base-font-size + 3px; }
+	@media (min-width: $layout-l) { font-size: $base-font-size + 3px; }
+	@media (min-width: $layout-xl) { font-size: $base-font-size + 4px; }
 
 	text-rendering: optimizeLegibility;
 	// -webkit-font-smoothing: antialiased;
@@ -20,49 +20,53 @@ h4 {
 	@include ff-header;
 }
 h1 {
-	font-size: $larger;
+	font-size: rem($larger);
 	line-height: 1;
 	margin-bottom: $space;
 	font-weight: normal;
+	font-style: italic;
 	@media (min-width: $layout-s) {
-		font-size: $larger;
+		font-size: rem($larger);
 		max-width: 92%;
 	}
 	@media (min-width: $layout-m) {
-		font-size: $x-large;
+		font-size: rem($largerer);
+	}
+	@media (min-width: $layout-l) {
+		font-size: rem($largererer);
 	}
 }
 h2 {
-	// @include rhythm($large);
-	font-size: $medium;
+	// font-family: 'questa-sans-medium';
+	font-size: rem($medium);
 	line-height: 1.1;
 	margin-top: $space*1;
-	// margin-bottom: $space/2;
+	@media (min-width: $layout-m) {
+		font-size: rem($large);
+	}
 }
 h3 {
 	// @include rhythm($medium);
 	font-size: 1rem;
+	@media (min-width: $layout-m) {
+		font-size: rem($medium);
+	}
 	line-height: 1.3;
 	margin-bottom: $space/2;
 }
 strong {
-	font-weight: 600;
+	@include ff-body-bold;
 }
-dfn, cite, em, i {
-	font-style: italic;
+dfn, cite, em, i, blockquote {
+	@include ff-body-italic;
 }
 blockquote {
 	margin-left: $space;
 	margin-right: $space*2;
-	font-style: italic;
 }
 code,
 pre {
-	// @include rhythm($small);
-	font-size: 16px;
-	font-family: 'Triplicate T4c', 'Source Code Pro', Consolas, monospace;
-	font-weight: normal;
-	// line-height: 1.4;
+	@include ff-monospaced;
 }
 pre {
 	line-height: 1.6;
@@ -71,17 +75,14 @@ pre {
 abbr,
 acronym,
 .Caps {
-	text-transform: lowercase;
+	text-transform: none;
 	font-variant: small-caps;
-	font-style: normal;
-	border-bottom: 0;
-	letter-spacing: 0.1em;
 }
 
 // Meta text
 small,
 .Meta {
-	font-size: ($small/$base-font-size) * 1rem;
+	@include ff-small;
 }
 
 article {
@@ -103,3 +104,9 @@ article {
 // 	margin-left: 2rem;
 // 	margin-right: -30%;
 // }
+
+.List {
+	a {
+		text-decoration: none;
+	}
+}

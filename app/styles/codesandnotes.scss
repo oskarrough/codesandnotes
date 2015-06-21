@@ -2,12 +2,17 @@
 	Oskar Rough Mosumgaard (c) 2015
 */
 
-@import 'components/utilities';
-@import 'components/config';
+// base
+@import 'base/functions';
+@import 'base/config';
+@import 'base/mixins';
 @import 'base/fonts';
+@import 'base/font-classes';
 
+// third party
 @import 'components/prism';
 
+// components
 @import 'components/base';
 @import 'components/typography';
 // @import 'components/typography-modernscale';

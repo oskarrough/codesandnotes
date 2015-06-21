@@ -1,18 +1,18 @@
 .SectionMenu {
 	@include ff-header;
+	font-size: rem($large);
 	counter-reset: section;
-	font-size: $medium;
+
 	@media (min-width: $layout-s) {
 		font-size: $large;
 		padding-left: 8%;
 	}
-	// list-style-type: decimal;
 
 	li::before {
 		display: inline-block;
 		min-width: 1.5em;
 		text-align: right;
-		color: $gray;
+		color: $lightgray;
 		counter-increment: section;
 		content: "" counter(section) ". ";
 	}
@@ -22,10 +22,9 @@
 }
 
 .Breadcrumb {
-	@include ff-header;
-	font-size: $medium;
-	margin-bottom: $space*3;
+	@include ff-small;
 	list-style: none;
+	margin-bottom: $space*3;
 
 	li {
 		display: inline;
@@ -36,7 +35,7 @@
 	li:not(:last-child):after {
 		content: ' ☞ ';
 		position: relative;
-		top: 0.1em;
+		top: 0.03em;
 		margin-left: 0.1em;
 		margin-right: 0.1em;
 	}
