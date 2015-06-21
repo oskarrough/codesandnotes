@@ -1,7 +1,5 @@
 ---
 title: Unobtrusive JavaScript
-date: 2012-03-13
-tags: ["Aspects","JavaScript","Progressive Enhancement"]
 ---
 
 Unobtrusive JavaScript is a way of thinking JavaScript. It's a set of guidelines to make the web better that are constantly being rethought. It shouldn't even be called 'Unobtrusive JavaScript' but rather something like 'JavaScript best practices', which is what it really is.

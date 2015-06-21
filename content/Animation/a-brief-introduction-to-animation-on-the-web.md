@@ -1,6 +1,7 @@
 ---
 title: A brief introduction to animation on the web
 weight: -99
+draft: true
 ---
 
 Thoughts and notes on animating the web.
