@@ -1,0 +1,23 @@
+/**
+ * Strips units from a number
+ */
+
+@function strip-unit($num) {
+	@return $num / ($num * 0 + 1);
+}
+
+/**
+ * Convert value to REM
+ */
+
+@function rem($target, $context: $base-font-size) {
+	@return (strip-unit($target) / strip-unit($context)) * 1rem;
+}
+
+/**
+ * Convert value to EM
+ */
+
+@function em($target, $context: $base-font-size) {
+	@return (strip-unit($target) / strip-unit($context)) * 1em;
+}

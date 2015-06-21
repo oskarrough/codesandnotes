@@ -1,3 +1,7 @@
+// Fallbacks
+$serif: Georgia, serif;
+$sans-serif: Geneva, Gill Sans, Calibri, sans-serif;
+
 // Sizes
 $small: 14px;
 $base-font-size: 16px;
@@ -5,14 +9,16 @@ $base-line-height: 23px;
 $medium: 24px;
 $large: 30px;
 $larger: 36px;
-$x-large: 50px;
+$largerer: 50px;
+$largererer: 60px;
 $space: ($base-line-height/$base-font-size) * 1rem;
 $space: 1rem;
 // $space: (1.333333333rem); // sass precision wasn't high enough but it is 26/18
 
-$layout-s: 30rem;
-$layout-m: 40rem;
-$layout-l: 50rem;
+$layout-s: 500px;
+$layout-m: 800px;
+$layout-l: 1500px;
+$layout-xl: 1800px;
 
 // Colors
 $black: hsl(0, 0%, 7%);

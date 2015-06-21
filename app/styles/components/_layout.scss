@@ -70,25 +70,3 @@ article {
 	padding-top: 10px;
 	text-align: center;
 }
-
-// /**
-//  * Chapters
-//  */
-// main {
-// 	counter-reset: section;
-// }
-// .Chapter {
-// 	h2::before {
-// 		// content: '§ ';
-// 		counter-increment: section;
-// 		content: "" counter(section) ". "; // Puts "1. " in front of every chapter title
-// 		color: $lightgray;
-// 	}
-// 	h2 a {
-// 		color: $black;
-// 	}
-// 	> p {
-// 		// max-width: 30rem;
-// 		font-size: (18/20) * 1rem;
-// 	}
-// }
