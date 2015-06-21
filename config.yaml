@@ -23,64 +23,64 @@ params:
 menu:
   main:
     - name: "Preface"
-      identifier: "preface"
+      identifier: "Preface"
       url: "/preface/"
       weight: -20
 
     - name: "Aspects"
-      identifier: "aspects"
+      identifier: "Aspects"
       url: "/aspects/"
       weight: -10
 
     - name: "HTML"
-      identifier: "html"
+      identifier: "HTML"
       url: "/html/"
       weight: 19
 
     - name: "CSS"
-      identifier: 'css'
+      identifier: 'CSS'
       url: '/css/'
       weight: 20
 
     - name: "JavaScript"
-      identifier: "javascript"
+      identifier: "JavaScript"
       url: "/javascript/"
       weight: 30
 
     - name: "Front-end"
-      identifier: 'front-end'
+      identifier: 'Front-end'
       url: '/front-end/'
       weight: 35
 
     - name: "Performance"
-      identifier: 'performance'
+      identifier: 'Performance'
       url: '/performance/'
       weight: 40
 
     - name: "Animation"
       weight: 50
-      identifier: "animation"
+      identifier: "Animation"
       url: "/animation/"
 
     - name: "Content Management"
-      identifier: 'content-management'
+      identifier: 'Content management'
       url: '/performance/'
       weight: 52
 
 
     - name: "Tools and Workflow"
-      identifier: 'tools-and-workflow'
+      identifier: 'Tools and Workflow'
       url: '/tools-and-workflow/'
       weight: 60
 
     - name: "Ember.js"
       identifier: "Ember-js"
-      identifier: "ember-js"
+      identifier: "Ember-js"
       url: "/ember-js/"
       weight: 70
 
     - name: "Typography"
-      identifier: "typography"
+      identifier: "Typography"
       url: "/typography/"
       weight: 80
 

@@ -1,8 +1,16 @@
 <ol class="SectionMenu">
 	{{ $currentNode := . }}
 	{{ range .Site.Menus.main }}
-		<li><a class="{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">
-			{{ .Name }}
-		</a></li>
+		{{ $isActive := ($currentNode.IsMenuCurrent "main" .) }}
+		{{ $isActive2 := ($currentNode.HasMenuCurrent "main" .) }}
+
+		<li>
+			<a href="{{.URL}}" class="{{if or $isActive $isActive2 }} is-active{{end}}" title="Jump to {{ .Name }}">
+				{{if or $isActive $isActive2 }}<strong>{{end}}
+					{{ .Name }}
+				{{if or $isActive $isActive2 }}</strong>{{end}}
+			</a>
+		</li>
 	{{ end }}
 </ol>
+
