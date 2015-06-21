@@ -1,7 +1,6 @@
 ---
 title: Don't break URLs
-date: 2011-12-16
-tags: ["Aspects","URLs"]
+weight: 102
 ---
 
 URLs are perhaps the only consistent interface we have on the web. It is what seperates desktop apps from web apps. Make good use of it.

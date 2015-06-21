@@ -1,7 +1,6 @@
 ---
 title: Scaling components
 date: 2013-09-22
-tags: ["Architecture","CSS","Responsive","scaling"]
 ---
 
 Here's a very useful technique for adding another level of scalability in your components. Let me quickly recap how pixels, em and rem work in terms of scaling.
@@ -18,7 +17,7 @@ Assuming a module consists of a wrapper and one or more child elements you set t
 
 Need to give this some more thought. What do we really need? Is this flexibility needed at all?
 
-#### References
+### References
 
 - [Modern CSS sizing advice](http://codesandnotes.com/modern-css-sizing-advice/)
 - [Sizing (Web) components](https://medium.com/p/8f433689736f)

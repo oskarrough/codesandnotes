@@ -72,7 +72,7 @@ Using grunt-contrib-compass you tell Compass to run its commands through bundler
     }
 }```
 
-#### References
+### References
 
 - [RubyGems](http://en.wikipedia.org/wiki/RubyGems)
 - [Bundler](http://bundler.io/)

@@ -1,5 +1,0 @@
----
-title: Choose only what you need and choose the right tool for the right job.
----
-
-## Fighting the hype-machine

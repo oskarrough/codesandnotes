@@ -1,5 +1,6 @@
 ---
 title: "The different levels of programming"
+draft: true
 ---
 
 Like anything else, especially trolls and onions, programming have layers. There are many solutions to the same problems.
@@ -8,7 +9,7 @@ http://worrydream.com/LearnableProgramming/
 
 While some solutions are better than others, as a beginner it is important to understand that the definition of ‘yes it works’ is very vague when it comes to web development.
 
-## That programming is about solving problems, not writing code.  Here are the four basic tasks that an individual programmer must perform.
+## That programming is about solving problems, not writing code. Here are the four basic tasks that an individual programmer must perform.
 
 	1.	Define the problem (requirements and constraints).
 	2.	Define the solution (algorithms and data structures).

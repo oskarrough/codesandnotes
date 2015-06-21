@@ -70,7 +70,7 @@ You can follow all these steps and recommendations blindly or you could use tool
 
 Another aspect is the runtime performance of your code. JavaScript can slow your site down if not used properly. Fancy CSS animations and transforms that are modified on scroll is often not done right resulting in a very janky experience.
 
-#### References
+### References
 
 - http://adactio.com/journal/5439/
 - http://allinthehead.com/retro/361/how-to-make-your-website-fast

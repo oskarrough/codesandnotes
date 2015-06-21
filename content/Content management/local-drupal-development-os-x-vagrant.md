@@ -1,5 +1,5 @@
 ---
-title: "Local Wordpress development with OS X and Vagrant"
+title: Local Wordpress development with OS X and Vagrant
 ---
 
 Vagrant together with VirtualBox allows you to create portable virtual machines development. For instance, you no longer have to fiddle around with MAMP or LAMP or whatever when you're doing local PHP development.
@@ -66,17 +66,20 @@ If you're using Sublime Text, be sure to install the the PHP-TWIG package to get
 
 https://getcomposer.org/doc/00-intro.md#globally-on-osx-via-homebrew-
 
+```bash
 brew update
 brew tap homebrew/dupes
 brew tap homebrew/php
 brew install composer
+```
 
 <!-- brew install php56 composer -->
-
+```bash
 cd ~/MYSITE/wp-content/plugins
 git clone git@github.com:jarednova/timber.git
 cd timber
 composer install
+```
 
 ## Local Drupal development on OS X using Vagrant
 
@@ -108,7 +111,7 @@ https://github.com/geerlingguy/drupal-vm/
 
 First cd into the vdd folder (where the vagrantfile is). Then run these commands:
 
-```shell
+```bash
 vagrant ssh
 cd ~/sites/drupal8
 git clone --branch 8.0.x http://git.drupal.org/project/drupal.git .

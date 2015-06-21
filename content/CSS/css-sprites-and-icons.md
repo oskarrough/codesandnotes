@@ -8,22 +8,16 @@ If your site uses 50 icons you don't want 50 HTTP requests. You want to merge th
 
 Manually creating sprites is super boring. What you want is a robot that creates it for you and gives you all the X and Y position values while keeping them up-to-date if any new icons are added.
 
-## Solution
-
 TODO
-
----
-title: "CSS Sprites"
----
-
-todo
 
 - What are sprites.
 - Why would I want it.
 - How do you do it
 - Image replacement techniques
 
-#### References
+## Enter Grunticon
+
+### References
 
 - http://filamentgroup.com/lab/bulletproof_icon_fonts/
 - http://developer.yahoo.com/performance/rules.html#opt_sprites

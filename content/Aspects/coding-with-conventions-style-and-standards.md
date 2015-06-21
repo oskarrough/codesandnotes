@@ -1,5 +1,6 @@
 ---
 title: "Coding with conventions, style and standards"
+draft: false
 ---
 
 Introduction. Code conventions?
@@ -32,14 +33,14 @@ selector {
 	color: red;
 }
 
-#### References
+## References
 
-- lea verou tabs
-- [indentation-with-spaces-considered](http://mystilleef.blogspot.com/2006/11/indentation-with-spaces-considered.html)
-- [tabs-vs-spaces-for-indentation](http://nithinbekal.com/2011/tabs-vs-spaces-for-indentation/)
-- [death-to-the-space-infidels](http://www.codinghorror.com/blog/2009/04/death-to-the-space-infidels.html)
+- [Why tabs are clearly superior (lea.verou.me)](http://lea.verou.me/2012/01/why-tabs-are-clearly-superior/)
+- [Indentation with spaces considered](http://mystilleef.blogspot.com/2006/11/indentation-with-spaces-considered.html)
+- [Tabs vs spaces for indentation](http://nithinbekal.com/2011/tabs-vs-spaces-for-indentation/)
+- [Death to the space infidels](http://www.codinghorror.com/blog/2009/04/death-to-the-space-infidels.html)
 - [Drupal coding standards](http://drupal.org/coding-standards)
 - [Wordpress coding standards](http://codex.wordpress.org/WordPress_Coding_Standards)
 - [Wordpress CSS coding standards](http://codex.wordpress.org/CSS_Coding_Standards)
 - [jQuery coding standards](http://docs.jquery.com/JQuery_Core_Style_Guidelines)
-- [Programming style on Wikipedia](http://en.wikipedia.org/wiki/Programming_style)
+- [Programming style (wikipedia.org)](http://en.wikipedia.org/wiki/Programming_style)

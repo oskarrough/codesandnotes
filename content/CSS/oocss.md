@@ -14,7 +14,7 @@ title: "Object-orientated CSS (OOCSS)"
 - layout
 - modules
 
-#### References
+### References
 
 - https://github.com/stubbornella/oocss/wiki
 - SmartWeb 2013 - Johnatan Snook

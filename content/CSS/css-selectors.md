@@ -2,10 +2,9 @@
 title: "An overview of CSS selectors"
 ---
 
-#### References
+If you don't Understanding CSS: selectors, specificity, properties, values
 
-- Understanding CSS: selectors, specificity, properties, values
-
+### References
 
 - http://quirksmode.org/css/selectors/
 - http://css.maxdesign.com.au/selectutorial/

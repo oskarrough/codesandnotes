@@ -1,7 +1,5 @@
 ---
 title: Modern CSS Sizing Advice
-date: 2012-05-29
-tags: ["CSS","Front-end","Front-end"]
 ---
 
 As if it weren't enough with centimeters and inches we have quite a few different CSS units. They all have their pros and cons so when do you use which one? This is an approach we've been using on many projects with success. This is not to say that you can't use pixels for everything, of course you can. But there is a better way.
@@ -27,7 +25,7 @@ No, but really. In this retina-dpi-apocalypse-world it's safer and better to wor
 
 Last bit of advice, if you can avoid defining any sizes, you'll have less issues.
 
-#### References
+### References
 
 - [Relative Lenghts on the W3](http://www.w3.org/TR/css3-values/#relative-lengths)
 - [Jonathan Snook on rem](http://snook.ca/archives/html_and_css/font-size-with-rem)

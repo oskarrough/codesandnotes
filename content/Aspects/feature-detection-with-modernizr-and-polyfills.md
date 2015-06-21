@@ -1,12 +1,11 @@
 ---
-title: "Feature detection with Modernizr and Polyfills"
+title: Feature detection with Modernizr and Polyfills
+weight: 60
 ---
 
-**Not all features of the web are equal. The web is young and in flux. Things change, things break.**
+**Not all features of the web are equal. The web is young and in flux. Things change, things break.** When we build things we rely on different browser features to achieve our goals. Perhaps we need to use `css-transitions` or `touch events`.
 
-When we build things we rely on different browser features to achieve our goals. Perhaps we need to use `css-transitions` and the `canvas` feature (and element).
-
-In the spirit of [progressive enhancement](http://codesandnotes.com/progressive-enhancement/), graceful degradation or [progressive reduction](http://codesandnotes.com/progressive-reduction/) we have learned that it is a good idea to test what the user’s platform supports before we start using features that would break anyway.
+In the spirit of [progressive enhancement]({{< relref "progressive-enhancement.md" >}}), graceful degradation or [progressive reduction]({{< relref "progressive-reduction.md" >}}) we have learned that it is a good idea to test what the user’s platform supports before we start using features that would break anyway.
 
 ## You need to know, your code needs to know
 
@@ -76,7 +75,7 @@ Less tests, less work, less bytes, better performance.
 
 You can build your own production-ready Modernizr at [modernizr.com/download](http://modernizr.com/download/).
 
-#### References
+### References
 
 - http://modernizr.com/download/
 - http://modernizr.com/resources/

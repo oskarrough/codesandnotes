@@ -1,10 +1,10 @@
 ---
-title: "Scope"
+title: Scope this in JavaScript
 ---
 
-What is scope?
+What is 'this' in JavaScript? Talk about scope, how it changes and how to deal with it. What is scope?
 
-```js
+```javascript
 // a globally-scoped variable
 var a = 1;
 
@@ -69,8 +69,7 @@ alert(new Seven().a);
 alert(new Seven().b);
 ```
 
-
-#### References
+### References
 
 - http://flippinawesome.org/2013/12/09/demystifying-this-in-javascript/
 - http://www.2ality.com/2011/02/javascript-variable-scoping-and-its.html
@@ -79,3 +78,4 @@ alert(new Seven().b);
 - https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions_and_function_scope
 - http://stackoverflow.com/a/500459/273406
 - http://www.jibbering.com/faq/notes/closures/
+- https://www.youtube.com/watch?v=yuo8YqKDQ-M

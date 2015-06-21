@@ -1,5 +1,5 @@
 ---
-title: "JavaScript: MVC"
+title: JavaScript Frameworks
 ---
 
 to js: http://blog.adtile.me/2014/01/16/a-dive-into-plain-javascript/
@@ -7,9 +7,13 @@ to js: http://blog.adtile.me/2014/01/16/a-dive-into-plain-javascript/
 intro
 
 ## What is an MVC
+
 ## Examples of MVC
+
 ## When to use MVC
+
 ## Ember
+
 ## Angular.js
 
 ## Backbone.js
@@ -21,7 +25,7 @@ intro
 - http://weblog.bocoup.com/introducing-the-backbone-boilerplate/
 - https://github.com/tbranyen/backbone-boilerplate
 
-#### References
+### References
 
 - Learn Angular.js: http://egghead.io/
 - http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/

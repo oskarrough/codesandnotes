@@ -52,7 +52,7 @@ One important thing to note is that browsers, sadly, interpret these rules diffe
 - By default, content-box means padding and borders are added to the size
 - Border-box is easier to use as the padding and borders are placed inside the width and height.
 
-#### References
+### References
 
 - [box model documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model).
 - [box-sizing documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)

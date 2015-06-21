@@ -54,7 +54,7 @@ package.json -> a list of components managed through npm. Running “npm install
 - js linting
 - building
 
-#### References
+### References
 
 - [Gruntjs.com](http://gruntjs.com/)
 - [Yeoman.io](http://yeoman.io/)

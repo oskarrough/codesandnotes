@@ -8,6 +8,6 @@ When you delete stuff in the command line using `rm` you have no way of undoing 
 
 Install it with [homebrew](http://brew.sh/): `$ brew install trash`
 
-#### References
+### References
 
 - [How not to rm yourself](https://plus.google.com/114738313102270607087/posts/Quxra6ARTRs)

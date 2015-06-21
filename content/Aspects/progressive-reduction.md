@@ -1,7 +1,7 @@
 ---
 title: Progressive Reduction
 date: 2013-02-06
-tags: ["Aspects","progressive reduction","Usability"]
+weight: 52
 ---
 
 The more you use a product, the more familiar you become with it, the less you need from its interface. At first an iPod could seem super unintuitive - how do you even turn this thing on? But as you become more familiar with its interface, the reduced design starts to work. In the same way you would imagine three steps of progressive and reduced versions of your design. One for first time users, one for advanced users and another for the experts.

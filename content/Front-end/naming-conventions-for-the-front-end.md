@@ -1,7 +1,6 @@
 ---
 title: Naming conventions for the front-end
 date: 2014-01-06
-tags: ["Architecture","Naming convention"]
 ---
 
 Naming conventions make things easier by ensuring consistency in your code. It is an educated pattern for naming things.
@@ -28,7 +27,7 @@ This convention is tested, it works and it _will_ help you differentiate your cl
     .ComponentName--modifierName {}
     .is-stateOfModule {}
 
-#### References
+### References
 
 - [SUIT naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)
 - [SUIT Components and examples of naming conventions](https://github.com/suitcss/suit/blob/master/doc/components.md#naming-conventions)

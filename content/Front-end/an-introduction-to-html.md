@@ -1,21 +1,21 @@
 ---
-title: HTML
-weight: -99
+title: An introduction to HTML
+weight: -98
 ---
 
 The backbone of every website, HTML is a [markup language](http://en.wikipedia.org/wiki/Markup_language), which means you'll be describing, or marking, your content for the computers to differentiate your content. Look at the following example:
 
-{{< highlight html >}}
+```markup
 This is my title
 And this is some body text with a link to http://codesandnotes.com.
-{{< /highlight >}}
+```
 
 Here the computer has no way of recognizing what type of content it is. It's just text and that's where HTML comes in:
 
-{{< highlight html >}}
+```markup
 <h1>This is my title</h1>
 <p>And this is some body text with a link to <a href="http://codesandnotes.com">Codes &amp; Notes</a>.</p>
-{{< /highlight >}}
+```
 
 Now it makes sense, not only to computers, but to you and the people using your site because browsers will apply default styling and functionality to the elements, now that it recognizes them.
 
