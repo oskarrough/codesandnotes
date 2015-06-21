@@ -32,10 +32,10 @@ menu:
       url: "/aspects/"
       weight: -10
 
-    - name: "HTML"
-      identifier: "HTML"
-      url: "/html/"
-      weight: 19
+    - name: "Front-end"
+      identifier: 'Front-end'
+      url: '/front-end/'
+      weight: 15
 
     - name: "CSS"
       identifier: 'CSS'
@@ -46,11 +46,6 @@ menu:
       identifier: "JavaScript"
       url: "/javascript/"
       weight: 30
-
-    - name: "Front-end"
-      identifier: 'Front-end'
-      url: '/front-end/'
-      weight: 35
 
     - name: "Performance"
       identifier: 'Performance'
@@ -64,9 +59,8 @@ menu:
 
     - name: "Content Management"
       identifier: 'Content management'
-      url: '/performance/'
+      url: '/content-management/'
       weight: 52
-
 
     - name: "Tools and Workflow"
       identifier: 'Tools and Workflow'

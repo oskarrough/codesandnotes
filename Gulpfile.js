@@ -91,6 +91,13 @@ gulp.task('build', ['hugo', 'styles', 'scripts'], function() {
 		.pipe(plugin.size({ title: 'build', gzip: true }));
 });
 
+// gulp.task('minify', () => {
+//   return gulp.src(['dist/styles/*.css', 'dist/scripts/*.js'])
+//     .pipe($.if('*.js', $.uglify()))
+//     .pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
+//     .pipe(gulp.dest('dist'));
+// });
+
 // cleans, then builds - use this
 gulp.task('default', ['clean'], function () {
 	gulp.start('build');

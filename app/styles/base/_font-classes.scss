@@ -7,21 +7,21 @@
 }
 
 @mixin ff-body() {
+	font-family: 'questa-sans-light';
 	font-weight: normal;
 	// font-family: $serif;
 	// font-family: $sans-serif;
-	font-family: 'questa-sans-light';
 }
 
 @mixin ff-body-italic() {
-	font-weight: normal;
-	font-style: italic;
 	font-family: 'questa-sans-light-italic';
+	font-weight: normal;
+	font-style: normal;
 }
 
 @mixin ff-body-bold() {
-	font-weight: normal;
 	font-family: 'questa-sans-medium';
+	font-weight: normal;
 }
 
 @mixin ff-small() {
@@ -34,7 +34,7 @@
 @mixin ff-monospaced() {
 	// @include rhythm($small);
 	font-family: 'Triplicate T4c', 'Source Code Pro', Consolas, monospace;
-	font-size: rem(16);
+	font-size: rem($small);
 	font-weight: normal;
 	// line-height: 1.4;
 }
