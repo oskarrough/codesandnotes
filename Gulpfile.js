@@ -5,6 +5,7 @@ var autoprefixer = require('autoprefixer-core');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var compression = require('compression');
+var rsync = require('rsyncwrapper').rsync;
 
 // Builds all content
 gulp.task('hugo', function (cb) {
@@ -110,3 +111,19 @@ gulp.task('minify', ['build-move'], function() {
     .pipe(gulp.dest('dist'));
 });
 
+// Upload dist to dev
+gulp.task('deploy-ftp', function() {
+	rsync({
+		src: 'dist/',
+		dest: 'oskarrough@web461.webfaction.com:/home/oskarrough/webapps/codesandnotes_static',
+		ssh: true,
+		recursive: true,
+		// deleteAll: true // Careful, this could cause data loss
+	}, function(error, stdout, stderr, cmd) {
+		if (error) {
+			console.log(error.message);
+		} else { // success
+			console.log('Successfully deployed to codesandnotes.com');
+		}
+	});
+});
