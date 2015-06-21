@@ -1,12 +1,12 @@
 {{ partial "header.html" . }}
 
-<ul class="Breadcrumb">
-	<li><a href="/">{{ .Site.Title }}</a></li>
-	<li title="Chapter">{{ .Title }}</li>
-	<!-- <span class="Badge">Chapter</span> -->
-</ul>
-
 <section class="Main">
+	<ul class="Breadcrumb">
+		<li><a href="/">{{ .Site.Title }}</a></li>
+		<li title="Chapter">{{ .Title }}</li>
+		<!-- <span class="Badge">Chapter</span> -->
+	</ul>
+
 	<h1>{{ .Title}}</h1>
 
 	<!-- <p>Articles in this chapter:</p> -->
