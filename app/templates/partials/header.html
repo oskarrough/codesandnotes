@@ -13,7 +13,7 @@
 
 	<title>
 		{{ if eq .URL "/" }}
-			{{ .Site.Title }} — A reference for web development you can trust
+			{{ .Site.Title }} — A reference to web development you can trust
 		{{ else if eq .URL "/post/" }}
 			All Entries &middot; {{ .Site.Title }}
 		{{ else if in .URL "/tags/" }}
@@ -25,7 +25,7 @@
 
 	<meta name="author" content="{{ .Site.Author.name }}">
 	<meta property="og:site_name" content="{{ .Site.Title }}">
-	<meta name="description" content="Codes and notes is a reference for web development that you can trust">
+	<meta name="description" content="Codes and notes is a reference to web development that you can trust">
 
 	{{ if eq .URL "/" }}
 		<!-- Index -->

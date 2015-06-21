@@ -1,14 +1,18 @@
 .SectionMenu {
 	@include ff-header;
-	font-size: rem($large);
+	font-size: rem($medium);
 	counter-reset: section;
 
 	@media (min-width: $layout-s) {
-		font-size: $large;
+		font-size: rem($medium);
 		padding-left: 8%;
+	}
+	@media (min-width: $layout-m) {
+		font-size: rem($large);
 	}
 
 	li::before {
+		@include negative-text;
 		display: inline-block;
 		min-width: 1.5em;
 		text-align: right;
