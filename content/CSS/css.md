@@ -1,5 +1,5 @@
 ---
-title: "CSS (Cascading Style Sheets)"
+title: CSS (Cascading Style Sheets)
 weight: -99
 ---
 
@@ -35,10 +35,11 @@ Cascading, inheritance, selectors and their specificity. This section is about b
 - Select nested elements to apply styling
 - Anatomy of a CSS rule
 - The CSS cascade: Browsers deal with conflicting rules by:
-	1. Importance
-	2. Origin (author, user, browser)
-	3. Specificity
-	4. Source order
+
+1. Importance
+2. Origin (author, user, browser)
+3. Specificity
+4. Source order
 
 ## CSS structure
 

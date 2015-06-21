@@ -1,5 +1,5 @@
 ---
-title: "A brief introduction to animation on the web"
+title: A brief introduction to animation on the web
 weight: -99
 ---
 

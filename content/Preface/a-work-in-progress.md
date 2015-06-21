@@ -1,7 +1,5 @@
 ---
 title: A work in progress
-date: 2014-01-06
-tags: ["Preface"]
 ---
 
 As of this writing, the 4th of May 2014, there is still very much to write but keeping it away from people until there isn't anymore to write is not the solution. This is why you will find a few poorly-written drafts online.
