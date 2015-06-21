@@ -9,11 +9,11 @@
 <section class="Main">
 	<h1>{{ .Title}}</h1>
 
-	<p>Articles in this chapter:</p>
+	<!-- <p>Articles in this chapter:</p> -->
 
 	<ul class="List">
 		{{ range .Data.Pages }}
-			{{ .Render "list-item"}}
+	   	{{ .Render "list-item"}}
 		{{ end }}
 	</ul>
 </section>

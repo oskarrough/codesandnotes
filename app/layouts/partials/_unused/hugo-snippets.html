@@ -1,3 +1,27 @@
+<nav>
+		<ul class="Breadcrumbb">
+			<!-- <li><a href="/{{ .Section }}">◆</a></li> -->
+			<li>
+				{{ if .NextInSection }}
+					<a href="{{ .NextInSection.Permalink }}">
+						Prev {{ .NextInSection.Title }}
+					</a></li>
+				{{ else }}
+					No prev
+				{{ end }}
+			</li>
+
+			<li>
+			{{ if .PrevInSection }}{{ else }}
+				<!-- No next -->
+			{{ end }}
+
+			</li>
+		</ul>
+	</nav>
+
+	{{ <!-- *range .Paginator.Pages --> }}
+
 <ul class="List">
 	{{ range first 200 .Data.Pages }}
 		{{ if eq .Type "Aspects"}}
@@ -5,3 +29,76 @@
 		{{ end }}
 	{{ end }}
 </ul>
+
+
+
+
+<!-- <ul>
+		<li><a href="{{ .Prev.Permalink }}">Prev {{ .Prev.Title}}</a></li>
+		<li><a href="{{ .Next.Permalink }}">Next {{ .Next.Title}}</a></li>
+	</ul>
+	<ul>
+		<li><a href="{{ (.Site.Pages.ByWeight.Prev .).Permalink }}">Prev</a></li>
+		<li><a href="{{ (.Site.Pages.ByWeight.Next .).Permalink }}">Next</a></li>
+	</ul> -->
+
+
+	<aside>
+		<!-- {{ if .TableOfContents }}
+		<h3>Table of contents</h3>
+		<div class="Toc">
+			{{ .TableOfContents }}
+		</div>
+		{{ end }} -->
+		<!-- ☞ -->
+		<!-- ◀ ◆ ▶ -->
+
+		<!-- {{ if .NextInSection }}
+				<a href="{{ .NextInSection.Permalink }}">
+					<span aria-hidden="true">&larr; Prev</span>
+					{{ .NextInSection.Title }}
+				</a>
+			{{ end }} -->
+
+
+			<!-- <li><a href="{{ .Site.BaseURL }}">All chapters</a></li> -->
+
+		<!-- {{ partial "pager.html" . }} -->
+
+		<!-- <h3>Continue reading <em>{{ .Section}}</em></h3>
+		<ul class="List">
+			{{ $section := .Section }}
+			{{ range first 200 .Site.Pages }}
+				{{ if eq .Type $section }}
+					{{ .Render "list-item"}}
+				{{ end }}
+			{{ end }}
+		</ul>
+
+		{{ if .Params.tags }}
+			<h3>Tags</h3>
+			{{ $baseurl := .Site.BaseURL }}
+			<ul class="List List--tags">
+				{{ range .Params.tags }}
+					<li>
+						<a href="{{ $baseurl }}/tags/{{ . | urlize }}">
+						{{ . }}
+						</a>
+					</li>
+				{{ end }}
+			</ul>
+		{{ end }} -->
+
+		<!-- <h3>Related Post</h3>
+		<ul class="List">
+			{{ $page_link := .Permalink }}
+			{{ $tags := .Params.tags }}
+			{{ range .Site.Pages }}
+				{{ $page := . }}
+				{{ $has_common_tags := intersect $tags .Params.tags | len | lt 0 }}
+				{{ if and $has_common_tags (ne $page_link $page.Permalink) }}
+					<li><a href="{{ $page.Permalink }}">{{ $page.Title }}</a></li>
+				{{ end }}
+			{{ end }}
+		</ul> -->
+	</aside>

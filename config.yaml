@@ -3,7 +3,7 @@ languageCode: 'en-us'
 buildDrafts: false
 pluralizelisttitles: false
 relativeUrls: true
-
+Paginate: 999
 SectionPagesMenu: 'main'
 metaDataFormat: 'yaml'
 # baseURL: 'http://codesandnotes.com/'
@@ -23,37 +23,69 @@ params:
 menu:
   main:
     - name: "Preface"
-      weight: -20
+      identifier: "preface"
       url: "/preface/"
+      weight: -20
+
     - name: "Aspects"
-      weight: -10
+      identifier: "aspects"
       url: "/aspects/"
+      weight: -10
+
     - name: "HTML"
+      identifier: "html"
       url: "/html/"
       weight: 19
+
     - name: "CSS"
+      identifier: 'css'
       url: '/css/'
       weight: 20
+
     - name: "JavaScript"
+      identifier: "javascript"
       url: "/javascript/"
       weight: 30
+
+    - name: "Front-end"
+      identifier: 'front-end'
+      url: '/front-end/'
+      weight: 35
+
     - name: "Performance"
+      identifier: 'performance'
       url: '/performance/'
       weight: 40
+
     - name: "Animation"
       weight: 50
+      identifier: "animation"
       url: "/animation/"
+
+    - name: "Content Management"
+      identifier: 'content-management'
+      url: '/performance/'
+      weight: 52
+
+
     - name: "Tools and Workflow"
+      identifier: 'tools-and-workflow'
       url: '/tools-and-workflow/'
       weight: 60
+
     - name: "Ember.js"
       identifier: "Ember-js"
+      identifier: "ember-js"
       url: "/ember-js/"
       weight: 70
+
     - name: "Typography"
+      identifier: "typography"
       url: "/typography/"
       weight: 80
+
     - name: "Drafts"
+      identifier: "_drafts"
       identifier: "_drafts"
       url: "/_drafts/"
       weight: 500
