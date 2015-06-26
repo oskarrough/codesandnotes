@@ -44,9 +44,3 @@ Then go:
 
 1. `gulp`
 2. `gulp deploy`
-
-# License
-
-Licensed [BY-NC-SA Creative Commons](http://creativecommons.org/licenses/by-nc-sa/3.0/).
-
-gsed -i.backup -e 's/^# \(.*\)$/---\ntitle: \"\1\"\n---/g' *.md

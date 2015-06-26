@@ -7,7 +7,7 @@ SectionPagesMenu: 'main'
 metaDataFormat: 'yaml'
 
 relativeURLs: true
-baseURL: 'http://codesandnotes.com/'
+#baseURL: 'http://codesandnotes.com/'
 #baseurl: ''
 # theme: 'codesandnotes'
 

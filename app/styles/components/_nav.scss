@@ -1,4 +1,5 @@
 .SectionMenu {
+	list-style: none;
 	@include ff-header;
 	font-size: rem($medium);
 	counter-reset: section;

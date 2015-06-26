@@ -3,25 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-
-	<!-- <link rel="stylesheet" href="styles/prism.css" /> -->
-	<!-- <link rel="stylesheet" href="/styles/can-simple.css" /> -->
 	<link rel="stylesheet" href="/styles/codesandnotes.css" />
+	<!-- <script src="//use.typekit.net/krs2vbw.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>-->
+	<script>
+    TypekitConfig = { kitId: 'krs2vbw' };
+    (function() {
+        var tk = document.createElement('script');
+        tk.src = '//use.typekit.com/' + TypekitConfig.kitId + '.js';
+        tk.type = 'text/javascript';
+        tk.async = 'true';
+        tk.onload = tk.onreadystatechange = function() {
+            var rs = this.readyState;
+            if (rs && rs != 'complete' && rs != 'loaded') return;
+            try { Typekit.load(TypekitConfig); } catch (e) {}
+        };
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(tk, s);
+    })();
+	</script>
+</script>
 
-	<script src="//use.typekit.net/krs2vbw.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
-
-	<title>
-		{{ if eq .URL "/" }}
-			{{ .Site.Title }} — A reference to web development you can trust
-		{{ else if eq .URL "/post/" }}
-			All Entries &middot; {{ .Site.Title }}
-		{{ else if in .URL "/tags/" }}
-			{{ .Site.Title }}
-		{{ else }}
-			{{ .Title }} &middot; {{ .Site.Title }}
-		{{ end }}
-	</title>
+	<title>{{ if eq .URL "/" }}{{ .Site.Title }}{{ else if eq .URL "/post/" }}All Entries &middot; {{ .Site.Title }}{{ else if in .URL "/tags/" }}{{ .Site.Title }}{{ else }}{{ .Title }}&middot; {{ .Site.Title }}{{ end }}</title>
 
 	<meta name="author" content="{{ .Site.Author.name }}">
 	<meta property="og:site_name" content="{{ .Site.Title }}">

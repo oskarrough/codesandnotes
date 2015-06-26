@@ -102,3 +102,6 @@
 			{{ end }}
 		</ul> -->
 	</aside>
+
+
+gsed -i.backup -e 's/^# \(.*\)$/---\ntitle: \"\1\"\n---/g' *.md
