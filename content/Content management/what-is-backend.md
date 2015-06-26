@@ -1,5 +1,6 @@
 ---
 title: What is back-end?
+draft: true
 ---
 
 It’s the structure that allows information to be shared across accounts or people. It’s the glue that binds the internet together.

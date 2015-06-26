@@ -33,3 +33,4 @@ Both CSS and JavaScript provide methods for animating. You can combine the two, 
 -[12 basic principles of animation](http://en.wikipedia.org/wiki/12_basic_principles_of_animation)
 - http://the12principles.tumblr.com/
 - [snapsvg - The JavaScript SVG library for the modern web](http://snapsvg.io/)
+- http://dynamicsjs.com/

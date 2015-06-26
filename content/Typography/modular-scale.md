@@ -1,11 +1,10 @@
 ---
 title: Modular scale
-date: 2011-12-14
 ---
 
-Print layouts have been using modular scales for centuries, so why shouldn't we in digital world. It helps you compose with a vertical rhythm.
+Print layouts have been using modular scales for centuries, so why shouldn't we in the digital world. Modular scale helps you compose with a vertical rhythm, to make your typography flow.
 
-What you're currently is composed with vertical rhythm. But more than keeping it real with Mr. Fibonacci, you should think about what really makes sense within your site. And keep visual consistency.
+What you're currently reading is (hopefully) composed with vertical rhythm. But more than keeping it real with Mr. Fibonacci, you should think about what really makes sense within your site. And keep visual consistency.
 
 ### References
 

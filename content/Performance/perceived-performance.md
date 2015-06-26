@@ -1,7 +1,6 @@
 ---
 title: Perceived performance
-date: 2013-12-29
-tags: ["Aspects","Performance"]
+weight: -70
 ---
 
 Performance is one thing, perceived performance is another. Using different techniques it's very possible to make things feel faster than reality. But what if perception _is_ reality? Just kidding. Consider the following example: you want to copy a file from A to B and do it using two different applications.

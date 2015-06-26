@@ -1,5 +1,6 @@
 ---
 title: Self-publishing
+draft: true
 ---
 
 Notes on self publishing. Will make it useful for others later.

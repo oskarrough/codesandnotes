@@ -1,7 +1,5 @@
 ---
 title: Yeoman, Grunt and Compass sprites
-date: 2013-03-12
-tags: ["Compass","grunt","Sprites","Tools &amp; Workflow","yeoman"]
 ---
 
 **Update 12th of January 2014**: Lots of things changed since writing this article. Will update soon.
@@ -37,6 +35,6 @@ tags: ["Compass","grunt","Sprites","Tools &amp; Workflow","yeoman"]
             }
         },</pre>
 
-### Ressources
+### Resources
 
 - [gruntjs/grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass)

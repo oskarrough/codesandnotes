@@ -1,5 +1,6 @@
 ---
 title: "Digital tools"
+draft: true
 ---
 
 Det er ikke altid, man har lyst til at tænke på sit værktøj. Ofte er det produktet, værktøjet kan fremstille, der interesserer. Og hvor nørdet jeg end kan blive, hvor meget jeg end kan lide at lege og justere mit værktøj, er det altid med formålet at få det ud ad (af?) vejen.

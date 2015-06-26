@@ -1,7 +1,5 @@
 ---
 title: Pasting tools
-date: 2013-06-24
-tags: ["Code sharing","Tool","Tools &amp; Workflow"]
 ---
 
 There are tons of services that quickly allow you to share some code. Here are some you can use.

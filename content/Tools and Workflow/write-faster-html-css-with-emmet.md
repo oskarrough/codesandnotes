@@ -1,7 +1,6 @@
 ---
 title: Write faster HTML and CSS with Emmet
 date: 2013-02-28
-tags: ["Emmet","Productivity","Sublime Text","Text editor","Tools &amp; Workflow"]
 ---
 
 Here's how you can reach productivity Nirvana. Through [Emmet's]("http://emmet.io/") fuzzy, css-like abbreviations you will be able to write your CSS and HTML much more efficiently.

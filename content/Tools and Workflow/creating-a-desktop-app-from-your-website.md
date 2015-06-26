@@ -1,6 +1,9 @@
 ---
 title: "Creating a desktop app from your website"
+draft: true
 ---
+
+**TODO: Have to rewrite this using Electron.**
 
 In this article I'll explain how you can wrap your existing website into a desktop application for OSX, Windows and Linux using [NW.js](http://nwjs.io/).
 
@@ -43,11 +46,7 @@ https://github.com/nwjs/nw.js/wiki/Debugging-with-Sublime-Text-2-and-3
 credits.html
 options.macIcns > icns file
 
-
 nwbuild dist -p osx64
-
-
-
 
 https://github.com/mllrsohn/node-webkit-builder
 https://github.com/Emerson/Ember-Node-Webkit-Example

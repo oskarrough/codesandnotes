@@ -1,5 +1,6 @@
 ---
 title: Maintaining a performance budget
+weight: -80
 ---
 
 The average page weight and number of connections on a website keep increasing. It’s not unusual to see a website download 10mb to your device, which could take several minutes. Even more so if you’re on a mobile device with a bad connection. Needless to say, we want to make sure cybex-online.com stays lightning-fast.

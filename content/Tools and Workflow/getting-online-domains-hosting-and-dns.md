@@ -18,7 +18,6 @@ Your websites or a more directly the files that make up your website needs exist
 
 S3 + Cloudfront
 AWS vs S3
-Jumpstarter
 Firebase
 Heroku
 Divshot
@@ -26,4 +25,16 @@ Webfaction
 Digital Ocean
 Mediatemple
 
-https://pinboard.in/u:rough/t:hosting
+## What is DNS
+
+## Why do I need a server?
+
+Shared hosting.
+
+### Virtual server
+
+### Dedicated server
+
+## Deploying
+
+- https://pinboard.in/u:rough/t:hosting

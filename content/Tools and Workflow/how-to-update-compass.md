@@ -1,7 +1,6 @@
 ---
 title: How to update Compass
-date: 2012-01-18
-tags: ["Compass","Package-management","Tools &amp; Workflow"]
+draft: true
 ---
 
 Here's how you update [Compass](http://compass-style.org/) (the CSS framework written with Sass).

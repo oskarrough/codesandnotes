@@ -2,7 +2,7 @@
 title: "Static sites"
 ---
 
-The UX of text files is very easy to learn. Everybody knows how to edit text and categorize them in folders and this is why building sites using a _static site generator_ can be great.
+The UX of text files is familiar to almost everyone. Everybody knows how to edit text and categorize them in folders and this is why building sites using a _static site generator_ can be great.
 
 A server-based CMS require a server (even if it's local), a database and dependencies, and you have to manage the database. It's a hassle.
 

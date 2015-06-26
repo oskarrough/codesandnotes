@@ -9,8 +9,6 @@ What are you doing right now? Whether you are supposed to be developing, designi
 
 Now, back in the days everything was hardcoded without databases. No, not really. What do I know.
 
-**@todo**
-
 ## References
 
 - http://www.zeldman.com/category/content-first/

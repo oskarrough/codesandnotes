@@ -5,6 +5,7 @@ weight: -99
 
 To do.
 
+- ES6
 - Why would I ever want a framework?
 - http://jquery.com
 - Explain event delegation
@@ -33,6 +34,7 @@ To do.
 - http://jsbooks.revolunet.com/
 - http://eloquentjavascript.net/
 - https://eloquentjavascript.net/2nd_edition/preview/
+- https://leanpub.com/understandinges6/read
 
 ## Resources
 
