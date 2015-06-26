@@ -16,16 +16,6 @@ gulp.task('hugo', function (cb) {
 	});
 });
 
-// Deploys whatever is in `dist` to dev domain
-// (as specified in app/static/CNAME)
-gulp.task('deploy', function (cb) {
-	exec('surge dist', function (err, stdout, stderr) {
-		console.log(stdout);
-		console.log(stderr);
-		cb(err);
-	});
-});
-
 // Sass, sourcemaps and autoprefixer
 gulp.task('styles', function () {
 	gulp.src(['app/styles/*.scss'])
@@ -85,7 +75,6 @@ gulp.task('serve', ['hugo', 'styles', 'scripts'], function () {
 // shortcut for serve
 gulp.task('s', ['serve']);
 
-
 // 1. first clean
 gulp.task('default', ['clean'], function () {
 	gulp.start('build-assets');
@@ -105,7 +94,7 @@ gulp.task('build-move', function() {
 
 // 4. then minify
 gulp.task('minify', ['build-move'], function() {
-  return gulp.src(['dist/styles/**/*.css', 'dist/scripts/*.js'], { base: 'dist' })
+  return gulp.src(['dist/styles/*.css', 'dist/scripts/*.js'], { base: 'dist' })
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.minifyCss({ compatibility: '*' })))
     .pipe(gulp.dest('dist'));
@@ -125,5 +114,15 @@ gulp.task('deploy-ftp', function() {
 		} else { // success
 			console.log('Successfully deployed to codesandnotes.com');
 		}
+	});
+});
+
+// Deploys whatever is in `dist` to dev domain
+// (as specified in app/static/CNAME)
+gulp.task('deploy', function (cb) {
+	exec('surge dist', function (err, stdout, stderr) {
+		console.log(stdout);
+		console.log(stderr);
+		cb(err);
 	});
 });

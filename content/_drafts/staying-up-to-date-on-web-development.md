@@ -1,5 +1,6 @@
 ---
 title: Staying up to date
+draft: true
 ---
 
 I gave up following all the feeds I use to and maybe you should too. Newsletters aren't dead, especially not the weekly ones. Gives you freedom! Here are three good ones to subscribe to:
