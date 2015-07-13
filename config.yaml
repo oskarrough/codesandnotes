@@ -13,6 +13,7 @@ relativeURLs: true
 
 layoutdir: 'app/templates'
 publishdir: 'dist'
+#PygmentsCodeFences: "true"
 
 taxonomies:
   tag: 'tags'
