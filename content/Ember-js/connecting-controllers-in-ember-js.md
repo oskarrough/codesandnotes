@@ -1,26 +1,24 @@
 ---
 title: Connecting controllers in Ember.js
+published: true
 ---
 
-To enable communication between controllers you have to use the `needs` property on your controller. Here's how to do it:
+
+To enable communication between controllers you can inject a controller using `Ember.inject.controller`. Here's how to do it:
 
 ```javascript
 // controllers/playlist.js
 import Ember from 'ember';
 
-export default Ember.ObjectController.extend({
-    needs: ['tracks', 'anotherOne'],
+export default Ember.Controller.extend({
+    anotherController: Ember.inject.controller(),
 
     // now you can access it with
-    // this.get('controllers.tracks')
+    // this.get('anotherController')
 
     // or in your template:
-    // {{controllers.tracks}}
-    // {{controllers.tracks.someProperty}}
-
-    // if you want, you can make an alias:
-    tracks: Ember.computed.alias('controllers.tracks')
+    // {{anotherController.someProperty}}
 });
 ```
 
-Also see the official guide on [http://emberjs.com/guides/controllers/dependencies-between-controllers/](http://emberjs.com/guides/controllers/dependencies-between-controllers/)
+Also see the official guide on [dependencies between controllers](http://guides.emberjs.com/v1.13.0/controllers/dependencies-between-controllers/).
