@@ -57,3 +57,4 @@ Having an interface for Git helps a lot. Github.com is one way, Bitbucket.com is
 - http://try.github.io/
 - http://24ways.org/2013/git-for-grownups/
 - http://firstaidgit.io/
+- https://gumroad.com/l/goal-oriented-git/

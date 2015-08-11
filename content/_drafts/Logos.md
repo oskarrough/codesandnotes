@@ -1,5 +1,6 @@
 ---
 title: Logos
+draft: true
 ---
 
 The principal role of a logo is to identify, and simplicity is its means… Its effectiveness depends on distinctiveness, visibility, adaptability, memorability, universality, and timelessness.
