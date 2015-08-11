@@ -100,4 +100,4 @@ surge dist
 
 Note that we rename `index.html` to `200.html` for [client-side routing](http://surge.sh/help/adding-a-200-page-for-client-side-routing). Without it, the server wouldn't know that we want a URL as `example.com/some/ember/route` to be handled by `example.com/index.html` — and not the `some/ember/route` folder.
 
-<!-- [2]({{< relref "2-building-a-tagwall.md" >}}) -->
+<!-- [2]({{< relref "2-building-the-tagwall.md" >}}) -->

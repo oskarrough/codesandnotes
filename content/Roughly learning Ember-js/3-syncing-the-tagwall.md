@@ -147,14 +147,14 @@ So, there we have it! If you create some messages and refresh, the messages will
 
 {{< figure src="/images/tagwall/tagwall4.png" >}}
 
-
 ## Next steps
 
 OK, that's it. The tagwall is working, you can send messages and they are stored in Firebase. If you deploy it (see chapter 1 again) or go to my example at <a href="http://tagwall.surge.sh">tagwall.surge.sh</a> we can have a chat!
 
-Of course, there are some obvious improvements we could make:
+Here are some improvements we could do:
 
-- Add styling in `app/styles/app.css` ()
+- Add styling in `app/styles/app.css` (or if you're sassy, you can install [ember-cli-sass](https://github.com/aexmachina/ember-cli-sass)) — it would make sense to make the input fixed at the bottom and limit the height of our messages with `overflow-y: scroll;`
+- Make it possible to edit/delete messages
+- Introduce a `user` model so people can identify themselves
 
-- There's no way to edit or delete messages
-- We can add some styles in app/css.
+And what if visitors could create new tagwalls themselves and decide the URL? This way people could create their own (secret) tagwalls to share. This is what we'll do in the upcoming chapter four.
