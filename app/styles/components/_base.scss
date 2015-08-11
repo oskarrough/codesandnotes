@@ -68,11 +68,9 @@ hr {
 
 
 // Links
-a,
-a:visited {
-	// color: $primary-color;
-	// text-decoration: none;
-	color: $text-color;
+a {
+	color: $turquoise;
+	// color: $blue;
 	text-decoration: underline;
 }
 a {

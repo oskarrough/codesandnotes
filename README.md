@@ -10,7 +10,7 @@ Having used Jekyll, Wordpress, Middleman, my own Gulp generator I've finally set
 
 All articles are in `content/`. They are written in Markdown with YAML front-matter for Hugo to build the project. Templates, styles and scripts are in `app/`.
 
-## Installing dependecies
+## Installing dependencies
 
 First you need git, node, go and hugo installed. If you have homebrew as well, hugo is installed like this:
 
