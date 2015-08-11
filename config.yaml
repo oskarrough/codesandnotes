@@ -68,11 +68,15 @@ menu:
       url: '/tools-and-workflow/'
       weight: 60
 
+    - name: "Roughly learning Ember.js"
+      identifier: "Roughly learning Ember-js"
+      url: "/roughly-learning-ember-js/"
+      weight: 70
+
     - name: "Ember.js"
       identifier: "Ember-js"
-      identifier: "Ember-js"
       url: "/ember-js/"
-      weight: 70
+      weight: 71
 
     - name: "Typography"
       identifier: "Typography"
