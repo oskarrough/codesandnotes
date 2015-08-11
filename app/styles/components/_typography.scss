@@ -11,7 +11,6 @@ html {
 	// -webkit-font-smoothing: antialiased;
 }
 
-
 // Headings
 h1,
 h2,
@@ -22,7 +21,7 @@ h4 {
 h1 {
 	font-size: rem($larger);
 	line-height: 1;
-	margin-bottom: $space;
+	margin-bottom: $space*1.5;
 	font-weight: normal;
 	font-style: italic;
 	@media (min-width: $layout-s) {
@@ -37,10 +36,10 @@ h1 {
 	}
 }
 h2 {
-	// font-family: 'questa-sans-medium';
+	@extend ff-body-bold;
 	font-size: rem($medium);
 	line-height: 1.1;
-	margin-top: $space*1;
+	margin-top: $space*1.5;
 	@media (min-width: $layout-m) {
 		font-size: rem($large);
 	}
@@ -64,13 +63,23 @@ blockquote {
 	margin-left: $space;
 	margin-right: $space*2;
 }
-code,
-pre {
+code {
 	@include ff-monospaced;
 }
+
+/* Inline code */
+:not(pre) > code {
+	background-color: hsl(0, 0%, 100%);
+	padding: 0.1em;
+	border-radius: 3px;
+}
+
+// code blocks
 pre {
-	line-height: 1.6;
+	padding: 1em;
+	margin: 1rem 0;
 	overflow: auto;
+	line-height: 1.1;
 }
 abbr,
 acronym,

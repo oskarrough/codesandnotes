@@ -15,7 +15,7 @@
     "gulp-cache": "^0.2.10",
     "gulp-concat": "^2.6.0",
     "gulp-csso": "^1.0.0",
-    "gulp-filter": "^2.0.2",
+    "gulp-filter": "^3.0.0",
     "gulp-if": "^1.2.5",
     "gulp-load-plugins": "^1.0.0-rc",
     "gulp-minify-css": "^1.2.0",

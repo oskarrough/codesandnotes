@@ -1,37 +1,31 @@
-@mixin ff-header() {
-	// @include negative-text;
-	// font-family: 'lydian-mt', 'eskapade-fraktur', $serif;
+@mixin ff-header {
 	font-family: 'eskapade-fraktur', $serif;
 	font-weight: normal;
-	// -webkit-font-smoothing: auto; // otherwise it gets too thin, stay with the default bro
 }
 
-@mixin ff-body() {
+@mixin ff-body {
 	font-family: 'questa-sans-light';
 	font-weight: normal;
-	// font-family: $serif;
-	// font-family: $sans-serif;
 }
 
-@mixin ff-body-italic() {
+@mixin ff-body-italic {
 	font-family: 'questa-sans-light-italic';
 	font-weight: normal;
 	font-style: normal;
 }
 
-@mixin ff-body-bold() {
+@mixin ff-body-bold {
 	font-family: 'questa-sans-medium';
 	font-weight: normal;
 }
 
-@mixin ff-small() {
-	// font-family: 'questa-sans-medium';
+@mixin ff-small {
 	font-size: rem($small);
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 }
 
-@mixin ff-monospaced() {
+@mixin ff-monospaced {
 	// @include rhythm($small);
 	font-family: 'Triplicate T4c', 'Source Code Pro', Consolas, monospace;
 	font-size: rem($small);

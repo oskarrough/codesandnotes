@@ -1,8 +1,9 @@
 .SectionMenu {
-	list-style: none;
 	@include ff-header;
+	list-style: none;
 	font-size: rem($medium);
 	counter-reset: section;
+	padding-left: 0;
 
 	@media (min-width: $layout-s) {
 		font-size: rem($medium);

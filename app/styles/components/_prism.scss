@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+handlebars+scss */
+/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+bash+handlebars+scss */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
@@ -13,7 +13,6 @@ pre[class*="language-"] {
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
-	line-height: 1.4;
 
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
@@ -45,21 +44,9 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 }
 
 /* Code blocks */
-pre[class*="language-"] {
-	margin: 1rem 0;
-	padding-left: 1rem;
-	overflow: auto;
-}
-
 :not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	// background: #f5f2f0;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
+pre {
+	background: hsl(0, 0%, 100%);
 }
 
 .token.comment,
@@ -132,3 +119,4 @@ pre[class*="language-"] {
 .token.entity {
 	cursor: help;
 }
+
