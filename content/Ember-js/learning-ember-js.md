@@ -1,5 +1,6 @@
 ---
 title: Learning Ember.js
+draft: true
 ---
 
 ## ES6 destructuring
