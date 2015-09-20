@@ -1,6 +1,7 @@
 ---
 title: CMS aka Content Management System
 weight: 2
+draft: true
 ---
 
 There's a plethora of content management systems out there. I've tried a lot and which to choose really comes down to each projects specific needs and future plans.

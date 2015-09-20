@@ -1,5 +1,6 @@
 ---
 title: Backup
+draft: true
 ---
 
 You don't want to loose your work (not to mention your photos and music) so you need to have secure backups of your data. There are several ways to achieve this. This is my way.

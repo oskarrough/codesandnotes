@@ -26,3 +26,7 @@ topic + p:first-line{
 }
 
 end every article with a symbol ♦
+
+http://www.daveliepmann.com/tufte-css/
+https://github.com/edwardtufte/et-bembo
+http://grantland.com/one-hundred-years-arm-bars-gracie-jiu-jitsu-mma/#chapter-1

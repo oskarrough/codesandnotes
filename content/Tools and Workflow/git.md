@@ -1,5 +1,6 @@
 ---
-title: "Git"
+title: Git
+draft: true
 ---
 
 Git is a free and open source distributed version control system. Basically, it allows more people to work together on the same code, saving a version history, merge different versions of the same file and much, much more.
@@ -35,6 +36,14 @@ As with everything else, it’s important to keep conventions when working with 
 
 See more on https://medium.com/code-adventures/a940ee20862d
 
+## Git Flow
+
+always commit to dev or a so-called "feature branch" - never on master. When done, you create a pull-request through bitbucket or github where others can review the code before merging into master.
+
+This means that the state of master will always be ready to deploy.
+
+https://guides.github.com/introduction/flow/index.html
+
 ## GUI for Git
 
 Having an interface for Git helps a lot. Github.com is one way, Bitbucket.com is another but there are also native apps to accompany you. I recommend Sourcetree as the most helpful.
@@ -49,7 +58,7 @@ Having an interface for Git helps a lot. Github.com is one way, Bitbucket.com is
 - http://www.git-tower.com/learn/
 - http://git-scm.com/book
 - https://help.github.com/
-- http://think-like-a-git.net/ - Git really isn't made for human beings. Think Like (a) Git is a guide for the perplexed that should help smoothen things out
+- http://think-like-a-git.net/ - Git really isn't made for human beings. Think Like (a) Git is a guide for the perplexed that should help smoothen things out.
 - https://pinboard.in/u:rough/t:git/
 - http://www.integralist.co.uk/posts/git-tips/
 - A visual Git reference http://marklodato.github.io/visual-git-guide/index-en.html

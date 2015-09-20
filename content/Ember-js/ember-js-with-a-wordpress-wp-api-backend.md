@@ -41,3 +41,33 @@ The endpoint for tags is here: http://pfadfinderei.com/wp-json/taxonomies/post_t
 ## Supporting IE9
 
 Be careful that your adapter's host property matches the full URL of your API. So if your API doesn't have www, don't include it. This tricked me up for some hours.
+
+## Custom post types
+
+If you add show_in_rest=true as one of your arguments that gets passed to register_post_type() you will be able to retrieve custom post type data.
+
+Example:
+
+```php
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+
+    $labels = array(
+        'name' => __( 'Data' ),
+        'singular_name' => __( 'item' )
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+	'has_archive' => true,
+        'show_in_rest' => true
+    );
+    register_post_type( 'data', $args );
+}
+```
+
+Then you can use an endpoint like this: http://www.example.com/wp-json/wp/v2/data/
+
+## WPML support
+
+https://wordpress.org/support/topic/wpml-support-20

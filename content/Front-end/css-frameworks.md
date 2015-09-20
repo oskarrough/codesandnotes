@@ -16,6 +16,6 @@ Here are some CSS frameworks that are actually worth using.
 
 - [SUIT](https://github.com/necolas/suit) - HTML/CSS framework for creating loosely coupled UI components
 - [inuitcss](http://inuitcss.com/) - a powerful, scalable, Sass-based, BEM, OOCSS framework.
-- [Pure](http://purecss.io/) - a well written low-level CSS framework by the guys at Yahoo.
+- [Pure](http://purecss.io/) - a well written low-level CSS framework by the people at Yahoo.
 - [Bootstrap](http://getbootstrap.com/) - sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
 - [Foundation](http://foundation.zurb.com/) - the most advanced responsive front-end framework in the world.

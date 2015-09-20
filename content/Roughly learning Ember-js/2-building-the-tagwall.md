@@ -23,7 +23,7 @@ I see two properties and an action in our component:
 - An input field to write a new message (`newMessage` string)
 - A button to send it (`sendMessage` action)
 
-> For the purpose of this guide, we'll keep the component as indenpendent and lean as we can, leaving core Ember concepts as routes and models for chapter three. Bear with me.
+For the purpose of this guide, we'll keep the component as indenpendent and lean as we can, leaving core Ember concepts as routes and models for chapter three. Bear with me.
 
 ## Creating the component
 

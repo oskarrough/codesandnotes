@@ -4,12 +4,11 @@ title: "Object-orientated JavaScript"
 
 You'd be wise to invest some time learning the basics of object orientated programming (OOP). Here are some tips to get started and how to make use of it.
 
-	Object-oriented programming is intended to promote greater flexibility and maintainability in programming… By virtue of its strong emphasis on modularity, object oriented code is intended to be simpler to develop and easier to understand later on…
-
-	Object-oriented programming may be seen as the design of software using a collection of cooperating objects, as opposed to a traditional view in which a program may be seen as a collection of functions…
-
+> Object-oriented programming is intended to promote greater flexibility and maintainability in programming… By virtue of its strong emphasis on modularity, object oriented code is intended to be simpler to develop and easier to understand later on…
 
 First I'd recommend you read [Object-orientated JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript]) on the MDN.
+
+> Object-oriented programming may be seen as the design of software using a collection of cooperating objects, as opposed to a traditional view in which a program may be seen as a collection of functions…
 
 ## The rough explanation
 
