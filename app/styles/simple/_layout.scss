@@ -1,9 +1,17 @@
+:root {
+	@media (min-width: $layout-ml) {
+		font-size: 20px;
+	}
+}
 body {
-	max-width: 70rem;
+	max-width: 60rem;
 	padding: 2rem;
 	@media (min-width: $layout-s) {
 		padding-left: 12.5%;
 	}
+}
+article {
+	margin-bottom: 3rem;
 }
 img {
 	max-width: 100%;

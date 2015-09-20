@@ -9,27 +9,15 @@ h1,h2,h3,h4, strong {
 code {
 	font-size: $small-font-size;
 }
+a {
+	color: $html-color;
+}
 
-// h1 {
-// 	@include ff-triplicate;
-// 	letter-spacing: -0.04em;
-// }
-// h2 {
-// 	@include ff-triplicate;
-// }
-// code {
-// 	@include ff-triplicate;
-// }
-// strong {
-// 	@include questa-sans-light-bold;
-// }
-// em,
-// blockquote {
-// 	@include questa-sans-light-italic;
-// }
-// abbr {
-// 	@include ff-small;
-// }
+article a,
+.List a {
+	// border-bottom: 1px solid $lightgray;
+	@include linkUnderlines($html-background-color, $html-color);
+}
 
 // h1, h2, h3 { margin-top:0; margin-bottom:0; }
 // h1 { font-size:2.61538em; padding:1.3724em 0 (1.3724em / 2); }

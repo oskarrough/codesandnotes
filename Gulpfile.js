@@ -106,7 +106,7 @@ gulp.task('deploy-ftp', function() {
 		src: 'dist/',
 		dest: 'oskarrough@web461.webfaction.com:/home/oskarrough/webapps/codesandnotes_static',
 		ssh: true,
-		recursive: true,
+		recursive: true
 		// deleteAll: true // Careful, this could cause data loss
 	}, function(error, stdout, stderr, cmd) {
 		if (error) {

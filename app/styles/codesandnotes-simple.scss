@@ -6,7 +6,7 @@
 @import 'base/font-et-bembo';
 @import 'simple/config';
 // @import 'base/functions';
-// @import 'base/mixins';
+@import 'base/mixins';
 @import '../node_modules/sanitize.css/sanitize';
 @import 'base/font-classes';
 @import 'components/prism';
@@ -17,8 +17,3 @@
 @import 'simple/sidenotes';
 
 @import 'components/print';
-
-a {
-	color: $html-color;
-	border-bottom: 1px solid $lightgray;
-}
