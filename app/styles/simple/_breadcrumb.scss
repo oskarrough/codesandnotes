@@ -1,0 +1,18 @@
+.Breadcrumb {
+	font-variant: small-caps;
+	padding-left: 0;
+	list-style: none;
+	li {
+		display: inline;
+	}
+	a {
+		border-bottom: 0;
+	}
+	li:not(:last-child) a:after {
+		content: ' →';
+		color: hsl(0, 0%, 45%);
+	}
+	li a { color: hsl(0, 0%, 60%); }
+	li:nth-child(2) a { color: hsl(0, 0%, 40%); }
+	li:nth-child(3) a { color: hsl(0, 0%, 20%); }
+}

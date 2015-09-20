@@ -1,24 +1,26 @@
 // Fallbacks
-$serif: Georgia, serif;
+$serif: Palatino, Georgia, serif;
 $sans-serif: Geneva, Gill Sans, Calibri, sans-serif;
 
 // Sizes
-$small: 13px;
-$base-font-size: 16px;
-$base-line-height: 23px;
+$root-font-size: 16px;
+$root-line-height: 23px;
+$small-font-size: 13px;
 $medium: 24px;
 $large: 30px;
 $larger: 36px;
 $largerer: 50px;
 $largererer: 60px;
-$space: ($base-line-height/$base-font-size) * 1rem;
+$space: ($root-line-height/$root-font-size) * 1rem;
 $space: 1rem;
 // $space: (1.333333333rem); // sass precision wasn't high enough but it is 26/18
 
-$layout-s: 500px;
-$layout-m: 800px;
-$layout-l: 1500px;
-$layout-xl: 1800px;
+// Breakpoints
+$layout-s: 414px;
+$layout-sm: 660px;
+$layout-m: 768px;
+$layout-ml: 1024px;
+$layout-l: 1440px;
 
 // Colors
 $black: hsl(0, 0%, 7%);
@@ -27,10 +29,11 @@ $blue: #000CCA;
 $turquoise: hsl(180, 100%, 30%);
 $green: hsl(150, 60%, 25%);
 $lightgreen: hsl(130, 21%, 90%);
-$sand: hsl(30, 10%, 97%);
+$sand: hsl(30, 8%, 97%);
 $beige: hsl(40, 30%, 96%);
 $light: hsl(180, 9%, 98%);
 $purple:	#1F2DC7;
+$darkgray: hsl(0, 0%, 60%);
 $gray: hsl(0, 0%, 50%);
 $lightgray: hsl(0, 0%, 80%);
 $darkblue: hsl(240, 60%, 28%);
@@ -41,12 +44,3 @@ $darkblue: hsl(240, 60%, 28%);
 $primary-color: $purple;//$green;
 $text-color: $black;
 $bg-color: $sand; // $light, $beige
-
-.Color--black { background-color: $black;}
-.Color--secondary { background-color: $secondary;}
-.Color--green { background-color: $green;}
-.Color--lightgreen { background-color: $lightgreen;}
-.Color--turquoise { background-color: $turquoise;}
-.Color--light { background-color: $light;}
-.Color--beige { background-color: $beige;}
-.Color--sand { background-color: $sand;}

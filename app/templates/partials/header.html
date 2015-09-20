@@ -3,10 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="/styles/codesandnotes.css" />
-	<script src="//use.typekit.net/krs2vbw.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
-</script>
+	<link rel="stylesheet" href="/styles/codesandnotes-simple.css" />
+	<!-- <link rel="stylesheet" href="/styles/tufte.css" /> -->
+	<!-- <script src="//use.typekit.net/krs2vbw.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script> -->
 
 	<title>{{ if eq .URL "/" }}{{ .Site.Title }}{{ else if eq .URL "/post/" }}All Entries &middot; {{ .Site.Title }}{{ else if in .URL "/tags/" }}{{ .Site.Title }}{{ else }}{{ .Title }}&middot; {{ .Site.Title }}{{ end }}</title>
 

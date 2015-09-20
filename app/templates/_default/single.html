@@ -9,23 +9,15 @@
 	</ul>
 
 	<article class="Article">
-		<h1 class="Article-title">
-			<!-- <a href="{{ .Permalink }}"></a> -->
-			{{ .Title }}
-		</h1>
-		<div class="Article-body">
-			<!-- <p>{{ .FuzzyWordCount}} words &rarr; {{ .ReadingTime}}</p> -->
-			{{ .Content }}
-		</div>
+		<h1 class="Article-title">{{ .Title }}</h1>
+		{{ .Content }}
+		<!-- <p><small>{{ .FuzzyWordCount}} words &rarr; ~{{ .ReadingTime}} minute</small></p> -->
 	</article>
 
 	{{ if .PrevInSection }}
-		☞ <a href="{{ .PrevInSection.Permalink }}">
-			{{ .PrevInSection.Title }}
-		</a>
+		<p class="FixedBottom"><a href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title }}</a> <span class="Symbol">☞</span></p>
 	{{ end }}
 </main>
-
 <!-- <aside class="Aside">
 	{{ partial "aside.html" . }}
 </aside> -->

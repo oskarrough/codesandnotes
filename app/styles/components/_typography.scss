@@ -1,11 +1,11 @@
 html {
-	@include ff-body;
-	font-size: $base-font-size;
-	line-height: ($base-line-height / $base-font-size);
-	@media (min-width: $layout-s) { font-size: $base-font-size + 2px; }
-	// @media (min-width: $layout-m) { font-size: $base-font-size + 3px; }
-	@media (min-width: $layout-l) { font-size: $base-font-size + 3px; }
-	@media (min-width: $layout-xl) { font-size: $base-font-size + 4px; }
+	@include questa-sans-light;
+	font-size: $root-font-size;
+	line-height: ($root-line-height / $root-font-size);
+	// @media (min-width: $layout-s) { font-size: $root-font-size + 2px; }
+	// // @media (min-width: $layout-m) { font-size: $root-font-size + 3px; }
+	// @media (min-width: $layout-l) { font-size: $root-font-size + 3px; }
+	// @media (min-width: $layout-xl) { font-size: $root-font-size + 4px; }
 
 	text-rendering: optimizeLegibility;
 	// -webkit-font-smoothing: antialiased;
@@ -36,7 +36,7 @@ h1 {
 	}
 }
 h2 {
-	@extend ff-body-bold;
+	@extend questa-sans-light-bold;
 	font-size: rem($medium);
 	line-height: 1.1;
 	margin-top: $space*1.5;
@@ -54,17 +54,17 @@ h3 {
 	margin-bottom: $space/2;
 }
 strong {
-	@include ff-body-bold;
+	@include questa-sans-light-bold;
 }
 dfn, cite, em, i, blockquote {
-	@include ff-body-italic;
+	@include questa-sans-light-italic;
 }
 blockquote {
 	margin-left: $space;
 	margin-right: $space*2;
 }
 code {
-	@include ff-monospaced;
+	@include ff-triplicate;
 }
 
 /* Inline code */

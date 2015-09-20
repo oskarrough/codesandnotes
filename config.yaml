@@ -15,6 +15,11 @@ layoutdir: 'app/templates'
 publishdir: 'dist'
 #PygmentsCodeFences: "true"
 
+blackfriday:
+  angledQuotes: false
+  fractions: false
+  plainIdAnchors: false
+
 taxonomies:
   tag: 'tags'
 

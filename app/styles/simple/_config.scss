@@ -1,0 +1,35 @@
+$black: hsl(0, 0%, 7%);
+$darkgray: hsl(0, 0%, 30%);
+$gray: hsl(0, 0%, 50%);
+$lightgray: hsl(0, 0%, 70%);
+$sand: hsl(60, 50%, 97%);
+$purple:	#1F2DC7;
+// $blue: #000CCA;
+// $turquoise: hsl(180, 100%, 30%);
+// $green: hsl(150, 60%, 25%);
+// $lightgreen: hsl(130, 21%, 90%);
+// $beige: hsl(40, 30%, 96%);
+// $light: hsl(180, 9%, 98%);
+// $darkblue: hsl(240, 60%, 28%);
+$red: hsl(5, 100%, 50%);
+// $yellow: hsl(54, 66%, 70%);
+// $darkyellow: hsl(66, 25%, 49%);
+$primary-color: $red;
+// $secondary-color: hsl(20, 90%, 50%);
+
+// $root-font-family: palatino; // the default font family is `sans-serif`.
+$root-font-size: 18px;
+$root-line-height: 1.42;
+// $root-text-rendering: ; // the default text-rendering is `optimizeLegibility`.
+$html-background-color: $sand; // the default background color is `#FFFFFF`.
+$html-color: $black; // the default text color is `#000000`.
+$anchor-text-decoration: none; // the default anchor text decoration is `none`.
+// $monospace-font-family: ; // the default font for code elements is `monospace`.
+// $selection-background-color: hsl(150, 60%, 30%); // the default selection background color is `#B3D4FC`.
+// $selection-text-shadow: ; // the default selection shadow is `none`.
+$small-font-size: 80%;
+
+$layout-s: 414px;
+$layout-m: 740px;
+$layout-ml: 1024px;
+$layout-l: 1440px;

@@ -13,8 +13,8 @@
 
 // Vertical rhythm
 @mixin rhythm($size) {
-	font-size: ($size/$base-font-size) * 1rem;
-	line-height: ($base-line-height/$size);
+	font-size: ($size/$root-font-size) * 1rem;
+	line-height: ($root-line-height/$size);
 }
 
 /**
@@ -24,7 +24,7 @@
  * it will make type appear lighter but it also DISABLED subpixel antialiasing which isn't always good
  */
 
-@mixin negative-text() {
+@mixin negative-text {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

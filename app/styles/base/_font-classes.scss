@@ -1,34 +1,29 @@
-@mixin ff-header {
-	font-family: 'eskapade-fraktur', $serif;
-	font-weight: normal;
+// @mixin ff-header {
+// 	font-family: 'eskapade-fraktur', $serif;
+// 	// font-family: 'Triplicate T4c';
+// 	font-weight: normal;
+// }
+// @mixin questa-sans-light {
+// 	font-family: 'questa-sans-light';
+// 	font-weight: normal;
+// }
+// @mixin questa-sans-light-italic {
+// 	font-family: 'questa-sans-light-italic';
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+// @mixin questa-sans-light-bold {
+// 	font-family: 'questa-sans-medium';
+// 	font-weight: normal;
+// }
+@mixin ff-triplicate {
+	font-family: 'Triplicate T4c', 'Source Code Pro', Consolas, monospace;
 }
-
-@mixin ff-body {
-	font-family: 'questa-sans-light';
-	font-weight: normal;
-}
-
-@mixin ff-body-italic {
-	font-family: 'questa-sans-light-italic';
-	font-weight: normal;
-	font-style: normal;
-}
-
-@mixin ff-body-bold {
-	font-family: 'questa-sans-medium';
-	font-weight: normal;
-}
-
 @mixin ff-small {
-	font-size: rem($small);
+	font-size: $small-font-size;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 }
-
-@mixin ff-monospaced {
-	// @include rhythm($small);
-	font-family: 'Triplicate T4c', 'Source Code Pro', Consolas, monospace;
-	font-size: rem($small);
-	font-weight: normal;
-	// line-height: 1.4;
+@mixin ff-sans {
+	font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
 }

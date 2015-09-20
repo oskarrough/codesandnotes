@@ -1,0 +1,82 @@
+// Make space for the sidenotes.
+@media (min-width: $layout-m) {
+	ul,ol,p {
+		max-width: 65%;
+	}
+	.note {
+		float: right;
+		clear: right;
+		margin-right: -65%;
+		width: 55%;
+	}
+}
+
+// This element groups sidenote numbering.
+article {
+	counter-reset: sidenote-counter;
+}
+
+.note {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: $small-font-size;
+	line-height: 1.6;
+	vertical-align: baseline;
+	position: relative;
+}
+.note-number {
+	counter-increment: sidenote-counter;
+}
+.note-number:after,
+.note--side:before {
+	content: counter(sidenote-counter) " ";
+	position: relative;
+	vertical-align: baseline;
+	color: $primary-color;
+}
+.note-number:after {
+	content: counter(sidenote-counter);
+	font-size: $small-font-size;
+	top: -0.4rem;
+	left: 0.1rem;
+}
+.note--side:before {
+	content: counter(sidenote-counter) ". ";
+	position: absolute;
+	/* 100% refers to the computed width of the number, so this transform
+	* shifts the number just outside the left edge of the sidenote box,
+	* with a buffer of 0.25rem, no matter how many digits the number has. */
+	transform: translateX(-100%) translateX(-0.25rem);
+}
+input.note-toggle {
+	display: none;
+}
+label.note-number {
+	display: inline;
+}
+label.note-toggle:not(.note-number) {
+	display: none;
+	color: $primary-color;
+}
+
+@media (max-width: $layout-m) {
+	label.note-toggle:not(.note-number) {
+		display: inline;
+	}
+	.note {
+		display: none;
+	}
+	.note-toggle:checked + .note {
+		display: block;
+		float: left;
+		left: 1rem;
+		clear: both;
+		width: 95%;
+		margin: 1rem 2.5%;
+		vertical-align: baseline;
+		position: relative;
+	}
+	label {
+		cursor: pointer;
+	}
+}
