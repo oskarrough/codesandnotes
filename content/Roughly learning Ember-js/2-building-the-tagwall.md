@@ -21,7 +21,7 @@ I see two properties and an action in our component:
 
 - A list of messages (an array of `message` models)
 - An input field to write a new message (`newMessage` string)
-- A button to send it (`sendMessage` action)
+- A button to send it (`submit` action)
 
 For the purpose of this guide, we'll keep the component as indenpendent and lean as we can, leaving core Ember concepts as routes and models for chapter three. Bear with me.
 
@@ -43,36 +43,41 @@ Following the pod structure we defined earlier, our tagwall will be generated as
 </div>
 
 {{#unless readOnly}}
-  <form class="Tagwall-form" {{action 'sendMessage' newMessage on='submit'}}>
+  <form class="Tagwall-form" {{action 'submit' newMessage on='submit'}}>
     {{input value=newMessage placeholder="Enter message…"}}
     <button type="submit">Send</button>
   </form>
 {{/unless}}
 ```
 
-The `{{#each}}` helper allows us iterate through our array of messages. Inside the each block we have access to the message currently being iterated as the `message` variable. You could also have named the variable `Hummus`, but it doesn't matter. On the `<form>` element we've defined a `sendMessage` action which will be called on `submit`. Note how we take `newMessage` as argument with the action helper. To back this template, we have `app/components/tag-wall/component.js`:
+The `{{#each}}` helper allows us iterate through our array of messages. Inside the each block we have access to the message currently being iterated as the `message` variable. You could also have named the variable `Hummus`, but it doesn't matter. On the `<form>` element we've defined a `submit` *action* which will be called on the standard JavaScript *event* also called `submit`.
+
+Note how we take `newMessage` as argument to the action helper. To back this template, we have `app/components/tag-wall/component.js`:
 
 ```javascript
 import Ember from 'ember';
 
 export default Ember.Component.extend({
   classNames: ['TagWall'],
-  messages: Ember.A([]),
+  newMessage: '',
+  messages: [],
   readOnly: false,
 
   actions: {
-    sendMessage(newMessage) {
-      if (newMessage.length < 1) { return false; }
-
+    submit(newMessage) {
+      if (newMessage.length < 1) {
+         return false;
+      }
       this.get('messages').pushObject({
         text: newMessage
       });
+      this.set('newMessage', '');
     }
   }
 });
 ```
 
-A couple of things to note here. Because we added a `readOnly:false` property we now have a flag to use, in case we want to disable writing new messages for the tagwall. But we don't now, which is why it's set to `false`. For Ember to automatically be able to update our template when new messages are added, we define `messages` as a normal array but wrapped with `Ember.A()`.
+A couple of things to note here. Because we added a `readOnly:false` property we now have a flag to use, in case we want to disable writing new messages for the tagwall. But we don't now, which is why it's set to `false`. For Ember to automatically be able to update our template when new messages are added, we define `messages` as a normal array but wrapped with `Ember.A()`. The last line clears the input for another message.
 
 ## Using the component
 
@@ -92,17 +97,5 @@ ember g route index
 Try writing a couple of messages and you'll see it more or less working. Remember you can use the Ember Inspector to check the component (and everything else in the application):
 
 {{< figure src="/images/tagwall/tagwall3.png" >}}
-
-One small improvement we should make is to clear the `newMessage` after sending a message:
-
-```javascript
-actions: {
-   sendMessage(newMessage) {
-      …snip…
-
-      this.set('newMessage', null);
-   }
-}
-```
 
 There we have it! An extremely lonely, but functioning, tagwall. The data, the messages, live like dayflies in the component. As soon as the browser window is closed, they will be gone, we're not saving them anywhere. For them to persist we need to synchronize and connect a database.

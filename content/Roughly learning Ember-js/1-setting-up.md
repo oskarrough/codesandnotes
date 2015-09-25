@@ -41,7 +41,7 @@ open .
 
 You'll see tons of files and folders but we'll mostly be concerned with the `app` folder. Let's tell Ember-CLI that we want to use a pod structure. Pods allows us to group files by structure rather than type. For instance, instead of templates clamped together in `app/templates/`, they'll be split out under their route such as `app/posts/template.hbs`. Don't worry about it too much, it'll make sense soon. If you want, see more on the [pod structure](http://www.Ember-CLI.com/user-guide/#using-pods).
 
-To use pods, edit the hidden `.Ember-CLI` file to:
+To use pods, edit the hidden `.ember-cli` file to:
 
 ```
 {
@@ -65,17 +65,17 @@ Now it's time to create a new application route (which also generates a new appl
 ember g route application
 ```
 
-Ember-CLI is now helping us create `app/application/route.js` and `app/application/template.hbs`. Change some text in `app/application/template.hbs` to test:
-
-```handlebars
-<h1>Rough Tagwall</h1>
-{{outlet}}
-```
-
-The `{{outlet}}` in the [application template](http://guides.emberjs.com/v1.13.0/templates/the-application-template/) is where Ember will render our templates. To see your site, Ember-CLI can start a server which will automatically build and refresh the browser every time you change a file. Very practical, try it out:
+Ember-CLI is now helping us create `app/application/route.js` and `app/application/template.hbs`. In the [application template](http://guides.emberjs.com/v1.13.0/templates/the-application-template/) you'll find an `{{outlet}}` which is where Ember renders our templates. To see your site, Ember-CLI can start a local server which will automatically refresh the browser every time you change a file. Very practical, try it out:
 
 ```bash
 ember serve
+```
+
+Let's edit the application template to test it out:
+
+```hbs
+<h1>Rough Tagwall</h1>
+{{outlet}}
 ```
 
 Open up your browser on [http://localhost:4200](http://localhost:4200) and rejoice! It'll look something like this:
@@ -84,20 +84,25 @@ Open up your browser on [http://localhost:4200](http://localhost:4200) and rejoi
 
 ## Building and deploying
 
-To publish our project online we can deploy it using [Surge.sh](http://surge.sh/). A brilliant (free!) service for deploying static sites, exactly like ours. Stop the Ember-CLI server using `ctrl+c` in the Terminal, then build the project:
+The last part of setting up is deploying the project with [Surge.sh](http://surge.sh/). A brilliant (free!) service for deploying static sites, exactly like ours. Stop the Ember-CLI server using `ctrl+c` in the Terminal, then build the project:
 
 ```bash
 ember build --environment=production
 ```
 
-We specify a *production* [environment](http://www.Ember-CLI.com/user-guide/#Environments) which will make sure everything is minified. When it's done your project will be available in the `dist` folder. Check it out, this is what you should put online. You should avoid changing anything in the `dist` folder yourself. Now install and deploy using surge:
+Note, here we specify a *production* [environment](http://www.Ember-CLI.com/user-guide/#Environments). This is what will minify all our files and prepare everything for deployment. When it's done your project will be available in the `dist` folder. Check it out. This is what you should put online. You should never change anything in the `dist` folder yourself. If you haven't already installed Surge, it's one command away:
 
 ```bash
 npm install --global surge
+```
+
+Now deploy using surge:
+
+```bash
 mv dist/index.html dist/200.html
 surge dist
 ```
 
-Note that we rename `index.html` to `200.html` for [client-side routing](http://surge.sh/help/adding-a-200-page-for-client-side-routing). Without it, the server wouldn't know that we want a URL as `example.com/some/ember/route` to be handled by `example.com/index.html` — and not the `some/ember/route` folder.
+If it's your first time using Surge you'll need to supply a username as well to make sure no one else can overwrite your project. Note that we also rename `index.html` to `200.html` for [client-side routing](http://surge.sh/help/adding-a-200-page-for-client-side-routing). Without it, the server wouldn't know that we want a URL as `example.com/some/ember/route` to be handled by `example.com/index.html` — and not go to the `some/ember/route` folder.
 
 <!-- [2]({{< relref "2-building-the-tagwall.md" >}}) -->

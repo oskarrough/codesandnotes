@@ -20,7 +20,7 @@ Models are the objects that represent your data. You define what kind of data yo
 ember g model message text:string created:date
 ```
 
-For the `created` we can set a default value so we don't have to save a date every time. Like this:
+For the `created` we can set a default value so we don't have to save a date every time. Edit `app/message/model.js`
 
 ```javascript
 import DS from 'ember-data';
@@ -63,29 +63,23 @@ If you refresh the browser now, you'll see an error in the console as it tries t
 
 Components are supposed to be dumb. The tagwall isn't supposed to know anything about our models, how we store, create or save our data. See more about [sending actions from components to your application](http://guides.emberjs.com/v1.13.0/components/sending-actions-from-components-to-your-application/). Now our tagwall is it's messages from the route's model, good! But it's still changing the data by creating new messages directly in the component, bad!
 
-Instead the component should notify the application through an action to create a new message. This is data down, actions up. I know it took me some time to understand so allow me to repeat: we are going to split creating a new message in two parts:
+Instead the component should notify the application through an action to create a new message. This is data down, actions up. I know it took me some time to understand so allow me to repeat: Currently our component has a single action called `submit` which saves a new message. Components shouldn't change data. Instead we are going to change the `submit` action on the component to check that we never save an empty message and afterwards sending the actions up. This allows us to catch the action on the route. called `saveMessage`.
 
-1. submit (in the component)
-2. saveMessage (in the route)
+`submit` does a little check to make sure we never save an empty message. If there is a message, we send the action upwards for the route to catch. Note how no data is changed at component level. `saveMessage` on the route is in charge of creating and saving the message.
 
-The difference is important: `submit` does a little check to make sure we don't save an empty message — no data is changed — and `saveMessage` is in charge of creating and saving the message. Let's do it.
-
-Change the `submit` action in the component:
+Add the `sendAction` at the end of the `submit` action in the component:
 
 ```javascript
 actions: {
   submit(text) {
-    if (text.length < 1) { return false; }
+    if (text.length < 1) {
+      return false;
+    }
+    this.set('newMessage', '');
     this.sendAction('onSubmit', text);
   }
 }
 ```
-
-Let me walk you and myself through it again:
-
-1. HTML `submit` --> `submit` (component)
-2. `submit` --> `onSubmit` (template)
-3. `onSubmit` --> `saveMessage` (route)
 
 So when `sendMessage` is called in our component, it checks whether there is a text to send, and if so, it'll send the action up using the name `onSubmit`. Note how we pass `text` as argument. On the component itself you tell it which parent actions should handle the it. Here we define `saveMessage`.
 
@@ -104,7 +98,7 @@ export default Ember.Route.extend({
   …snip…
   actions: {
     saveMessage(text) {
-      let message = this.store.createRecord('message', {
+      const message = this.store.createRecord('message', {
         text: text
       });
       message.save();
@@ -141,7 +135,9 @@ firebase: 'https://your-firebase.firebaseio.com/',
 …snip…
 ```
 
-Alright, notice how a `app/application/adapter.js` was created for us by Emberfire? With Ember Data the adapter tell how to communicate with the backend and it'll hopefully *just work*. If you try to send a message now, 'saveMessage' calls `.save()` on the model, which will tell ember-data to sends a request to the server (through emberfire>firebase) to save it.
+Alright, notice how a `app/application/adapter.js` was created for us by Emberfire? With Ember Data the adapter tell how to communicate with the backend and it'll hopefully *just work*.
+
+Open the server again using `ember serve` and try to send a message. 'saveMessage' will call `.save()` on the model, which will tell ember-data to sends a request to the server through emberfire and finally landing in Firebase.
 
 So, there we have it! If you create some messages and refresh, the messages will now properly save and sync to our new remote database. Better believe it! If you open Firebase it'll look something like this:
 
