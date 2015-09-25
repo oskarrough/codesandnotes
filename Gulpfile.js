@@ -2,19 +2,22 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var exec = require('child_process').exec;
 var autoprefixer = require('autoprefixer-core');
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
-var compression = require('compression');
+var browserSync = require('browser-sync').create();
 var rsync = require('rsyncwrapper').rsync;
+var del = require('del');
+
+gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 // Builds all content
 gulp.task('hugo', function (cb) {
 	return exec('hugo --verbose=true', function (err, stdout, stderr) {
-		console.log(stdout); // Hugo output
-		console.log(stderr); // Debugging feedback
+		console.log(stdout);
+		console.log(stderr);
 		cb(err);
 	});
 });
+
+// gulp.task('hugo', $.shell.task(['hugo']));
 
 // Sass, sourcemaps and autoprefixer
 gulp.task('styles', function () {
@@ -23,15 +26,15 @@ gulp.task('styles', function () {
 		.pipe($.sass({
 			outputStyle: 'expanded',
 			precision: 10,
-			includePaths: ['.'],
+			includePaths: ['.']
 		}).on('error', $.sass.logError))
 		.pipe($.postcss([
-			autoprefixer({ browsers: ['last 2 version', 'android 4', 'ios 7', 'ie 10']})
+			autoprefixer({browsers: ['last 2 version', 'android 4', 'ios 7', 'ie 10']})
 		]))
 		.pipe($.sourcemaps.write('.'))
 		.pipe(gulp.dest('.tmp/styles'))
 		.pipe($.filter('**/*.css'))
-		.pipe(reload({ stream: true }));
+		.pipe(browserSync.stream());
 });
 
 // Babel and sourcemaps
@@ -39,23 +42,18 @@ gulp.task('scripts', function () {
 	return gulp.src('app/scripts/**/*.js')
 		.pipe($.sourcemaps.init())
 		.pipe($.babel())
-		// .pipe($.concat('main.js'))
+		// .pipe($.concat('codesandnotes.js'))
 		.pipe($.sourcemaps.write('.'))
-		.pipe(gulp.dest('.tmp/scripts/'));
+		.pipe(gulp.dest('.tmp/scripts/'))
+		.pipe(browserSync.stream({once: true}));
 });
 
-gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
-
-// starts a server for development
+// Development server
 gulp.task('serve', ['hugo', 'styles', 'scripts'], function () {
-
-	// server, livereload + gzip
-	browserSync({
+	browserSync.init({
 		notify: false,
-		server: {
-			baseDir: ['.tmp', 'app', 'static', 'dist'], // 'dist' and 'static' are needed because hugo builds all content here
-			middleware: compression()
-		}
+		// 'dist' and 'static' are needed because hugo builds all content here
+		server: {baseDir: ['.tmp', 'app', 'static', 'dist']}
 	});
 
 	// watch for changes
@@ -64,54 +62,53 @@ gulp.task('serve', ['hugo', 'styles', 'scripts'], function () {
 	// 	'app/scripts/**/*.js',
 	// 	'app/images/**/*',
 	// 	'.tmp/fonts/**/*'
-	// ]).on('change', reload);
+	// ]).on('change', browserSync.reload);
 
 	// watch for changes and run tasks
 	gulp.watch(['content/**/*.md', 'app/templates/**/*.html'], ['hugo']);
-	gulp.watch('app/styles/**/*', ['styles']); // 'styles' does reload
-	gulp.watch('app/scripts/**/*.js', ['scripts', reload]);
+	gulp.watch('app/styles/**/*', ['styles']);
+	gulp.watch('app/scripts/**/*.js', ['scripts']);
 });
 
 // shortcut for serve
 gulp.task('s', ['serve']);
 
-// 1. first clean
-gulp.task('default', ['clean'], function () {
+// First cleans, then starts the building sequence
+gulp.task('build', ['clean'], function () {
 	gulp.start('build-assets');
 });
 
-// 2. then build assets
-gulp.task('build-assets', ['hugo', 'styles', 'scripts'], function() {
+// Build assets
+gulp.task('build-assets', ['hugo', 'styles', 'scripts'], function () {
 	gulp.start('minify');
 });
 
-// 3. then move them (called by minify)
-gulp.task('build-move', function() {
+// Copies all assets after they are built
+gulp.task('copy-assets', function () {
 	return gulp.src('.tmp/**/*')
 		.pipe(gulp.dest('dist'))
-		.pipe($.size({ title: 'build', gzip: true }));
+		.pipe($.size({itle: 'build', gzip: true}));
 });
 
 // 4. then minify
-gulp.task('minify', ['build-move'], function() {
-  return gulp.src(['dist/styles/*.css', 'dist/scripts/*.js'], { base: 'dist' })
-    .pipe($.if('*.js', $.uglify()))
-    .pipe($.if('*.css', $.minifyCss({ compatibility: '*' })))
-    .pipe(gulp.dest('dist'));
+gulp.task('minify', ['copy-assets'], function () {
+	return gulp.src(['dist/styles/*.css', 'dist/scripts/*.js'], {base: 'dist'})
+		.pipe($.if('*.js', $.uglify()))
+		.pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
+		.pipe(gulp.dest('dist'));
 });
 
 // Upload dist to dev
-gulp.task('deploy-ftp', function() {
+gulp.task('deploy', function () {
 	rsync({
 		src: 'dist/',
 		dest: 'oskarrough@web461.webfaction.com:/home/oskarrough/webapps/codesandnotes_static',
 		ssh: true,
 		recursive: true
-		// deleteAll: true // Careful, this could cause data loss
-	}, function(error, stdout, stderr, cmd) {
+	}, function (error) {
 		if (error) {
 			console.log(error.message);
-		} else { // success
+		} else {
 			console.log('Successfully deployed to codesandnotes.com');
 		}
 	});
@@ -119,7 +116,7 @@ gulp.task('deploy-ftp', function() {
 
 // Deploys whatever is in `dist` to dev domain
 // (as specified in app/static/CNAME)
-gulp.task('deploy', function (cb) {
+gulp.task('deploy-dev', function (cb) {
 	exec('surge dist', function (err, stdout, stderr) {
 		console.log(stdout);
 		console.log(stderr);
