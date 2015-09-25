@@ -1,12 +1,17 @@
+:root {
+	font-size: $root-font-size;
+
+	@media (min-width: $layout-m) {
+		font-size: $root-font-size + 1px;
+	}
+	@media (min-width: $layout-ml) {
+		font-size: $root-font-size + 2px;
+	}
+}
+
 html {
 	@include questa-sans-light;
-	font-size: $root-font-size;
 	line-height: ($root-line-height / $root-font-size);
-	// @media (min-width: $layout-s) { font-size: $root-font-size + 2px; }
-	// // @media (min-width: $layout-m) { font-size: $root-font-size + 3px; }
-	// @media (min-width: $layout-l) { font-size: $root-font-size + 3px; }
-	// @media (min-width: $layout-xl) { font-size: $root-font-size + 4px; }
-
 	text-rendering: optimizeLegibility;
 	// -webkit-font-smoothing: antialiased;
 }

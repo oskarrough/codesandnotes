@@ -3,35 +3,31 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="/styles/codesandnotes-simple.css" />
+	<link rel="stylesheet" href="/styles/codesandnotes.css" />
 	<!-- <link rel="stylesheet" href="/styles/tufte.css" /> -->
-	<!-- <script src="//use.typekit.net/krs2vbw.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script> -->
-
+	<script src="//use.typekit.net/krs2vbw.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 	<title>{{ if eq .URL "/" }}{{ .Site.Title }}{{ else if eq .URL "/post/" }}All Entries &middot; {{ .Site.Title }}{{ else if in .URL "/tags/" }}{{ .Site.Title }}{{ else }}{{ .Title }}&middot; {{ .Site.Title }}{{ end }}</title>
-
 	<meta name="author" content="{{ .Site.Author.name }}">
 	<meta property="og:site_name" content="{{ .Site.Title }}">
 	<meta name="description" content="Codes and notes is a reference to web development that you can trust">
-
 	{{ if eq .URL "/" }}
-		<!-- Index -->
-		<meta property="og:type" content="website">
-		{{ range first 1 .Data.Pages }}
-			<meta property="og:title" content="{{ .Site.Title }}">
-		{{ end }}
-	{{ else if eq .URL "/post/" }}
-		<!-- Post -->
-		<meta property="og:title" content="All Entries &middot; {{ .Site.Title }}">
-	{{ else if in .URL "/tags/" }}
-		<!-- Category -->
-		<meta property="og:title" content="{{ .Site.Title }}">
-	{{ else }}
-		<!-- Article -->
-		<meta property="og:type" content="article">
-		<meta property="og:title" content="{{ .Title }} &middot; {{ .Site.Title }}">
+	<!-- Index -->
+	<meta property="og:type" content="website">
+	{{ range first 1 .Data.Pages }}
+	<meta property="og:title" content="{{ .Site.Title }}">
 	{{ end }}
-
+	{{ else if eq .URL "/post/" }}
+	<!-- Post -->
+	<meta property="og:title" content="All Entries &middot; {{ .Site.Title }}">
+	{{ else if in .URL "/tags/" }}
+	<!-- Category -->
+	<meta property="og:title" content="{{ .Site.Title }}">
+	{{ else }}
+	<!-- Article -->
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="{{ .Title }} &middot; {{ .Site.Title }}">
+	{{ end }}
 	<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 </head>
 <body>
