@@ -20,7 +20,7 @@ git pull --rebase
 
 1. Temporarily stash your local commits,
 2. Pull the online commits,
-3. Apply the stashed commits on top of what just got pulled
+3. Apply the stashed commits on top of what got pulled
 4. if there are any merges to be made, do them, add them and continue the rebase. Like so:
 5. git add .
 6. git rebase --continue

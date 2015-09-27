@@ -18,7 +18,7 @@ Read that again, please.
 
 ## Different box models with box-sizing
 
-The box-sizing property has three different values to choose from: `content-box`, `padding-box` and `border-box`. We just learned that the default `content-box` adds padding and borders to the width and height. The `padding-box` value also includes padding to the total size, but not border. The `border-box` value includes both padding and border to the size.
+The box-sizing property has three different values to choose from: `content-box`, `padding-box` and `border-box`. We've now learned that the default `content-box` adds padding and borders to the width and height. The `padding-box` value also includes padding to the total size, but not border. The `border-box` value includes both padding and border to the size.
 
 ## An example
 

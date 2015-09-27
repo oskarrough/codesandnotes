@@ -59,7 +59,7 @@ npm install --global trash
 trash app/templates/application.hbs app/templates/components app/controllers
 ```
 
-Now it's time to create a new application route (which also generates a new application template for us). Make sure you in the `tagwall` folder that was just created and run:
+Now it's time to create a new application route (which also generates a new application template for us). Make sure you in the `tagwall` folder that was created and run:
 
 ```bash
 ember g route application

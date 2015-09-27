@@ -17,7 +17,7 @@ We need to know what features are supported where. Our code needs to know. And w
 
 Before Modernizr and such precise tools arrived, browser sniffing was used all the time. The concept is to test for a user-agent header which the browser sends, revealing which browser it is. So you knew that if it was Internet Explorer 8, this and that feature isn’t supported.
 
-This very quickly turned into a mess. The problem with this method is that you don't write your code based to the feature but to a specific browser version. Browsers get updated while versions numbers and features fly around. It's just not a very reliable method.
+This very quickly turned into a mess. The problem with this method is that you don't write your code based to the feature but to a specific browser version. Browsers get updated while versions numbers and features fly around. It is not a very reliable method.
 
 Instead, you could and probably should use feature detection!
 
@@ -32,7 +32,7 @@ Instead, you could and probably should use feature detection!
 **Task:** Rotate an element 90 degrees
 **First solution:** `css div { transform: rotate(90); }`
 
-This will do the job, but what if the browser does not support CSS transforms? In most cases, nothing happens as the browser happily just ignores the rule but now we when the element isn't rotated the design doesn't work anymore. We need a fallback. Enter Modernizr.
+This will do the job, but what if the browser does not support CSS transforms? In most cases, nothing happens as the browser happily ignores the rule but now we when the element isn't rotated the design doesn't work anymore. We need a fallback. Enter Modernizr.
 
 We need Modernizr to feature detect for CSS transforms so we can progressively enhance our element. This means that we will first write the code for a design without transforms and enhance with code for a design with transforms using the class modernizr automatically adds to the <html> element.
 

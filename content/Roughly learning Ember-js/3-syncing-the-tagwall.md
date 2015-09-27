@@ -37,7 +37,7 @@ As Emberfire automatically adds IDs to models, we shouldn't define any ourselves
 
 ## Data down!
 
-Right now, when a message is sent, we just push a small object (not a *real* model) into our messages array in the component. This is the lo-fi version. What we should do instead is data down. The route is responsible for fetching data and pass it to our component. Since our component is currently in the `index` template, we'll request our model in the `index` route:
+Right now, when a message is sent, we push a small object (not a *real* model) into our messages array in the component. This is the lo-fi version. What we should do instead is data down. The route is responsible for fetching data and pass it to our component. Since our component is currently in the `index` template, we'll request our model in the `index` route:
 
 ```javascript
 import Ember from 'ember';

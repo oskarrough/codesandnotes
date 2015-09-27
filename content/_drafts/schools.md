@@ -7,7 +7,7 @@ List of interesting schools.
 
 ### CIID labs
 
-Copenhagen Institute of Interaction Design (or just CIID) is a really interesting school. Their [CIID labs](http://labs.ciid.dk/) is filled with good stuff.
+Copenhagen Institute of Interaction Design (or CIID) is a really interesting school. Their [CIID labs](http://labs.ciid.dk/) is filled with good stuff.
 
 - georgia tech
 - delft

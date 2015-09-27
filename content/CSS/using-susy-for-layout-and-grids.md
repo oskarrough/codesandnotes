@@ -4,7 +4,7 @@ date: 2012-06-11
 tags: ["Front-end","Grids","Layouts","susy"]
 ---
 
-Although it might sometimes feel like it, creating a two-column layout with CSS is not magic. It's mathematics. [Susy](http://susy.oddbird.net/) is a Sass library that helps you create CSS layouts by abstracting all the math through powerful mixins and Sass functions. There are no enforced classes or anything like it, you just pass some configuration to Susy and it will know what to do.
+Although it might sometimes feel like it, creating a two-column layout with CSS is not magic. It's mathematics. [Susy](http://susy.oddbird.net/) is a Sass library that helps you create CSS layouts by abstracting all the math through powerful mixins and Sass functions. There are no enforced classes or anything like it, you pass some configuration to Susy and it will know what to do.
 
 Friends don't let friends rely on magic.
 

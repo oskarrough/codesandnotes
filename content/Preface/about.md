@@ -10,6 +10,6 @@ All titles are set with the beautiful [Eskapade Fraktur](http://www.type-togethe
 
 ## Setup
 
-I code and note (pun intended) everything on a Mac with Sublime Text. Articles are written and formatted with Markdown and HTML, designed locally in a Gulp setup (similar to my [rough boilerplate](https://github.com/oskarrough/rough)) combined with [Hugo](http://gohugo.io/) to build what you're currently looking at. Previously I've been through Jekyll, Middleman, Wordpress and Drupal but Gulp and Hugo is just perfect for me. It's fast and efficient, the code is not too abstract. Everything is open source at [github.com/oskarrough/codesandnotes](https://github.com/oskarrough/codesandnotes) - please have a look and let me know if you have any questions.
+I code and note (pun intended) everything on a Mac with Sublime Text. Articles are written and formatted with Markdown and HTML, designed locally in a Gulp setup (similar to my [rough boilerplate](https://github.com/oskarrough/rough)) combined with [Hugo](http://gohugo.io/) to build what you're currently looking at. Previously I've been through Jekyll, Middleman, Wordpress and Drupal but Gulp and Hugo is perfect for me. It's fast and efficient, the code is not too abstract. Everything is open source at [github.com/oskarrough/codesandnotes](https://github.com/oskarrough/codesandnotes) - please have a look and let me know if you have any questions.
 
 Continue to [Aspects](/aspects/).

@@ -80,7 +80,7 @@ _Themes_ are the styling of the chrome in Sublime Text.
 Although there's a huge difference in quality in the available schemes and themes, in the end it's really a user preference.
 Some prefer light, some dark, some like rainbows and some like shadows.
 
-That being said, some schemes are just better since they clarify the different parts of your code, functions from objects to vars and so on. Others just look pretty.
+That being said, some schemes are better since they clarify the different parts of your code, functions from objects to vars and so on. Others just look pretty.
 
 Choose a good one. My favorite is included by default in Sublime and is called 'Eiffel'. I prefer text black on white and I like my comments to be very visible.
 

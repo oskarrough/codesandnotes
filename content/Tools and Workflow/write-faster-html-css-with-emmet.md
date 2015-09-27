@@ -7,7 +7,7 @@ Here's how you can reach productivity Nirvana. Through [Emmet's]("http://emmet.i
 
 Emmet is a plugin for your text editor that allows to write your HTML and CSS much faster with css-like abbreviations and fuzzy search expansion. Check the playable demo [Emmet documentation]("http://docs.emmet.io/").
 
-[Hayaku](http://hayakubundle.com/) does nearly the same, only just for CSS. If you prefer Hayaku's way of dealing with CSS, you can have them running side by side without problems. I only use Emmet.
+[Hayaku](http://hayakubundle.com/) does nearly the same, only for CSS. If you prefer Hayaku's way of dealing with CSS, you can have them running side by side without problems. I only use Emmet.
 
 And I really recommend devoting an hour's time to learn it. It will pay you back in gazillions. Promise. Most recommended.
 

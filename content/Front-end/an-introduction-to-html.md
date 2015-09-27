@@ -19,7 +19,7 @@ Here the computer has no way of recognizing what type of content it is. It's jus
 
 Now it makes sense, not only to computers, but to you and the people using your site because browsers will apply default styling and functionality to the elements, now that it recognizes them.
 
-You'll get a lot of things for free just by using the right elements. HTML is HTML elements and elements consist of tags, attributes and content. To avoid any further confusion, please read <a href="http://www.456bereastreet.com/archive/200508/html_tags_vs_elements_vs_attributes/">HTML tags vs. elements vs. attributes</a> now. Yes, now. I'll wait.
+You'll get a lot of things for free by using the right elements. HTML is HTML elements and elements consist of tags, attributes and content. To avoid any further confusion, please read <a href="http://www.456bereastreet.com/archive/200508/html_tags_vs_elements_vs_attributes/">HTML tags vs. elements vs. attributes</a> now. Yes, now. I'll wait.
 
 HTML provide semantics for your content and provide hooks for further enhancing your content with <a href="/css">CSS</a> and <a href="/javascript">JavaScript</a>, or styling and functionality, respectively.
 

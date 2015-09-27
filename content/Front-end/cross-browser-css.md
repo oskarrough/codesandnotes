@@ -9,7 +9,7 @@ tags: ["Cross-browser","CSS","Front-end"]
 {{<figure src="/images/illustrations/phobia-11-lg.jpg">}}
 -->
 
-Cross-browser issues are differences in the browser's interpretation of the spec. What? Yes. Browsers understand the same things differently. Just like humans. And that's what makes life (and developing) fun! Well, life sure but development not so much.
+Cross-browser issues are differences in the browser's interpretation of the spec. What? Yes. Browsers understand the same things differently. Like humans. And that's what makes life (and developing) fun! Well, life sure but development not so much.
 
 Writing robust cross-browser front-ends used to be hell because of the huge differences in between browsers. Time went on and even Internet Explorer 6 died. One of the biggest problems was getting users on the newest browser. Only nerds enjoy updating software. Let there be automatic updating and most of our problems were solved.
 
@@ -27,7 +27,7 @@ In your own browser you have access to all your developer tools so you can inspe
 
 [Virtual Machines](http://www.macworld.com/article/1164817/the_best_way_to_run_windows_on_your_mac.html) to the rescue. Such a machine allows you to for instance install Windows or Ubuntu on your Mac.
 
-[Browserstack](http://www.browserstack.com/) is a service that does all the virtual machines for you and make them accessible in the browser. Just log in, choose your system and off you go. It's fast and it works. Very much worth it. Use it.
+[Browserstack](http://www.browserstack.com/) is a service that does all the virtual machines for you and make them accessible in the browser. Log in, choose your system and off you go. It's fast and it works. Very much worth it. Use it.
 
 [Can I Use](http://caniuse.com/) is a great way to quickly check browsers (and which specific versions) support the feature you are using, CSS transforms for instance.
 

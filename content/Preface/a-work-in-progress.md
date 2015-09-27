@@ -12,6 +12,6 @@ If you have any ideas, please [let me know](mailto:oskar@rough.dk).
 
 I care how you consume which is why I want to publish everything here as a website, as a pdf, as an e-book and of course a hardcover book. Eventually. I take the advice of another good friend: _"ship early, ship often"_.
 
-All this just to say that Codes & Notes is a work in progress and it will stay like that. It's best like that.
+All this to say that Codes & Notes is a work in progress and it will stay like that. It's best like that.
 
 ![Completely unrelated illustration except for the fact that they were also working. The opium workers](/images/illustrations/c-1850-sherwill-4-dryi67904.jpg)
