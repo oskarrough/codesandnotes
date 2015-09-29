@@ -1,20 +1,13 @@
 * {
 	box-sizing: border-box;
 }
-
-html {
-	background-color: $bg-color;
-	color: $black;
-}
 body {
 	margin: 0;
 	overflow-y: scroll;
-	padding-top: 1px; // hack
 }
-
 .CodesAndNotes {
 	box-sizing: content-box;
-	max-width: 37rem; // less than 31 will break the manchet
+	max-width: 40rem; // less than 31 will break the manchet
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: $space*2;
@@ -22,10 +15,6 @@ body {
 		padding-left: $space;
 		padding-right: $space;
 	}
-	// @media (min-width: $layout-m) {
-	// 	padding-left: $space*3;
-	// 	padding-right: $space*3;
-	// }
 }
 .Header {
 	padding-left: 0;
@@ -43,9 +32,10 @@ body {
 }
 
 .Main {
-	background-color: $bg-color;
 	padding-top: $space*2;
 	padding-bottom: $space*2;
+	position: relative;
+	z-index: 1;
 }
 article {
 	padding-bottom: $space;

@@ -41,7 +41,9 @@ textarea {
 	min-height: 5.444444444rem;
 	max-width: 100%;
 }
-
+code {
+	font-size: $small-font-size;
+}
 ul {
 	line-height: 1.6;
 	padding-left: 0;
@@ -52,32 +54,15 @@ ul {
 	}
 }
 
-hr {
-	border: 0;
-}
-.Ornament {
-	background-image: url(/images/ornaments/ornament.png);
-	background-repeat: no-repeat;
-	background-position: center left;
-	height: 58px;
-	height: 90px;
-}
-.Ornament--white {
-	background-image: url(/images/ornaments/ornament-white.png);
-}
-
-
 // Links
 a {
-	color: $turquoise;
-	// color: $blue;
-	text-decoration: underline;
+	color: $anchor-color;
 }
 a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: $turquoise;
+		color: $anchor-color;
 		color: $secondary;
 	}
 }
@@ -91,3 +76,18 @@ a {
 // a[class^="tag-link-"] {
 // 	content: '#';
 // }
+
+// Dividers
+hr {
+	border: 0;
+}
+.Ornament {
+	background-image: url(/images/ornaments/ornament.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+	height: 58px;
+	height: 90px;
+}
+.Ornament--white {
+	background-image: url(/images/ornaments/ornament-white.png);
+}

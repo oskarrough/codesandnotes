@@ -1,19 +1,16 @@
-// Fallbacks
-$serif: Palatino, Georgia, serif;
-$sans-serif: Geneva, Gill Sans, Calibri, sans-serif;
-
-// Sizes
+// Config
+$root-font-family: $sans-serif;
 $root-font-size: 16px;
-$root-line-height: 23px;
+$root-line-height: 1.5;
 $small-font-size: 13px;
-$medium: 24px;
+$medium: 20px;
 $large: 30px;
 $larger: 36px;
 $largerer: 50px;
 $largererer: 60px;
 $space: ($root-line-height/$root-font-size) * 1rem;
 $space: 1rem;
-// $space: (1.333333333rem); // sass precision wasn't high enough but it is 26/18
+$anchor-text-decoration: underline; // because we use our own border
 
 // Breakpoints
 $layout-s: 414px;
@@ -41,6 +38,7 @@ $darkblue: hsl(240, 60%, 28%);
 // $yellow: hsl(54, 66%, 70%);
 // $darkyellow: hsl(66, 25%, 49%);
 
-$primary-color: $purple;//$green;
-$text-color: $black;
-$bg-color: $sand; // $light, $beige
+$primary-color: $purple;
+$anchor-color: $turquoise;
+$html-background-color: $sand;
+$html-color: $black;

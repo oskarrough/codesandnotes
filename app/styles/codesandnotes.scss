@@ -6,13 +6,13 @@
 // fonts
 @import 'base/font-et-bembo';
 @import 'base/font-questa';
+@import 'base/font-classes';
 
 // base
 @import 'base/functions';
 @import 'base/config';
 @import 'base/mixins';
-// @import '../node_modules/sanitize.css/sanitize';
-@import 'base/font-classes';
+@import '../node_modules/sanitize.css/sanitize';
 @import 'components/prism';
 
 // components
@@ -23,6 +23,5 @@
 @import 'components/header';
 @import 'components/nav';
 @import 'components/loader';
-// @import 'components/styleguide';
-
 @import 'components/print';
+// @import 'components/styleguide';
