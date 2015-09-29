@@ -5,7 +5,7 @@ draft: true
 
 List of interesting schools.
 
-### CIID labs
+## CIID labs
 
 Copenhagen Institute of Interaction Design (or CIID) is a really interesting school. Their [CIID labs](http://labs.ciid.dk/) is filled with good stuff.
 

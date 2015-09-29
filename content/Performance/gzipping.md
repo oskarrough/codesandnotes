@@ -42,7 +42,7 @@ AddOutputFilterByType DEFLATE application/atom+xml \
 </IfModule>
 ```
 
-### References
+### Resources
 
 - http://www.feedthebot.com/pagespeed/enable-compression.html
 - http://checkgzipcompression.com/

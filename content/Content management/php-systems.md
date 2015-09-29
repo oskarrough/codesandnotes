@@ -23,7 +23,7 @@ A really little PHP-based content management system. [Perch](http://grabaperch.c
 
 You can store and manage all your content with files (could be text, markdown, html) and Statamic adds variables and templating with PHP and Yaml. I wonder when (if) you hit the wall and wish you went with a more powerful system.
 
-### References
+### Resources
 
 - [statamic.com/blog](http://statamic.com/blog)
 - [tips.statamic.com](http://tips.statamic.com/)

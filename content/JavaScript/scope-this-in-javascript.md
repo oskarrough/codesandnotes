@@ -69,7 +69,7 @@ alert(new Seven().a);
 alert(new Seven().b);
 ```
 
-### References
+### Resources
 
 - http://flippinawesome.org/2013/12/09/demystifying-this-in-javascript/
 - http://www.2ality.com/2011/02/javascript-variable-scoping-and-its.html

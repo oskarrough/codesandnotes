@@ -19,7 +19,7 @@ main { padding}
 aside { posa l0 tar fll}
 p
 
-### References
+### Resources
 
 topic + p:first-line{
 	//https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings

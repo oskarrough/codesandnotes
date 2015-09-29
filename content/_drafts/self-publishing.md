@@ -52,10 +52,10 @@ Notes on self publishing. Will make it useful for others later.
 3. EPUB
 4. MOBI
 
-### Semantic naming approach
+## Semantic naming approach
 
 name files, order with 1. etc. Store it in YAML frontmatter.
 
-### TOC based approach
+## TOC based approach
 
 toc.json or toc.md

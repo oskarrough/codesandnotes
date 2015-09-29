@@ -14,7 +14,7 @@ TODO: When to use jQuery? When not?
 
 https://github.com/jquery/jquery/issues?utf8=%E2%9C%93&q=is%3Aissue+milestone%3A3.0.0+
 
-### References
+### Resources
 
 - http://learn.jquery.com/
 - http://plugins.jquery.com/

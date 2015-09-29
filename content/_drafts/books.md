@@ -3,7 +3,7 @@ title: Books
 draft: true
 ---
 
-### The Nature of Code
+## The Nature of Code
 
 A DRM-free book about the nature of code by Daniel Shiffman. The entire book is in a github repo and the publishing process is rather interesting.
 
@@ -11,7 +11,7 @@ A DRM-free book about the nature of code by Daniel Shiffman. The entire book is 
 
 [The Nature of Code](http://natureofcode.com/).
 
-### The Best of edw519
+## The Best of edw519
 
 A book on programming, full on gems, from a Hacker News top contributor.
 

@@ -36,6 +36,6 @@ Assuming we've defined the `dir` attribute on the HTML element we can target sty
 
 Also, remember that browser defaults change as the direction does which means some things are already taken care for for you.
 
-### References
+### Resources
 
 - [24 ways: Going Both Ways](http://24ways.org/2011/going-both-ways)

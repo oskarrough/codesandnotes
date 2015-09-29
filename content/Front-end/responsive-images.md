@@ -17,6 +17,21 @@ When your front end is asking for different (sizes of) images you also need to h
 
 This is a server side solution that will return a responsive image based on the variables passed through as a part of the query string.
 
+srcset - Images to use in different situations (e.g. high-resolution displays, small monitors, etc)
+sizes - Image sizes between breakpoints
+
+1. Define a list of image resources
+2. Specify their physical dimensions i.e. width in pixels
+
+## Fixed width image with support for DPR
+
+```markup
+    <img src="cat-500px.jpg" width="500px" alt=""
+         srcset="cat-750px.jpg 1.5x, cat-1000px.jpg 2x">
+```
+
+Here, the same image will be displayed in a 1920px wide screen and a 320px screen. Only DPR will change the image.
+
 ## Resources
 
 - http://dev.opera.com/articles/responsive-images/
@@ -26,20 +41,3 @@ This is a server side solution that will return a responsive image based on the 
 - http://blog.cloudfour.com/sensible-jumps-in-responsive-image-file-sizes
 - https://github.com/scottjehl/picturefill
 - https://github.com/BBC-News/Imager.js
-
-
-srcset - Images to use in different situations (e.g. high-resolution displays, small monitors, etc)
-sizes - Image sizes between breakpoints
-
-1. Define a list of image resources
-2. Specify their physical dimensions i.e. width in pixels
-
-
-## Fixed width image with support for DPR
-
-<img src="cat-500px.jpg"
-	srcset="cat-750px.jpg 1.5x, cat-1000px.jpg 2x"
-	width="500px" alt="">
-
-Here, the same image will be displayed in a 1920px wide screen and a 320px screen. Only DPR will change the image.
-

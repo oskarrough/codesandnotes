@@ -17,7 +17,7 @@ TODO
 
 ## Enter Grunticon
 
-### References
+### Resources
 
 - http://filamentgroup.com/lab/bulletproof_icon_fonts/
 - http://developer.yahoo.com/performance/rules.html#opt_sprites

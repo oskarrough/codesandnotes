@@ -144,7 +144,7 @@ Feature detection vs browser detection
 
 Enter [Modernizr](http://www.modernizr.com).
 
-### References
+### Resources
 
 - https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills
 - http://html5please.us

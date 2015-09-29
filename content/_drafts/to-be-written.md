@@ -27,7 +27,7 @@ Topics I'd like to write about.
 - Practice web development by transforming a design comp into an HTML and CSS web page
 - Reviewing and refactoring
 
-### References
+### Resources
 
 - http://hackdesign.org/lesson/9/
 - http://webplatformtools.org/

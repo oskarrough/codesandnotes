@@ -12,7 +12,7 @@ CSS is magic. Browsers twist and turn the rules to their own liking, ending up w
 
 Here I want to include a list/collection of css tricks that are useful and perhaps at first not intuitive.
 
-### Ideas for later articles
+## Ideas for later articles
 
 - intrinsic ratio
 - vertical centering

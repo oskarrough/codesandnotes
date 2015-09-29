@@ -30,7 +30,7 @@ Jekyll and Octopress as well as Middleman are all written in Ruby.
 - https://github.com/dpree/jekyll-navigation
 - http://stackoverflow.com/questions/9053066/sorted-navigation-menu-with-jekyll-and-liquid
 
-### References
+### Resources
 
 - http://modernstatic.com/
 - http://go-static-my-friend.fredjean.net/ (Middleman)
