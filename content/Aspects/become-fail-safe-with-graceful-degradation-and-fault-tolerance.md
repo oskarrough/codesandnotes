@@ -4,11 +4,11 @@ date: 2014-01-11
 weight: 51
 ---
 
-It all works until it doesn't. No matter how experienced we become there is always a chance that it will break, burn and destroy.
+It all works until it doesn't. No matter how experienced we become there is always a chance that it will break, burn and destroy. Graceful degradation or fault tolerance (different names, same thing) is an aspect that will allow your products to fail without burning down.
 
-Graceful degradation or fault tolerance (different names, same thing) is an aspect that will allow your products to fail without burning down.
+It is the flipside to [progressive enhancement]({{< relref "progressive-enhancement.md" >}}).
 
-It is the flipside to [progressive enhancement]({{< relref "progressive-enhancement.md" >}}). Please see these references:
+## References
 
 - [Fault tolerance (wikipedia.org)](http://en.wikipedia.org/wiki/Fault_tolerance)
 - [Understanding progressive enhancement (alistapart.com)](http://alistapart.com/article/understandingprogressiveenhancement)

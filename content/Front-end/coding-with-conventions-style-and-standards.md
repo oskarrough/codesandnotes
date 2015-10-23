@@ -4,10 +4,9 @@ draft: false
 ---
 
 Introduction. Code conventions?
+
 - best practices regarding spans, naming, code hierarchy.
 - Conform to the conventions (stay consistent)
-
-http://javascript.crockford.com/code.html
 
 - [Why coding style matters](http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/)
 - [Github CSS styleguide](https://github.com/styleguide/css)
@@ -15,6 +14,7 @@ http://javascript.crockford.com/code.html
 - [Idiomatic.css](https://github.com/necolas/idiomatic-css)
 - [Idomatic.js](https://github.com/rwldrn/idiomatic.js/)
 - [Google HTML/CSS Style Guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
+- http://javascript.crockford.com/code.html
 
 ## Indentwars
 
