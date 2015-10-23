@@ -4,9 +4,11 @@ tags: ['ember-js']
 weight: 1
 ---
 
-We'll be using a bunch of tools namely: [Ember.js](http://emberjs.com/), [Ember-CLI](http://www.Ember-CLI.com/), [Firebase](https://www.firebase.com/) and [Emberfire](https://github.com/firebase/emberfire). To put the project online later we'll use [Surge](http://surge.sh/). All are free tools and Firebase has premium features if you want to go pro. For hobby projects, they have a very generous plan which we'll accept.
+We'll be using a bunch of tools namely: [Ember.js](http://emberjs.com/), [Ember-CLI](http://www.Ember-CLI.com/), [Firebase](https://www.firebase.com/) and [Emberfire](https://github.com/firebase/emberfire). To put the project online later we'll use [Surge](http://surge.sh/). All are free tools and Surge and Firebase have premium features if you want to be pro. 
 
-To install all of these, you need to have node.js and git running on your system. When it works, you can open Terminal.app and do `node --version` or `git --version` to make sure it works.
+For hobby projects however, we don’t need to as they have both have very generous plans, which we'll gladly accept.
+
+To install all of these, you need to have node.js and git running on your system. Unfortunately I don’t have the space to explain that here.
 
 > I've only been able to test on OS X but the ideas of the guide should hopefully pierce through platforms
 
@@ -59,13 +61,15 @@ npm install --global trash
 trash app/templates/application.hbs app/templates/components app/controllers
 ```
 
-Now it's time to create a new application route (which also generates a new application template for us). Make sure you in the `tagwall` folder that was created and run:
+Now it's time to create a new application route and template. Here it is important to know that Ember CLI automatically knows about files inside `app/`. When using pods you place files by their route, if they have one. So to create a new “application” route and template we have to create a `route.js` and `template.hbs` in `app/application`.
+
+But since we have Ember-CLI, we don’t need to do it ourselves. Make sure you are inside the `tagwall` folder that was created and run:
 
 ```bash
 ember g route application
 ```
 
-Ember-CLI is now helping us create `app/application/route.js` and `app/application/template.hbs`. In the [application template](http://guides.emberjs.com/v1.13.0/templates/the-application-template/) you'll find an `{{outlet}}` which is where Ember renders our templates. To see your site, Ember-CLI can start a local server which will automatically refresh the browser every time you change a file. Very practical, try it out:
+ In the [application template](http://guides.emberjs.com/v1.13.0/templates/the-application-template/) you'll find an `{{outlet}}` which is where Ember renders our templates. To see your site, Ember-CLI can start a local server which will automatically refresh the browser every time you change a file. Very practical, try it out:
 
 ```bash
 ember serve

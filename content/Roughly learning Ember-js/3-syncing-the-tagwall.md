@@ -33,11 +33,11 @@ export default DS.Model.extend({
 });
 ```
 
-As Emberfire automatically adds IDs to models, we shouldn't define any ourselves. Now you can do `this.store.createRecord('message', { text: 'Funky emotions' })` to create a new message using Ember Data. But components should not be used to create new records. That's what routes are for.
+As Emberfire automatically adds IDs to models, we shouldn't define any ourselves. You can read more about creating and deleting models on http://guides.emberjs.com/v2.1.0/models/creating-updating-and-deleting-records/. But components should not be used to create new records. That's what routes are for.
 
 ## Data down!
 
-Right now, when a message is sent, we push a small object (not a *real* model) into our messages array in the component. This is the lo-fi version. What we should do instead is data down. The route is responsible for fetching data and pass it to our component. Since our component is currently in the `index` template, we'll request our model in the `index` route:
+Right now, when a message is sent, we push a plain JavaScript Object (and not a *real* Ember.js model class) into our messages array in the component. This is the lo-fi version. What we should do instead is pass the data down from a parent route. The route is responsible for fetching data and passing it to our component. Since our component is currently in the `app/index/template.hbs` we will request our models there:
 
 ```javascript
 import Ember from 'ember';
@@ -49,7 +49,7 @@ export default Ember.Route.extend({
 });
 ```
 
-This is Ember Data's way of sending an ajax request to the server to fetch all message. The route's model hook returns a model which is automatically set on the controller, which in turn makes it available in our templates. This works even if you don't define a controller, because Ember autogenerates it for you.
+This is Ember Data's way of sending an ajax request to the server to fetch all messages. More on that here: http://guides.emberjs.com/v2.1.0/routing/specifying-a-routes-model/. The route's model hook returns a model which is automatically set on the controller, which in turn makes it available in our templates. This works even if you don't define a controller, because Ember autogenerates it for you.
 
 We also need to pass the model to our component:
 
@@ -81,15 +81,15 @@ actions: {
 }
 ```
 
-So when `sendMessage` is called in our component, it checks whether there is a text to send, and if so, it'll send the action up using the name `onSubmit`. Note how we pass `text` as argument. On the component itself you tell it which parent actions should handle the it. Here we define `saveMessage`.
+So when `sendMessage` is called in our component, it checks whether there is a text to send, and if so, it will send the action up using the name `onSubmit` with the text as value for the action. The idea is that component only cares about the interaction. This is why we send the action up, so a parent can handle whatever logic is specific to our app. In this case, when the component fires ‘onSubmit’ we want to handle it with a `saveMessage` action on our index route.
 
-Index template:
+Which actions triggers which action is defined directly on the component, like this on `app/routes/index/template.hbs`:
 
 ```handlebars
 {{tag-wall messages=model onSubmit="saveMessage"}}
 ```
 
-Index route:
+And on `app/index/route.js` the action itself:
 
 ```javascript
 import Ember from 'ember';
@@ -107,50 +107,44 @@ export default Ember.Route.extend({
 });
 ```
 
-Great! We've now completely seperated our concerns. The tagwall component can send a message but it's up to the application itself what it wants to do with it.
+Great! We have now completely seperated our concerns. The tagwall component can submit a message but it's up to the application itself to take further action.
 
-But there's still an error because we're trying to save a model without having a backend to save it to.
+But there's still an error because we're trying to save a model without having defined where Ember Data should actually save it.
 
 ## Emberfire
 
-Let's sync our site with a Firebase database. We need to create a Firebase database and configure the Emberfire adapter, which bridges ember-data and Firebase almost seamlessly. That's the beauty of this combo, we almost don't need to change *any* code to change the backend.
+Let's sync our site with a Firebase database. We should create a Firebase database and configure the Emberfire adapter, which bridges Ember Data and Firebase. That's the beauty of this combo, we almost don't need to change *any* code to change the backend.
 
-Head to [firebase.com](https://www.firebase.com), sign up and create a new 'app' as they call it. You'll get a url like `my-name.firebase.io`. Remember it.
+Head to firebase.com, sign up and create a new ‘app’, as they call it. You'll get an URL like `my-name.firebase.io`. Remember it.
 
-Now install the emberfire addon. Press `ctrl+c` in Terminal to stop the server and run:
+Now install the emberfire addon. Press `ctrl+c` in Terminal to stop the server we started earlier and run:
 
 ```bash
 ember install emberfire
 ```
 
-This will install the Emberfire module from NPM and add Firebase to our `bower.json` as well. As it will tell you, you need to configure your Firebase URL in `config/environment.js` as well as the [content security policy](http://www.ember-cli.com/user-guide/#content-security-policy) (CSP):
+This will install the Emberfire module from NPM and add any dependencies to our `bower.json` as well. This way you don’t have to include ANY script yourself. The addon automatically hooks into ember-cli.
 
-```javascript
-…snip…
-contentSecurityPolicy: {
-  'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com",
-  'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com"
-},
-firebase: 'https://your-firebase.firebaseio.com/',
-…snip…
-```
+As it will tell you, you need to configure your Firebase URL in `config/environment.js`. Do that now, please.
 
-Alright, notice how a `app/application/adapter.js` was created for us by Emberfire? With Ember Data the adapter tell how to communicate with the backend and it'll hopefully *just work*.
+Alright, notice how a `app/adapters/application.js` was created for us by Emberfire? In Ember Data, the adapter is what tells us how to communicate with the backend. Meaning when you use the `save()` method on a model, it knows where to send all the ajax requests because of the Emberfire adapter.
 
-Open the server again using `ember serve` and try to send a message. 'saveMessage' will call `.save()` on the model, which will tell ember-data to sends a request to the server through emberfire and finally landing in Firebase.
+Open the server again using `ember serve` and try to send a message in our app. Just as before, ’saveMessage' will call `.save()` on the model, which will tell ember-data to sends a request to the server through emberfire and finally land in Firebase.
 
-So, there we have it! If you create some messages and refresh, the messages will now properly save and sync to our new remote database. Better believe it! If you open Firebase it'll look something like this:
+So, there we have it! If you create some messages and refresh, the messages should now properly save and sync to our new remote database. Better believe it! If you open your Firebase account it'll look something like this:
 
 {{< figure src="/images/tagwall/tagwall4.png" >}}
 
 ## Next steps
 
-OK, that's it. The tagwall is working, you can send messages and they are stored in Firebase. If you deploy it (see chapter 1 again) or go to my example at <a href="http://tagwall.surge.sh">tagwall.surge.sh</a> we can have a chat!
+The tagwall is now working, you can send messages and they are stored in Firebase. If not, please let me know at oskar@rough.dk and I’ll try to help.
+
+If you deploy it (see chapter 1 again) or go to my example at <a href="http://tagwall.surge.sh">tagwall.surge.sh</a> we can have a chat through a version of the tagwall you just completed.
 
 Here are some improvements we could do:
 
-- Add styling in `app/styles/app.css` (or if you're sassy, you can install [ember-cli-sass](https://github.com/aexmachina/ember-cli-sass)) — it would make sense to make the input fixed at the bottom and limit the height of our messages with `overflow-y: scroll;`
 - Make it possible to edit/delete messages
 - Introduce a `user` model so people can identify themselves
+- Add styling in `app/styles/app.css` (or with [ember-cli-sass](https://github.com/aexmachina/ember-cli-sass)) if you prefer — it could make sense to style the input fixed at the bottom and limit the height of our messages with `overflow-y: scroll;`
 
-And what if visitors could create new tagwalls themselves and decide the URL? This way people could create their own (secret) tagwalls to share. This is what we'll do in the upcoming chapter four.
+And what if visitors could create new tagwalls themselves and decide the URL? This way people could create their own (secret) tagwalls to share. We could even use it as a mini-forum for this article. This is what we'll do in the upcoming chapter four.

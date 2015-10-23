@@ -17,11 +17,7 @@ Our design brief is simple. Behold, a high fidelity design mockup of our tagwall
 ╚═════════════════════════════╝
 ```
 
-I see two properties and an action in our component:
-
-- A list of messages (an array of `message` models)
-- An input field to write a new message (`newMessage` string)
-- A button to send it (`submit` action)
+We can break it down into a list of messages (an array), an input field where we can write a new message (a string) and a button to submit the form (submit action).
 
 For the purpose of this guide, we'll keep the component as indenpendent and lean as we can, leaving core Ember concepts as routes and models for chapter three. Bear with me.
 
