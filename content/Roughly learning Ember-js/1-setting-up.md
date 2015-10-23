@@ -52,7 +52,7 @@ To use pods, edit the hidden `.ember-cli` file to:
 
 ## Making sure it runs
 
-Because our app was generated without pods, we'll delete `app/templates/application.hbs` and the `app/controllers` folder. While it's easy enough to delete files using the Finder in OS X, we'll now do it using [trash](https://github.com/sindresorhus/trash), which is a lot safer than using `rm`.
+Because our app was generated without pods, we'll delete `app/templates/application.hbs` and the `app/controllers` folder. While it's easy enough to delete files using the Finder in OS X, we'll now do it using [trash-cli](https://github.com/sindresorhus/trash-cli), which is a lot safer than using `rm`.
 
 ```bash
 npm install --global trash
