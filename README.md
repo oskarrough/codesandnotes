@@ -34,7 +34,7 @@ Then go:
 
 1. `git clone git@github.com:oskarrough/codesandnotes.git`
 2. `cd codesandnotes`
-3. `npm install; gulp clean`
+3. `npm install`
 
 ## Running the server
 
@@ -44,3 +44,9 @@ Then go:
 
 1. `gulp`
 2. `gulp deploy`
+
+## Using Alex
+
+Check for offensive spelling using Alex:
+
+`alex content/**/*.md`
