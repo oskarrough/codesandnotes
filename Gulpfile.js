@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var exec = require('child_process').exec;
-var autoprefixer = require('autoprefixer-core');
+var autoprefixer = require('autoprefixer');
 var browserSync = require('browser-sync').create();
 var rsync = require('rsyncwrapper').rsync;
 var del = require('del');
@@ -28,9 +28,7 @@ gulp.task('styles', function () {
 			precision: 10,
 			includePaths: ['.']
 		}).on('error', $.sass.logError))
-		.pipe($.postcss([
-			autoprefixer({browsers: ['last 2 version', 'android 4', 'ios 7', 'ie 10']})
-		]))
+		.pipe($.postcss([autoprefixer({browsers: ['last 2 versions']})]))
 		.pipe($.sourcemaps.write('.'))
 		.pipe(gulp.dest('.tmp/styles'))
 		.pipe($.filter('**/*.css'))

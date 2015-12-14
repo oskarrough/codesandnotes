@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "alex": "^1.4.0",
-    "autoprefixer-core": "^6.0.1",
+    "autoprefixer": "^6.1.2",
     "browser-sync": "^2.9.6",
     "del": "^2.0.2",
     "gulp": "^3.9.0",
@@ -29,6 +29,6 @@
     "rsyncwrapper": "^0.4.3"
   },
   "dependencies": {
-    "sanitize.css": "^2.0.0"
+    "sanitize.css": "^3.0.0"
   }
 }
