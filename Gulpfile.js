@@ -5,8 +5,11 @@ var autoprefixer = require('autoprefixer');
 var browserSync = require('browser-sync').create();
 var rsync = require('rsyncwrapper').rsync;
 var del = require('del');
+var runSequence = require('run-sequence');
 
-gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
+gulp.task('clean', function () {
+	return del.bind(['.tmp', 'dist']);
+});
 
 // Builds all content
 gulp.task('hugo', function (cb) {
@@ -72,13 +75,13 @@ gulp.task('serve', ['hugo', 'styles', 'scripts'], function () {
 gulp.task('s', ['serve']);
 
 // First cleans, then starts the building sequence
-gulp.task('build', ['clean'], function () {
-	gulp.start('build-assets');
-});
-
-// Build assets
-gulp.task('build-assets', ['hugo', 'styles', 'scripts'], function () {
-	gulp.start('minify');
+gulp.task('build', function (callback) {
+	runSequence(
+		'clean',
+		['hugo', 'styles', 'scripts'],
+		'copy-assets',
+		'minify',
+		callback);
 });
 
 // Copies all assets after they are built
@@ -89,7 +92,7 @@ gulp.task('copy-assets', function () {
 });
 
 // 4. then minify
-gulp.task('minify', ['copy-assets'], function () {
+gulp.task('minify', function () {
 	return gulp.src(['dist/styles/*.css', 'dist/scripts/*.js'], {base: 'dist'})
 		.pipe($.if('*.js', $.uglify()))
 		.pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
