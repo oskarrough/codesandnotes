@@ -1,9 +1,12 @@
 :root {
-	@media (min-width: $layout-m) {
+	@media (min-width: $layout-sm) {
 		font-size: $root-font-size + 1px;
 	}
-	@media (min-width: $layout-ml) {
-		font-size: $root-font-size + 2px;
+	@media (min-width: $layout-m) {
+		// font-size: $root-font-size + 2px;
+	}
+	@media (min-width: $layout-l) {
+		// font-size: $root-font-size + 33px;
 	}
 }
 
@@ -26,12 +29,13 @@ h1 {
 	}
 }
 h2 {
-	margin-top: $space*2;
-	font-family: 'questa-sans-medium';
-	font-weight: normal;
-	font-size: rem($medium);
+	@include questa-sans-bold;
+	@include ff-header;
+	font-size: rem($ml);
 }
 h3 {
+	@include questa-sans-bold;
+
 	// @include rhythm($medium);
 	font-size: 1rem;
 	@media (min-width: $layout-m) {
@@ -41,7 +45,7 @@ h3 {
 	margin-bottom: $space/2;
 }
 strong {
-	@include questa-sans-light-bold;
+	@include questa-sans-light;
 }
 dfn, cite, em, i, blockquote {
 	@include questa-sans-light-italic;

@@ -1,15 +1,19 @@
 // Config
 $root-font-family: $sans-serif;
-$root-font-size: 16px;
 $root-line-height: 1.5;
+
 $small-font-size: 13px;
+$root-font-size: 17px;
 $medium: 20px;
+$ml: 24px;
 $large: 30px;
 $larger: 36px;
 $largerer: 50px;
 $largererer: 60px;
+
 $space: ($root-line-height/$root-font-size) * 1rem;
 $space: 1rem;
+
 $anchor-text-decoration: underline; // because we use our own border
 
 // Breakpoints
@@ -19,26 +23,28 @@ $layout-m: 768px;
 $layout-ml: 1024px;
 $layout-l: 1440px;
 
-// Colors
-$black: hsl(0, 0%, 7%);
-$secondary: hsl(20, 90%, 50%);
-$blue: #000CCA;
-$turquoise: hsl(180, 100%, 30%);
-$green: hsl(150, 60%, 25%);
-$lightgreen: hsl(130, 21%, 90%);
+// Grays
 $sand: hsl(30, 8%, 97%);
 $beige: hsl(40, 30%, 96%);
 $light: hsl(180, 9%, 98%);
-$purple:	#1F2DC7;
-$darkgray: hsl(0, 0%, 60%);
+$lightgray: hsl(0, 0%, 75%);
 $gray: hsl(0, 0%, 50%);
-$lightgray: hsl(0, 0%, 80%);
+$darkgray: hsl(0, 0%, 60%);
+$black: hsl(0, 0%, 7%);
+
+$blue: #000CCA;
+$turquoise: hsl(180, 70%, 25%);
+$green: hsl(150, 60%, 25%);
+$lightgreen: hsl(130, 21%, 90%);
+$purple:	#1F2DC7;
+$red: hsl(20, 90%, 50%);
 $darkblue: hsl(240, 60%, 28%);
 // $red: hsl(6, 66%, 50%);
 // $yellow: hsl(54, 66%, 70%);
 // $darkyellow: hsl(66, 25%, 49%);
 
 $primary-color: $purple;
+$secondary-color: $red;
 $anchor-color: $turquoise;
 $html-background-color: $sand;
 $html-color: $black;

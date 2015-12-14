@@ -1,3 +1,7 @@
+:root {
+	@include questa-sans-light;
+}
+
 // Set a default margin between elements
 blockquote,
 ol,
@@ -45,9 +49,12 @@ code {
 	font-size: $small-font-size;
 }
 ul {
-	line-height: 1.6;
+	margin-bottom: 0.75rem;
 	padding-left: 0;
 	list-style: none;
+	li {
+			margin-bottom: 0.25rem;
+	}
 	li:before {
 		// content: '↝ ';
 		content: '— ';
@@ -57,13 +64,14 @@ ul {
 // Links
 a {
 	color: $anchor-color;
+	// color: $black;
 }
 a {
 	&:hover,
 	&:focus,
 	&:active {
 		color: $anchor-color;
-		color: $secondary;
+		color: $secondary-color;
 	}
 }
 

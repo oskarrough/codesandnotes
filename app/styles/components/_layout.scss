@@ -11,6 +11,8 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: $space*2;
+	padding-left: 3px;
+	padding-right: 3px;
 	@media (min-width: $layout-s) {
 		padding-left: $space;
 		padding-right: $space;
@@ -30,12 +32,14 @@ body {
 	padding-left: 0;
 	padding-right: 0;
 }
-
 .Main {
 	padding-top: $space*2;
 	padding-bottom: $space*2;
 	position: relative;
 	z-index: 1;
+}
+.Main--bg {
+	background-color: $html-background-color;
 }
 article {
 	padding-bottom: $space;
