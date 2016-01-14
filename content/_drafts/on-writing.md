@@ -46,29 +46,29 @@ Avoid unnecessary jargon, trendy constructions, vagueness, and buzzwords. Omit n
 
 ## Quotes
 
-Writing a book is a horrible, exhausting struggle, like a long bout with some painful illness. One would never undertake such a thing if one were not driven on by some demon whom one can neither resist nor understand. — George Orwell
+> Writing a book is a horrible, exhausting struggle, like a long bout with some painful illness. One would never undertake such a thing if one were not driven on by some demon whom one can neither resist nor understand. — George Orwell
 
-You can’t wait for inspiration. You have to go after it with a club. ― Jack London
+> You can’t wait for inspiration. You have to go after it with a club. ― Jack London
 
-The first draft of everything is shit. -Ernest Hemingway
+> The first draft of everything is shit. -Ernest Hemingway
 
-If you don’t have time to read, you don’t have the time — or the tools — to write. Simple as that. – Stephen King
+> If you don’t have time to read, you don’t have the time — or the tools — to write. Simple as that. – Stephen King
 
-Remember: when people tell you something’s wrong or doesn’t work for them, they are almost always right. When they tell you exactly what they think is wrong and how to fix it, they are almost always wrong. – Neil Gaiman
+> Remember: when people tell you something’s wrong or doesn’t work for them, they are almost always right. When they tell you exactly what they think is wrong and how to fix it, they are almost always wrong. – Neil Gaiman
 
-Write drunk, edit sober. – Ernest Hemingway
+> Write drunk, edit sober. – Ernest Hemingway
 
-Get through a draft as quickly as possible. Hard to know the shape of the thing until you have a draft. Literally, when I wrote the last page of my first draft of Lincoln’s Melancholy I thought, Oh, shit, now I get the shape of this. But I had wasted years, literally years, writing and re-writing the first third to first half. The old writer’s rule applies: Have the courage to write badly. – Joshua Wolf Shenk
+> Get through a draft as quickly as possible. Hard to know the shape of the thing until you have a draft. Literally, when I wrote the last page of my first draft of Lincoln’s Melancholy I thought, Oh, shit, now I get the shape of this. But I had wasted years, literally years, writing and re-writing the first third to first half. The old writer’s rule applies: Have the courage to write badly. – Joshua Wolf Shenk
 
-Substitute ‘damn’ every time you’re inclined to write ‘very;’ your editor will delete it and the writing will be just as it should be. – Mark Twain
+> Substitute ‘damn’ every time you’re inclined to write ‘very;’ your editor will delete it and the writing will be just as it should be. – Mark Twain
 
-Start telling the stories that only you can tell, because there’ll always be better writers than you and there’ll always be smarter writers than you. There will always be people who are much better at doing this or doing that — but you are the only you. ― Neil Gaiman
+> Start telling the stories that only you can tell, because there’ll always be better writers than you and there’ll always be smarter writers than you. There will always be people who are much better at doing this or doing that — but you are the only you. ― Neil Gaiman
 
-Consistency is the last refuge of the unimaginative. – Oscar Wilde
+> Consistency is the last refuge of the unimaginative. – Oscar Wilde
 
-Try not to edit while you’re creating your first draft. Creating and editing are two separate processes using different sides of the brain, and if you try doing both at once you’ll lose.
+> Try not to edit while you’re creating your first draft. Creating and editing are two separate processes using different sides of the brain, and if you try doing both at once you’ll lose.
 
-Write daily for 30 minutes minimum! It’s easy to notice the difference in a short time
+> Write daily for 30 minutes minimum! It’s easy to notice the difference in a short time
 
 ### Resources
 

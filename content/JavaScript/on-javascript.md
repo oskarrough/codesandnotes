@@ -38,6 +38,7 @@ To do.
 
 ## Resources
 
+- http://jstherightway.org
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
 - http://www.2ality.com/2013/06/basic-javascript.html
 - [Idiomatic JavaScript (Necolas)](https://github.com/necolas/idiomatic-js)
