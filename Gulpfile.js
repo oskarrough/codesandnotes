@@ -7,8 +7,10 @@ var rsync = require('rsyncwrapper').rsync;
 var del = require('del');
 var runSequence = require('run-sequence');
 
-gulp.task('clean', function () {
-	return del.bind(['.tmp', 'dist']);
+// Deletes the two folders containing compiled output.
+gulp.task('clean', cb => {
+	del(['.tmp', 'dist']);
+	cb();
 });
 
 // Builds all content
