@@ -5,14 +5,22 @@ draft: true
 
 Remember to replace example.com with your own domain in all examples.
 
-First [install sslmate](https://sslmate.com/help/getting_started#install) and run this to buy a certificate:
+First [install sslmate](https://sslmate.com/help/getting_started#install). If you have homebrew on osx:
+
+```
+brew update
+brew install sslmate
+```
+
+If you haven't already got a certificate, buy one:
 
 ```
 sslmate buy example.com
 ```
 
-It will prompt you for this that, follow the instructions.
-Once certified, you'll recieve four files. You can also download them from sslmate.com, if you please.
+It will prompt you for several things, try to follow the instructions.
+
+Once certified, you'll receive four files. You can also download them anytime from sslmate.com.
 
 ```
 example.com.chain.crt
