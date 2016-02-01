@@ -34,9 +34,8 @@ gulp.task('styles', function () {
 			includePaths: ['.']
 		}).on('error', $.sass.logError))
 		.pipe($.postcss([autoprefixer({browsers: ['last 2 versions']})]))
-		.pipe($.sourcemaps.write('.'))
+		.pipe($.sourcemaps.write())
 		.pipe(gulp.dest('.tmp/styles'))
-		.pipe($.filter('**/*.css'))
 		.pipe(browserSync.stream());
 });
 
@@ -105,7 +104,7 @@ gulp.task('minify', function () {
 gulp.task('deploy', function () {
 	rsync({
 		src: 'dist/',
-		dest: 'oskarrough@web461.webfaction.com:/home/oskarrough/webapps/codesandnotes_static',
+		dest: 'oskarrough@wf-139-162-206-154.webfaction.com:/home/oskarrough/webapps/codesandnotes_static',
 		ssh: true,
 		recursive: true
 	}, function (error) {

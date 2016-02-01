@@ -6,6 +6,10 @@
   "engines": {
     "node": ">=0.12.0"
   },
+  "scripts": {
+    "start": "gulp serve",
+    "deploy": "gulp clean; gulp build; gulp deploy"
+  },
   "devDependencies": {
     "alex": "^1.4.0",
     "autoprefixer": "^6.1.2",
