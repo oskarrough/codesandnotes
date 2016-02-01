@@ -1,7 +1,9 @@
 /*!
-	Oskar Rough Mosumgaard (c) 2015
+	Oskar Rough Mosumgaard (c) 2016
 */
 
+// third-party
+@import 'suitcss-base/index.css';
 
 // fonts
 @import 'base/font-et-bembo';
@@ -12,7 +14,6 @@
 @import 'base/functions';
 @import 'base/config';
 @import 'base/mixins';
-@import '../node_modules/sanitize.css/sanitize.scss';
 @import 'components/prism';
 
 // components

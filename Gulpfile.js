@@ -6,19 +6,20 @@ var browserSync = require('browser-sync').create();
 var rsync = require('rsyncwrapper').rsync;
 var del = require('del');
 var runSequence = require('run-sequence');
+var path = require('path');
+const atImport = require('postcss-import');
 
 // Deletes the two folders containing compiled output.
-gulp.task('clean', cb => {
-	del(['.tmp', 'dist']);
-	cb();
+gulp.task('clean', () => {
+	return del(['.tmp', 'dist']);
 });
 
 // Builds all content
-gulp.task('hugo', function (cb) {
+gulp.task('hugo', function (callback) {
 	return exec('hugo --verbose=true', function (err, stdout, stderr) {
 		console.log(stdout);
 		console.log(stderr);
-		cb(err);
+		callback(err);
 	});
 });
 
@@ -31,9 +32,16 @@ gulp.task('styles', function () {
 		.pipe($.sass({
 			outputStyle: 'expanded',
 			precision: 10,
-			includePaths: ['.']
+			includePaths: [
+				'.',
+				path.join(__dirname, '../node_modules'),
+				path.join(__dirname, '../bower_components')
+			]
 		}).on('error', $.sass.logError))
-		.pipe($.postcss([autoprefixer({browsers: ['last 2 versions']})]))
+		.pipe($.postcss([
+			atImport(),
+			autoprefixer({browsers: ['last 2 versions']})
+		]))
 		.pipe($.sourcemaps.write())
 		.pipe(gulp.dest('.tmp/styles'))
 		.pipe(browserSync.stream());
@@ -75,21 +83,35 @@ gulp.task('serve', ['hugo', 'styles', 'scripts'], function () {
 // shortcut for serve
 gulp.task('s', ['serve']);
 
+/**
+ * Starts a server from the `dist` folder, which is
+ * useful for testing `gulp build`.
+ */
+gulp.task('serve:dist', () => {
+	browserSync.init({
+		notify: false,
+		server: {
+			baseDir: ['dist']
+		}
+	});
+});
+
 // First cleans, then starts the building sequence
 gulp.task('build', function (callback) {
 	runSequence(
 		'clean',
-		['hugo', 'styles', 'scripts'],
-		'copy-assets',
-		'minify',
+		// ['hugo', 'styles', 'scripts'],
+		['styles'],
+		'copyAssets',
+		// 'minify',
 		callback);
 });
 
 // Copies all assets after they are built
-gulp.task('copy-assets', function () {
+gulp.task('copyAssets', function () {
 	return gulp.src('.tmp/**/*')
-		.pipe(gulp.dest('dist'))
-		.pipe($.size({itle: 'build', gzip: true}));
+		.pipe(gulp.dest('dist/'))
+		.pipe($.size({title: 'build', gzip: true}));
 });
 
 // 4. then minify
@@ -118,10 +140,10 @@ gulp.task('deploy', function () {
 
 // Deploys whatever is in `dist` to dev domain
 // (as specified in app/static/CNAME)
-gulp.task('deploy-dev', function (cb) {
+gulp.task('deploy-dev', function (callback) {
 	exec('surge dist', function (err, stdout, stderr) {
 		console.log(stdout);
 		console.log(stderr);
-		cb(err);
+		callback(err);
 	});
 });
