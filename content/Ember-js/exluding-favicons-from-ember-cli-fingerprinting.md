@@ -4,13 +4,15 @@ date: 2014-11-16
 tags: ['ember-js']
 ---
 
-If there are files you don't want fingerprinted using ember-cli, like favicons, you can use this inside your Brocfile.js:
+If there are files you don't want fingerprinted using ember-cli, like favicons, you can use this inside your `ember-cli-build.js` (previously called `Brocfile.js`):
 
-    app = new EmberApp({
-        fingerprint: {
-            exclude: ['apple-touch-icon', 'favicon', 'mstile']
-        }
-    });
+```JavaScript
+app = new EmberApp({
+	fingerprint: {
+		exclude: ['apple-touch-icon', 'favicon', 'mstile']
+	}
+});
+```
 
 It will exclude any file matching any part of what you specify. So it'll also match 'android-chrome-96x96.png' for instance.
 
