@@ -2,9 +2,9 @@
 
 This is the repository of the book on web development I’m writing. It contains my drafts as well as finished articles, design ideas, personal notes and a backup of my Wordpress setup.
 
-☞ Please read the [Introduction to Codes & Notes](http://codesandnotes.com/introduction)
+☞ Please read the [Introduction to Codes & Notes](http://codesandnotes.com/preface/introduction/)
 
-## Setup
+## Development setup
 
 Having used Jekyll, Wordpress, Middleman, my own Gulp generator I've finally settled on [Hugo](http://gohugo.io/) + Gulp to build the book. It's a static site generator written in Go. Super fast (really) and very flexible.
 
