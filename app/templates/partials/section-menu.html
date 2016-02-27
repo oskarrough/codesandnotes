@@ -4,13 +4,18 @@
 		{{ $isActive := ($currentNode.IsMenuCurrent "main" .) }}
 		{{ $isActive2 := ($currentNode.HasMenuCurrent "main" .) }}
 
-		<li>
-			<a href="{{.URL}}" class="{{if or $isActive $isActive2 }} is-active{{end}}" title="Jump to {{ .Name }}">
-				{{if or $isActive $isActive2 }}<strong>{{end}}
-					{{ .Name }}
-				{{if or $isActive $isActive2 }}</strong>{{end}}
-			</a>
-		</li>
+
+		{{ if eq .Name "Drafts" }}
+		{{ else }}
+			<li>
+				<a href="{{.URL}}" class="{{if or $isActive $isActive2 }} is-active{{end}}" title="Jump to {{ .Name }}">
+					{{if or $isActive $isActive2 }}<strong>{{end}}
+						{{ .Name }}
+					{{if or $isActive $isActive2 }}</strong>{{end}}
+				</a>
+			</li>
+		{{ end }}
+
 	{{ end }}
 </ol>
 
