@@ -1,9 +1,11 @@
 ---
 title: Ember.js with a Wordpress WP-API backend
-draft: true
+tags: ['ember-js']
 ---
 
-We've tried it all: Typo3, Drupal, CMS Made Simple, Hugo, Kirby, Wordpress with Timber, Perch, Statamic, Jekyll, Middleman, Google Drive, Dropbox, anybox, no box… anything to make it easier for clients to edit their website while minimizing development time, allowing us to focus on the unique, features of the individual projects, making them great. Normally we'd even finish a static, prototype website first, and first then then convert it to a Wordpress theme and make it dynamic. Not effective, it's hard to reuse code across projects and it's not fun.
+**This article is a work in progress but I decided to publish it anyway. After writing it I've started https://github.com/oskarrough/ember-wordpress/, check it out.**
+
+We've tried it all: Typo3, Drupal, CMS Made Simple, Hugo, Kirby, Wordpress with Timber, Perch, Statamic, Jekyll, Middleman, Google Drive, Dropbox, anybox, no box… anything to make it easier for clients to edit their website while minimizing development time. Allowing us to focus on the unique, features of each individual project. Normally we'd even finish a static, prototype website first, and first then then convert it to a Wordpress theme and make it dynamic. Not effective, it's hard to reuse code across projects and it's not fun.
 
 Let me present you a great (and dare I say, fun!) way to build websites with the power of Ember and Wordpress extended with [WP-API](http://wp-api.org/) and [Advanced Custom Fields](http://www.advancedcustomfields.com/) (ACF). We'll write a simple adapter and serializer for Ember Data to make it fit together and you'll be up and running in no time.
 

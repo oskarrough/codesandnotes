@@ -5,9 +5,8 @@ draft: false
 
 Introduction. Code conventions?
 
-- best practices regarding spans, naming, code hierarchy.
+- Best practices regarding spans, naming, code hierarchy.
 - Conform to the conventions (stay consistent)
-
 - [Why coding style matters](http://coding.smashingmagazine.com/2012/10/25/why-coding-style-matters/)
 - [Github CSS styleguide](https://github.com/styleguide/css)
 - [Github Javascript styleguide](https://github.com/styleguide/javascript)
