@@ -29,13 +29,11 @@ h1 {
 	}
 }
 h2 {
-	@include questa-sans-bold;
 	@include ff-header;
 	font-size: rem($ml);
 }
 h3 {
-	@include questa-sans-bold;
-
+	@include questa-sans-medium;
 	// @include rhythm($medium);
 	font-size: 1rem;
 	@media (min-width: $layout-m) {
@@ -45,7 +43,8 @@ h3 {
 	margin-bottom: $space/2;
 }
 strong {
-	@include questa-sans-light;
+	// @include questa-sans-light;
+	@include questa-sans-medium;
 }
 dfn, cite, em, i, blockquote {
 	@include questa-sans-light-italic;

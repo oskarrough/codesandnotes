@@ -52,13 +52,15 @@ ul {
 	margin-bottom: 0.75rem;
 	padding-left: 0;
 	list-style: none;
-	li {
-			margin-bottom: 0.25rem;
-	}
+	line-height: 1.7;
 	li:before {
 		// content: '↝ ';
-		content: '— ';
+		// content: '— ';
+		content: '* ';
 	}
+}
+.List {
+
 }
 
 // Links
@@ -98,4 +100,17 @@ hr {
 }
 .Ornament--white {
 	background-image: url(/images/ornaments/ornament-white.png);
+}
+
+button {
+	font-size: rem(14px);
+	padding: 0.3em 0.6em 0.35em;
+	text-transform: uppercase;
+	border: 1px solid #555;
+	border-radius: 3px;
+	border-bottom-width: 2px;
+	&:hover,
+	&:focus {
+		border-color: #000;
+	}
 }

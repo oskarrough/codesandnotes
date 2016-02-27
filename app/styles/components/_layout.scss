@@ -1,6 +1,6 @@
-* {
-	box-sizing: border-box;
-}
+/**
+ * Layout
+ */
 body {
 	margin: 0;
 	overflow-y: scroll;
@@ -53,7 +53,9 @@ article {
 	clear: both;
 }
 
-// Styleguide
+/**
+ * Styleguide
+ */
 .Color {
 	display: inline-block;
 	width: 7em;
