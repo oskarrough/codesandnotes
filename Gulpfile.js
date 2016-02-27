@@ -1,13 +1,14 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
-var exec = require('child_process').exec;
 var autoprefixer = require('autoprefixer');
+var atImport = require('postcss-import');
 var browserSync = require('browser-sync').create();
-var rsync = require('rsyncwrapper').rsync;
+var critical = require('critical').stream;
 var del = require('del');
-var runSequence = require('run-sequence');
+var exec = require('child_process').exec;
 var path = require('path');
-const atImport = require('postcss-import');
+var runSequence = require('run-sequence');
+var rsync = require('rsyncwrapper');
 
 // Deletes the two folders containing compiled output.
 gulp.task('clean', () => {
@@ -16,21 +17,18 @@ gulp.task('clean', () => {
 
 // Builds all content
 gulp.task('hugo', function (callback) {
-	return exec('hugo --verbose=true', function (err, stdout, stderr) {
+	return exec('hugo', function (err, stdout, stderr) {
 		console.log(stdout);
 		console.log(stderr);
 		callback(err);
 	});
 });
 
-// gulp.task('hugo', $.shell.task(['hugo']));
-
-// Sass, sourcemaps and autoprefixer
+// Sass, sourcemaps, postcss-import and autoprefixer
 gulp.task('styles', function () {
-	gulp.src(['app/styles/*.scss'])
+	return gulp.src(['app/styles/*.scss'])
 		.pipe($.sourcemaps.init())
-		.pipe($.sass({
-			outputStyle: 'expanded',
+		.pipe($.sass.sync({
 			precision: 10,
 			includePaths: [
 				'.',
@@ -40,7 +38,7 @@ gulp.task('styles', function () {
 		}).on('error', $.sass.logError))
 		.pipe($.postcss([
 			atImport(),
-			autoprefixer({browsers: ['last 2 versions']})
+			autoprefixer()
 		]))
 		.pipe($.sourcemaps.write())
 		.pipe(gulp.dest('.tmp/styles'))
@@ -98,27 +96,47 @@ gulp.task('serve:dist', () => {
 
 // First cleans, then starts the building sequence
 gulp.task('build', function (callback) {
-	runSequence(
-		'clean',
-		// ['hugo', 'styles', 'scripts'],
-		['styles'],
-		'copyAssets',
-		// 'minify',
-		callback);
+	runSequence('clean',
+		['hugo', 'styles', 'scripts'],
+		'copy-from-tmp',
+		['minify-styles', 'minify-scripts', 'minify-templates'],
+		'critical'
+	);
 });
 
 // Copies all assets after they are built
-gulp.task('copyAssets', function () {
+gulp.task('copy-from-tmp', function () {
 	return gulp.src('.tmp/**/*')
 		.pipe(gulp.dest('dist/'))
 		.pipe($.size({title: 'build', gzip: true}));
 });
 
-// 4. then minify
-gulp.task('minify', function () {
-	return gulp.src(['dist/styles/*.css', 'dist/scripts/*.js'], {base: 'dist'})
-		.pipe($.if('*.js', $.uglify()))
-		.pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
+gulp.task('minify-templates', () => {
+	return gulp.src('dist/**/*.html', {base: 'dist'})
+		.pipe($.htmlmin({collapseWhitespace: true}))
+		.pipe(gulp.dest('dist'));
+});
+
+gulp.task('minify-styles', () => {
+	return gulp.src('dist/styles/*.css', {base: 'dist'})
+		// Don't remove vendor-prefixes.
+		.pipe($.cssnano({autoprefixer: false}))
+		.pipe(gulp.dest('dist'));
+});
+
+gulp.task('minify-scripts', () => {
+	return gulp.src('dist/scripts/*.js', {base: 'dist'})
+		.pipe($.uglify())
+		.pipe(gulp.dest('dist'));
+});
+
+// Generate & inline critical-path CSS
+gulp.task('critical', () => {
+	return gulp.src('dist/*.html')
+		.pipe(critical({
+			base: 'dist/',
+			inline: true
+		}))
 		.pipe(gulp.dest('dist'));
 });
 
@@ -126,7 +144,7 @@ gulp.task('minify', function () {
 gulp.task('deploy', function () {
 	rsync({
 		src: 'dist/',
-		dest: 'oskarrough@wf-139-162-206-154.webfaction.com:/home/oskarrough/webapps/codesandnotes_static',
+		dest: 'oskarrough@wf-139-162-206-154.webfaction.com:/home/oskarrough/webapps/codesandnotes_nginx',
 		ssh: true,
 		recursive: true
 	}, function (error) {
