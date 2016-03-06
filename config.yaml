@@ -5,6 +5,7 @@ pluralizelisttitles: false
 Paginate: 999
 SectionPagesMenu: 'main'
 metaDataFormat: 'yaml'
+ignoreFiles: ["\\_drafts$"]
 
 relativeURLs: true
 #baseURL: 'http://codesandnotes.com/'
