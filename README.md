@@ -16,18 +16,6 @@ First you need git, node, go and hugo installed. If you have homebrew as well, h
 
 - `brew install hugo`
 
-### How to install and use Hugo from master with Fish Shell
-
-If you want to compile with the latest greatest from GitHub, do this:
-
-```bash
-brew install go mercurial
-set -x GOPATH $HOME/go (where go should install stuff, you can change this)
-go env (check that the gopath is really set)
-go get -v github.com/spf13/hugo (installs hugo into ~/go/src/……… )
-mv ~/go/bin/hugo /usr/local/bin/ (now the hugo command should be available in your fish shell)
-```
-
 ## Installing Codes & Notes
 
 Then go:
@@ -36,17 +24,11 @@ Then go:
 2. `cd codesandnotes`
 3. `npm install`
 
-## Running the server
+To start a local development server: `npm run start`
+To deploy the project: `npm run deploy`
 
-1. `gulp serve`
+## Writing style
 
-## Building the project
+Both [Alex](https://github.com/wooorm/alex) and [retext-mapbox-standard](https://github.com/mapbox/retext-mapbox-standard) can be used to check the writing.
 
-1. `gulp`
-2. `gulp deploy`
-
-## Using Alex
-
-Check for offensive spelling using Alex:
-
-`alex content/**/*.md`
+`npm test`
