@@ -1,4 +1,7 @@
 :root {
+	@include root-font-family;
+	line-height: $root-line-height;
+
 	@media (min-width: $layout-sm) {
 		font-size: $root-font-size + 1px;
 	}
@@ -11,13 +14,17 @@
 }
 
 // Headings
-h1 {
+h1,
+h2,
+h3 {
 	@include ff-header;
 }
 h1 {
 	font-size: rem($larger);
 	line-height: 1;
-	margin-bottom: $space*2;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	// margin-bottom: $space*2;
 	font-weight: normal;
 	font-style: italic;
 	@media (min-width: $layout-s) {
@@ -29,48 +36,67 @@ h1 {
 	}
 }
 h2 {
-	@include ff-header;
-	font-size: rem($ml);
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 h3 {
-	@include questa-sans-medium;
 	// @include rhythm($medium);
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	font-size: 1rem;
 	@media (min-width: $layout-m) {
 		font-size: rem($medium);
 	}
-	line-height: 1.3;
-	margin-bottom: $space/2;
 }
+ul {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+p {
+	text-indent: 1em;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	// &:last-child {
+	// 	margin-top: 1rem;
+	// }
+}
+b,
 strong {
 	// @include questa-sans-light;
-	@include questa-sans-medium;
+	// @include questa-sans-medium;
+	font-weight: bold;
 }
 dfn, cite, em, i, blockquote {
-	@include questa-sans-light-italic;
+	// @include questa-sans-light-italic;
+	font-style: italic;
 }
 blockquote {
-	margin-left: $space;
-	margin-right: $space*2;
-}
-code {
-	@include ff-triplicate;
+	margin: 1rem;
+	max-width: 80%;
 }
 
-/* Inline code */
+// Code
+code, kbd, pre, samp {
+	@include ff-triplicate;
+	font-size: 0.8rem;
+}
+// Inline code
 :not(pre) > code {
-	background-color: hsl(0, 0%, 100%);
+	background-color: hsl(60, 90%, 93%);
 	padding: 0.1em;
 	border-radius: 3px;
 }
-
-// code blocks
+// Code blocks
 pre {
-	// padding: 1em;
 	margin: 2rem 0;
 	overflow: auto;
-	line-height: 1.1;
+	code {
+		display: block;
+	}
 }
+
+// Small caps.
 abbr,
 acronym,
 .Caps {
@@ -84,12 +110,11 @@ small,
 	@include ff-small;
 }
 
-article {
-	img {
-		display: block;
-		margin-top: $space;
-		margin-bottom: $space*2;
-	}
+// Images in articles
+article img {
+	display: block;
+	margin-top: $space;
+	margin-bottom: $space*2;
 }
 // img.AlignLeft {
 // 	max-width: 60%;
@@ -109,3 +134,7 @@ article {
 		text-decoration: none;
 	}
 }
+
+// code {
+// 	font-size: $small-font-size;
+// }

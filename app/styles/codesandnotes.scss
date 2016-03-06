@@ -6,8 +6,8 @@
 @import 'suitcss-base/index.css';
 
 // fonts
-@import 'base/font-et-bembo';
 @import 'base/font-questa';
+// @import 'base/font-monokrom';
 @import 'base/font-classes';
 
 // base
@@ -15,14 +15,15 @@
 @import 'base/config';
 @import 'base/mixins';
 @import 'components/prism';
+@import 'base/global';
 
 // components
-@import 'components/base';
 @import 'components/typography';
 @import 'components/layout';
+@import 'components/nav';
 @import 'components/cover';
 @import 'components/header';
-@import 'components/nav';
-@import 'components/loader';
+// @import 'components/loader';
+// // @import 'components/styleguide';
+
 @import 'components/print';
-// @import 'components/styleguide';

@@ -1,66 +1,33 @@
-:root {
-	@include questa-sans-light;
-}
-
-// Set a default margin between elements
-blockquote,
-ol,
-ul,
-dl,
-dd,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-pre,
-table,
-address,
-textarea,
-hr {
-	margin-top: 0;
-	margin-bottom: $space;
-}
-figure {
-	margin: 0;
-	position: relative;
-}
-table {
-	width: 100%;
-}
+// Responsive media.
 img,
 embed,
 iframe,
 object {
 	max-width: 100%;
 }
+
+// Make sure images are scaled correctly.
 img {
-	height: auto; // Make sure images are scaled correctly.
+	height: auto;
 	vertical-align: top;
 }
-textarea {
-	margin: 0;
-	min-height: 5.444444444rem;
-	max-width: 100%;
-}
-code {
-	font-size: $small-font-size;
-}
+
+// textarea {
+// 	margin: 0;
+// 	min-height: 5.444444444rem;
+// 	max-width: 100%;
+// }
+
 ul {
 	margin-bottom: 0.75rem;
 	padding-left: 0;
 	list-style: none;
 	line-height: 1.7;
 	li:before {
-		// content: '↝ ';
+		content: '↝ ';
 		// content: '— ';
-		content: '* ';
+		// content: '* ';
 	}
-}
-.List {
-
 }
 
 // Links
@@ -77,15 +44,15 @@ a {
 	}
 }
 
-// // Prefix chapter and topic links with a symbol
-// a[rel="category tag"]::before {
-// 	content: '§';
-// 	opacity: 0.5;
-// }
-// a[rel="tag"]::before,
-// a[class^="tag-link-"] {
-// 	content: '#';
-// }
+// // // Prefix chapter and topic links with a symbol
+// // a[rel="category tag"]::before {
+// // 	content: '§';
+// // 	opacity: 0.5;
+// // }
+// // a[rel="tag"]::before,
+// // a[class^="tag-link-"] {
+// // 	content: '#';
+// // }
 
 // Dividers
 hr {

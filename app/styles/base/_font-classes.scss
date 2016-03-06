@@ -1,13 +1,8 @@
 // Font families
-$serif: 'et-bembo', Palatino, Georgia, serif;
+$serif: Palatino, Georgia, serif;
 $sans-serif: 'questa-sans-light', Geneva, Gill Sans, Calibri, sans-serif;
 $monospace: 'Source Code Pro', Consolas, monospace;
 
-@mixin ff-header {
-	font-family: 'eskapade-fraktur', 'et-bembo', $serif;
-	// font-family: 'Triplicate T4c';
-	font-weight: normal;
-}
 @mixin questa-sans-light {
 	font-family: 'questa-sans-light', $sans-serif;
 	font-weight: normal;
@@ -28,11 +23,17 @@ $monospace: 'Source Code Pro', Consolas, monospace;
 @mixin ff-triplicate {
 	font-family: 'Triplicate T4c', $monospace;
 }
+
+@mixin root-font-family {
+	@include questa-sans-light;
+}
+@mixin ff-header {
+	font-family: 'eskapade-fraktur',  $serif;
+	// font-family: 'Triplicate T4c';
+	font-weight: normal;
+}
 @mixin ff-small {
 	font-size: $small-font-size;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
-}
-@mixin ff-sans {
-	font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
 }
