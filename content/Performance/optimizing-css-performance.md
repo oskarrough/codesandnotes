@@ -2,7 +2,7 @@
 title: Optimizing CSS performance
 ---
 
-In short, don't worry too much about your selectors. Unless you're rendering 1000 items with box-shadows, gradients, animations and crazy hover effects they are all fast enough - including the * selector. What you should worry about is janky performance when scrolling, heavy CSS transforms and animations. Box-shadows and filters.
+In short, don't worry too much about your selectors. Unless you're rendering 1000 items with box-shadows, gradients, animations and annoying hover effects they are all fast enough - including the * selector. What you should worry about is janky performance when scrolling, heavy CSS transforms and animations. Box-shadows and filters.
 
 That being said, what you _really_ should be spending your time optimizing is not the CSS but your heavy images, too many file requests which could be concatenate, your server setup and database queries etc.
 

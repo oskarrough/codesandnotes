@@ -14,9 +14,7 @@ If you have an open tag and want close it, e.g. write `</a>` you can do so by pr
 
 ## Other ways of writing HTML
 
-By design HTML is simple in its syntax. [Jade](http://jade-lang.com/) and <a href="http://haml.info/">HAML</a> are two ways of adding more features to your markup writing.
-
-@todo: write about web components and html imports
+By design HTML is simple in its syntax. [Jade](http://jade-lang.com/) and <a href="http://haml.info/">HAML</a> are two ways of adding more features to your markup writing. Whatever you chose, be sure to consider the costs of adding another language on top of HTML. Not relying on any extra step of compiling here can save you some headaches and it's easier to copy paste snippets from the internet.
 
 ## References
 

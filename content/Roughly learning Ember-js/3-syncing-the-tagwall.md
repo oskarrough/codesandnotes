@@ -61,7 +61,7 @@ If you refresh the browser now, you'll see an error in the console as it tries t
 
 ## Actions up!
 
-Components are supposed to be dumb. The tagwall isn't supposed to know anything about our models, how we store, create or save our data. See more about [sending actions from components to your application](http://guides.emberjs.com/v1.13.0/components/sending-actions-from-components-to-your-application/). Now our tagwall is it's messages from the route's model, good! But it's still changing the data by creating new messages directly in the component, bad!
+Components are supposed to work alone. The tagwall isn't supposed to know anything about our models, how we store, create or save our data. See more about [sending actions from components to your application](http://guides.emberjs.com/v1.13.0/components/sending-actions-from-components-to-your-application/). Now our tagwall is it's messages from the route's model, good! But it's still changing the data by creating new messages directly in the component, bad!
 
 Instead the component should notify the application through an action to create a new message. This is data down, actions up. I know it took me some time to understand so allow me to repeat: Currently our component has a single action called `submit` which saves a new message. Components shouldn't change data. Instead we are going to change the `submit` action on the component to check that we never save an empty message and afterwards sending the actions up. This allows us to catch the action on the route. called `saveMessage`.
 

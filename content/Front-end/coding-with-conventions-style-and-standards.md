@@ -19,21 +19,15 @@ Introduction. Code conventions?
 
 There's a reason the word 'war' is included in this section.
 
-	> "Let me summarize. The purpose of the tab character is for indentation and formatting. Optimal indentation width differs among people. Text editors allow users to set their preferred indentation width. If you use spaces for indentation, you make text editors ignore the preferred indentation width of your audience, readers or users. Hence, using spaces for indentation is considered harmful."
+> "Let me summarize. The purpose of the tab character is for indentation and formatting. Optimal indentation width differs among people. Text editors allow users to set their preferred indentation width. If you use spaces for indentation, you make text editors ignore the preferred indentation width of your audience, readers or users. Hence, using spaces for indentation is considered harmful."
 
 I don't remember where I found this quote but at the end of the day, you should use whatever your team has decided for - and you should stick to it.
 
-Tabs or spaces?Personally, I prefer a tab-width of 4 spaces.
-
-CSS is written like this:
-
-selector {
-	float: left; margin: 10px;
-	color: red;
-}
+Tabs or spaces? Personally, I prefer a single tab-width of 2 spaces.
 
 ## References
 
+- [XO - JavaScript happiness style linter](https://github.com/sindresorhus/xo)
 - [Why tabs are clearly superior (lea.verou.me)](http://lea.verou.me/2012/01/why-tabs-are-clearly-superior/)
 - [Indentation with spaces considered](http://mystilleef.blogspot.com/2006/11/indentation-with-spaces-considered.html)
 - [Tabs vs spaces for indentation](http://nithinbekal.com/2011/tabs-vs-spaces-for-indentation/)

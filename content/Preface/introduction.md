@@ -21,6 +21,6 @@ In turn, I hope you will appreciate them now.
 
 ## How is it written?
 
-It would be foolish to ignore the enormous web development community and as such this book thrives on the work and collective thoughts of you. I will strive to provide the right amount of references and I will do my best to cut the crap and bring you the heat.
+It would be foolish to ignore the enormous web development community and as such this book thrives on the work and collective thoughts of you. I will strive to provide the right amount of references.
 
 At the bottom of every page there are references to other articles you can continue reading.
