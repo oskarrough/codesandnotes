@@ -28,6 +28,7 @@ In the last years we've naturally seen more and more projects dedicated to learn
 - [Coursera](https://www.coursera.org/) (everything)
 - [edX](https://www.edx.org/) (everything)
 - [Treehouse](http://teamtreehouse.com/)
+- [Google Codelabs](https://codelabs.developers.google.com/?cat=Web)
 - [27 Ways to Learn to Program Online](http://thenextweb.com/dd/2012/10/21/so-you-want-to-be-a-programmer-huh-heres-25-ways-to-learn-online/)
 
 Most of these are also being funded by huge amounts of money. More reading on [NYTimes](http://www.nytimes.com/2012/11/04/education/edlife/massive-open-online-courses-are-multiplying-at-a-rapid-pace.html?pagewanted=all&_r=0).
@@ -42,3 +43,5 @@ Most of these are also being funded by huge amounts of money. More reading on [N
 - http://hello.processing.org/editor/
 - https://github.com/vhf/free-programming-books
 - https://www.google.com/about/careers/students/guide-to-technical-development.html
+- https://learnxinyminutes.com/
+- http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html

@@ -3,12 +3,6 @@ title: Learning Ember.js
 draft: true
 ---
 
-## ES6 destructuring
-
-const { computed, debug } = Ember;
-
-https://github.com/dockyard/styleguides/blob/master/ember.md#create-local-version-of-ember-and-ds
-
 ## Communicating between things
 
 1. Needs

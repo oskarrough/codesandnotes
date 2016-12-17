@@ -1,34 +1,10 @@
 ---
 title: Git
-draft: true
 ---
 
 Git is a free and open source distributed version control system. Basically, it allows more people to work together on the same code, saving a version history, merge different versions of the same file and much, much more.
 
 In the spirit of the rough guide I'll point you in the right directions since so many others before me explain and understand Git on a level I'll probably never reach.
-
-## The simplest Git workflow
-
-You write some code on a project on your computer. In other words, you create local changes. What you want now is to choose which of those changes you want to keep and share with the
-
-Commit local changes
-git add .
-git commit -m "message"
-
-**Pull remote changes (with rebase)**
-git pull --rebase
-
-1. Temporarily stash your local commits,
-2. Pull the online commits,
-3. Apply the stashed commits on top of what got pulled
-4. if there are any merges to be made, do them, add them and continue the rebase. Like so:
-5. git add .
-6. git rebase --continue
-
-**Push changes online**
-git push
-
-## Avoiding conflicts with rebase
 
 ## Git conventions
 
@@ -36,22 +12,16 @@ As with everything else, it’s important to keep conventions when working with 
 
 See more on https://medium.com/code-adventures/a940ee20862d
 
-## Git Flow
-
-always commit to dev or a so-called "feature branch" - never on master. When done, you create a pull-request through bitbucket or github where others can review the code before merging into master.
-
-This means that the state of master will always be ready to deploy.
-
-https://guides.github.com/introduction/flow/index.html
-
 ## GUI for Git
 
-Having an interface for Git helps a lot. Github.com is one way, Bitbucket.com is another but there are also native apps to accompany you. I recommend Sourcetree as the most helpful.
+While you can accomplish everything using git through the command line a visual interface is helpful. Especially for visualizing complex branches and your history. To accompany the web interfaces of Github, GitLab and BitBucket I can recommend the following apps:
 
-- http://www.sourcetreeapp.com/
-- http://mac.github.com/
-- http://windows.github.com/
-- http://www.git-tower.com/
+- http://www.sourcetreeapp.com/ (osx, win)
+- http://gitup.co/ (osx)
+- https://www.gitkraken.com/ (osx, win, linux)
+- https://git-fork.com/ (osx)
+- https://desktop.github.com/ (osx, win)
+- http://www.git-tower.com/ (osx)
 
 ### Resources
 
