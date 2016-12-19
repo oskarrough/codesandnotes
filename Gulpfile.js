@@ -135,8 +135,12 @@ gulp.task('critical', () => {
 	return gulp.src('dist/*.html')
 		.pipe(critical({
 			base: 'dist/',
-			inline: true
+			inline: true,
+			minify: true
 		}))
+		.on('error', err => {
+			console.log(err);
+		})
 		.pipe(gulp.dest('dist'));
 });
 
