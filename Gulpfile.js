@@ -148,7 +148,7 @@ gulp.task('critical', () => {
 gulp.task('deploy', function () {
 	rsync({
 		src: 'dist/',
-		dest: 'oskarrough@wf-139-162-206-154.webfaction.com:/home/oskarrough/webapps/codesandnotes_nginx',
+		dest: 'oskarrough@wf-139-162-206-154.webfaction.com:/home/oskarrough/webapps/codesandnotes_static',
 		ssh: true,
 		recursive: true
 	}, function (error) {
