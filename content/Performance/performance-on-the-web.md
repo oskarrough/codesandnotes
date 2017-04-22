@@ -9,7 +9,7 @@ When you're dealing with a web server *serving* files, you should at least consi
 
 1. Minimize HTTP Requests: A browser can only download so many files at a time and since HTTP requests (the browser asking for a file) is one of the biggest performance penalties, the less requests you make, the faster it'll get.
 
-2. File concatenation is a great way to minimize requests. It basically means merging multiple files into a single one. All your styles in one, all your scripts in another and so on.
+2. File concatenation is a great way to minimize requests. It basically means merging multiple files into a single one. All your styles in one, all your scripts in another and so on. Unless you're using HTTP2. Yeah.
 
 3. File minification — once your files are concatenated, you can minify them. That means stripping whitespace, linebreaks, unessesary characters, renaming variable names and much more. There are plenty online tools that can do this for you but that's not very practical. Instead you could use a build tool like Grunt or Gulp but that's for another chapter. There are also GUIs for all of this like [CodeKit](https://incident57.com/codekit/) or [Hammer](http://hammerformac.com/).
 
@@ -32,11 +32,15 @@ There are two sides to performance: actual and percieved. So far we've only talk
 
 ## Tools
 
-You can follow all these steps and recommendations blindly or you could use tooling to debug what is really slowing down your site.
+There are tons of great tools to help you analyze bottlenecks on your site.
 
 - [Google PageSpeed](https://developers.google.com/speed/pagespeed/) can analyze your site through their website but the browser extensions available for Chrome and Firefox are more handy.
 - [Yahoo's YSlow](http://developer.yahoo.com/yslow/) is very similar but provides some great second opinions. The Yahoo team also did us a favor of writing the excellent [Best Practices for Speeding Up Your Web Site](http://developer.yahoo.com/performance/rules.html). Really you should stop reading this and go there instead.
 - [Pingdom](http://tools.pingdom.com/fpt/) can also analyze your website speed
+- https://www.sitespeed.io provides automated tests using node
+- https://gtmetrix.com
+- https://www.webpagetest.org
+- https://developers.google.com/web/tools/lighthouse
 
 ## Script performance
 

@@ -12,7 +12,7 @@ Introduction. Code conventions?
 - [Github Javascript styleguide](https://github.com/styleguide/javascript)
 - [Idiomatic.css](https://github.com/necolas/idiomatic-css)
 - [Idomatic.js](https://github.com/rwldrn/idiomatic.js/)
-- [Google HTML/CSS Style Guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
+- [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.xml)
 - http://javascript.crockford.com/code.html
 
 ## Indentwars

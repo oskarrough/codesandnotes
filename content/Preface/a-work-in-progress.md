@@ -2,11 +2,11 @@
 title: A work in progress
 ---
 
-As of this writing, the <s>4th of May 2014</s> 21st of June 2015, there is still very much to write but I've realized that this project is never going to stop. Keeping it hidden until there isn't anymore to write is not the solution. This is why you will find a few poorly-written drafts online as well.
+As of this writing, the <s>4th of May 2014</s> <s>21st of June 2015</s> 26th of December 2016, there is still very much to write and I've learned that this project will never end. Which is a good thing. 
 
-When I started having more time for the project I ended up around threehundred-something articles. And while I support Stalin's remark _"quantity is a quality"_ I decided everyone would be better served with more precise and helpful articles. One of the philosophies of Codes & Notes is to only keep what you really need to know.
+When I started having more time for the project I ended up around threehundred-something articles. And while I appreciate Stalin's remark _"quantity is a quality"_ it does not translate well into the internet. We have an abundance of out-dated articles. One of the ideas of Codes & Notes is to only keep what you really need to know. One way to accomplish this is that I revisit the articles every six months or so. This way you quickly see which, if any, articles here were too specific to a certain era.
 
-If you have any ideas, please [let me know](mailto:oskar@rough.dk).
+If you have any questions, please do [get in touch](mailto:oskar@rough.dk).
 
 ## Publishing
 
