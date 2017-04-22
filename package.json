@@ -10,7 +10,7 @@
     "start": "gulp serve",
     "build": "gulp build",
     "deploy": "npm run build; gulp deploy",
-    "test": "alex content/**/*.md; retext-mapbox-standard content/content/**/*.md"
+    "test": "alex content/**/*.md; retext-mapbox-standard content/**/*.md; write-good content/**/*.md"
   },
   "devDependencies": {
     "alex": "^4.0.1",
@@ -39,6 +39,7 @@
     "run-sequence": "^1.1.5"
   },
   "dependencies": {
-    "suitcss-base": "^1.0.1"
+    "suitcss-base": "^1.0.1",
+    "write-good": "^0.10.0"
   }
 }
