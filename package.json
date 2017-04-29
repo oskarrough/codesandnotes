@@ -9,7 +9,7 @@
   "scripts": {
     "start": "gulp serve",
     "build": "gulp build",
-    "deploy": "npm run build; gulp deploy",
+    "deploy": "",
     "test": "alex content/**/*.md; retext-mapbox-standard content/**/*.md; write-good content/**/*.md"
   },
   "devDependencies": {
@@ -35,11 +35,10 @@
     "gulp-uglify": "^2.1.2",
     "postcss-import": "^8.0.2",
     "retext-mapbox-standard": "^2.0.0",
-    "rsyncwrapper": "^1.0.0",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "write-good": "^0.11.0"
   },
   "dependencies": {
-    "suitcss-base": "^1.0.1",
-    "write-good": "^0.11.0"
+    "suitcss-base": "^1.0.1"
   }
 }
