@@ -22,13 +22,14 @@ Then go:
 
 1. `git clone git@github.com:oskarrough/codesandnotes.git`
 2. `cd codesandnotes`
-3. `npm install`
+3. `yarn`
 
-To start a local development server: `npm run start`
-To deploy the project: `npm run deploy`
+To start a local development server: `yarn start`
+To deploy the project, push to the `production` branch.
 
 ## Writing style
 
 Both [Alex](https://github.com/wooorm/alex) and [retext-mapbox-standard](https://github.com/mapbox/retext-mapbox-standard) can be used to check the writing.
 
-`npm test`
+`yarn test`
+

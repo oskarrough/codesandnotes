@@ -9,7 +9,6 @@
   "scripts": {
     "start": "gulp serve",
     "build": "gulp build",
-    "deploy": "",
     "test": "alex content/**/*.md; retext-mapbox-standard content/**/*.md; write-good content/**/*.md"
   },
   "devDependencies": {
