@@ -118,17 +118,3 @@ gulp.task('minify-styles', () => {
 		.pipe(gulp.dest('dist'))
 })
 
-// Generate & inline critical-path CSS
-gulp.task('critical', () => {
-	return gulp.src('dist/*.html')
-		.pipe(critical({
-			base: 'dist/',
-			inline: true,
-			minify: true
-		}))
-		.on('error', err => {
-			console.log(err)
-		})
-		.pipe(gulp.dest('dist'))
-})
-
