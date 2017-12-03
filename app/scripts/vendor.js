@@ -1,1 +1,0 @@
-let vendor = 1;
