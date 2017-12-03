@@ -9,7 +9,7 @@ var exec = require('child_process').exec
 var path = require('path')
 var runSequence = require('run-sequence')
 
-// Deletes the two folders containing compiled output.
+// Deletes folders containing compiled output.
 gulp.task('clean', () => {
 	return del(['.tmp', 'dist'])
 })
@@ -31,8 +31,7 @@ gulp.task('styles', function () {
 			precision: 10,
 			includePaths: [
 				'.',
-				path.join(__dirname, '../node_modules'),
-				path.join(__dirname, '../bower_components')
+				path.join(__dirname, '../node_modules')
 			]
 		}).on('error', $.sass.logError))
 		.pipe($.postcss([
@@ -44,12 +43,10 @@ gulp.task('styles', function () {
 		.pipe(browserSync.stream())
 })
 
-// Babel and sourcemaps
+// Scripts
 gulp.task('scripts', function () {
 	return gulp.src('app/scripts/**/*.js')
 		.pipe($.sourcemaps.init())
-		.pipe($.babel())
-		// .pipe($.concat('codesandnotes.js'))
 		.pipe($.sourcemaps.write('.'))
 		.pipe(gulp.dest('.tmp/scripts/'))
 		.pipe(browserSync.stream({once: true}))
@@ -98,7 +95,7 @@ gulp.task('build', function (callback) {
 	runSequence('clean',
 		['hugo', 'styles', 'scripts'],
 		'copy-from-tmp',
-		['minify-styles', 'minify-scripts', 'minify-templates'],
+		['minify-styles', 'minify-templates'],
 		'critical'
 	)
 })
@@ -120,12 +117,6 @@ gulp.task('minify-styles', () => {
 	return gulp.src('dist/styles/*.css', {base: 'dist'})
 		// Don't remove vendor-prefixes.
 		.pipe($.cssnano({autoprefixer: false}))
-		.pipe(gulp.dest('dist'))
-})
-
-gulp.task('minify-scripts', () => {
-	return gulp.src('dist/scripts/*.js', {base: 'dist'})
-		.pipe($.uglify())
 		.pipe(gulp.dest('dist'))
 })
 
