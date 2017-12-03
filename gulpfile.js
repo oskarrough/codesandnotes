@@ -3,7 +3,6 @@ var $ = require('gulp-load-plugins')()
 var autoprefixer = require('autoprefixer')
 var atImport = require('postcss-import')
 var browserSync = require('browser-sync').create()
-var critical = require('critical').stream
 var del = require('del')
 var exec = require('child_process').exec
 var path = require('path')
@@ -95,8 +94,7 @@ gulp.task('build', function (callback) {
 	runSequence('clean',
 		['hugo', 'styles', 'scripts'],
 		'copy-from-tmp',
-		['minify-styles', 'minify-templates'],
-		'critical'
+		['minify-styles', 'minify-templates']
 	)
 })
 

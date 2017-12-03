@@ -15,7 +15,6 @@
     "alex": "^5.1.0",
     "autoprefixer": "^7.1.6",
     "browser-sync": "^2.18.13",
-    "critical": "^1.1.0",
     "del": "^3.0.0",
     "gulp": "^3.9.0",
     "gulp-cssnano": "^2.1.1",
