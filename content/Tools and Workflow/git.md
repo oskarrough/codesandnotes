@@ -37,3 +37,5 @@ While you can accomplish everything using git through the command line a visual 
 - http://24ways.org/2013/git-for-grownups/
 - http://firstaidgit.io/
 - https://gumroad.com/l/goal-oriented-git/
+- http://ohshitgit.com/
+

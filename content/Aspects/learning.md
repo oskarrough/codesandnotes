@@ -30,6 +30,7 @@ In the last years we've naturally seen more and more projects dedicated to learn
 - [Treehouse](http://teamtreehouse.com/)
 - [Google Codelabs](https://codelabs.developers.google.com/?cat=Web)
 - [27 Ways to Learn to Program Online](http://thenextweb.com/dd/2012/10/21/so-you-want-to-be-a-programmer-huh-heres-25-ways-to-learn-online/)
+- [DailyDrip](https://www.dailydrip.com/)
 
 Most of these are also being funded by huge amounts of money. More reading on [NYTimes](http://www.nytimes.com/2012/11/04/education/edlife/massive-open-online-courses-are-multiplying-at-a-rapid-pace.html?pagewanted=all&_r=0).
 
