@@ -1,9 +1,9 @@
 /*!
-	Oskar Rough Mosumgaard (c) 2016
+	Oskar Rough Mosumgaard (c) 2017
 */
 
 // third-party
-@import 'suitcss-base/index.css';
+@import 'normalize.css';
 
 // fonts
 @import 'base/font-questa';
@@ -22,7 +22,4 @@
 @import 'components/nav';
 @import 'components/cover';
 @import 'components/header';
-// @import 'components/loader';
-// // @import 'components/styleguide';
-
 @import 'components/print';

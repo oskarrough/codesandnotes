@@ -1,16 +1,3 @@
-// Clearfix
-@mixin clearfix {
-	&:before,
-	&:after {
-		content: ' '; /* 1 */
-		display: table; /* 2 */
-	}
-
-	&:after {
-		clear: both;
-	}
-}
-
 // Vertical rhythm
 @mixin rhythm($size) {
 	font-size: ($size/$root-font-size) * 1rem;
@@ -20,8 +7,8 @@
 /**
  * Negative text
  * use this for whitish text on blackish backgrounds
- *
- * it will make type appear lighter but it also DISABLED subpixel antialiasing which isn't always good
+ * it will make type appear lighter but it also disables
+ * subpixel antialiasing which isn't always good
  */
 
 @mixin negative-text {
