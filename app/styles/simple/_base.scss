@@ -2,36 +2,37 @@
 	// @include questa-sans-light;
 	font-family: 'et-bembo';
 }
+
 h1,h2,h3,h4, strong {
 	font-weight: bold;
 	// @include questa-sans-medium;
 }
+
 code {
 	font-size: $small-font-size;
 }
+
 a {
 	color: $html-color;
 }
 
 article a,
 .List a {
-	// border-bottom: 1px solid $lightgray;
-	@include linkUnderlines($html-background-color, $html-color);
 }
 
-// h1, h2, h3 { margin-top:0; margin-bottom:0; }
-// h1 { font-size:2.61538em; padding:1.3724em 0 (1.3724em / 2); }
-// h2 { font-size: 1.61538/2em; padding:1.39659em 0; }
-// h3 { font-size:1em; padding:1.33333em 0; }
+ // h1, h2, h3 { margin-top:0; margin-bottom:0; }
+ // h1 { font-size:2.61538em; padding:1.3724em 0 (1.3724em / 2); }
+ // h2 { font-size: 1.61538/2em; padding:1.39659em 0; }
+ // h3 { font-size:1em; padding:1.33333em 0; }
 
-// body { font-size:100%; line-height:1.25; }
-// h1, h2, h3 { margin-top:0; margin-bottom:0; }
-// h1 { font-size:1.5em; padding:1.45833em 0; }
-// h2 { font-size:1.33333em; padding:1.25em 0; }
-// h3 { font-size:1.16667em; padding:1.51785em 0; }
-//
-// body { font-size:100%; line-height:1.25; }
-// h1, h2, h3 { margin-top:0; margin-bottom:0; }
-// h1 { font-size:3em; padding:1.25em 0; }
-// h2 { font-size:1.3125em; padding:1.27976em 0; }
-// h3 { font-size:1.125em; padding:1.59722em 0; }
+ // body { font-size:100%; line-height:1.25; }
+ // h1, h2, h3 { margin-top:0; margin-bottom:0; }
+ // h1 { font-size:1.5em; padding:1.45833em 0; }
+ // h2 { font-size:1.33333em; padding:1.25em 0; }
+ // h3 { font-size:1.16667em; padding:1.51785em 0; }
+
+ // body { font-size:100%; line-height:1.25; }
+ // h1, h2, h3 { margin-top:0; margin-bottom:0; }
+ // h1 { font-size:3em; padding:1.25em 0; }
+ // h2 { font-size:1.3125em; padding:1.27976em 0; }
+ // h3 { font-size:1.125em; padding:1.59722em 0; }

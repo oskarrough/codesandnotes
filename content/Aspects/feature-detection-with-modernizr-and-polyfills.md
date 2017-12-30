@@ -23,9 +23,9 @@ Instead, you could and probably should use feature detection!
 
 ## Feature detection
 
-[Modernizr.js](http://modernizr.com/) "is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser".
+[Modernizr.js](http://modernizr.com/) is a JavaScript library "that detects HTML5 and CSS3 features in the user’s browser".
 
-	Taking advantage of cool new web technologies is great fun, until you have to support browsers that lag behind. Modernizr makes it easy for you to write conditional JavaScript and CSS to handle each situation, whether a browser supports a feature or not. It’s perfect for doing progressive enhancement easily.
+> Taking advantage of cool new web technologies is great fun, until you have to support browsers that lag behind. Modernizr makes it easy for you to write conditional JavaScript and CSS to handle each situation, whether a browser supports a feature or not. It’s perfect for doing progressive enhancement easily.
 
 ## Example
 
@@ -58,14 +58,9 @@ div {
 
 This way you will have used feature detection to make sure your design looks good no matter what is supported.
 
-Win.
-
 ## How it really works
 
-dsa
-
 	Modernizr runs quickly on page load to detect features; it then creates a JavaScript object with the results, and adds classes to the html element for you to key your CSS on. Modernizr supports dozens of tests…
-
 
 ## Customizing Modernizr
 
