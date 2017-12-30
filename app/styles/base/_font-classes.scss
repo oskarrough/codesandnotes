@@ -24,14 +24,12 @@ $monospace: 'Source Code Pro', Consolas, monospace;
 	font-family: 'Triplicate T4c', $monospace;
 }
 
-@mixin root-font-family {
-	@include questa-sans-light;
-}
 @mixin ff-header {
 	font-family: 'eskapade-fraktur',  $serif;
 	// font-family: 'Triplicate T4c';
 	font-weight: normal;
 }
+
 @mixin ff-small {
 	font-size: $small-font-size;
 	letter-spacing: 0.04em;
