@@ -19,27 +19,31 @@ h2,
 h3 {
 	@include ff-header;
 }
+
 h1 {
 	font-size: rem($larger);
 	line-height: 1;
 	margin-top: 1rem;
 	margin-bottom: 2rem;
-	// margin-bottom: $space*2;
 	font-weight: normal;
 	font-style: italic;
+
 	@media (min-width: $layout-s) {
 		font-size: rem($largerer);
 		max-width: 92%;
 	}
+
 	@media (min-width: $layout-ml) {
 		font-size: rem($largererer);
 	}
 }
+
 h2 {
 	font-size: 1.5rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
+
 h3 {
 	// @include rhythm($medium);
 	margin-top: 1rem;
@@ -49,28 +53,30 @@ h3 {
 		font-size: rem($medium);
 	}
 }
+
 ul {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
+
 p {
 	text-indent: 1em;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-	// &:last-child {
-	// 	margin-top: 1rem;
-	// }
 }
+
 b,
 strong {
 	// @include questa-sans-light;
 	// @include questa-sans-medium;
 	font-weight: bold;
 }
+
 dfn, cite, em, i, blockquote {
 	// @include questa-sans-light-italic;
 	font-style: italic;
 }
+
 blockquote {
 	margin: 1rem;
 	max-width: 80%;
