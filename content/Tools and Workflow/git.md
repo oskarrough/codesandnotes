@@ -23,6 +23,7 @@ While you can accomplish everything using git through the command line a visual 
 - https://git-fork.com/ (osx)
 - https://desktop.github.com/ (osx, win)
 - http://www.git-tower.com/ (osx)
+- https://git-fork.com/ (osx)
 
 ### Resources
 
