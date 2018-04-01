@@ -1,10 +1,10 @@
 ---
 title: 4. A platform og tagwalls
-tags: ['ember-js']
+tags:
+- ember-js
 weight: 4
-draft: true
----
 
+---
 **This article is not finished**
 
 Right now we don't have a model on the index route. We need to pass some messages to our component but so far we haven't got any messages in our app. Let's quickly create some dummy content in the `index` route. Later we'll change to use ember-data models. Previously we made an `{{#each}}` list in the `posts/template` but we didn't have any model so the list was empty. We should tell the route to return all posts. Edit `app/posts/route.js`:
