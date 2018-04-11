@@ -1,4 +1,5 @@
-[build]
 HUGO_VERSION = "0.38.1"
+
+[build]
 publish = "dist"
 command = "npm run build"
