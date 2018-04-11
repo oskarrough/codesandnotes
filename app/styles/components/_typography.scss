@@ -1,15 +1,13 @@
 :root {
-	@include root-font-family;
+	@include questa-sans-light;
 	line-height: $root-line-height;
 
 	@media (min-width: $layout-sm) {
 		font-size: $root-font-size + 1px;
 	}
-	@media (min-width: $layout-m) {
-		// font-size: $root-font-size + 2px;
-	}
+
 	@media (min-width: $layout-l) {
-		// font-size: $root-font-size + 33px;
+		font-size: $root-font-size + 2px;
 	}
 }
 
@@ -19,58 +17,62 @@ h2,
 h3 {
 	@include ff-header;
 }
+
 h1 {
 	font-size: rem($larger);
 	line-height: 1;
 	margin-top: 1rem;
 	margin-bottom: 2rem;
-	// margin-bottom: $space*2;
 	font-weight: normal;
 	font-style: italic;
+
 	@media (min-width: $layout-s) {
 		font-size: rem($largerer);
 		max-width: 92%;
 	}
+
 	@media (min-width: $layout-ml) {
 		font-size: rem($largererer);
 	}
 }
+
 h2 {
 	font-size: 1.5rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
+
 h3 {
 	// @include rhythm($medium);
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	font-size: 1rem;
+
 	@media (min-width: $layout-m) {
 		font-size: rem($medium);
 	}
 }
+
 ul {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
+
 p {
 	text-indent: 1em;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-	// &:last-child {
-	// 	margin-top: 1rem;
-	// }
 }
+
 b,
 strong {
-	// @include questa-sans-light;
-	// @include questa-sans-medium;
 	font-weight: bold;
 }
+
 dfn, cite, em, i, blockquote {
-	// @include questa-sans-light-italic;
 	font-style: italic;
 }
+
 blockquote {
 	margin: 1rem;
 	max-width: 80%;
@@ -81,12 +83,14 @@ code, kbd, pre, samp {
 	@include ff-triplicate;
 	font-size: 0.8rem;
 }
+
 // Inline code
 :not(pre) > code {
 	background-color: hsl(60, 90%, 93%);
 	padding: 0.1em;
 	border-radius: 3px;
 }
+
 // Code blocks
 pre {
 	margin: 2rem 0;
@@ -116,25 +120,8 @@ article img {
 	margin-top: $space;
 	margin-bottom: $space*2;
 }
-// img.AlignLeft {
-// 	max-width: 60%;
-// 	float: left;
-// 	margin-left: -30%;
-// 	margin-right: 2rem;
-// }
-// img.AlignRight {
-// 	max-width: 60%;
-// 	float: right;
-// 	margin-left: 2rem;
-// 	margin-right: -30%;
-// }
 
-.List {
-	a {
-		text-decoration: none;
-	}
+.List a {
+	text-decoration: none;
 }
 
-// code {
-// 	font-size: $small-font-size;
-// }

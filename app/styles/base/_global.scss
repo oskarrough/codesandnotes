@@ -12,12 +12,6 @@ img {
 	vertical-align: top;
 }
 
-// textarea {
-// 	margin: 0;
-// 	min-height: 5.444444444rem;
-// 	max-width: 100%;
-// }
-
 ul {
 	margin-bottom: 0.75rem;
 	padding-left: 0;
@@ -33,15 +27,13 @@ ul {
 // Links
 a {
 	color: $anchor-color;
-	// color: $black;
 }
-a {
-	&:hover,
-	&:focus,
-	&:active {
-		color: $anchor-color;
-		color: $secondary-color;
-	}
+
+a:hover,
+a:focus,
+a:active {
+	color: $anchor-color;
+	color: $secondary-color;
 }
 
 // // // Prefix chapter and topic links with a symbol
@@ -58,6 +50,7 @@ a {
 hr {
 	border: 0;
 }
+
 .Ornament {
 	background-image: url(/images/ornaments/ornament.png);
 	background-repeat: no-repeat;
@@ -65,13 +58,15 @@ hr {
 	height: 58px;
 	height: 90px;
 }
+
 .Ornament--white {
 	background-image: url(/images/ornaments/ornament-white.png);
 }
 
 button {
-	font-size: rem(14px);
-	padding: 0.3em 0.6em 0.35em;
+	font-family: inherit;
+	font-size: 0.875em;
+	padding: 0.3em 1em 0.35em;
 	text-transform: uppercase;
 	border: 1px solid #555;
 	border-radius: 3px;

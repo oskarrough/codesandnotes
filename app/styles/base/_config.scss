@@ -11,7 +11,6 @@ $larger: 36px;
 $largerer: 50px;
 $largererer: 60px;
 
-$space: ($root-line-height/$root-font-size) * 1rem;
 $space: 1rem;
 
 $anchor-text-decoration: underline; // because we use our own border
@@ -48,3 +47,5 @@ $secondary-color: $red;
 $anchor-color: $turquoise;
 $html-background-color: $sand;
 $html-color: $black;
+$selectionColor: #B3D4FC;
+

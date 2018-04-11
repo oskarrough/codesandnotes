@@ -1,5 +1,6 @@
 ---
 title: Git
+published: true
 ---
 
 Git is a free and open source distributed version control system. Basically, it allows more people to work together on the same code, saving a version history, merge different versions of the same file and much, much more.
@@ -22,6 +23,7 @@ While you can accomplish everything using git through the command line a visual 
 - https://git-fork.com/ (osx)
 - https://desktop.github.com/ (osx, win)
 - http://www.git-tower.com/ (osx)
+- https://git-fork.com/ (osx)
 
 ### Resources
 
@@ -37,3 +39,6 @@ While you can accomplish everything using git through the command line a visual 
 - http://24ways.org/2013/git-for-grownups/
 - http://firstaidgit.io/
 - https://gumroad.com/l/goal-oriented-git/
+- http://ohshitgit.com/
+- https://github.com/tldr-pages/tldr/blob/master/pages/common/git-branch.md
+

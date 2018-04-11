@@ -1,15 +1,13 @@
 /*!
-	Oskar Rough Mosumgaard (c) 2016
+	Oskar Rough Mosumgaard (c) 2017
 */
 
 // third-party
-@import 'suitcss-base/index.css';
-
-// fonts
-@import 'base/font-questa';
-@import 'base/font-classes';
+@import 'normalize.css';
 
 // base
+@import 'base/font-questa';
+@import 'base/font-classes';
 @import 'base/functions';
 @import 'base/config';
 @import 'base/mixins';
@@ -18,11 +16,9 @@
 
 // components
 @import 'components/typography';
+// @import 'components/typography-modernscale';
 @import 'components/layout';
 @import 'components/nav';
 @import 'components/cover';
-@import 'components/header';
-// @import 'components/loader';
-// // @import 'components/styleguide';
-
+@import 'components/manchet';
 @import 'components/print';

@@ -3053,9 +3053,9 @@ normalize-url@^1.4.0:
     query-string "^4.1.0"
     sort-keys "^1.0.0"
 
-normalize.css@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-3.0.3.tgz#acc00262e235a2caa91363a2e5e3bfa4f8ad05c6"
+normalize.css@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-7.0.0.tgz#abfb1dd82470674e0322b53ceb1aaf412938e4bf"
 
 npm-prefix@^1.2.0:
   version "1.2.0"
@@ -4661,12 +4661,6 @@ strip-indent@^1.0.1:
 strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
-
-suitcss-base@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/suitcss-base/-/suitcss-base-1.0.2.tgz#6030f73af51c0e41a09193032107a1956d7aac96"
-  dependencies:
-    normalize.css "^3.0.3"
 
 supports-color@^2.0.0:
   version "2.0.0"
