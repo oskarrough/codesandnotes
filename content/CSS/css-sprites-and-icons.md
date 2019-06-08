@@ -22,7 +22,7 @@ TODO
 - http://filamentgroup.com/lab/bulletproof_icon_fonts/
 - http://developer.yahoo.com/performance/rules.html#opt_sprites
 - http://compass-style.org/reference/compass/utilities/sprites/
-- http://codesandnotes.com/css-sprites-and-icons
+- https://www.codesandnotes.com/css/css-sprites-and-icons
 - http://iconizr.com/ & https://github.com/jkphl/iconizr
 - https://github.com/filamentgroup/grunticon
 - https://github.com/Ensighten/grunt-spritesmith
