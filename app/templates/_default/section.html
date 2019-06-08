@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-<section class="Main">
+<main class="Main">
 	<ul class="Breadcrumb">
 		<li><a href="/">{{ .Site.Title }}</a></li>
 		<li title="Chapter">{{ .Title }}</li>
@@ -9,13 +9,11 @@
 
 	<h1>{{ .Title}}</h1>
 
-	<!-- <p>Articles in this chapter:</p> -->
-
 	<ul class="List">
 		{{ range .Data.Pages }}
 	   	{{ .Render "list-item"}}
 		{{ end }}
 	</ul>
-</section>
+</main>
 
 {{ partial "footer.html" . }}
