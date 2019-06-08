@@ -21,7 +21,7 @@ Since em is relative to the parent font-size it makes the ideal candidate for va
 
 ### Pixels for when you can't use any of the above
 
-No, but really. In this retina-dpi-apocalypse-world it's safer and better to work with the technologies instead of against them. Scalable units as rem and em allow you to easily create [scalable components](http://codesandnotes.com/scaling-components/). Of course, when working with non-scalable icons, images or other absolute layouts, the world isn't black or white.
+No, but really. In this retina-dpi-apocalypse-world it's safer and better to work with the technologies instead of against them. Scalable units as rem and em allow you to easily create [scalable components](/css/scaling-components/). Of course, when working with non-scalable icons, images or other absolute layouts, the world isn't black or white.
 
 Last bit of advice, if you can avoid defining any sizes, you'll have less issues.
 

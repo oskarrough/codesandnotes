@@ -1,6 +1,5 @@
 ---
-title: Typefaces for coding
-draft: true
+title: Typefaces for programming
 ---
 
 You care about readability. You should also care about readability when you're coding. Here's a list of monospaced typefaces, some of them especially drawn for development.
