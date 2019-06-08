@@ -3,16 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>{{ if eq .URL "/" }}{{ .Site.Title }}{{ else if eq .URL "/post/" }}All Entries &middot; {{ .Site.Title }}{{ else if in .URL "/tags/" }}{{ .Site.Title }}{{ else }}{{ .Title }}&middot; {{ .Site.Title }}{{ end }}</title>
+	<title>{{ if eq .RelPermalink "/" }}{{ .Site.Title }}{{ else if eq .RelPermalink "/post/" }}All Entries &middot; {{ .Site.Title }}{{ else if in .RelPermalink "/tags/" }}{{ .Site.Title }}{{ else }}{{ .Title }}&middot; {{ .Site.Title }}{{ end }}</title>
 	<meta name="author" content="{{ .Site.Author.name }}">
 	<meta property="og:site_name" content="{{ .Site.Title }}">
 	<meta name="description" content="Codes and notes is a reference to web development that you can trust">
-	{{ if eq .URL "/" }}
+	{{ if eq .RelPermalink "/" }}
 		<!-- Index -->
 		<meta property="og:title" content="{{ .Site.Title }}">
-		{{ range first 1 .Data.Pages }}
-	{{ end }}
-	{{ else if in .URL "/tags/" }}
+	{{ else if in .RelPermalink "/tags/" }}
 		<!-- Category -->
 		<meta property="og:title" content="{{ .Site.Title }}">
 	{{ else }}

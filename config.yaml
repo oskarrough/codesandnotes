@@ -1,5 +1,6 @@
 title: 'Codes & Notes'
 languageCode: 'en-us'
+baseURL: '/'
 buildDrafts: false
 pluralizelisttitles: false
 Paginate: 999
@@ -8,9 +9,6 @@ metaDataFormat: 'yaml'
 ignoreFiles: ["\\_drafts$"]
 
 relativeURLs: true
-#baseURL: 'http://codesandnotes.com/'
-#baseurl: ''
-# theme: 'codesandnotes'
 
 layoutdir: 'app/templates'
 publishdir: 'dist'
@@ -90,7 +88,6 @@ menu:
       weight: 80
 
     - name: "Drafts"
-      identifier: "_drafts"
       identifier: "_drafts"
       url: "/_drafts/"
       weight: 500
