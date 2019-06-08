@@ -1,6 +1,5 @@
 ---
 title: How to configure sslmate+surge SSL certificate
-draft: true
 ---
 
 Remember to replace example.com with your own domain in all examples.

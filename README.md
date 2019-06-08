@@ -1,8 +1,8 @@
 # Codes & Notes
 
-This is the repository of the book on web development I’m writing. It contains my drafts as well as finished articles, design ideas, personal notes and a backup of my Wordpress setup.
+This is the repository of the book on web development I’m writing. It contains my drafts as well as finished articles, design ideas, personal notes.
 
-☞ Please read the [Introduction to Codes & Notes](http://codesandnotes.com/preface/introduction/)
+☞ Please read the [Introduction to Codes & Notes](https://www.codesandnotes.com/preface/introduction/)
 
 ## Development setup
 
@@ -12,11 +12,7 @@ All articles are in the `content` folder. They are written in Markdown format wi
 
 ### Installing dependencies
 
-You will need Git, Node and Hugo installed on your system. 
-
-### Installing Codes & Notes
-
-Then go:
+You will need Git, Node and Hugo installed on your system. Then go:
 
 1. `git clone git@github.com:oskarrough/codesandnotes.git`
 2. `cd codesandnotes`
@@ -33,4 +29,3 @@ To deploy the project, push to the `production` branch. This will trigger Netlif
 Both [Alex](https://github.com/wooorm/alex) and [retext-mapbox-standard](https://github.com/mapbox/retext-mapbox-standard) can be used to check the writing. Take these suggestions with a grain of salt.
 
 `yarn test`
-

@@ -41,29 +41,11 @@ gulp.task('styles', function () {
 		.pipe(browserSync.stream())
 })
 
-// Scripts
-gulp.task('scripts', function () {
-	return gulp.src('app/scripts/**/*.js')
-		.pipe($.sourcemaps.init())
-		.pipe($.sourcemaps.write('.'))
-		.pipe(gulp.dest('.tmp/scripts/'))
-		.pipe(browserSync.stream({once: true}))
-})
-
 // Development server
-gulp.task('serve', gulp.series('styles', 'scripts', 'hugo', function () {
-	// watch for changes
-	// gulp.watch([
-	// 	// 'app/*.html',
-	// 	'app/scripts/**/*.js',
-	// 	'app/images/**/*',
-	// 	'.tmp/fonts/**/*'
-	// ]).on('change', browserSync.reload)
-
+gulp.task('serve', gulp.series('styles', 'hugo', function () {
 	// watch for changes and run tasks
 	gulp.watch(['content/**/*.md', 'app/templates/**/*.html']).on('change',  gulp.series('hugo'))
 	gulp.watch('app/styles/**/*', gulp.series('styles'))
-	gulp.watch('app/scripts/**/*.js', gulp.series('scripts'))
 
 	browserSync.init({
 		notify: false,
@@ -108,7 +90,7 @@ gulp.task('minify-styles', () => {
 // First cleans, then starts the building sequence
 gulp.task('build', gulp.series(
 	'clean',
-	gulp.parallel('hugo', 'styles', 'scripts'),
+	gulp.parallel('hugo', 'styles'),
 	'copy-from-tmp',
 	gulp.parallel('minify-styles', 'minify-templates')
 ))

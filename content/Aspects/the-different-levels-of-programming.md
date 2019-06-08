@@ -40,6 +40,7 @@ Writing software isn't like running a race - you don't start at the beginning, f
 (And finally, on that note... write automated tests. I don't buy in to the principles of TDD, but I definitely buy into the practice. I usually flip it around in my head - it's not that your code is complete once it satisfies the test; rather, your tests are complete once they demonstrate that the code functions correctly. I've seen too much code 'proven' by incorrect or incomplete tests to be happy with "write the test, write the minimum code to pass the test".)
 
 Here's the promised tl;dr:
+
 1. Follow good developers, and try to understand their ideas.
 2. Pick the right tool, not your favourite tool.
 3. Know your libraries and frameworks, so you don't repeat them.

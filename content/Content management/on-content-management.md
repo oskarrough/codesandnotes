@@ -9,6 +9,20 @@ What are you doing right now? Whether you are supposed to be developing, designi
 
 Now, back in the days everything was hardcoded without databases. No, not really. What do I know.
 
+There's a plethora of content management systems out there. I've tried a lot and which to choose really comes down to each projects specific needs and future plans.
+
+## PHP-based systems
+
+- Drupal
+- Perch
+- Wordpress
+- etc.
+
+## File-based systems
+
+- statamic
+- http://modernstatic.com/
+
 ## References
 
 - http://www.zeldman.com/category/content-first/
@@ -19,3 +33,4 @@ Now, back in the days everything was hardcoded without databases. No, not really
 - [How We Build CMS-Free Websites](http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/)
 - http://alistapart.com/topic/content-strategy
 - https://pinboard.in/u:rough/t:cms
+

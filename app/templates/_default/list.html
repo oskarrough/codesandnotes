@@ -5,9 +5,9 @@
 	<li><span class="Badge">tag</span> {{ .Title }}</li>
 </ul>
 
-<!-- <p><span class="Badge">Tag</span></p> -->
+<p><span class="Badge">Tag</span></p>
 
-<section class="Main">
+<main class="Main">
 	<h1>{{ .Title}}</h1>
 
 	<p>Articles with this tag:</p>
@@ -16,6 +16,6 @@
 			{{ .Render "list-item"}}
 		{{ end }}
 	</ul>
-</section>
+</main>
 
 {{ partial "footer.html" . }}

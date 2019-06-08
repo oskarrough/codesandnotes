@@ -1,12 +1,14 @@
 ---
 title: "Servers"
-draft: true
 ---
 
-## What do you need?
+## Hosting services
 
-## Hosting
+- Netlify
+- Now
+- Heroku
 
-### Resources
+### Self-managed servers
 
-http://24ways.org/2013/url-rewriting-for-the-fearful/
+- https://www.scaleway.com/en/
+- https://www.digitalocean.com

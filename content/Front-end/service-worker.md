@@ -1,10 +1,11 @@
 ---
-title: Service Worker
-draft: true
+title: Service Workers
 ---
 
 ### Resources
 
+- https://developers.google.com/web/tools/workbox/
+- https://developers.google.com/web/fundamentals/primers/service-workers/
 - https://serviceworke.rs/
 - https://davidwalsh.name/offline-recipes-service-workers
 - https://jakearchibald.github.io/isserviceworkerready/
