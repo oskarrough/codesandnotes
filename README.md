@@ -1,3 +1,5 @@
+> Author's update from summer 2022: most of these articles were written some seven years ago. The web has changed a lot since then. Enjoy!
+
 # Codes & Notes
 
 This is the repository of the book on web development I’m writing. It contains my drafts as well as finished articles, design ideas, personal notes.
